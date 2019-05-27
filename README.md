@@ -28,8 +28,8 @@ C#
 |	23	|	|	|	|
 |	24	|	|	|	|
 |	25	|	|	|	|
-|	26	|	|	|	|
-|	27	|	|	|	|
+|	26	| [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)	| Array	|	[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Remove%20Duplicates%20from%20Sorted%20Array.cs) |
+|	27	| [Remove Element](https://leetcode.com/problems/remove-element/)	|Array	|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Remove%20Element.cs)	|
 |	28	|	|	|	|
 |	29	|	|	|	|
 |	30	|	|	|	|
