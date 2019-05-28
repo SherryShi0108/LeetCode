@@ -37,7 +37,7 @@ C#
 |	32	|	|	|	|
 |	33	|	|	|	|
 |	34	|	|	|	|
-|	35	|	|	|	|
+|	35	|	[Search Insert Position](https://leetcode.com/problems/search-insert-position/)|Binary Search	|	[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Search%20Insert%20Position.cs)|
 |	36	|	|	|	|
 |	37	|	|	|	|
 |	38	|	|	|	|
@@ -55,7 +55,7 @@ C#
 |	50	|	|	|	|
 |	51	|	|	|	|
 |	52	|	|	|	|
-|	53	|	|	|	|
+|	53	|[Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)	| Dynamic Programming	|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Maximum%20Subarray.cs)	|
 |	54	|	|	|	|
 |	55	|	|	|	|
 |	56	|	|	|	|
