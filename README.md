@@ -68,7 +68,7 @@ C#
 |	63	|	|	|	|
 |	64	|	|	|	|
 |	65	|	|	|	|
-|	66	|	|	|	|
+|	66	|[Plus One](https://leetcode.com/problems/plus-one/)	|	Array|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Plus%20One.cs)	|
 |	67	|	|	|	|
 |	68	|	|	|	|
 |	69	|	|	|	|
