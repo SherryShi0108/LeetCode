@@ -123,7 +123,7 @@ C#
 |	118	|	|	|	|
 |	119	|	|	|	|
 |	120	|	|	|	|
-|	121	|	|	|	|
+|	121	|[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)	|Dynamic Programming	|	[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Best%20Time%20to%20Buy%20and%20Sell%20Stock.cs)|
 |	122	|	|	|	|
 |	123	|	|	|	|
 |	124	|	|	|	|
@@ -171,7 +171,7 @@ C#
 |	166	|	|	|	|
 |	167	|	|	|	|
 |	168	|	|	|	|
-|	169	|	|	|	|
+|	169	|	[Majority Element](https://leetcode.com/problems/majority-element/)|Array	|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Majority%20Element.cs)	|
 |	170	|	|	|	|
 |	171	|	|	|	|
 |	172	|	|	|	|
