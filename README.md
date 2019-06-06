@@ -169,7 +169,7 @@ C#
 |	164	|	|	|	|
 |	165	|	|	|	|
 |	166	|	|	|	|
-|	167	|	|	|	|
+|	167	|[Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)	|Binary Search	|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Two%20Sum%20II%20-%20Input%20array%20is%20sorted.cs)	|
 |	168	|	|	|	|
 |	169	|	[Majority Element](https://leetcode.com/problems/majority-element/)|Array	|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Majority%20Element.cs)	|
 |	170	|	|	|	|
@@ -219,9 +219,9 @@ C#
 |	214	|	|	|	|
 |	215	|	|	|	|
 |	216	|	|	|	|
-|	217	|	|	|	|
+|	217	|[Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)	|	Array|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Contains%20Duplicate.cs)	|
 |	218	|	|	|	|
-|	219	|	|	|	|
+|	219	|[Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/)	|	Array|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Contains%20Duplicate%20II.cs)	|
 |	220	|	|	|	|
 |	221	|	|	|	|
 |	222	|	|	|	|
