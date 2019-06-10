@@ -416,7 +416,7 @@ C#
 |	411	|	|	|	|
 |	412	|	|	|	|
 |	413	|	|	|	|
-|	414	|	|	|	|
+|	414	|[Third Maximum Number](https://leetcode.com/problems/third-maximum-number/)	|Array	|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Third%20Maximum%20Number.cs)	|
 |	415	|	|	|	|
 |	416	|	|	|	|
 |	417	|	|	|	|
@@ -487,7 +487,7 @@ C#
 |	482	|	|	|	|
 |	483	|	|	|	|
 |	484	|	|	|	|
-|	485	|	|	|	|
+|	485	|[Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/)	|	Array|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Max%20Consecutive%20Ones.cs)|
 |	486	|	|	|	|
 |	487	|	|	|	|
 |	488	|	|	|	|
