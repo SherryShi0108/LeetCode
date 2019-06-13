@@ -270,7 +270,7 @@ C#
 |	265	|	|	|	|
 |	266	|	|	|	|
 |	267	|	|	|	|
-|	268	|	|	|	|
+|	268	|[Missing Number](https://leetcode.com/problems/missing-number/)	|Bit Manipulation	|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Missing%20Number.cs)	|
 |	269	|	|	|	|
 |	270	|	|	|	|
 |	271	|	|	|	|
@@ -719,7 +719,7 @@ C#
 |	714	|	|	|	|
 |	715	|	|	|	|
 |	716	|	|	|	|
-|	717	|	|	|	|
+|	717	|[1-bit and 2-bit Characters](https://leetcode.com/problems/1-bit-and-2-bit-characters/)	|	Array|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/1-bit%20and%202-bit%20Characters.cs)	|
 |	718	|	|	|	|
 |	719	|	|	|	|
 |	720	|	|	|	|
