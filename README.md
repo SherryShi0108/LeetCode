@@ -671,12 +671,12 @@ C#
 |	666	|	|	|	|
 |	667	|	|	|	|
 |	668	|	|	|	|
-|	669	|[Longest Continuous Increasing Subsequence](https://leetcode.com/problems/longest-continuous-increasing-subsequence/)|Array|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Longest%20Continuous%20Increasing%20Subsequence.cs)	|
+|	669	|	|	|	|
 |	670	|	|	|	|
 |	671	|	|	|	|
 |	672	|	|	|	|
 |	673	|	|	|	|
-|	674	|	|	|	|
+|	674	|[Longest Continuous Increasing Subsequence](https://leetcode.com/problems/longest-continuous-increasing-subsequence/)|Array|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Longest%20Continuous%20Increasing%20Subsequence.cs)	|
 |	675	|	|	|	|
 |	676	|	|	|	|
 |	677	|	|	|	|
