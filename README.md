@@ -90,7 +90,7 @@ C#
 |	85	|	|	|	|
 |	86	|	|	|	|
 |	87	|	|	|	|
-|	88	|	|	|	|
+|	88	|[Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)	|Array	|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Merge%20Sorted%20Array.cs)	|
 |	89	|	|	|	|
 |	90	|	|	|	|
 |	91	|	|	|	|
@@ -671,7 +671,7 @@ C#
 |	666	|	|	|	|
 |	667	|	|	|	|
 |	668	|	|	|	|
-|	669	|	|	|	|
+|	669	|[Longest Continuous Increasing Subsequence](https://leetcode.com/problems/longest-continuous-increasing-subsequence/)|Array|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Longest%20Continuous%20Increasing%20Subsequence.cs)	|
 |	670	|	|	|	|
 |	671	|	|	|	|
 |	672	|	|	|	|
