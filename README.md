@@ -158,12 +158,12 @@ C#
 |	153	|	|	|	|
 |	154	|	|	|	|
 |	155	|	|	|	|
-|	156	|	|	|	|
-|	157	|	|	|	|
-|	158	|	|	|	|
-|	159	|	|	|	|
+|	156 ♣|Binary Tree Upside Down	|	|	|
+|	157 ♣|Read N Characters Given Read4 |	|	|
+|	158	♣|Read N Characters Given Read4 II - Call multiple times	|	|	|
+|	159	♣|Longest Substring with At Most Two Distinct Characters|	|	|
 |	160	|	|	|	|
-|	161	|	|	|	|
+|	161	♣|One Edit Distance	|	|	|
 |	162	|	|	|	|
 |	163	|	|	|	|
 |	164	|	|	|	|
