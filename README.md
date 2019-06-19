@@ -280,12 +280,12 @@ C#
 |	275	|	|	|	|
 |	276	|❀ Paint Fence	|	|	|
 |	277	|❀ Find the Celebrity 	|	|	|
-|	278	|[Move Zeroes](https://leetcode.com/problems/move-zeroes/)	|Array	|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Move%20Zeroes.cs)	|
+|	278	|  |	|	|
 |	279	|	|	|	|
 |	280	|❀ Wiggle Sort	|	|	|
 |	281	|❀ Zigzag Iterator	|	|	|
 |	282	|	|	|	|
-|	283	|	|	|	|
+|	283	|[Move Zeroes](https://leetcode.com/problems/move-zeroes/)	|Array	|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Move%20Zeroes.cs)	|
 |	284	|	|	|	|
 |	285	|❀ Inorder Successor in BST	|	|	|
 |	286	|❀ Walls and Gates 	|	|	|
