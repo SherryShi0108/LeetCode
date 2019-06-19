@@ -280,7 +280,7 @@ C#
 |	275	|	|	|	|
 |	276	|❀ Paint Fence	|	|	|
 |	277	|❀ Find the Celebrity 	|	|	|
-|	278	|	|	|	|
+|	278	|[Move Zeroes](https://leetcode.com/problems/move-zeroes/)	|Array	|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Move%20Zeroes.cs)	|
 |	279	|	|	|	|
 |	280	|❀ Wiggle Sort	|	|	|
 |	281	|❀ Zigzag Iterator	|	|	|
@@ -511,7 +511,7 @@ C#
 |	506	|	|	|	|
 |	507	|	|	|	|
 |	508	|	|	|	|
-|	509	|	|	|	|
+|	509	|[Fibonacci Number](https://leetcode.com/problems/fibonacci-number/)	|Array	|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Fibonacci%20Number.cs)	|
 |	510	|❀ Inorder Successor in BST II 	|	|	|
 |	511	|❀ Game Play Analysis I 	|	|	|
 |	512	|❀ Game Play Analysis II 	|	|	|
