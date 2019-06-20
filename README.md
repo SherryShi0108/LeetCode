@@ -1,7 +1,7 @@
 # LeetCode
 C#
 
-| #        | Title |  Solution  | IsBest | Summary | IsChecked |
+| #        | Title | Solution | Summary  |  IsBest  | IsChecked |
 | :------: | ----- | :------: | :------: | :------: | :------: |
 | 1 | [TwoSum](https://leetcode.com/problems/two-sum/) |[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/TwoSum.cs) | | |  |
 | 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) |  | | | |
