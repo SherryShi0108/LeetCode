@@ -907,7 +907,7 @@ C#
 |	902	|	|	|	| | |
 |	903	|	|	|	| | |
 |	904	|	|	|	| | |
-|	905	|	|	|	| | |
+|	905	|[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)	|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Sort%20Array%20By%20Parity.cs)	|	| ♥ | |
 |	906	|	|	|	| | |
 |	907	|	|	|	| | |
 |	908	|	|	|	| | |
@@ -924,7 +924,7 @@ C#
 |	919	|	|	|	| | |
 |	920	|	|	|	| | |
 |	921	|	|	|	| | |
-|	922	|	|	|	| | |
+|	922	| [Sort Array By Parity II](https://leetcode.com/problems/sort-array-by-parity-ii/)	|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Sort%20Array%20By%20Parity%20II.cs)	|	| ♥ | |
 |	923	|	|	|	| | |
 |	924	|	|	|	| | |
 |	925	|	|	|	| | |
