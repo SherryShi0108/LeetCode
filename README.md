@@ -630,7 +630,7 @@ C#
 |	625	|❀ Minimum Factorization	|	|	| | |
 |	626	|	|	|	| | |
 |	627	|	|	|	| | |
-|	628	|	|	|	| | |
+|	628	|[Maximum Product of Three Numbers](https://leetcode.com/problems/maximum-product-of-three-numbers/)	|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Maximum%20Product%20of%20Three%20Numbers.cs)	|	| ♥ | |
 |	629	|	|	|	| | |
 |	630	|	|	|	| | |
 |	631	|♣ Design Excel Sum Formula 	|	|	| | |
@@ -645,7 +645,7 @@ C#
 |	640	|	|	|	| | |
 |	641	|	|	|	| | |
 |	642	|♣ Design Search Autocomplete System	|	|	| | |
-|	643	|	|	|	| | |
+|	643	|[Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/)	|	[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Maximum%20Average%20Subarray%20I.cs) |	| ♥ | |
 |	644	|♣ Maximum Average Subarray II 	|	|	| | |
 |	645	|	|	|	| | |
 |	646	|	|	|	| | |
