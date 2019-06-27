@@ -898,7 +898,7 @@ C#
 |	893	|	|	|	| | |
 |	894	|	|	|	| | |
 |	895	|	|	|	| | |
-|	896	|	|	|	| | |
+|	896	|[Monotonic Array](https://leetcode.com/problems/monotonic-array/)	|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Monotonic%20Array.cs)	|	| ♥ | |
 |	897	|	|	|	| | |
 |	898	|	|	|	| | |
 |	899	|	|	|	| | |
@@ -916,7 +916,7 @@ C#
 |	911	|	|	|	| | |
 |	912	|	|	|	| | |
 |	913	|	|	|	| | |
-|	914	|	|	|	| | |
+|	914	|[X of a Kind in a Deck of Cards](https://leetcode.com/problems/x-of-a-kind-in-a-deck-of-cards/)	|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/X%20of%20a%20Kind%20in%20a%20Deck%20of%20Cards.cs)	|	| | |
 |	915	|	|	|	| | |
 |	916	|	|	|	| | |
 |	917	|	|	|	| | |
