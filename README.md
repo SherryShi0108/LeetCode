@@ -563,7 +563,7 @@ C#
 |	558	|	|	|	| | |
 |	559	|	|	|	| | |
 |	560	|	|	|	| | |
-|	561	|	|	|	| | |
+|	561	|[Array Partition I](https://leetcode.com/problems/array-partition-i/)	|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Array%20Partition%20I.cs)	|	| ？ | |
 |	562	|❀ Longest Line of Consecutive One in Matrix 	|	|	| | |
 |	563	|	|	|	| | |
 |	564	|	|	|	| | |
@@ -699,7 +699,7 @@ C#
 |	694	|❀ Number of Distinct Islands	|	|	| | |
 |	695	|	|	|	| | |
 |	696	|	|	|	| | |
-|	697	|	|	|	| | |
+|	697	|[Degree of an Array](https://leetcode.com/problems/degree-of-an-array/)	|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Degree%20of%20an%20Array.cs)	|	| ♥ | |
 |	698	|	|	|	| | |
 |	699	|	|	|	| | |
 |	700	|	|	|	| | |
