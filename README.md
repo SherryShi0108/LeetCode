@@ -607,7 +607,7 @@ C#
 |	602	|❀ Friend Requests II: Who Has the Most Friends	|	|	| | |
 |	603	|❀ Consecutive Available Seats	|	|	| | |
 |	604	|❀ Design Compressed String Iterator 	|	|	| | |
-|	605	|	|	|	| | |
+|	605	| [Can Place Flowers](https://leetcode.com/problems/can-place-flowers/)	| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Can%20Place%20Flowers.cs) |	| ♥ | |
 |	606	|	|	|	| | |
 |	607	|❀ Sales Person	|	|	| | |
 |	608	|❀ Tree Node |	|	| | |
@@ -749,7 +749,7 @@ C#
 |	744	|	|	|	| | |
 |	745	|	|	|	| | |
 |	746	|	|	|	| | |
-|	747	|	|	|	| | |
+|	747	| [Largest Number At Least Twice of Others](https://leetcode.com/problems/largest-number-at-least-twice-of-others/)	| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Largest%20Number%20At%20Least%20Twice%20of%20Others.cs)	|	| ♥ | |
 |	748	|	|	|	| | |
 |	749	|	|	|	| | |
 |	750	|❀ Number Of Corner Rectangles	|	|	| | |
