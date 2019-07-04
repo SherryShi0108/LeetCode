@@ -124,7 +124,7 @@ C#
 |	119	|	|	|	| | |
 |	120	|	|	|	| | |
 |	121	|[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)	|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Best%20Time%20to%20Buy%20and%20Sell%20Stock.cs)| | | |
-|	122	|	|	|	| | |
+|	122	|	[Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) | [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Best%20Time%20to%20Buy%20and%20Sell%20Stock%20II.cs)	|	| ♥ | |
 |	123	|	|	|	| | |
 |	124	|	|	|	| | |
 |	125	|	|	|	| | |
@@ -890,7 +890,7 @@ C#
 |	885	|	|	|	| | |
 |	886	|	|	|	| | |
 |	887	|	|	|	| | |
-|	888	|	|	|	| | |
+|	888	| [Fair Candy Swap](https://leetcode.com/problems/fair-candy-swap/) | [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Fair%20Candy%20Swap.cs)	|	| ♥ | |
 |	889	|	|	|	| | |
 |	890	|	|	|	| | |
 |	891	|	|	|	| | |
