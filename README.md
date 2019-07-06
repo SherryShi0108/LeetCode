@@ -943,7 +943,7 @@ C#
 |	938	|	|	|	| | |
 |	939	|	|	|	| | |
 |	940	|	|	|	| | |
-|	941	|	|	|	| | |
+|	941	| [Valid Mountain Array](https://leetcode.com/problems/valid-mountain-array/) | [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Valid%20Mountain%20Array.cs)	|	| ♥ | |
 |	942	|	|	|	| | |
 |	943	|	|	|	| | |
 |	944	|	|	|	| | |
@@ -979,7 +979,7 @@ C#
 |	974	|	|	|	| | |
 |	975	|	|	|	| | |
 |	976	|	|	|	| | |
-|	977	|	|	|	| | |
+|	977	| [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/)	| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Squares%20of%20a%20Sorted%20Array.cs)	|	| ♥ | |
 |	978	|	|	|	| | |
 |	979	|	|	|	| | |
 |	980	|	|	|	| | |
