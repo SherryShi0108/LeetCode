@@ -991,7 +991,7 @@ C#
 |	986	|	|	|	| | |
 |	987	|	|	|	| | |
 |	988	|	|	|	| | |
-|	989	|	|	|	| | |
+|	989	|[Add to Array-Form of Integer](https://leetcode.com/problems/add-to-array-form-of-integer/)	|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Add%20to%20Array-Form%20of%20Integer.cs)	|	| ♥ | |
 |	990	|	|	|	| | |
 |	991	|	|	|	| | |
 |	992	|	|	|	| | |
@@ -1001,5 +1001,5 @@ C#
 |	996	|	|	|	| | |
 |	997	|	|	|	| | |
 |	998	|	|	|	| | |
-|	999	|	|	|	| | |
+|	999	|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook/)|	|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Available%20Captures%20for%20Rook.cs)	| ♥ | |
 |	1000	|	|	|	| | |
