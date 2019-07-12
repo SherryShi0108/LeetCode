@@ -450,7 +450,7 @@ C#
 |	445	|	|	|	| | |
 |	446	|	|	|	| | |
 |	447	|	|	|	| | |
-|	448	|	|	|	| | |
+|	448	|[Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Find%20All%20Numbers%20Disappeared%20in%20an%20Array.cs)	|	| ♥ | |
 |	449	|	|	|	| | |
 |	450	|	|	|	| | |
 |	451	|	|	|	| | |
@@ -726,7 +726,7 @@ C#
 |	721	|	|	|	| | |
 |	722	|	|	|	| | |
 |	723	|❀ Candy Crush	|	|	| | |
-|	724	|	|	|	| | |
+|	724	|[Find Pivot Index](https://leetcode.com/problems/find-pivot-index/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Find%20Pivot%20Index.cs)|	| ♥ | |
 |	725	|	|	|	| | |
 |	726	|	|	|	| | |
 |	727	|♣ Minimum Window Subsequence	|	|	| | |
