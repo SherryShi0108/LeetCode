@@ -1001,5 +1001,5 @@ C#
 |	996	|	|	|	| | |
 |	997	|	|	|	| | |
 |	998	|	|	|	| | |
-|	999	|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook/)|	|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Available%20Captures%20for%20Rook.cs)	| ♥ | |
+|	999	|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Available%20Captures%20for%20Rook.cs)|	| ♥ | |
 |	1000	|	|	|	| | |
