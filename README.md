@@ -191,7 +191,7 @@ C#
 |	186 |❀ Reverse Words in a String II  	|	|	| | |
 |	187	|	|	|	| | |
 |	188	|	|	|	| | |
-|	189	|	|	|	| | |
+|	189	|[Rotate Array](https://leetcode.com/problems/rotate-array/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Rotate%20Array.cs)|	| ♥ | |
 |	190	|	|	|	| | |
 |	191	|	|	|	| | |
 |	192	|	|	|	| | |
@@ -832,7 +832,7 @@ C#
 |	827	|	|	|	| | |
 |	828	|	|	|	| | |
 |	829	|	|	|	| | |
-|	830	|	|	|	| | |
+|	830	|[Positions of Large Groups](https://leetcode.com/problems/positions-of-large-groups/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Positions%20of%20Large%20Groups.cs)|	| ♥ | |
 |	831	|	|	|	| | |
 |	832	|	|	|	| | |
 |	833	|	|	|	| | |
