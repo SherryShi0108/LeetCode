@@ -75,8 +75,33 @@ public class Solution169
         }
         return n;
     }
+    
+    // --------------- O(n)120ms --------------- O(1)27.4MB --------------- (82% 12%)
+    public int MajorityElement_3(int[] nums)
+    {
+        int count = 1;
+        int temp = nums[0];
+        for (int i = 1; i < nums.Length; i++)
+        {
+            if (nums[i] == temp)
+            {
+                count++;
+            }
+            else
+            {
+                count--;
+                if (count == 0)
+                {
+                    temp = nums[i];
+                    count = 1;
+                }
+            }
+        }
+        return temp;
+    }
+    
 
 }
 /**************************************************************************************************************
- * MajorityElement_1    MajorityElement_2                                                                     *
+ * MajorityElement_1    MajorityElement_2/3                                                                   *
  **************************************************************************************************************/
