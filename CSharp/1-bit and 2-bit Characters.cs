@@ -43,6 +43,19 @@ public class Solution717
         }
         return false;
     }
+    //类似
+    public bool IsOneBitCharacter_1(int[] bits)
+    {
+        int i = 0;
+        for (i = 0; i < bits.Length - 1; i++)
+        {
+            if (bits[i] == 1)
+            {
+                i++;
+            }
+        }
+        return i == bits.Length - 1 ? true : false;
+    }
 
     // --------------- O(n) 96ms --------------- 22.7MB --------------- (48% 50%)
     public bool IsOneBitCharacter_2(int[] bits)
