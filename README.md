@@ -534,7 +534,7 @@ C#
 |	529	|	|	|	| | |
 |	530	|	|	|	| | |
 |	531	|❀ Lonely Pixel I 	|	|	| | |
-|	532	|	|	|	| | |
+|	532	|[K-diff Pairs in an Array](https://leetcode.com/problems/k-diff-pairs-in-an-array/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/K-diff%20Pairs%20in%20an%20Array.cs)| | ♥ | |
 |	533	|❀ Lonely Pixel II	|	|	| | |
 |	534	|❀ Game Play Analysis III 	|	|	| | |
 |	535	|	|	|	| | |
@@ -834,7 +834,7 @@ C#
 |	829	|	|	|	| | |
 |	830	|[Positions of Large Groups](https://leetcode.com/problems/positions-of-large-groups/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Positions%20of%20Large%20Groups.cs)|	| ♥ | |
 |	831	|	|	|	| | |
-|	832	|	|	|	| | |
+|	832	|[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Flipping%20an%20Image.cs)|	| ♥ | |
 |	833	|	|	|	| | |
 |	834	|	|	|	| | |
 |	835	|	|	|	| | |
