@@ -842,7 +842,7 @@ C#
 |	837	|	|	|	| | |
 |	838	|	|	|	| | |
 |	839	|	|	|	| | |
-|	840	|	|	|	| | |
+|	840	|[Magic Squares In Grid](https://leetcode.com/problems/magic-squares-in-grid/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Magic%20Squares%20In%20Grid.cs)|	| ♥ | |
 |	841	|	|	|	| | |
 |	842	|	|	|	| | |
 |	843	|	|	|	| | |
@@ -851,7 +851,7 @@ C#
 |	846	|	|	|	| | |
 |	847	|	|	|	| | |
 |	848	|	|	|	| | |
-|	849	|	|	|	| | |
+|	849	|[Maximize Distance to Closest Person](https://leetcode.com/problems/maximize-distance-to-closest-person/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Maximize%20Distance%20to%20Closest%20Person.cs)|	| ♥ | |
 |	850	|	|	|	| | |
 |	851	|	|	|	| | |
 |	852	|	|	|	| | |
