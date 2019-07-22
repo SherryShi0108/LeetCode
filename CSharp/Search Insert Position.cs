@@ -80,7 +80,7 @@ public class Solution
     }
 
     // --------------- O(n) 100ms --------------- 22.6MB ---------------  
-    public int SearchInsert_3(int[] nums, int target)
+    public int SearchInsert_4(int[] nums, int target)
     {
         var i = 0;
         for (i = 0; i < nums.Length; i++)
@@ -91,6 +91,19 @@ public class Solution
             }
         }
         return i;
+    }
+    
+    // --------------- O(n) 96ms --------------- 22.7MB --------------- (74% 5%)  
+    public int SearchInsert_5(int[] nums, int target)
+    {
+        for (int i = 0; i < nums.Length; i++)
+        {
+            if (target <= nums[i])
+            {
+                return i;
+            }
+        }
+        return nums.Length;
     }
 }
 /**************************************************************************************************************
