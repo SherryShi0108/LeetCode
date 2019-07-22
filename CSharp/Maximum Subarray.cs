@@ -46,13 +46,18 @@ public class Solution
         return nums[0];
     }
 
-    // --------------- using dynamic programming / divide and conquer ---------------  
-    public int MaxSubArray_2(int[] nums)
+    // --------------- O(n) 112ms --------------- 23.4MB --------------- (27% 8%) ※
+     public int MaxSubArray_3(int[] nums)
     {
-
-        return 0;
+        int max = nums[0];
+        for (int i = 1; i < nums.Length; i++)
+        {
+            nums[i] = nums[i] > nums[i] + nums[i - 1] ? nums[i] : nums[i] + nums[i - 1];
+            max = max > nums[i] ? max : nums[i];
+        }
+        return max;
     }
 }
 /**************************************************************************************************************
- * MaxSubArray_1                                                                                              *
+ * MaxSubArray_1/3                                                                                              *
  **************************************************************************************************************/
