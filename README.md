@@ -568,7 +568,7 @@ C#
 |	563	|	|	|	| | |
 |	564	|	|	|	| | |
 |	565	|	|	|	| | |
-|	566	|	|	|	| | |
+|	566	|[Reshape the Matrix](https://leetcode.com/problems/reshape-the-matrix/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Reshape%20the%20Matrix.cs)| | ♥ | |
 |	567	|	|	|	| | |
 |	568	|♣ Maximum Vacation Days	|	|	| | |
 |	569	|♣ Median Employee Salary 	|	|	| | |
@@ -768,7 +768,7 @@ C#
 |	763	|	|	|	| | |
 |	764	|	|	|	| | |
 |	765	|	|	|	| | |
-|	766	|	|	|	| | |
+|	766	|[Toeplitz Matrix](https://leetcode.com/problems/toeplitz-matrix/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Toeplitz%20Matrix.cs)|	| ♥ | |
 |	767	|	|	|	| | |
 |	768	|	|	|	| | |
 |	769	|	|	|	| | |
@@ -869,7 +869,7 @@ C#
 |	864	|	|	|	| | |
 |	865	|	|	|	| | |
 |	866	|	|	|	| | |
-|	867	|	|	|	| | |
+|	867	|[Transpose Matrix](https://leetcode.com/problems/transpose-matrix/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Transpose%20Matrix.cs)| | ♥ | |
 |	868	|	|	|	| | |
 |	869	|	|	|	| | |
 |	870	|	|	|	| | |
@@ -987,7 +987,7 @@ C#
 |	982	|	|	|	| | |
 |	983	|	|	|	| | |
 |	984	|	|	|	| | |
-|	985	|	|	|	| | |
+|	985	|[Sum of Even Numbers After Queries](https://leetcode.com/problems/sum-of-even-numbers-after-queries/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Sum%20of%20Even%20Numbers%20After%20Queries.cs)|	| ♥ | |
 |	986	|	|	|	| | |
 |	987	|	|	|	| | |
 |	988	|	|	|	| | |
