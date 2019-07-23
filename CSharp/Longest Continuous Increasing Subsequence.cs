@@ -84,7 +84,30 @@ public class Solution674
         }
         return max;
     }   
+    
+    // --------------- O(n) 100ms --------------- 23.8MB --------------- (75% 96%) ※
+    public int FindLengthOfLCIS_4(int[] nums)
+    {
+        if (nums.Length == 0 || nums == null) { return 0; }
+
+        int max = 1;
+        int count = 1;
+        for (int i = 1; i < nums.Length; i++)
+        {
+            if (nums[i] > nums[i - 1])
+            {
+                count++;
+                max = max > count ? max : count;
+            }
+            else
+            {
+                count = 1;
+            }
+        }
+
+        return max;
+    }
 }
 /**************************************************************************************************************
- * FindLengthOfLCIS_3                                                                                         *
+ * FindLengthOfLCIS_3 / 4                                                                                     *
  **************************************************************************************************************/
