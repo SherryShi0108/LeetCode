@@ -120,8 +120,8 @@ C#
 |	115	|	|	|	| | |
 |	116	|	|	|	| | |
 |	117	|	|	|	| | |
-|	118	|	|	|	| | |
-|	119	|	|	|	| | |
+|	118	|[Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Pascal's%20Triangle.cs)| | ♥ | |
+|	119	|[Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Pascal's%20Triangle%20II.cs)|	| ♥ | |
 |	120	|	|	|	| | |
 |	121	|[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)	|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Best%20Time%20to%20Buy%20and%20Sell%20Stock.cs)| | | |
 |	122	|	[Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) | [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Best%20Time%20to%20Buy%20and%20Sell%20Stock%20II.cs)	|	| ♥ | |
@@ -663,7 +663,7 @@ C#
 |	658	|	|	|	| | |
 |	659	|	|	|	| | |
 |	660	|♣ Remove 9 |	|	| | |
-|	661	|	|	|	| | |
+|	661	|[Image Smoother](https://leetcode.com/problems/image-smoother/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Image%20Smoother.cs)| | ♥ | |
 |	662	|	|	|	| | |
 |	663	|❀ Equal Tree Partition	|	| | |	|
 |	664	|	|	|	| | |
@@ -748,7 +748,7 @@ C#
 |	743	|	|	|	| | |
 |	744	|	|	|	| | |
 |	745	|	|	|	| | |
-|	746	|	|	|	| | |
+|	746	|[Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Min%20Cost%20Climbing%20Stairs.cs)| | | |
 |	747	| [Largest Number At Least Twice of Others](https://leetcode.com/problems/largest-number-at-least-twice-of-others/)	| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Largest%20Number%20At%20Least%20Twice%20of%20Others.cs)	|	| ♥ | |
 |	748	|	|	|	| | |
 |	749	|	|	|	| | |
