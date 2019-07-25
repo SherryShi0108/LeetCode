@@ -54,7 +54,7 @@ public class Solution717
                 i++;
             }
         }
-        return i == bits.Length - 1 ? true : false;
+        return i == bits.Length - 1 ;
     }
 
     // --------------- O(n) 96ms --------------- 22.7MB --------------- (48% 50%)
@@ -110,16 +110,8 @@ public class Solution717
         }
 
         return (bits.Length - i - 1) % 2 != 0;
-        /*
-         * if ((bits.Length - i - 1) % 2 == 0)
-         * {
-         *    return false;
-         * }
-         * else
-         * {
-         *    return true;
-         * }
-         */
+        
+        // return (bits.Length - i) % 2 == 0;
     }
 
 
