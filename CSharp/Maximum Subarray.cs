@@ -49,6 +49,8 @@ public class Solution
     // --------------- O(n) 112ms --------------- 23.4MB --------------- (27% 8%) ※
      public int MaxSubArray_3(int[] nums)
     {
+        if(nums.Length==0||nums==null) {return 0;}
+         
         int max = nums[0];
         for (int i = 1; i < nums.Length; i++)
         {
