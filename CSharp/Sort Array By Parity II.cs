@@ -89,7 +89,28 @@ public class Solution922
         }
         return A;
     }
+    
+    // --------------- 300ms --------------- 34.6MB --------------- (46% 72%) ※
+    public int[] SortArrayByParityII_4(int[] A)
+    {
+        int j = 1;
+        for (int i = 0; i < A.Length; i+=2)
+        {
+            if (A[i] % 2 != 0)
+            {
+                while (A[j] % 2 != 0)
+                {
+                    j += 2;
+                }
+
+                int temp = A[i];
+                A[i] = A[j];
+                A[j] = temp;
+            }
+        }
+        return A;
+    }
 }
 /**************************************************************************************************************
- * SortArrayByParityII_2 SortArrayByParityII_3                                                                *
+ * SortArrayByParityII_2 SortArrayByParityII_3 SortArrayByParityII_4                                          *
  **************************************************************************************************************/
