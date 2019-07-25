@@ -142,7 +142,43 @@ public class Solution941
         }
         return increaseFound && decreaseFound;
     }    
+    
+    // --------------- O(n) 192ms --------------- 31MB --------------- (5% 13%) 
+    public bool ValidMountainArray_5(int[] A)
+    {
+        int flag1 = 0;
+        int flag2 = 0;
+
+        int i = 1;
+        int j = A.Length - 1;
+        for (i = 1; i < A.Length; i++)
+        {
+            if (A[i] > A[i - 1])
+            {
+                flag1 = 1;
+            }
+            else
+            {
+                break;
+            }
+        }
+
+        for (j = A.Length - 1; j > 0; j--)
+        {
+            if (A[j] < A[j - 1])
+            {
+                flag2 = 1;
+            }
+            else
+            {
+                break;
+            }
+        }
+
+        bool a = (flag1 == 1 && flag2 == 1 && j + 1 == i);
+        return a;
+    }
 }
 /**************************************************************************************************************
- * ValidMountainArray_2   ValidMountainArray_3   ValidMountainArray_4                                         *
+ * ValidMountainArray_2   ValidMountainArray_3   ValidMountainArray_4/5                                         *
  **************************************************************************************************************/
