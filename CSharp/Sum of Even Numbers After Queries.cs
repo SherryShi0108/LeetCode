@@ -52,7 +52,7 @@ public class Solution985
         return B;
     }
 
-    // --------------- O(n) 456ms --------------- 47.1MB --------------- (33.3% 6%)  ※
+    // --------------- O(n) 456ms --------------- 47.1MB --------------- (33.3% 6%) 
     public int[] SumEvenAfterQueries_2(int[] A, int[][] queries)
     {
         int sum = 0;
@@ -85,7 +85,43 @@ public class Solution985
         }
         return B;
     }
+    
+     // --------------- O(n) 452ms --------------- 47MB --------------- (60% 100%)  ※
+    public int[] SumEvenAfterQueries_3(int[] A, int[][] queries)
+    {
+        int sum = 0;
+        for (int i = 0; i < A.Length; i++)
+        {
+            if (A[i] % 2 == 0)
+            {
+                sum += A[i];
+            }
+        }
+
+        int[] B = new int[queries.Length];
+        for (int i = 0; i < queries.Length; i++)
+        {
+            int[] C = queries[i];
+
+            if (A[C[1]] % 2 == 0 && C[0] % 2 == 0)
+            {
+                sum = sum + C[0] ;
+            }
+            else if (A[C[1]] % 2 != 0 && C[0] % 2 != 0)
+            {
+                sum = sum + A[C[1]] + C[0];
+            }
+            else if (A[C[1]] % 2 == 0 && C[0] % 2 != 0)
+            {
+                sum = sum - A[C[1]];
+            }
+            B[i] = sum;
+            A[C[1]] += C[0];
+        }
+
+        return B;
+    }
 }
 /**************************************************************************************************************
- * SumEvenAfterQueries_2                                                                                      *
+ * SumEvenAfterQueries_3                                                                                      *
  **************************************************************************************************************/
