@@ -29,7 +29,7 @@ public class Solution665
      *  [3,4,2,3] false
      *  [4,2,3] true
      */
-    // --------------- O(n) 144ms --------------- 29.7MB --------------- (17% 8%) ※ 
+    // --------------- O(n) 144ms --------------- 29.7MB --------------- (17% 8%)  
     public bool CheckPossibility_1(int[] nums)
     {
         int count = 0;
@@ -90,7 +90,30 @@ public class Solution665
         }
         return true;
     }
+    
+    // --------------- O(n) 128ms --------------- 29.6MB --------------- (70% 100%) ※
+    public bool CheckPossibility_3(int[] nums)
+    {
+        int count = 1;
+        for (int i = 1; i < nums.Length; i++)
+        {
+            if (nums[i] < nums[i - 1])
+            {
+                count--;
+                if (count < 0) { return false; }
+                if (i == 1 || nums[i] >= nums[i - 2])
+                {
+                    nums[i - 1] = nums[i];
+                }
+                else if (nums[i] < nums[i - 2])
+                {
+                    nums[i] = nums[i - 1];
+                }
+            }
+        }
+        return true;
+    }
 }
 /**************************************************************************************************************
- * CheckPossibility_1                                                                                         *
+ * CheckPossibility_3                                                                                         *
  **************************************************************************************************************/
