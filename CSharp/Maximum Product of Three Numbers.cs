@@ -55,7 +55,7 @@ public class Solution628
     }
     ///+++++++++++++++++++++++++ Error +++++++++++++++++++++++++
 
-    // --------------- O(n) 144ms --------------- 32.5MB --------------- (70% 6%) ※
+    // --------------- O(n) 144ms --------------- 32.5MB --------------- (70% 6%) 
     public int MaximumProduct_2(int[] nums)
     {
         int[] d1 = new int[3] { int.MinValue, int.MinValue, int.MinValue };
@@ -97,11 +97,52 @@ public class Solution628
         return max;
     }
 
+    // --------------- O(n) 144ms --------------- 32.5MB --------------- (80% 50%) ※
+    /*
+     * similar to 2
+     */
+     public int MaximumProduct_3(int[] nums)
+    {
+        int Max1 = int.MinValue; int Max2 = int.MinValue; int Max3 = int.MinValue;
+        int Min1 = int.MaxValue; int Min2 = int.MaxValue;
+
+        for (int i = 0; i < nums.Length; i++)
+        {
+            if (nums[i] >= Max1)
+            {
+                Max3 = Max2;
+                Max2 = Max1;
+                Max1 = nums[i];
+            }
+            else if (nums[i] >= Max2)
+            {
+                Max3 = Max2;
+                Max2 = nums[i];
+            }
+            else if (nums[i] > Max3)
+            {
+                Max3 = nums[i];
+            }
+
+            if (nums[i] <= Min1)
+            {
+                Min2 = Min1;
+                Min1 = nums[i];
+            }
+            else if (nums[i] < Min2)
+            {
+                Min2 = nums[i];
+            }
+        }
+
+        return Max1 * Max2 * Max3 > Max1 * Min1 * Min2 ? Max1 * Max2 * Max3 : Max1 * Min1 * Min2;
+    }
+    
     // --------------- O(nlogn) 164ms --------------- 32.5MB --------------- (32% 6%)
     /*
      * sort
      */
-    public int MaximumProduct_3(int[] nums)
+    public int MaximumProduct_4(int[] nums)
     {
         System.Array.Sort(nums);
 
