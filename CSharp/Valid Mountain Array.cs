@@ -178,7 +178,43 @@ public class Solution941
         bool a = (flag1 == 1 && flag2 == 1 && j + 1 == i);
         return a;
     }
+    
+     // --------------- O(n) 188ms --------------- 31MB --------------- (6% 100%) 
+     /*
+      *  easy - understanding
+      */
+    public bool ValidMountainArray_6(int[] A)
+    {
+        int p = 0; int q = -1;
+        for (int i = 1; i < A.Length; i++)
+        {
+            if (A[i] > A[i - 1])
+            {
+                continue;
+            }
+            else
+            {
+                p = i-1;
+                break;
+            }
+        }
+
+        for (int i = A.Length-1; i > 0; i--)
+        {
+            if (A[i] < A[i - 1])
+            {
+                continue;
+            }
+            else
+            {
+                q = i;
+                break;
+            }
+        }
+
+        return p == q;
+    }
 }
 /**************************************************************************************************************
- * ValidMountainArray_2   ValidMountainArray_3   ValidMountainArray_4/5                                         *
+ * ValidMountainArray_2   ValidMountainArray_3   ValidMountainArray_4/5 ValidMountainArray_6                  *
  **************************************************************************************************************/
