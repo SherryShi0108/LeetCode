@@ -43,30 +43,8 @@ public class Solution674
         return max;
     }
 
-    // --------------- O(n) 104ms --------------- 24.3MB --------------- (38% 5%)
-    public int FindLengthOfLCIS_2(int[] nums)
-    {
-        if (nums.Length == 0 || nums == null) { return 0; }
-
-        int max =1;
-        int count = 1;
-        for (int i = 1; i < nums.Length; i++)
-        {
-            if (nums[i] > nums[i - 1])
-            {
-                count++;
-                max = max > count ? max : count;
-            }
-            else
-            {
-                count = 1;
-            }
-        }    
-        return max;
-    }
-
     // --------------- O(n) 100ms --------------- 24.3MB --------------- (55% 5%)
-    public int FindLengthOfLCIS_3(int[] nums)
+    public int FindLengthOfLCIS_2(int[] nums)
     {
         int max = 0;
         int count = 0;
@@ -86,7 +64,7 @@ public class Solution674
     }   
     
     // --------------- O(n) 100ms --------------- 23.8MB --------------- (75% 96%) ※
-    public int FindLengthOfLCIS_4(int[] nums)
+    public int FindLengthOfLCIS_3(int[] nums)
     {
         if (nums.Length == 0 || nums == null) { return 0; }
 
@@ -109,5 +87,5 @@ public class Solution674
     }
 }
 /**************************************************************************************************************
- * FindLengthOfLCIS_3 / 4                                                                                     *
+ * FindLengthOfLCIS_3                                                                                         *
  **************************************************************************************************************/
