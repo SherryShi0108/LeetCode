@@ -3,7 +3,7 @@ C#
 
 | #        | Title | Solution | Summary  |  IsBest  | IsChecked |
 | :------: | ----- | :------: | :------: | :------: | :------: |
-| 1 | [TwoSum](https://leetcode.com/problems/two-sum/) |[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/TwoSum.cs) | | |  |
+| 1 | [TwoSum](https://leetcode.com/problems/two-sum/) |[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/TwoSum.cs) | | ♥ |  |
 | 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) |  | | | |
 |	3	| [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)	| |	| | | |
 |	4	|	|	|	| | |
@@ -219,9 +219,9 @@ C#
 |	214	|	|	|	| | |
 |	215	|	|	|	| | |
 |	216	|	|	|	| | |
-|	217	|[Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)	|	[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Contains%20Duplicate.cs)	| | | |
+|	217	|[Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)	|	[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Contains%20Duplicate.cs)	| | ♥ | |
 |	218	|	|	|	| | |
-|	219	|[Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/)	|	[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Contains%20Duplicate%20II.cs)	| | | |
+|	219	|[Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/)	|	[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Contains%20Duplicate%20II.cs)	| | ♥ | |
 |	220	|	|	|	| | |
 |	221	|	|	|	| | |
 |	222	|	|	|	| | |
