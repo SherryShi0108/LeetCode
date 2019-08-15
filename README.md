@@ -138,7 +138,7 @@ C#
 |	133	|	|	|	| | |
 |	134	|	|	|	| | |
 |	135	|	|	|	| | |
-|	136	|	|	|	| | |
+|	136	|[Single Number](https://leetcode.com/problems/single-number/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Single%20Number.cs)|	| ♥ | |
 |	137	|	|	|	| | |
 |	138	|	|	|	| | |
 |	139	|	|	|	| | |
@@ -244,7 +244,7 @@ C#
 |	239	|	|	|	| | |
 |	240	|	|	|	| | |
 |	241	|	|	|	| | |
-|	242	|	|	|	| | |
+|	242	|[Valid Anagram](https://leetcode.com/problems/valid-anagram/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Valid%20Anagram.cs)|	| ♥ | |
 |	243	|❀ Shortest Word Distance	|	|	| | |
 |	244	|❀ Shortest Word Distance II  |	|	| | |
 |	245	|❀ Shortest Word Distance III	|	|	| | |
@@ -292,7 +292,7 @@ C#
 |	287	|	|	|	| | |
 |	288	|❀ Unique Word Abbreviation	|	|	| | |
 |	289	|	|	|	| | |
-|	290	|	|	|	| | |
+|	290	|[Word Pattern](https://leetcode.com/problems/word-pattern/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Word%20Pattern.cs)| | ♥ | |
 |	291	|♣ Word Pattern II 	|	|	| | |
 |	292	|	|	|	| | |
 |	293	|❀ Flip Game	|	|	| | |
@@ -351,7 +351,7 @@ C#
 |	346	|❀ Moving Average from Data Stream 	|	|	| | |
 |	347	|	|	|	| | |
 |	348	|❀ Design Tic-Tac-Toe |	|	| | |
-|	349	|	|	|	| | |
+|	349	|[Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Intersection%20of%20Two%20Arrays.cs)| | ♥ | |
 |	350	|	|	|	| | |
 |	351	|❀ Android Unlock Patterns 	|	|	| | |
 |	352	|	|	|	| | |
@@ -389,9 +389,9 @@ C#
 |	384	|	|	|	| | |
 |	385	|	|	|	| | |
 |	386	|	|	|	| | |
-|	387	|	|	|	| | |
+|	387	|[First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/First%20Unique%20Character%20in%20a%20String.cs)| | ♥ | |
 |	388	|	|	|	| | |
-|	389	|	|	|	| | |
+|	389	|[Find the Difference](https://leetcode.com/problems/find-the-difference/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Find%20the%20Difference.cs)|	| ♥ | |
 |	390	|	|	|	| | |
 |	391	|	|	|	| | |
 |	392	|	|	|	| | |
@@ -411,12 +411,12 @@ C#
 |	406	|	|	|	| | |
 |	407	|	|	|	| | |
 |	408	|❀ Valid Word Abbreviation	|	|	| | |
-|	409	|	|	|	| | |
+|	409	|[Longest Palindrome](https://leetcode.com/problems/longest-palindrome/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Longest%20Palindrome.cs)|	| ♥ | |
 |	410	|	|	|	| | |
 |	411	|♣ Minimum Unique Word Abbreviation  	|	|	| | |
 |	412	|	|	|	| | |
 |	413	|	|	|	| | |
-|	414	|[Third Maximum Number](https://leetcode.com/problems/third-maximum-number/)	|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Third%20Maximum%20Number.cs)	| | | |
+|	414	|[Third Maximum Number](https://leetcode.com/problems/third-maximum-number/)	|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Third%20Maximum%20Number.cs)	| | ♥ | |
 |	415	|	|	|	| | |
 |	416	|	|	|	| | |
 |	417	|	|	|	| | |
@@ -647,7 +647,7 @@ C#
 |	642	|♣ Design Search Autocomplete System	|	|	| | |
 |	643	|[Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/)	|	[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Maximum%20Average%20Subarray%20I.cs) |	| ♥ | |
 |	644	|♣ Maximum Average Subarray II 	|	|	| | |
-|	645	|	|	|	| | |
+|	645	|[Set Mismatch](https://leetcode.com/problems/set-mismatch/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Set%20Mismatch.cs)| | ♥ | |
 |	646	|	|	|	| | |
 |	647	|	|	|	| | |
 |	648	|	|	|	| | |
@@ -886,7 +886,7 @@ C#
 |	881	|	|	|	| | |
 |	882	|	|	|	| | |
 |	883	|	|	|	| | |
-|	884	|	|	|	| | |
+|	884	|[Uncommon Words from Two Sentences](https://leetcode.com/problems/uncommon-words-from-two-sentences/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Uncommon%20Words%20from%20Two%20Sentences.cs)|	| ♥ | |
 |	885	|	|	|	| | |
 |	886	|	|	|	| | |
 |	887	|	|	|	| | |
@@ -963,7 +963,7 @@ C#
 |	958	|	|	|	| | |
 |	959	|	|	|	| | |
 |	960	|	|	|	| | |
-|	961	|	|	|	| | |
+|	961	|[N-Repeated Element in Size 2N Array](https://leetcode.com/problems/n-repeated-element-in-size-2n-array/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/N-Repeated%20Element%20in%20Size%202N%20Array.cs)|	| ♥ | |
 |	962	|	|	|	| | |
 |	963	|	|	|	| | |
 |	964	|	|	|	| | |
