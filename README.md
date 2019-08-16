@@ -352,7 +352,7 @@ C#
 |	347	|	|	|	| | |
 |	348	|❀ Design Tic-Tac-Toe |	|	| | |
 |	349	|[Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Intersection%20of%20Two%20Arrays.cs)| | ♥ | |
-|	350	|	|	|	| | |
+|	350	|[Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Intersection%20of%20Two%20Arrays%20II.cs)|	| ♥ | |
 |	351	|❀ Android Unlock Patterns 	|	|	| | |
 |	352	|	|	|	| | |
 |	353	|❀ Design Snake Game	|	|	| | |
@@ -502,7 +502,7 @@ C#
 |	497	|	|	|	| | |
 |	498	|	|	|	| | |
 |	499	|♣ The Maze III 	|	|	| | |
-|	500	|	|	|	| | |
+|	500	|[Keyboard Row](https://leetcode.com/problems/keyboard-row/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Keyboard%20Row.cs)| | ♥ | |
 |	501	|	|	|	| | |
 |	502	|	|	|	| | |
 |	503	|	|	|	| | |
@@ -577,7 +577,7 @@ C#
 |	572	|	|	|	| | |
 |	573	|❀ Squirrel Simulation	|	|	| | |
 |	574	|❀ Winning Candidate	|	|	| | |
-|	575	|	|	|	| | |
+|	575	|[Distribute Candies](https://leetcode.com/problems/distribute-candies/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Distribute%20Candies.cs)| | ♥ | |
 |	576	|	|	|	| | |
 |	577	|❀ Employee Bonus 	|	|	| | |
 |	578	|❀ Get Highest Answer Rate Question 	|	|	| | |
@@ -601,7 +601,7 @@ C#
 |	596	|	|	|	| | |
 |	597	|❀ Friend Requests I: Overall Acceptance Rate |	|	| | |
 |	598	|	|	|	| | |
-|	599	|	|	|	| | |
+|	599	|[Minimum Index Sum of Two Lists](https://leetcode.com/problems/minimum-index-sum-of-two-lists/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Minimum%20Index%20Sum%20of%20Two%20Lists.cs)| | ♥ | |
 |	600	|	|	|	| | |
 |	601	|	|	|	| | |
 |	602	|❀ Friend Requests II: Who Has the Most Friends	|	|	| | |
@@ -773,7 +773,7 @@ C#
 |	768	|	|	|	| | |
 |	769	|	|	|	| | |
 |	770	|	|	|	| | |
-|	771	|	|	|	| | |
+|	771	|[Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Jewels%20and%20Stones.cs)|	| ♥ | |
 |	772	|♣ Basic Calculator III 	|	|	| | |
 |	773	|	|	|	| | |
 |	774	|❀ Minimize Max Distance to Gas Station 	|	|	| | |
