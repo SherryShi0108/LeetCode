@@ -206,8 +206,8 @@ C#
 |	201	|	|	|	| | |
 |	202	|	|	|	| | |
 |	203	|	|	|	| | |
-|	204	|	|	|	| | |
-|	205	|	|	|	| | |
+|	204	|[Count Primes](https://leetcode.com/problems/count-primes/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Count%20Primes.cs)| | ♥ | |
+|	205	|[Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Isomorphic%20Strings.cs)| | ♥ | |
 |	206	|	|	|	| | |
 |	207	|	|	|	| | |
 |	208	|	|	|	| | |
@@ -301,7 +301,7 @@ C#
 |	296	|♣ Best Meeting Point 	|	|	| | |
 |	297	|	|	|	| | |
 |	298	|	|	|	| | |
-|	299	|	|	|	| | |
+|	299	|[Bulls and Cows](https://leetcode.com/problems/bulls-and-cows/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Bulls%20and%20Cows.cs)| | ♥ | |
 |	300	|	|	|	| | |
 |	301	|	|	|	| | |
 |	302	|♣ Smallest Rectangle Enclosing Black Pixels 	|	|	| | |
@@ -465,7 +465,7 @@ C#
 |	460	|	|	|	| | |
 |	461	|	|	|	| | |
 |	462	|	|	|	| | |
-|	463	|	|	|	| | |
+|	463	|[Island Perimeter](https://leetcode.com/problems/island-perimeter/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Island%20Perimeter.cs)| | ♥ | |
 |	464	|	|	|	| | |
 |	465	|♣ Optimal Account Balancing	|	|	| | |
 |	466	|	|	|	| | |
@@ -955,7 +955,7 @@ C#
 |	950	|	|	|	| | |
 |	951	|	|	|	| | |
 |	952	|	|	|	| | |
-|	953	|	|	|	| | |
+|	953	|[Verifying an Alien Dictionary](https://leetcode.com/problems/verifying-an-alien-dictionary/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Verifying%20an%20Alien%20Dictionary.cs)|	| ♥ | |
 |	954	|	|	|	| | |
 |	955	|	|	|	| | |
 |	956	|	|	|	| | |
