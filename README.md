@@ -204,7 +204,7 @@ C#
 |	199	|	|	|	| | |
 |	200	|	|	|	| | |
 |	201	|	|	|	| | |
-|	202	|	|	|	| | |
+|	202	|[Happy Number](https://leetcode.com/problems/happy-number/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Happy%20Number.cs)|	| | |
 |	203	|	|	|	| | |
 |	204	|[Count Primes](https://leetcode.com/problems/count-primes/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Count%20Primes.cs)| | ♥ | |
 |	205	|[Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Isomorphic%20Strings.cs)| | ♥ | |
@@ -596,7 +596,7 @@ C#
 |	591	|	|	|	| | |
 |	592	|	|	|	| | |
 |	593	|	|	|	| | |
-|	594	|	|	|	| | |
+|	594	|[Longest Harmonious Subsequence](https://leetcode.com/problems/longest-harmonious-subsequence/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Longest%20Harmonious%20Subsequence.cs)| | ♥ | |
 |	595	|	|	|	| | |
 |	596	|	|	|	| | |
 |	597	|❀ Friend Requests I: Overall Acceptance Rate |	|	| | |
@@ -722,7 +722,7 @@ C#
 |	717	|[1-bit and 2-bit Characters](https://leetcode.com/problems/1-bit-and-2-bit-characters/)	|	[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/1-bit%20and%202-bit%20Characters.cs)	| | | |
 |	718	|	|	|	| | |
 |	719	|	|	|	| | |
-|	720	|	|	|	| | |
+|	720	|[Longest Word in Dictionary](https://leetcode.com/problems/longest-word-in-dictionary/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Longest%20Word%20in%20Dictionary.cs)| | | |
 |	721	|	|	|	| | |
 |	722	|	|	|	| | |
 |	723	|❀ Candy Crush	|	|	| | |
@@ -813,7 +813,7 @@ C#
 |	808	|	|	|	| | |
 |	809	|	|	|	| | |
 |	810	|	|	|	| | |
-|	811	|	|	|	| | |
+|	811	|[Subdomain Visit Count](https://leetcode.com/problems/subdomain-visit-count/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Subdomain%20Visit%20Count.cs)|	| ♥ | |
 |	812	|	|	|	| | |
 |	813	|	|	|	| | |
 |	814	|	|	|	| | |
@@ -972,7 +972,7 @@ C#
 |	967	|	|	|	| | |
 |	968	|	|	|	| | |
 |	969	|	|	|	| | |
-|	970	|	|	|	| | |
+|	970	|[Powerful Integers](https://leetcode.com/problems/powerful-integers/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Powerful%20Integers.cs)|	| ♥ | |
 |	971	|	|	|	| | |
 |	972	|	|	|	| | |
 |	973	|	|	|	| | |
