@@ -69,6 +69,9 @@ public class Solution914
     ///+++++++++++++++++++++++++ Error +++++++++++++++++++++++++
 
     // --------------- O(n^2) 140ms --------------- 26.5MB --------------- (10% 60%)
+    /*
+     * the last foreach is unnecessary
+     */
     public bool HasGroupsSizeX_2(int[] deck)
     {
         Dictionary<int, int> d = new Dictionary<int, int>();
@@ -113,7 +116,44 @@ public class Solution914
         }
         return flag;
     }
+    
+    // --------------- O(n) 124ms --------------- 26.6MB --------------- (42% 100%)
+    public bool HasGroupsSizeX_3(int[] deck)
+    {
+        Dictionary<int, int> d = new Dictionary<int, int>();
+        for (int i = 0; i < deck.Length; i++)
+        {
+            if (d.ContainsKey(deck[i]))
+            {
+                d[deck[i]]++;
+            }
+            else
+            {
+                d[deck[i]] = 1;
+            }
+        }
+
+        int min = int.MaxValue;
+        foreach (var item in d)
+        {
+            min = min < item.Value ? min : item.Value;
+        }
+
+        for (int i = 2; i <= min; i++)
+        {
+            bool flag = true;
+            foreach (var item in d)
+            {
+                if (item.Value % i != 0) { flag = false; }
+            }
+            if (flag)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
 }
 /**************************************************************************************************************
- * HasGroupsSizeX_2                                                                                           *
+ * HasGroupsSizeX_3                                                                                           *
  **************************************************************************************************************/
