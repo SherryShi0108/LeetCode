@@ -37,7 +37,7 @@ using System.Collections.Generic;
 
 public class Solution888
 {
-    // --------------- O(n+m) 320ms --------------- 46.3MB --------------- (98% 6%) ※
+    // --------------- O(n+m) 320ms --------------- 46.3MB --------------- (98% 6%) 
     public int[] FairCandySwap_1(int[] A, int[] B)
     {
         int sum1 = 0;
@@ -65,7 +65,36 @@ public class Solution888
         }
         return null;
     }
+    
+    // --------------- O(n+m) 336ms --------------- 46.2MB --------------- (90% 14%) ※
+    /*
+     * similar to 1 , but easier to understand
+     */
+    public int[] FairCandySwap_2(int[] A, int[] B)
+    {
+        int sum1 = 0; int sum2 = 0; int sumAvg = 0;
+        Dictionary<int, int> d = new Dictionary<int, int>();
+        foreach (int t in A)
+        {
+            sum1 += t;
+        }
+        for (int i = 0; i < B.Length; i++)
+        {
+            sum2 += B[i];
+            d[B[i]] = i;
+        }
+        sumAvg = (sum1 + sum2) / 2;
+
+        for (int i = 0; i < A.Length; i++)
+        {
+            if (d.ContainsKey(sumAvg - sum1 + A[i]))  //aim sum1-A[i]+d[x]=sumAvg
+            {
+                return new int[] { A[i], sumAvg - sum1 + A[i] };
+            }
+        }
+        return null;
+    }  
 }
 /**************************************************************************************************************
- * FairCandySwap_1                                                                                            *
+ * FairCandySwap_1 / 2                                                                                            *
  **************************************************************************************************************/
