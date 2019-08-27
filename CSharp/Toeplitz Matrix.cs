@@ -58,7 +58,26 @@ public class Solution766
         }
         return true ;
     }
+    
+    // --------------- O(n)=O(matrix.W*matrix.H) 116ms --------------- 25.6MB --------------- (51% 29%) 
+    /*
+     * similar to 1
+     */
+    public bool IsToeplitzMatrix_1(int[][] matrix)
+    {
+         for (int i = 0; i < nums.Length-1; i++)
+            {
+                for (int j = 0; j < nums[0].Length-1; j++)
+                {
+                    if (nums[i][j] != nums[i + 1][j + 1])
+                    {
+                        return false;
+                    }
+                }
+            }
+            return true;
+    }
 }
 /**************************************************************************************************************
- * IsToeplitzMatrix_1                                                                                         *
+ * IsToeplitzMatrix_1/2                                                                                       *
  **************************************************************************************************************/
