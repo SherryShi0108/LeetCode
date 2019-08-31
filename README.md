@@ -170,10 +170,10 @@ C#
 |	165	|	|	|	| | |
 |	166	|	|	|	| | |
 |	167	|[Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)	|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Two%20Sum%20II%20-%20Input%20array%20is%20sorted.cs)	| | | |
-|	168	|	|	|	| | |
+|	168	|[Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Excel%20Sheet%20Column%20Title.cs)| | ♥ | |
 |	169	|	[Majority Element](https://leetcode.com/problems/majority-element/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Majority%20Element.cs)	| | | |
 |	170 | ❀ Two Sum III - Data structure design	|	|	| | |
-|	171	|	|	|	| | |
+|	171	|[Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Excel%20Sheet%20Column%20Number.cs)|	| ♥ | |
 |	172	|	|	|	| | |
 |	173	|	|	|	| | |
 |	174	|	|	|	| | |
@@ -265,7 +265,7 @@ C#
 |	260	|	|	|	| | |
 |	261	|❀ Graph Valid Tree|	|	| | |
 |	262	|	|	|	| | |
-|	263	|	|	|	| | |
+|	263	|[Ugly Number](https://leetcode.com/problems/ugly-number/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Ugly%20Number.cs)|	| ♥ | |
 |	264	|	|	|	| | |
 |	265 |♣ Paint House II 	|	|	| | |
 |	266	|❀ Palindrome Permutation 	|	|	| | |
@@ -328,7 +328,7 @@ C#
 |	323	|❀ Number of Connected Components in an Undirected Graph	|	|	| | |
 |	324	|	|	|	| | |
 |	325	|❀ Maximum Size Subarray Sum Equals k |	|	| | |
-|	326	|	|	|	| | |
+|	326	|[Power of Three](https://leetcode.com/problems/power-of-three/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Power%20of%20Three.cs)| | ♥ | |
 |	327	|	|	|	| | |
 |	328	|	|	|	| | |
 |	329	|	|	|	| | |
@@ -443,7 +443,7 @@ C#
 |	438	|	|	|	| | |
 |	439	|❀ Ternary Expression Parser	|	|	| | |
 |	440	|	|	|	| | |
-|	441	|	|	|	| | |
+|	441	|[Arranging Coins](https://leetcode.com/problems/arranging-coins/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Arranging%20Coins.cs)|	| ♥ | |
 |	442	|	|	|	| | |
 |	443	|	|	|	| | |
 |	444	|❀ Sequence Reconstruction	|	|	| | |
@@ -814,7 +814,7 @@ C#
 |	809	|	|	|	| | |
 |	810	|	|	|	| | |
 |	811	|[Subdomain Visit Count](https://leetcode.com/problems/subdomain-visit-count/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Subdomain%20Visit%20Count.cs)|	| ♥ | |
-|	812	|	|	|	| | |
+|	812	|[Largest Triangle Area](https://leetcode.com/problems/largest-triangle-area/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Largest%20Triangle%20Area.cs)|	| ♥ | |
 |	813	|	|	|	| | |
 |	814	|	|	|	| | |
 |	815	|	|	|	| | |
@@ -944,7 +944,7 @@ C#
 |	939	|	|	|	| | |
 |	940	|	|	|	| | |
 |	941	| [Valid Mountain Array](https://leetcode.com/problems/valid-mountain-array/) | [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Valid%20Mountain%20Array.cs)	|	| ♥ | |
-|	942	|	|	|	| | |
+|	942	|[DI String Match](https://leetcode.com/problems/di-string-match/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/DI%20String%20Match.cs)|	| ♥ | |
 |	943	|	|	|	| | |
 |	944	|	|	|	| | |
 |	945	|	|	|	| | |
@@ -978,7 +978,7 @@ C#
 |	973	|	|	|	| | |
 |	974	|	|	|	| | |
 |	975	|	|	|	| | |
-|	976	|	|	|	| | |
+|	976	|[Largest Perimeter Triangle](https://leetcode.com/problems/largest-perimeter-triangle/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Largest%20Perimeter%20Triangle.cs)| | ♥ | |
 |	977	| [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/)	| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Squares%20of%20a%20Sorted%20Array.cs)	|	| ♥ | |
 |	978	|	|	|	| | |
 |	979	|	|	|	| | |
