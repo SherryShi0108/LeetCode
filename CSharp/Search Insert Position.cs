@@ -93,7 +93,7 @@ public class Solution
         return i;
     }
     
-    // --------------- O(n) 96ms --------------- 22.7MB --------------- (74% 5%)  
+    // --------------- O(n) 96ms --------------- 22.7MB --------------- (74% 5%) ※
     public int SearchInsert_5(int[] nums, int target)
     {
         for (int i = 0; i < nums.Length; i++)
