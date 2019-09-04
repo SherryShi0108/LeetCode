@@ -9,13 +9,13 @@ C#
 |	4	|	|	|	| | |
 |	5	|	|	|	| | |
 |	6	|	|	|	| | |
-|	7	|	|	|	| | |
+|	7	|[Reverse Integer](https://leetcode.com/problems/reverse-integer/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Reverse%20Integer.cs)|	| ♥ | |
 |	8	|	|	|	| | |
 |	9	|	|	|	| | |
 |	10	|	|	|	| | |
 |	11	|	|	|	| | |
 |	12	|	|	|	| | |
-|	13	|	|	|	| | |
+|	13	|[Roman to Integer](https://leetcode.com/problems/roman-to-integer/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Roman%20to%20Integer.cs)| | ♥ | |
 |	14	|	|	|	| | |
 |	15	|	|	|	| | |
 |	16	|	|	|	| | |
@@ -37,7 +37,7 @@ C#
 |	32	|	|	|	| | |
 |	33	|	|	|	| | |
 |	34	|	|	|	| | |
-|	35	|	[Search Insert Position](https://leetcode.com/problems/search-insert-position/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Search%20Insert%20Position.cs)| | | |
+|	35	|	[Search Insert Position](https://leetcode.com/problems/search-insert-position/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Search%20Insert%20Position.cs)| | ♥ | |
 |	36	|	|	|	| | |
 |	37	|	|	|	| | |
 |	38	|	|	|	| | |
@@ -174,7 +174,7 @@ C#
 |	169	|	[Majority Element](https://leetcode.com/problems/majority-element/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Majority%20Element.cs)	| | | |
 |	170 | ❀ Two Sum III - Data structure design	|	|	| | |
 |	171	|[Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Excel%20Sheet%20Column%20Number.cs)|	| ♥ | |
-|	172	|	|	|	| | |
+|	172	|[Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Factorial%20Trailing%20Zeroes.cs)|	| ♥ | |
 |	173	|	|	|	| | |
 |	174	|	|	|	| | |
 |	175	|	|	|	| | |
@@ -260,7 +260,7 @@ C#
 |	255	|❀ Verify Preorder Sequence in Binary Search Tree	|	|	| | |
 |	256	|❀ Paint House 	|	|	| | |
 |	257	|	|	|	| | |
-|	258	|	|	|	| | |
+|	258	|[Add Digits](https://leetcode.com/problems/add-digits/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Add%20Digits.cs)| | ♥ | |
 |	259	|❀ 3Sum Smaller	|	|	| | |
 |	260	|	|	|	| | |
 |	261	|❀ Graph Valid Tree|	|	| | |
@@ -369,7 +369,7 @@ C#
 |	364	|❀ Nested List Weight Sum II 	|	|	| | |
 |	365	|	|	|	| | |
 |	366	|❀ Find Leaves of Binary Tree	|	|	| | |
-|	367	|	|	|	| | |
+|	367	|[Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Valid%20Perfect%20Square.cs)| | | |
 |	368	|	|	|	| | |
 |	369	|❀ Plus One Linked List 	|	|	| | |
 |	370	|❀ Range Addition	|	|	| | |
@@ -449,7 +449,7 @@ C#
 |	444	|❀ Sequence Reconstruction	|	|	| | |
 |	445	|	|	|	| | |
 |	446	|	|	|	| | |
-|	447	|	|	|	| | |
+|	447	|[Number of Boomerangs](https://leetcode.com/problems/number-of-boomerangs/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Number%20of%20Boomerangs.cs)| | ♥ | |
 |	448	|[Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Find%20All%20Numbers%20Disappeared%20in%20an%20Array.cs)	|	| ♥ | |
 |	449	|	|	|	| | |
 |	450	|	|	|	| | |
@@ -511,7 +511,7 @@ C#
 |	506	|	|	|	| | |
 |	507	|	|	|	| | |
 |	508	|	|	|	| | |
-|	509	|[Fibonacci Number](https://leetcode.com/problems/fibonacci-number/)	|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Fibonacci%20Number.cs)	| | | |
+|	509	|[Fibonacci Number](https://leetcode.com/problems/fibonacci-number/)	|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Fibonacci%20Number.cs)	| | ♥ | |
 |	510	|❀ Inorder Successor in BST II 	|	|	| | |
 |	511	|❀ Game Play Analysis I 	|	|	| | |
 |	512	|❀ Game Play Analysis II 	|	|	| | |
@@ -707,8 +707,8 @@ C#
 |	702	|❀ Search in a Sorted Array of Unknown Size	|	|	| | |
 |	703	|	|	|	| | |
 |	704	|	|	|	| | |
-|	705	|	|	|	| | |
-|	706	|	|	|	| | |
+|	705	|[Design HashSet](https://leetcode.com/problems/design-hashset/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Design%20HashSet.cs)| | | |
+|	706	|[Design HashMap](https://leetcode.com/problems/design-hashmap/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Design%20HashMap.cs)| | | |
 |	707	|	|	|	| | |
 |	708	|❀ Insert into a Cyclic Sorted List	|	|	| | |
 |	709	|	|	|	| | |
@@ -750,7 +750,7 @@ C#
 |	745	|	|	|	| | |
 |	746	|[Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Min%20Cost%20Climbing%20Stairs.cs)| | | |
 |	747	| [Largest Number At Least Twice of Others](https://leetcode.com/problems/largest-number-at-least-twice-of-others/)	| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Largest%20Number%20At%20Least%20Twice%20of%20Others.cs)	|	| ♥ | |
-|	748	|	|	|	| | |
+|	748	|[Shortest Completing Word](https://leetcode.com/problems/shortest-completing-word/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Shortest%20Completing%20Word.cs)| | ♥ | |
 |	749	|	|	|	| | |
 |	750	|❀ Number Of Corner Rectangles	|	|	| | |
 |	751	|❀ IP to CIDR 	|	|	| | |
@@ -870,7 +870,7 @@ C#
 |	865	|	|	|	| | |
 |	866	|	|	|	| | |
 |	867	|[Transpose Matrix](https://leetcode.com/problems/transpose-matrix/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Transpose%20Matrix.cs)| | ♥ | |
-|	868	|	|	|	| | |
+|	868	|[Binary Gap](https://leetcode.com/problems/binary-gap/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Binary%20Gap.cs)| | ♥ | |
 |	869	|	|	|	| | |
 |	870	|	|	|	| | |
 |	871	|	|	|	| | |
