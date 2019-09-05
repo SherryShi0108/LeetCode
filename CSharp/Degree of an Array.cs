@@ -96,8 +96,38 @@ public class Solution697
             }
         }
         return min;
-    }   
+    }
+    
+    // --------------- O(n) 144ms --------------- 29.7MB --------------- (68% 100%) 
+    public int FindShortestSubArray_3(int[] nums)
+    {
+        Dictionary<int, int[]> d = new Dictionary<int, int[]>();
+        int min = int.MaxValue;
+        int count = 1;
+        for (int i = 0; i < nums.Length; i++)
+        {
+            if (d.ContainsKey(nums[i]))
+            {
+                d[nums[i]][1]++;
+                if (d[nums[i]][1] > count)
+                {
+                    min = i - d[nums[i]][0];
+                    count = d[nums[i]][1];
+                }
+                else if (d[nums[i]][1] == count)
+                {
+                    int x = i - d[nums[i]][0];
+                    min = min < x ? min : x;
+                }
+            }
+            else
+            {
+                d[nums[i]] = new int[] { i, 1 };
+            }
+        }
+        return min == int.MaxValue ? 1 : min + 1;
+    }
 }
 /**************************************************************************************************************
- * FindShortestSubArray_2                                                                                     *
+ * FindShortestSubArray_2 / 3                                                                                 *
  **************************************************************************************************************/
