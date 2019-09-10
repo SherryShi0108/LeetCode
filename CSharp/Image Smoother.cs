@@ -63,7 +63,40 @@ public class Solution661
 
         return result;
     }
+    
+    // --------------- O(n)=O(M.Length*M.Width) 320ms --------------- 33.7MB --------------- (100% 75%) 
+    public int[][] ImageSmoother_2(int[][] M)
+    {
+        int m = M.Length;
+        int n = M[0].Length;
+        int[][] N = new int[m][];
+        for (int i = 0; i < m; i++)
+        {
+            N[i] = new int[n];
+        }
+
+        for (int i = 0; i < m; i++)
+        {
+            for (int j = 0; j < n; j++)
+            {
+                int sum = 0;
+                int count = 0;
+                for (int k = i - 1 < 0 ? 0 : i - 1; k < (i + 2 > m ? m : i + 2); k++)
+                {
+                    for (int l = j - 1 < 0 ? 0 : j - 1; l < (j + 2 > n ? n : j + 2); l++)
+                    {
+                        sum += M[k][l];
+                        count++;
+                    }
+                }
+               
+                N[i][j] = sum / count;
+            }
+        }
+
+        return N;
+    }
 }
 /**************************************************************************************************************
- * ImageSmoother_1                                                                                            *
+ * ImageSmoother_1 / 2                                                                                        *
  **************************************************************************************************************/
