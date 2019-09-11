@@ -1,4 +1,4 @@
-﻿//Source  : https://leetcode.com/problems/positions-of-large-groups/
+//Source  : https://leetcode.com/problems/positions-of-large-groups/
 //Author  : Xinruo Shi
 //Date    : 2019-07-02
 //Language: C#
@@ -61,6 +61,40 @@ public class Solution830
         }
 
         return L;
+    }
+    
+    // --------------- O(n) 252ms --------------- 30.5MB --------------- (88% 34%)
+    /*
+     * similar to 1
+     */
+    public IList<IList<int>> LargeGroupPositions_1_2(string S)
+    {
+        IList<IList<int>> L = new List<IList<int>>();
+        int count = 1;
+        for (int i = 1; i < S.Length; i++)
+        {
+            if (S[i] == S[i - 1])
+            {
+                count++;
+            }
+            else
+            {
+                if (count > 2)
+                {
+                    L.Add(new int[] {i - count, i - 1});
+                }
+
+                count = 1;
+            }
+        }
+
+        if (count > 2)
+        {
+            L.Add(new int[] {S.Length - count, S.Length - 1});
+        }
+
+        return L;
+
     }
 
     // --------------- O(n) 260ms --------------- 30.7MB --------------- (29% 8%) ※
