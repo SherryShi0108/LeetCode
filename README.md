@@ -68,8 +68,8 @@ C#
 |	63	|	|	|	| | |
 |	64	|	|	|	| | |
 |	65	|	|	|	| | |
-|	66	|[Plus One](https://leetcode.com/problems/plus-one/)	|	[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Plus%20One.cs)	|  | | |
-|	67	|	|	|	| | |
+|	66	|[Plus One](https://leetcode.com/problems/plus-one/)	|	[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Plus%20One.cs)	| | ♥ | |
+|	67	|[Add Binary](https://leetcode.com/problems/add-binary/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Add%20Binary.cs)| | ♥ | |
 |	68	|	|	|	| | |
 |	69	|	|	|	| | |
 |	70	|	|	|	| | |
@@ -285,7 +285,7 @@ C#
 |	280	|❀ Wiggle Sort	|	|	| | |
 |	281	|❀ Zigzag Iterator	|	|	| | |
 |	282	|	|	|	| | |
-|	283	|[Move Zeroes](https://leetcode.com/problems/move-zeroes/)	|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Move%20Zeroes.cs)	| | | |
+|	283	|[Move Zeroes](https://leetcode.com/problems/move-zeroes/)	|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Move%20Zeroes.cs)	| | ♥ | |
 |	284	|	|	|	| | |
 |	285	|❀ Inorder Successor in BST	|	|	| | |
 |	286	|❀ Walls and Gates 	|	|	| | |
@@ -910,7 +910,7 @@ C#
 |	905	|[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)	|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Sort%20Array%20By%20Parity.cs)	|	| ♥ | |
 |	906	|	|	|	| | |
 |	907	|	|	|	| | |
-|	908	|	|	|	| | |
+|	908	|[Smallest Range I](https://leetcode.com/problems/smallest-range-i/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Smallest%20Range%20I.cs)| | ♥ | |
 |	909	|	|	|	| | |
 |	910	|	|	|	| | |
 |	911	|	|	|	| | |
