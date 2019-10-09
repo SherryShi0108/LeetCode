@@ -124,7 +124,7 @@ public class Solution905
         return A;
     }
 
-    // --------------- O(n) 300ms --------------- 31.9MB --------------- (10% 46%)
+    // --------------- O(n) 300ms --------------- 31.9MB --------------- (10% 46%) ※
     public int[] SortArrayByParity_6(int[] A)
     {
         int m = 0;
