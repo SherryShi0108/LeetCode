@@ -65,7 +65,7 @@ public class Solution697
         return min + 1;
     }
 
-    // --------------- O(n) 132ms --------------- 30.1MB --------------- (86% 54%) ※
+    // --------------- O(n) 132ms --------------- 30.1MB --------------- (86% 54%) 
     public int FindShortestSubArray_2(int[] nums)
     {
         Dictionary<int, int[]> d = new Dictionary<int, int[]>();
@@ -127,7 +127,41 @@ public class Solution697
         }
         return min == int.MaxValue ? 1 : min + 1;
     }
+    
+    // --------------- O(n) 120ms --------------- 31.2MB --------------- (98% 100%) ※
+    public int FindShortestSubArray_4(int[] nums)
+    {
+        Dictionary<int,int[]> d=new Dictionary<int, int[]>();
+
+        int maxDegree = 0;
+        int min = 0;
+        for (int i = 0; i < nums.Length; i++)
+        {
+            if (d.ContainsKey(nums[i]))
+            {
+                d[nums[i]][1]++;
+
+            }
+            else
+            {
+                d[nums[i]]=new int[]{i,1};
+            }
+
+            if (d[nums[i]][1] > maxDegree)
+            {
+                min = i - d[nums[i]][0] ;
+                maxDegree = d[nums[i]][1];
+            }
+            else if (d[nums[i]][1] == maxDegree)
+            {
+                min = min < (i - d[nums[i]][0]) ? min : (i - d[nums[i]][0]);
+            }
+
+        }
+
+        return min + 1;
+    }
 }
 /**************************************************************************************************************
- * FindShortestSubArray_2 / 3                                                                                 *
+ * FindShortestSubArray_2 / FindShortestSubArray_4                                                            *
  **************************************************************************************************************/
