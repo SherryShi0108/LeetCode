@@ -168,7 +168,45 @@ public class Solution605
         }
         return capacity >= n;
     }
+    
+    // --------------- O(n) 104ms --------------- 28.9MB --------------- (98% 100%)
+    public bool CanPlaceFlowers_6(int[] flowerbed, int n)
+    {
+        int count = 0;
+        for (int i = 0; i < flowerbed.Length; i++)
+        {
+            if (flowerbed[i] == 0)
+            {
+                if (i == 0)
+                {
+                    if (flowerbed.Length == 1 || flowerbed[i + 1] == 0)
+                    {
+                        flowerbed[i] = 1;
+                        count++;
+                    }
+                }
+                else if (i == flowerbed.Length - 1)
+                {
+                    if (flowerbed[flowerbed.Length - 2] == 0)
+                    {
+                        flowerbed[i] = 1;
+                        count++;
+                    }
+                }
+                else
+                {
+                    if (flowerbed[i - 1] == 0 && flowerbed[i + 1] == 0)
+                    {
+                        flowerbed[i] = 1;
+                        count++;
+                    }
+                }
+            }
+        }
+
+        return count >= n;
+    }
 }
 /**************************************************************************************************************
- * CanPlaceFlowers_2 CanPlaceFlowers_4 CanPlaceFlowers_5                                                      *
+ * CanPlaceFlowers_2 CanPlaceFlowers_4 CanPlaceFlowers_5   6！！！                                             *
  **************************************************************************************************************/
