@@ -97,7 +97,31 @@ public class Solution747
         }
         return index;
     }
+    
+    // --------------- O(n) 92ms --------------- 23.8MB --------------- (82% 20%)
+    public int DominantIndex_4(int[] nums)
+    {
+        int index = 0;
+
+        int max1 = nums[0];
+        int max2 = 0;
+        for (int i = 1; i < nums.Length; i++)
+        {
+            if (nums[i] > max1)
+            {
+                max2 = max1;
+                max1 = nums[i];
+                index = i;
+            }
+            else if(nums[i] > max2)
+            {
+                max2 = nums[i];
+            }
+        }
+
+        return max1 >= 2 * max2 ? index : -1;
+    }
 }
 /**************************************************************************************************************
- * DominantIndex_1/3 DominantIndex_2                                                                          *
+ * DominantIndex_1/3 DominantIndex_2 /DominantIndex_4                                                         *
  **************************************************************************************************************/
