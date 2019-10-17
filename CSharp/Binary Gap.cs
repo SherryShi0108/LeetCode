@@ -35,7 +35,7 @@
 
 public class Solution868
 {
-    // --------------- O(logn) 40ms --------------- 12.7MB --------------- (80% 100%) ※
+    // --------------- O(logn) 40ms --------------- 12.7MB --------------- (80% 100%) 
     public int BinaryGap_1(int N)
     {
         int i1 = 0;  // current
@@ -80,6 +80,22 @@ public class Solution868
         {
             max = max > array[i] - array[i - 1] ? max : array[i] - array[i - 1];
         }
+        return max;
+    }
+    
+    // --------------- O(logn) 40ms --------------- 13.7MB --------------- (80% 100%) ※
+    public int BinaryGap_3(int N)
+    {
+        int max = 0;
+        for (int i = -32; N>0; N/=2,i++)
+        {
+            if (N % 2 == 1)
+            {
+                max = max > i ? max : i;
+                i = 0;
+            }
+        }
+
         return max;
     }
 }
