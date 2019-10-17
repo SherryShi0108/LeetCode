@@ -55,7 +55,7 @@ public class Solution258
         if (num == 0) { return 0; }
         int x = (num - 1) % 9 + 1;
         return x;
-        // return num == 0 ? 0 : (num - 1) % 9 + 1; One Line
+        // return (num - 1) % 9 + 1;      //  One Line
     }
 }
 /**************************************************************************************************************
