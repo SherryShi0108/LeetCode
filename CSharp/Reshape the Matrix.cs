@@ -107,7 +107,31 @@ public class Solution566
 
         return B;
     }
+    
+    // --------------- O(n)=O(nums.L*nums.W) 276ms --------------- O(n) 33.1MB --------------- (66.3% 33%)
+    public int[][] MatrixReshape_4(int[][] nums, int r, int c)
+    {
+        int m = nums.Length;
+        int n = nums[0].Length;
+        if (m * n != r * c)
+        {
+            return nums;
+        }
+        
+        int[][] result=new int[r][];
+        for (int i = 0; i < r; i++)
+        {
+            result[i] = new int[c];
+            for (int j = 0; j < c; j++)
+            {
+                int t = i *c+ j;
+                result[i][j] = nums[t/n][t%n];
+            }
+        }
+
+        return result;
+    }
 }
 /**************************************************************************************************************
- * MatrixReshape_1 MatrixReshape_3                                                                            *
+ * MatrixReshape_4 MatrixReshape_3                                                                            *
  **************************************************************************************************************/
