@@ -11,7 +11,7 @@ C#
 |	6	|	|	|	| | |
 |	7	|[Reverse Integer](https://leetcode.com/problems/reverse-integer/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Reverse%20Integer.cs)|	| ♥ | |
 |	8	|	|	|	| | |
-|	9	| [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | [C#]([https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Palindrome%20Number.cs](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Palindrome Number.cs)) |	| ♥ | |
+|	9	| [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | [C#]([https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Palindrome%20Number.cs]|	| ♥ | |
 |	10	|	|	|	| | |
 |	11	|	|	|	| | |
 |	12	|	|	|	| | |
@@ -30,7 +30,7 @@ C#
 |	25	|	|	|	| | |
 |	26	| [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)	| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Remove%20Duplicates%20from%20Sorted%20Array.cs) | | ♥ |  |
 |	27	| [Remove Element](https://leetcode.com/problems/remove-element/)	|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Remove%20Element.cs)	| | ♥ | |
-|	28	| [Implement strStr()](https://leetcode.com/problems/implement-strstr/) | [C#]([https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Implement%20strStr().cs](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Implement strStr().cs)) |	| ♥ | |
+|	28	| [Implement strStr()](https://leetcode.com/problems/implement-strstr/) | [C#]([https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Implement%20strStr().cs] |	| ♥ | |
 |	29	|	|	|	| | |
 |	30	|	|	|	| | |
 |	31	|	|	|	| | |
@@ -127,7 +127,7 @@ C#
 |	122	|	[Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) | [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Best%20Time%20to%20Buy%20and%20Sell%20Stock%20II.cs)	|	| ♥ | |
 |	123	|	|	|	| | |
 |	124	|	|	|	| | |
-|	125	| [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | [C#]([https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Valid%20Palindrome.cs](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Valid Palindrome.cs)) |	| ♥ | |
+|	125	| [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | [C#]([https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Valid%20Palindrome.cs] |	| ♥ | |
 |	126	|	|	|	| | |
 |	127	|	|	|	| | |
 |	128	|	|	|	| | |
@@ -233,7 +233,7 @@ C#
 |	228	|	|	|	| | |
 |	229	|	|	|	| | |
 |	230	|	|	|	| | |
-|	231	| [Power of Two](https://leetcode.com/problems/power-of-two/) | [C#]([https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Power%20of%20Two.cs](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Power of Two.cs)) |	| ♥ | |
+|	231	| [Power of Two](https://leetcode.com/problems/power-of-two/) | [C#]([https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Power%20of%20Two.cs] |	| ♥ | |
 |	232	|	|	|	| | |
 |	233	|	|	|	| | |
 |	234	|	|	|	| | |
@@ -346,7 +346,7 @@ C#
 |	341	|	|	|	| | |
 |	342	|	|	|	| | |
 |	343	|	|	|	| | |
-|	344	| [Reverse String](https://leetcode.com/problems/reverse-string/) | [C#]([https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Reverse%20String.cs](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Reverse String.cs)) |	| ♥ | |
+|	344	| [Reverse String](https://leetcode.com/problems/reverse-string/) | [C#]([https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Reverse%20String.cs] |	| ♥ | |
 |	345	|	|	|	| | |
 |	346	|❀ Moving Average from Data Stream 	|	|	| | |
 |	347	|	|	|	| | |
@@ -730,7 +730,7 @@ C#
 |	725	|	|	|	| | |
 |	726	|	|	|	| | |
 |	727	|♣ Minimum Window Subsequence	|	|	| | |
-|	728	| [Self Dividing Numbers](https://leetcode.com/problems/self-dividing-numbers/) | [C#]([https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Self%20Dividing%20Numbers.cs](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Self Dividing Numbers.cs)) |	| ♥ | |
+|	728	| [Self Dividing Numbers](https://leetcode.com/problems/self-dividing-numbers/) | [C#]([https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Self%20Dividing%20Numbers.cs] |	| ♥ | |
 |	729	|	|	|	| | |
 |	730	|	|	|	| | |
 |	731	|	|	|	| | |
@@ -951,7 +951,7 @@ C#
 |	946	|	|	|	| | |
 |	947	|	|	|	| | |
 |	948	|	|	|	| | |
-|	949	| [Largest Time for Given Digits](https://leetcode.com/problems/largest-time-for-given-digits/) | [C#]([https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Largest%20Time%20for%20Given%20Digits.cs](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Largest Time for Given Digits.cs)) |	| ♥ | |
+|	949	| [Largest Time for Given Digits](https://leetcode.com/problems/largest-time-for-given-digits/) | [C#]([https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Largest%20Time%20for%20Given%20Digits.cs] |	| ♥ | |
 |	950	|	|	|	| | |
 |	951	|	|	|	| | |
 |	952	|	|	|	| | |
