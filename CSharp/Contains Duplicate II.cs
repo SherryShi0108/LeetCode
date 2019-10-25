@@ -65,7 +65,28 @@ public class Solution219
         }
         return false;
     }
+    
+    // --------------- O(n) 108ms --------------- 27.1MB ---------------(79% 100%) ※
+    public bool ContainsNearbyDuplicate_3(int[] nums, int k)
+    {
+        HashSet<int> h = new HashSet<int>();
+        
+        for (int i = 0; i < nums.Length; i++)
+        {
+            if (i > k)
+            {
+                h.Remove(nums[i - k - 1]);
+            }
+
+            if (!h.Add(nums[i]))
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
 }
 /**************************************************************************************************************
- * ContainsNearbyDuplicate_1                                                                                  *
+ * ContainsNearbyDuplicate_1 / 3                                                                              *
  **************************************************************************************************************/
