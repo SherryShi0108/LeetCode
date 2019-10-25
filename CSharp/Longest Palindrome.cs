@@ -120,7 +120,7 @@ public class Solution409
         return sum + countEqule1;
     }
 
-    // --------------- O(n) 80ms --------------- 20.5MB ---------------(71% 33%) ※
+    // --------------- O(n) 80ms --------------- 20.5MB ---------------(71% 33%) 
     /*
      * improve 3: use array[58] , because A:65 z:122, so 0-57
      * A: 65  a: 97
@@ -176,7 +176,28 @@ public class Solution409
 
         return sum;
     }
+    
+    // --------------- O(n) 76ms --------------- 21.8MB ---------------(82% 34%) ※
+    public int LongestPalindrome_6(string s)
+    {
+        HashSet<char> h = new HashSet<char>();
+        int count = 0;
+        for (int i = 0; i < s.Length; i++)
+        {
+            if (h.Contains(s[i]))
+            {
+                count += 2;
+                h.Remove(s[i]);
+            }
+            else
+            {
+                h.Add(s[i]);
+            }
+        }
+
+        return h.Count > 0 ? count + 1 : count;
+    }
 }
 /**************************************************************************************************************
- * LongestPalindrome_2 LongestPalindrome_3 LongestPalindrome_4 LongestPalindrome_5                            *
+ * LongestPalindrome_6                                                                                        *
  **************************************************************************************************************/
