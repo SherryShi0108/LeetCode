@@ -115,20 +115,22 @@ public class Solution645
     public int[] FindErrorNums_4(int[] nums)
     {
         int sum = 0;
-        int[] temp = new int[nums.Length + 1];
-        int[] result = new int[2];
-
+        int number1 = 0;
+        HashSet<int> h = new HashSet<int>();
         for (int i = 0; i < nums.Length; i++)
         {
-            sum ^= nums[i] ^ i + 1;
-            temp[nums[i]]++;
-            if (temp[nums[i]] == 2)
+            sum = sum ^ nums[i] ^ (i + 1);
+            if (h.Contains(nums[i]))
             {
-                result[0] = nums[i];
+                number1 = nums[i];
+            }
+            else
+            {
+                h.Add(nums[i]);
             }
         }
-        result[1] = sum ^ result[0];
-        return result;
+
+        return new[] {number1, sum ^ number1};
     }
 }
 /**************************************************************************************************************
