@@ -56,5 +56,37 @@ public class Solution350
         
         return L.ToArray();
     }
+    
+     /* is sorted */
+    public int[] Intersect_2(int[] nums1, int[] nums2)
+    {
+        List<int> L=new List<int>();
+        int m = 0;
+        int n = 0;
+        while (m<nums1.Length && n<nums2.Length)
+        {
+            if (nums1[m] == nums2[n])
+            {
+                L.Add(nums1[m]);
+                m++;
+                n++;
+            }
+            else if(nums1[m]<nums2[n])
+            {
+                m++;
+            }
+            else
+            {
+                n++;
+            }
+        }
 
+        return L.ToArray();
+    }
+    
+    /* 2.  What if nums1's size is small compared to nums2's size? Which algorithm is better? */
+    /* Answer: put all elements of nums1 into a HashMap, batch reading nums2 elements  */
+    
+    /* 3.  What if elements of nums2 are stored on disk, and the memory is limited such that you cannot load all elements into the memory at once? */
+    /* Answer：First sorted these two nums, then batch reading elements */
 }
