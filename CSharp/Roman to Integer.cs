@@ -98,7 +98,35 @@ public class Solution13
         }
         return result;
     }
+    
+     // --------------- O(n) 100ms --------------- 25.1MB --------------- (36.6% 8.7%)
+    /*
+     * Directly use if
+     */
+    public int RomanToInt_3(string s)
+    {
+        int result = 0;
+        for (int i = 0; i < s.Length; i++)
+        {
+            if (s[i] == 'M') result += 1000;
+            else if (s[i] == 'D') result += 500;
+            else if (s[i] == 'C') result += 100;
+            else if (s[i] == 'L') result += 50;
+            else if (s[i] == 'X') result += 10;
+            else if (s[i] == 'V') result += 5;
+            else if (s[i] == 'I') result += 1;
+        }
+
+        if (s.Contains("IV")) result -= 2;
+        if (s.Contains("IX")) result -= 2;
+        if (s.Contains("XL")) result -= 20;
+        if (s.Contains("XC")) result -= 20;
+        if (s.Contains("CD")) result -= 200;
+        if (s.Contains("CM")) result -= 200;
+
+        return result;
+    }
 }
 /**************************************************************************************************************
- * RomanToInt_1 RomanToInt_2                                                                                  *
+ * RomanToInt_1                                                                                               *
  **************************************************************************************************************/
