@@ -77,7 +77,7 @@ public class Solution849
         return max;
     }
 
-    // --------------- O(n) 108ms --------------- O(n) 25.9MB --------------- (73% 44%) ※  
+    // --------------- O(n) 108ms --------------- O(n) 25.9MB --------------- (73% 44%)   
     /*
      * easy-understanding
      */
@@ -166,8 +166,40 @@ public class Solution849
 
         max = max > (seats.Length - 1 - left) ? max : (seats.Length - 1 - left);
         return max;
-    }    
+    }   
+    
+    // --------------- O(n) 104ms --------------- O(n) 27.2MB --------------- (83% 100%) ※
+    public int MaxDistToClosest_5(int[] seats)
+    {
+        int max = 0;
+        int count = 0;
+        bool flag = true;
+        for (int i = 0; i < seats.Length; i++)
+        {
+            if (seats[i] == 0)
+            {
+                count++;
+            }
+            else
+            {
+                if (flag)
+                {
+                    max = max > count ? max : count;
+                    flag = false;
+                    count = 0;
+                }
+                else
+                {
+                    max = max > (count + 1) / 2 ? max : (count + 1) / 2;
+                    count = 0;
+                }
+            }
+        }
+
+        max = max > count ? max : count;
+        return max;
+    }
 }
 /**************************************************************************************************************
- * MaxDistToClosest_2                                                                                         *
+ * MaxDistToClosest_5                                                                                         *
  **************************************************************************************************************/
