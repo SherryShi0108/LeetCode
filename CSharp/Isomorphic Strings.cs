@@ -116,8 +116,6 @@ public class Solution205
         int[] b = new int[128];
         for (int i = 0; i < s.Length; i++)
         {
-            int x = a[s[i]];
-            int y = b[t[i]];
             if (a[s[i]] != b[t[i]])
             {
                 return false;
