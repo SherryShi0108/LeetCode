@@ -38,7 +38,7 @@ public class Solution367
     // use binary search
     public bool IsPerfectSquare_2(int num)
     {
-
+        // Always Time Limit Exceeded
         return false;
     }
 
