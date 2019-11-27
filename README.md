@@ -143,7 +143,7 @@ C#
 |	138	|	|	|	| | |
 |	139	|	|	|	| | |
 |	140	|	|	|	| | |
-|	141	|	|	|	| | |
+|	141	|[Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Linked%20List%20Cycle.cs)|	| ♥ | |
 |	142	|	|	|	| | |
 |	143	|	|	|	| | |
 |	144	|	|	|	| | |
@@ -236,7 +236,7 @@ C#
 |	231	| [Power of Two](https://leetcode.com/problems/power-of-two/) | [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Power%20of%20Two.cs) |	| ♥ | |
 |	232	|	|	|	| | |
 |	233	|	|	|	| | |
-|	234	|	|	|	| | |
+|	234	|[Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Palindrome%20Linked%20List.cs)| | ♥ | |
 |	235	|	|	|	| | |
 |	236	|	|	|	| | |
 |	237	|	|	|	| | |
@@ -270,7 +270,7 @@ C#
 |	265 |♣ Paint House II 	|	|	| | |
 |	266	|❀ Palindrome Permutation 	|	|	| | |
 |	267	|❀ Palindrome Permutation II  	|	|	| | |
-|	268	|[Missing Number](https://leetcode.com/problems/missing-number/)	|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Missing%20Number.cs)	| | | |
+|	268	|[Missing Number](https://leetcode.com/problems/missing-number/)	|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Missing%20Number.cs)	| | ♥ | |
 |	269	|♣ Alien Dictionary	|	|	| | |
 |	270	|❀ Closest Binary Search Tree Value	|	|	| | |
 |	271	|❀ Encode and Decode Strings	|	|	| | |
@@ -347,7 +347,7 @@ C#
 |	342	|	|	|	| | |
 |	343	|	|	|	| | |
 |	344	| [Reverse String](https://leetcode.com/problems/reverse-string/) | [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Reverse%20String.cs) |	| ♥ | |
-|	345	|	|	|	| | |
+|	345	|[Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Reverse%20Vowels%20of%20a%20String.cs)| | ♥ | |
 |	346	|❀ Moving Average from Data Stream 	|	|	| | |
 |	347	|	|	|	| | |
 |	348	|❀ Design Tic-Tac-Toe |	|	| | |
@@ -846,7 +846,7 @@ C#
 |	841	|	|	|	| | |
 |	842	|	|	|	| | |
 |	843	|	|	|	| | |
-|	844	|	|	|	| | |
+|	844	|[Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Backspace%20String%20Compare.cs)| | ♥ | |
 |	845	|	|	|	| | |
 |	846	|	|	|	| | |
 |	847	|	|	|	| | |
@@ -927,7 +927,7 @@ C#
 |	922	| [Sort Array By Parity II](https://leetcode.com/problems/sort-array-by-parity-ii/)	|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Sort%20Array%20By%20Parity%20II.cs)	|	| ♥ | |
 |	923	|	|	|	| | |
 |	924	|	|	|	| | |
-|	925	|	|	|	| | |
+|	925	|[Long Pressed Name](https://leetcode.com/problems/long-pressed-name/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Long%20Pressed%20Name.cs)|	| ♥ | |
 |	926	|	|	|	| | |
 |	927	|	|	|	| | |
 |	928	|	|	|	| | |
