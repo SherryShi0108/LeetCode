@@ -85,7 +85,7 @@ C#
 |	80	|	|	|	| | |
 |	81	|	|	|	| | |
 |	82	|	|	|	| | |
-|	83	|	|	|	| | |
+|	83	|[Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Remove%20Duplicates%20from%20Sorted%20List.cs)| | ♥ | |
 |	84	|	|	|	| | |
 |	85	|	|	|	| | |
 |	86	|	|	|	| | |
@@ -205,10 +205,10 @@ C#
 |	200	|	|	|	| | |
 |	201	|	|	|	| | |
 |	202	|[Happy Number](https://leetcode.com/problems/happy-number/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Happy%20Number.cs)|	| | |
-|	203	|	|	|	| | |
+|	203	|[Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Remove%20Linked%20List%20Elements.cs)|	| ♥ | |
 |	204	|[Count Primes](https://leetcode.com/problems/count-primes/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Count%20Primes.cs)| | ♥ | |
 |	205	|[Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Isomorphic%20Strings.cs)| | ♥ | |
-|	206	|	|	|	| | |
+|	206	|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Reverse%20Linked%20List.cs)|	| ♥ | |
 |	207	|	|	|	| | |
 |	208	|	|	|	| | |
 |	209	|	|	|	| | |
@@ -239,7 +239,8 @@ C#
 |	234	|[Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Palindrome%20Linked%20List.cs)| | ♥ | |
 |	235	|	|	|	| | |
 |	236	|	|	|	| | |
-|	237	|	|	|	| | |
+|	237	|[Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)|[]|	| | |
+|	237	|[Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)|[C#]()| | ♥ | |
 |	238	|	|	|	| | |
 |	239	|	|	|	| | |
 |	240	|	|	|	| | |
@@ -878,7 +879,7 @@ C#
 |	873	|	|	|	| | |
 |	874	|	|	|	| | |
 |	875	|	|	|	| | |
-|	876	|	|	|	| | |
+|	876	|[Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Middle%20of%20the%20Linked%20List.cs)|	| ♥ | |
 |	877	|	|	|	| | |
 |	878	|	|	|	| | |
 |	879	|	|	|	| | |
