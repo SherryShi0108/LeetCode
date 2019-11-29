@@ -23,7 +23,7 @@ C#
 |	18	|	|	|	| | |
 |	19	|	|	|	| | |
 |	20	|	|	|	| | |
-|	21	|	|	|	| | |
+|	21	|[Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Merge%20Two%20Sorted%20Lists.cs)| | ♥ | |
 |	22	|	|	|	| | |
 |	23	|	|	|	| | |
 |	24	|	|	|	| | |
@@ -162,7 +162,7 @@ C#
 |	157 |❀ Read N Characters Given Read4 |	|	| | |
 |	158	|♣ Read N Characters Given Read4 II - Call multiple times	|	|	| | |
 |	159 |♣ Longest Substring with At Most Two Distinct Characters|	|	| | |
-|	160	|	|	|	| | |
+|	160	|[Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Intersection%20of%20Two%20Linked%20Lists.cs)| | ♥ | |
 |	161	|❀ One Edit Distance	|	|	| | |
 |	162	|	|	|	| | |
 |	163 |❀ Missing Ranges	|	|	| | |
