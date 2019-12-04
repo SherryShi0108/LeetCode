@@ -22,7 +22,7 @@ C#
 |	17	|	|	|	| | |
 |	18	|	|	|	| | |
 |	19	|	|	|	| | |
-|	20	|	|	|	| | |
+|	20	|[Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Valid%20Parentheses.cs)|	| ♥ | |
 |	21	|[Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Merge%20Two%20Sorted%20Lists.cs)| | ♥ | |
 |	22	|	|	|	| | |
 |	23	|	|	|	| | |
@@ -60,7 +60,7 @@ C#
 |	55	|	|	|	| | |
 |	56	|	|	|	| | |
 |	57	|	|	|	| | |
-|	58	|	|	|	| | |
+|	58	|[Length of Last Word](https://leetcode.com/problems/length-of-last-word/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Length%20of%20Last%20Word.cs)|	| ♥ | |
 |	59	|	|	|	| | |
 |	60	|	|	|	| | |
 |	61	|	|	|	| | |
@@ -462,7 +462,7 @@ C#
 |	456	|	|	|	| | |
 |	457	|	|	|	| | |
 |	458	|	|	|	| | |
-|	459	|	|	|	| | |
+|	459	|[Repeated Substring Pattern](https://leetcode.com/problems/repeated-substring-pattern/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Repeated%20Substring%20Pattern.cs)| | ♥ | |
 |	460	|	|	|	| | |
 |	461	|	|	|	| | |
 |	462	|	|	|	| | |
@@ -523,8 +523,8 @@ C#
 |	517	|	|	|	| | |
 |	518	|	|	|	| | |
 |	519	|	|	|	| | |
-|	520	|	|	|	| | |
-|	521	|	|	|	| | |
+|	520	|[Detect Capital](https://leetcode.com/problems/detect-capital/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Detect%20Capital.cs)| | ♥ | |
+|	521	|[Longest Uncommon Subsequence I](https://leetcode.com/problems/longest-uncommon-subsequence-i/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Longest%20Uncommon%20Subsequence%20I.cs)| | ♥ | |
 |	522	|	|	|	| | |
 |	523	|	|	|	| | |
 |	524	|	|	|	| | |
@@ -554,7 +554,7 @@ C#
 |	548	|❀ Split Array with Equal Sum	|	|	| | |
 |	549	|❀ Binary Tree Longest Consecutive Sequence II	|	|	| | |
 |	550	|❀ Game Play Analysis IV	|	|	| | |
-|	551	|	|	|	| | |
+|	551	|[Student Attendance Record I](https://leetcode.com/problems/student-attendance-record-i/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Student%20Attendance%20Record%20I.cs)|	| ♥ | |
 |	552	|	|	|	| | |
 |	553	|	|	|	| | |
 |	554	|	|	|	| | |
@@ -712,7 +712,7 @@ C#
 |	706	|[Design HashMap](https://leetcode.com/problems/design-hashmap/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Design%20HashMap.cs)| | | |
 |	707	|	|	|	| | |
 |	708	|❀ Insert into a Cyclic Sorted List	|	|	| | |
-|	709	|	|	|	| | |
+|	709	|[To Lower Case](https://leetcode.com/problems/to-lower-case/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/To%20Lower%20Case.cs)|	| ♥ | |
 |	710	|	|	|	| | |
 |	711	|♣ Number of Distinct Islands II 	|	|	| | |
 |	712	|	|	|	| | |
@@ -827,7 +827,7 @@ C#
 |	821	|	|	|	| | |
 |	822	|	|	|	| | |
 |	823	|	|	|	| | |
-|	824	|	|	|	| | |
+|	824	|[Goat Latin](https://leetcode.com/problems/goat-latin/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Goat%20Latin.cs)| | ♥ | |
 |	825	|	|	|	| | |
 |	826	|	|	|	| | |
 |	827	|	|	|	| | |
@@ -855,7 +855,7 @@ C#
 |	849	|[Maximize Distance to Closest Person](https://leetcode.com/problems/maximize-distance-to-closest-person/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Maximize%20Distance%20to%20Closest%20Person.cs)|	| ♥ | |
 |	850	|	|	|	| | |
 |	851	|	|	|	| | |
-|	852	|	|	|	| | |
+|	852	|[Peak Index in a Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Peak%20Index%20in%20a%20Mountain%20Array.cs)| | ♥  | |
 |	853	|	|	|	| | |
 |	854	|	|	|	| | |
 |	855	|	|	|	| | |
@@ -920,7 +920,7 @@ C#
 |	914	|[X of a Kind in a Deck of Cards](https://leetcode.com/problems/x-of-a-kind-in-a-deck-of-cards/)	|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/X%20of%20a%20Kind%20in%20a%20Deck%20of%20Cards.cs)	|	| | |
 |	915	|	|	|	| | |
 |	916	|	|	|	| | |
-|	917	|	|	|	| | |
+|	917	|[Reverse Only Letters](https://leetcode.com/problems/reverse-only-letters/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Reverse%20Only%20Letters.cs)| | ♥ | |
 |	918	|	|	|	| | |
 |	919	|	|	|	| | |
 |	920	|	|	|	| | |
