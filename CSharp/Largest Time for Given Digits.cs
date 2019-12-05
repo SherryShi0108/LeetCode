@@ -100,7 +100,39 @@ public class Solution949
 
         return result;
     }
+    
+    // --------------- 108ms --------------- 23.9MB --------------- (60% 100%)
+    public string LargestTimeFromDigits_2(int[] A)
+    {
+        int max = -1;
+        for (int i = 0; i < A.Length; i++)
+        {
+            for (int j = 0; j < A.Length; j++)
+            {
+                for (int k = 0; k < A.Length; k++)
+                {
+                    if (i != k && j != k && i != j)
+                    {
+                        int l = 6 - i - j - k;
+
+                        int hour = 10 * A[i] + A[j];
+                        int minute = 10 * A[k] + A[l];
+                        if (hour < 24 && minute < 60)
+                        {
+                            int temp = hour * 60 + minute;
+                            max = max > temp ? max : temp;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        if (max == -1) return "";
+        string re = $"{max / 60:D2}:{max % 60:D2}";
+        return re;
+    }
 }
 /**************************************************************************************************************
- * LargestTimeFromDigits_1 LargestTimeFromDigits_2                                                            *
+ * LargestTimeFromDigits_1 LargestTimeFromDigits_2/3                                                          *
  **************************************************************************************************************/
