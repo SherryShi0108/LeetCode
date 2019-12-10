@@ -106,7 +106,7 @@ public class Solution
         return nums.Length;
     }
     
-    // --------------- O(n) 96ms --------------- 24MB --------------- (63% 5%) ※
+    // --------------- O(logn) 96ms --------------- 24MB --------------- (63% 5%) ※
     public int SearchInsert_6(int[] nums, int target)
     {
         int left = 0;
@@ -128,7 +128,7 @@ public class Solution
         return left ;
     }
     
-    // --------------- O(n) 96ms --------------- 23.9MB --------------- (63% 5%)
+    // --------------- O(logn) 96ms --------------- 23.9MB --------------- (63% 5%)
     /* Normal Solution */
     public int SearchInsert_7(int[] nums, int target)
     {
