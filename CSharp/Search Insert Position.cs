@@ -93,7 +93,7 @@ public class Solution
         return i;
     }
     
-    // --------------- O(n) 96ms --------------- 22.7MB --------------- (74% 5%) ※
+    // --------------- O(n) 96ms --------------- 22.7MB --------------- (74% 5%) 
     public int SearchInsert_5(int[] nums, int target)
     {
         for (int i = 0; i < nums.Length; i++)
@@ -105,7 +105,29 @@ public class Solution
         }
         return nums.Length;
     }
+    
+    // --------------- O(n) 96ms --------------- 24MB --------------- (63% 5%) ※
+    public int SearchInsert_6(int[] nums, int target)
+    {
+        int left = 0;
+        int right = nums.Length;
+        while (left<right)
+        {
+            int mid = left + (right - left) / 2;
+            if (nums[mid] == target) return mid;
+            else if (nums[mid] > target)
+            {
+                right = mid;
+            }
+            else
+            {
+                left = mid+1;
+            }
+        }
+
+        return left ;
+    }
 }
 /**************************************************************************************************************
- * SearchInsert_3/4                                                                                           *
+ * SearchInsert_6                                                                                             *
  **************************************************************************************************************/
