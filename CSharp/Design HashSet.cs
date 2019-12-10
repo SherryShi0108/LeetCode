@@ -28,10 +28,17 @@
  * ※
  *******************************************************************************************************************************/
 //class 705
+/**
+ * Your MyHashSet object will be instantiated and called as such:
+ * MyHashSet obj = new MyHashSet();
+ * obj.Add(key);
+ * obj.Remove(key);
+ * bool param_3 = obj.Contains(key);
+ */
 
 // --------------- O(1) 256ms --------------- 41.3MB --------------- (67% 100%)
 /*
- * this solution use array , space not good
+ * this solution use array , this is not good
  * use int(0,1) or bool(false,true) also right
  */
 public class MyHashSet_1
@@ -60,11 +67,46 @@ public class MyHashSet_1
     }
 }
 
-/**
- * Your MyHashSet object will be instantiated and called as such:
- * MyHashSet obj = new MyHashSet();
- * obj.Add(key);
- * obj.Remove(key);
- * bool param_3 = obj.Contains(key);
+// --------------- O(1) 252ms --------------- 49.2MB --------------- (70% 100%)
+/*
+ * this solution use array[][] , use bucket
  */
+public class MyHashSet_2
+{
+    /** Initialize your data structure here. */
+    private int buckets = 1000;
+    private int perBucket = 1001;
+    private bool[][] table;
+
+    public MyHashSet_2()
+    {
+        table = new bool[buckets][];
+    }
+
+    public void Add(int key)
+    {
+        if (table[key%1000] == null)
+        {
+            table[key % 1000] =new bool[perBucket];
+        }
+
+        table[key % 1000][key / 1000] = true;
+    }
+
+    public void Remove(int key)
+    {
+        if (table[key % 1000] != null)
+        {
+            table[key % 1000][key / 1000] = false;
+        }
+    }
+
+    /** Returns true if this set contains the specified element */
+    public bool Contains(int key)
+    {
+        return (table[key % 1000] != null && table[key % 1000][key / 1000]);
+    }
+}
+
+
 
