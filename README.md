@@ -707,7 +707,7 @@ C#
 |	701	|	|	|	| | |
 |	702	|❀ Search in a Sorted Array of Unknown Size	|	|	| | |
 |	703	|	|	|	| | |
-|	704	|	|	|	| | |
+|	704	| [Binary Search](https://leetcode.com/problems/binary-search/) |  |	| | |
 |	705	|[Design HashSet](https://leetcode.com/problems/design-hashset/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Design%20HashSet.cs)| | | |
 |	706	|[Design HashMap](https://leetcode.com/problems/design-hashmap/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Design%20HashMap.cs)| | | |
 |	707	|	|	|	| | |
