@@ -14,7 +14,7 @@
  * 
  * Input: 14
  * Output: false
- * ※
+ * 
  *******************************************************************************************************************************/
 
 public class Solution367
@@ -35,10 +35,35 @@ public class Solution367
         return num == 0;
     }
 
-    // use binary search
+   // --------------- O(logn) 40ms --------------- 14MB --------------- (74% 25%) ※
+    /*
+     * attention: num/mid , so mid != 0 , so i && j !=0
+     */
     public bool IsPerfectSquare_2(int num)
     {
-        // Always Time Limit Exceeded
+        int i = 1;
+        int j = num;
+        while (i<=j)
+        {
+            int mid = i + (j - i) / 2;
+            if (mid == num / mid )
+            {
+                if (num % mid == 0){return true;}
+                else
+                {
+                    j = mid - 1;
+                }
+            }
+            else if (mid > num / mid)
+            {
+                j = mid - 1;
+            }
+            else if (mid < num / mid)
+            {
+                i = mid + 1;
+            }
+        }
+
         return false;
     }
 
