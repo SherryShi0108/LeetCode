@@ -71,7 +71,7 @@ C#
 |	66	|[Plus One](https://leetcode.com/problems/plus-one/)	|	[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Plus%20One.cs)	| | ♥ | |
 |	67	|[Add Binary](https://leetcode.com/problems/add-binary/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Add%20Binary.cs)| | ♥ | |
 |	68	|	|	|	| | |
-|	69	|	|	|	| | |
+|	69	|[Sqrt(x)](https://leetcode.com/problems/sqrtx/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Sqrt(x).cs)|	| ♥ | |
 |	70	|	|	|	| | |
 |	71	|	|	|	| | |
 |	72	|	|	|	| | |
@@ -281,7 +281,7 @@ C#
 |	275	|	|	|	| | |
 |	276	|❀ Paint Fence	|	|	| | |
 |	277	|❀ Find the Celebrity 	|	|	| | |
-|	278	|  |	|	| | |
+|	278	|[First Bad Version](https://leetcode.com/problems/first-bad-version/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/First%20Bad%20Version.cs)|	| ♥ | |
 |	279	|	|	|	| | |
 |	280	|❀ Wiggle Sort	|	|	| | |
 |	281	|❀ Zigzag Iterator	|	|	| | |
@@ -377,7 +377,7 @@ C#
 |	371	|	|	|	| | |
 |	372	|	|	|	| | |
 |	373	|	|	|	| | |
-|	374	|	|	|	| | |
+|	374	|[Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Guess%20Number%20Higher%20or%20Lower.cs)| | ♥ | |
 |	375	|	|	|	| | |
 |	376	|	|	|	| | |
 |	377	|	|	|	| | |
@@ -386,7 +386,7 @@ C#
 |	380	|	|	|	| | |
 |	381	|	|	|	| | |
 |	382	|	|	|	| | |
-|	383	|	|	|	| | |
+|	383	|[Ransom Note](https://leetcode.com/problems/ransom-note/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Ransom%20Note.cs)|	| ♥ | |
 |	384	|	|	|	| | |
 |	385	|	|	|	| | |
 |	386	|	|	|	| | |
@@ -418,7 +418,7 @@ C#
 |	412	|	|	|	| | |
 |	413	|	|	|	| | |
 |	414	|[Third Maximum Number](https://leetcode.com/problems/third-maximum-number/)	|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Third%20Maximum%20Number.cs)	| | ♥ | |
-|	415	|	|	|	| | |
+|	415	|[Add Strings](https://leetcode.com/problems/add-strings/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Add%20Strings.cs)|	| ♥ | |
 |	416	|	|	|	| | |
 |	417	|	|	|	| | |
 |	418	|❀ Sentence Screen Fitting 	|	|	| | |
@@ -437,7 +437,7 @@ C#
 |	431	|♣ Encode N-ary Tree to Binary Tree |	|	| | |
 |	432	|	|	|	| | |
 |	433	|	|	|	| | |
-|	434	|	|	|	| | |
+|	434	|[Number of Segments in a String](https://leetcode.com/problems/number-of-segments-in-a-string/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Number%20of%20Segments%20in%20a%20String.cs)| | ♥ | |
 |	435	|	|	|	| | |
 |	436	|	|	|	| | |
 |	437	|	|	|	| | |
@@ -456,7 +456,7 @@ C#
 |	450	|	|	|	| | |
 |	451	|	|	|	| | |
 |	452	|	|	|	| | |
-|	453	|	|	|	| | |
+|	453	|[Minimum Moves to Equal Array Elements](https://leetcode.com/problems/minimum-moves-to-equal-array-elements/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Minimum%20Moves%20to%20Equal%20Array%20Elements.cs)|	| ♥ | |
 |	454	|	|	|	| | |
 |	455	|	|	|	| | |
 |	456	|	|	|	| | |
@@ -510,7 +510,7 @@ C#
 |	504	|	|	|	| | |
 |	505	|❀ The Maze II	|	|	| | |
 |	506	|	|	|	| | |
-|	507	|	|	|	| | |
+|	507	|[Perfect Number](https://leetcode.com/problems/perfect-number/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Perfect%20Number.cs)| | ♥ | |
 |	508	|	|	|	| | |
 |	509	|[Fibonacci Number](https://leetcode.com/problems/fibonacci-number/)	|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Fibonacci%20Number.cs)	| | ♥ | |
 |	510	|❀ Inorder Successor in BST II 	|	|	| | |
@@ -707,7 +707,7 @@ C#
 |	701	|	|	|	| | |
 |	702	|❀ Search in a Sorted Array of Unknown Size	|	|	| | |
 |	703	|	|	|	| | |
-|	704	| [Binary Search](https://leetcode.com/problems/binary-search/) |  |	| | |
+|	704	| [Binary Search](https://leetcode.com/problems/binary-search/) |[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Binary%20Search.cs)|	| ♥ | |
 |	705	|[Design HashSet](https://leetcode.com/problems/design-hashset/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Design%20HashSet.cs)| | | |
 |	706	|[Design HashMap](https://leetcode.com/problems/design-hashmap/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Design%20HashMap.cs)| | | |
 |	707	|	|	|	| | |
