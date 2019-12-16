@@ -41,10 +41,32 @@ public class Solution441
         return i - 2;
     }
 
-    //logn Binary Search
+    // --------------- O(logn) 44ms --------------- 14.2MB --------------- (83% 100%)
+    /* 
+     * logn Binary Search 
+     * use long
+     */
     public int ArrangeCoins_2(int n)
     {
-        return 0;
+        long i = 1;
+        long j = n;
+
+        while (i<=j)
+        {
+            long mid = i + (j - i) / 2;
+            long temp = mid * (mid + 1) / 2;
+            if (temp == n) return (int)mid;
+            else if(temp>n)
+            {
+                j = mid - 1;
+            }
+            else
+            {
+                i = mid + 1;
+            }
+        }
+
+        return (int)j;
     }
 
     // --------------- O(1) 40ms --------------- 12.7MB --------------- (93% 100%)
@@ -61,5 +83,5 @@ public class Solution441
     }
 }
 /**************************************************************************************************************
- * ArrangeCoins_1 ArrangeCoins_3                                                                              *
+ * ArrangeCoins_1 ArrangeCoins_2 ArrangeCoins_3                                                               *
  **************************************************************************************************************/
