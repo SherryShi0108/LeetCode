@@ -87,7 +87,7 @@ public class Solution645
         return new int[] { x, y };
     }
 
-    // --------------- O(n) 284ms --------------- 36.1MB ---------------(92% 100%) ※
+    // --------------- O(n) 284ms --------------- 36.1MB ---------------(92% 100%) 
     /*
      * use array
      */
@@ -132,7 +132,22 @@ public class Solution645
 
         return new[] {number1, sum ^ number1};
     }
+    
+    // --------------- O(n) 264ms --------------- 43.7MB ---------------(96% 100%) ※
+    /* improve 4 */
+    public int[] FindErrorNums_5(int[] nums)
+    {
+        int t = 0;
+        HashSet<int> H=new HashSet<int>();
+        int t1 = 0;
+        for (int i = 0; i < nums.Length; i++)
+        {
+            t = t ^ nums[i] ^ (i + 1);
+            if (!H.Add(nums[i])) t1 = nums[i];
+        }
+        return new int[2]{t1,t^t1};
+    }
 }
 /**************************************************************************************************************
- * FindErrorNums_3 FindErrorNums_4                                                                            *
+ * FindErrorNums_3 FindErrorNums_5                                                                            *
  **************************************************************************************************************/
