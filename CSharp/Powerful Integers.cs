@@ -83,7 +83,44 @@ public class Solution970
         }
         return new List<int>(H);
     }
+    
+    // --------------- O(m*n) 204ms --------------- 25MB --------------- (95% 100%)
+    public IList<int> PowerfulIntegers_3(int x, int y, int bound)
+    {
+        List<int> L1=new List<int>();
+        List<int> L2 = new List<int>();
+
+        int t1 = 1;
+        while (t1<=bound)
+        {
+            L1.Add(t1);
+            t1 *= x;
+            if (t1 == 1) break;
+        }
+
+        int t2 = 1;
+        while (t2 <= bound)
+        {
+            L2.Add(t2);
+            t2 *= y;
+            if(t2==1)break;
+        }
+
+        HashSet<int> H=new HashSet<int>();
+        foreach (int i1 in L1)
+        {
+            foreach (int i2 in L2)
+            {
+                if (i1 + i2 <= bound)
+                {
+                    H.Add(i1 + i2);
+                }
+            }
+        }
+        List<int> result=new List<int>(H);
+        return result;
+    }
 }
 /**************************************************************************************************************
- * PowerfulIntegers_2                                                                                         *
+ * PowerfulIntegers_2 / 3                                                                                     *
  **************************************************************************************************************/
