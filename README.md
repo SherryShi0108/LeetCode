@@ -239,7 +239,6 @@ C#
 |	234	|[Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Palindrome%20Linked%20List.cs)| | ♥ | |
 |	235	|	|	|	| | |
 |	236	|	|	|	| | |
-|	237	|[Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)|[]|	| | |
 |	237	|[Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)|[C#]()| | ♥ | |
 |	238	|	|	|	| | |
 |	239	|	|	|	| | |
