@@ -40,7 +40,7 @@ C#
 |	35	|	[Search Insert Position](https://leetcode.com/problems/search-insert-position/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Search%20Insert%20Position.cs)| | ♥ | |
 |	36	|	|	|	| | |
 |	37	|	|	|	| | |
-|	38	|	|	|	| | |
+|	38	|[Count and Say](https://leetcode.com/problems/count-and-say/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Count%20and%20Say.cs)| | ♥ | |
 |	39	|	|	|	| | |
 |	40	|	|	|	| | |
 |	41	|	|	|	| | |
@@ -72,7 +72,7 @@ C#
 |	67	|[Add Binary](https://leetcode.com/problems/add-binary/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Add%20Binary.cs)| | ♥ | |
 |	68	|	|	|	| | |
 |	69	|[Sqrt(x)](https://leetcode.com/problems/sqrtx/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Sqrt(x).cs)|	| ♥ | |
-|	70	|	|	|	| | |
+|	70	|[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Climbing%20Stairs.cs)|	| ♥ | |
 |	71	|	|	|	| | |
 |	72	|	|	|	| | |
 |	73	|	|	|	| | |
@@ -394,7 +394,7 @@ C#
 |	389	|[Find the Difference](https://leetcode.com/problems/find-the-difference/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Find%20the%20Difference.cs)|	| ♥ | |
 |	390	|	|	|	| | |
 |	391	|	|	|	| | |
-|	392	|	|	|	| | |
+|	392	|[Is Subsequence](https://leetcode.com/problems/is-subsequence/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Is%20Subsequence.cs)| | ♥ | |
 |	393	|	|	|	| | |
 |	394	|	|	|	| | |
 |	395	|	|	|	| | |
@@ -635,7 +635,7 @@ C#
 |	630	|	|	|	| | |
 |	631	|♣ Design Excel Sum Formula 	|	|	| | |
 |	632	|	|	|	| | |
-|	633	|	|	|	| | |
+|	633	|[Sum of Square Numbers](https://leetcode.com/problems/sum-of-square-numbers/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Sum%20of%20Square%20Numbers.cs)|	| | |
 |	634	|❀ Find the Derangement of An Array	|	|	| | |
 |	635	|❀ Design Log Storage System 	|	|	| | |
 |	636	|	|	|	| | |
@@ -746,7 +746,7 @@ C#
 |	741	|	|	|	| | |
 |	742	|❀ Closest Leaf in a Binary Tree 	|	|	| | |
 |	743	|	|	|	| | |
-|	744	|	|	|	| | |
+|	744	|[Find Smallest Letter Greater Than Target](https://leetcode.com/problems/find-smallest-letter-greater-than-target/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Find%20Smallest%20Letter%20Greater%20Than%20Target.cs)| | ♥ | |
 |	745	|	|	|	| | |
 |	746	|[Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Min%20Cost%20Climbing%20Stairs.cs)| | | |
 |	747	| [Largest Number At Least Twice of Others](https://leetcode.com/problems/largest-number-at-least-twice-of-others/)	| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Largest%20Number%20At%20Least%20Twice%20of%20Others.cs)	|	| ♥ | |
