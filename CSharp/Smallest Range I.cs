@@ -63,6 +63,13 @@ public class Solution908
         int result = (min + K) - (max - K) > 0 ? 0 : (max - K) - (min + K);
         return result;
     }
+    
+    // more tricky
+     public int SmallestRangeI_3(int[] A, int K)
+     {
+         int t = (max - K) - (min + k) = max - min - 2 * K;
+         return Max( 0 , t );
+     } 
 }
 /**************************************************************************************************************
  * SmallestRangeI_2                                                                                           *
