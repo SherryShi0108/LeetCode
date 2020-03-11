@@ -125,7 +125,25 @@ public class Solution205
         }
         return true;
     }
+    
+    // --------------- O(n) 72ms --------------- 23.3MB --------------- (95% 13%)
+    public bool IsIsomorphic_5(string s, string t)
+    {
+        if (s.Length != t.Length) return false;
+
+            int[] c = new int[256];
+
+            for (int i = 0; i < s.Length; i++)
+            {
+                if (c[s[i]] != c[128 + t[i]]) return false;
+
+                c[s[i]] = i + 1;
+                c[128 + t[i]] = i + 1;
+            }
+            return true;
+    }
+    
 }
 /**************************************************************************************************************
- * IsIsomorphic_2 IsIsomorphic_3 IsIsomorphic_4                                                               *
+ * IsIsomorphic_2 IsIsomorphic_3 IsIsomorphic_4 IsIsomorphic_5                                                *
  **************************************************************************************************************/
