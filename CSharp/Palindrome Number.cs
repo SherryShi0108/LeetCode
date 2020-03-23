@@ -46,6 +46,7 @@ public class Solution9
         {
             return false;
         }
+        //  if(x<0) return false; because 120 could direct judge
 
         int a = x;
         int b = 0;
