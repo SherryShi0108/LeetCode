@@ -48,7 +48,7 @@ public class Solution217
         return false;
     }
 
-
+    // --------------- O(n) 112ms --------------- 31.5MB ---------------(68%,17%) 
     public bool ContainsDuplicate_2(int[] nums)
     {
         Dictionary<int, int> d = new Dictionary<int, int>();
@@ -65,7 +65,18 @@ public class Solution217
         }
         return false;
     }
+    
+    // --------------- O(n) 112ms --------------- 31.5MB ---------------(68%,17%)  ※
+    public bool ContainsDuplicate_3(int[] nums)
+    {
+        HashSet<int> h=new HashSet<int>();
+        for (int i = 0; i < nums.Length; i++)
+        {
+            if (!h.Add(nums[i])) return true;
+        }
+        return false;
+    }
 }
 /**************************************************************************************************************
- * ContainsDuplicate_2                                                                                        *
+ * ContainsDuplicate_2 /3                                                                                     *
  **************************************************************************************************************/
