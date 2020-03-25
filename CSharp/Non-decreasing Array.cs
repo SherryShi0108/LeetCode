@@ -113,6 +113,39 @@ public class Solution665
         }
         return true;
     }
+    
+    // --------------- O(n) 116ms --------------- 31.5MB --------------- (87% 100%) ※
+    /*
+     * easy-understanding
+     */
+    public bool CheckPossibility_4(int[] nums)
+    {
+        int count = 1;
+        for (int i = 1; i < nums.Length; i++)
+        {
+            if (nums[i] < nums[i - 1])
+            {
+                count--;
+                if (count < 0) return false;
+                if (i == 1)
+                {
+                    nums[i - 1] = nums[i];
+                }
+                else
+                {
+                    if (nums[i] >= nums[i - 2])
+                    {
+                        nums[i - 1] = nums[i];
+                    }
+                    else
+                    {
+                        nums[i] = nums[i - 1];
+                    }
+                }
+            }
+        }
+        return true;
+    }
 }
 /**************************************************************************************************************
  * CheckPossibility_3                                                                                         *
