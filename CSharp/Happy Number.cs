@@ -17,41 +17,33 @@
  *              8^2 + 2^2 = 68
  *              6^2 + 8^2 = 100
  *              1^2 + 0^2 + 0^2 = 1
- * ※
+ * 
  *******************************************************************************************************************************/
 
 using System.Collections.Generic;
 
 public class Solution202
-{
-    // --------------- O(n) 44ms --------------- 14.8MB --------------- (68% 67%)
+{   
+    // --------------- O(n) 44ms --------------- 16.6MB --------------- (60% 33%)
+    /*
+     * use hashset
+     */
     public bool IsHappy_1(int n)
     {
-        HashSet<int> H = new HashSet<int>();
-        int sum = n;
-
-        while (sum != 1)
-        {
-            int currentSum = 0;
-            while (sum > 0)
-            {
-                int t = sum % 10;
-                sum = sum / 10;
-                currentSum += t * t;
-            }
-            sum = currentSum;
-
-            if (H.Contains(sum))
-            {
-                return false;
-            }
-            else
-            {
-                H.Add(sum);
-            }
-        }
-        return true;
-    }
+       HashSet<int> d=new HashSet<int>();
+       while (n!=1)
+       {
+           int sum = 0;
+           while (n>0)
+           {
+                sum += (n % 10) * (n % 10);
+                n /= 10;
+           }
+           if (!d.Add(sum)) return false;
+           n = sum;
+       }
+       return true;
+   }
 
     // --------------- O(n) 44ms --------------- 15MB --------------- (68% 33%)
     /*
@@ -60,32 +52,41 @@ public class Solution202
     HashSet<int> H = new HashSet<int>();
     public bool IsHappy(int n)
     {
-        int sum = n;
-        int currentSum = 0;
-
-        while (sum > 0)
+        if (!H.Add(n)) return false;
+        int sum = 0;
+        while (n>0)
         {
-            int t = sum % 10;
-            sum = sum / 10;
-            currentSum += t * t;
+            sum += (n % 10) * (n % 10);
+            n /= 10;
         }
-        sum = currentSum;
-
-        if (sum == 1) { return true; }
-        if (H.Contains(sum)) { return false; }
-        else { H.Add(sum); }
-
-        return IsHappy(sum);
+        if (sum == 1) return true;
+        return  IdHappy(sum);
     }
 
+    // --------------- O(n) 40ms --------------- 14.7MB --------------- (88% 67%) ※
     /* 
      * difficute understanding use the Floyd Cycle detection algorithm
-     * https://leetcode.com/problems/happy-number/discuss/56917/My-solution-in-C(-O(1)-space-and-no-magic-math-property-involved-)
-     * https://leetcode.com/problems/happy-number/discuss/56919/Explanation-of-why-those-posted-algorithms-are-mathematically-valid
      */
     public bool IsHappy_3(int n)
     {
-        return false;
+        int a = GetSum(n);
+        int b = GetSum(GetSum(n));
+        while (a!=b)
+        {
+            a = GetSum(a);
+            b = GetSum(GetSum(b));
+        }
+        return a == 1;
+    }
+    public int GetSum(int n)
+    {
+        int sum = 0;
+        while (n>0)
+        {
+            sum += (n % 10) * (n % 10);
+            n /= 10;
+        }
+         return sum;
     }
 }
 /**************************************************************************************************************
