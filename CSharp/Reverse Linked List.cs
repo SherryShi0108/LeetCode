@@ -65,7 +65,7 @@ public class Solution206
     /*
      *  easy-understanding
      */
-    public ListNode ReverseList_1(ListNode head)
+    public ListNode ReverseList_3(ListNode head)
     {
         if (head == null) return head;
 
