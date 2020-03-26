@@ -46,18 +46,41 @@ public class Solution9
         {
             return false;
         }
-        //  if(x<0) return false; because 120 could direct judge
+        //  if(x<0) return false; because 120 could direct judge 
+        //  or delete above
 
         int a = x;
         int b = 0;
         while (a > 0)
         {
-            b = b * 10 + a % 10;
+            b = b * 10 + a % 10; // or judge overflow: if (int.MaxValue / 10 < temp) return false;
             a /= 10;
         }
 
         return b == x;
     }
+    
+    // --------------- 68ms --------------- 15.7MB --------------- (57% 15%)
+    public bool IsPalindrome_3(int x)
+    {
+        if (x < 0) return false;
+
+        int div = 1;
+        while (x / div >= 10)
+        {
+             div *= 10;
+        }
+
+        while (div >= 10)
+        {
+             if (x / div != x % 10) return false;
+              x = x % div / 10;
+             div /= 100;
+        }
+
+        return true;
+}
+
 }
 /**************************************************************************************************************
  * IsPalindrome_2                                                                                             *
