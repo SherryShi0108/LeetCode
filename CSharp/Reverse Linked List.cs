@@ -11,7 +11,7 @@
  * Output: 5->4->3->2->1->NULL
  *
  * Follow up: A linked list can be reversed either iteratively or recursively. Could you implement both?
- * ※
+ * 
  *******************************************************************************************************************************/
 
 /**
@@ -60,7 +60,27 @@ public class Solution206
         head.next = newHead;
         return ReverseListInt(next, head);
     }
+    
+    // --------------- 80ms --------------- 24.5MB --------------- (99% 8%) ※
+    /*
+     *  easy-understanding
+     */
+    public ListNode ReverseList_1(ListNode head)
+    {
+        if (head == null) return head;
+
+        ListNode newHead = head;
+        while (head.next!=null)
+        {
+            ListNode current = head.next;
+            head.next = head.next.next;
+            current.next = newHead;
+            newHead = current;
+        }
+
+        return newHead;
+    }
 }
 /**************************************************************************************************************
- * ReverseList_1 ReverseList_2                                                                                *
+ * ReverseList_1 ReverseList_2 ReverseList_3                                                                  *
  **************************************************************************************************************/
