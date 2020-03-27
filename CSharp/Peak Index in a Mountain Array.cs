@@ -62,7 +62,7 @@ public class Solution852
     public int PeakIndexInMountainArray_3(int[] A)
     {
         int left = 0;
-        int right = A.Length - 1;
+        int right = A.Length;
         while (left<right)
         {
             int mid = left + (right - left) / 2;
@@ -83,17 +83,17 @@ public class Solution852
     public int PeakIndexInMountainArray_4(int[] A)
     {
         int i = 0;
-        int j = A.Length;
-        while (i<j)
+        int j = A.Length - 1;
+        while (i<=j)
         {
             int mid = i + (j - i) / 2;
-            if (mid== A.Length-1 || A[mid] < A[mid+1])
+            if (A[mid] < A[mid+1])
             {
                 i = mid+1;
             }
             else
             {
-                j = mid;
+                j = mid-1;
             }
         }
 
