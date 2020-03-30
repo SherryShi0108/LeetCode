@@ -57,13 +57,10 @@ public class Solution203
      */
     public ListNode RemoveElements_2(ListNode head, int val)
     {
-        while (head != null && head.val == val)
-        {
-            head = head.next;
-        }
+        if (head == null) return head;
 
         ListNode temp = head;
-        while (temp != null && temp.next != null)
+        while (temp!=null && temp.next!=null)
         {
             if (temp.next.val == val)
             {
@@ -73,9 +70,9 @@ public class Solution203
             {
                 temp = temp.next;
             }
+                
         }
-
-        return head;
+        return head.val == val ? head.next : head;
     }
 
     // --------------- O(n) 96ms --------------- O(1) 28.1MB --------------- (97% 20%) ※
