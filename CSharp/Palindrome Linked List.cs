@@ -61,58 +61,80 @@ public class Solution234
 
     // --------------- O(n) 96ms --------------- O(n) 27.8MB --------------- (96% 30%) 
     /*
-     * improve 1 , using Linq
+     * improve 1 , using stack
      */
     public bool IsPalindrome_2(ListNode head)
     {
-        if (head == null || head.next == null) return true;
+        Stack<int> s=new Stack<int>();
+        ListNode temp = head;
 
-        List<int> L = new List<int>();
-        while (head != null)
+        while (temp != null)
         {
-            L.Add(head.val);
-            head = head.next;
-        }
-        if(L.Take(L.Count / 2).SequenceEqual(L.Skip(L.Count / 2 + L.Count % 2).Reverse()))
-        {
-            return true;
+            s.Push(temp.val);
+            temp = temp.next;
         }
 
-        return false;
+        temp = head;
+        while (temp!=null)
+        {
+            if (temp.val != s.Pop()) return false;
+            temp = temp.next;
+        }
+
+        return true;
     }
+    
+    
 
-    // --------------- O(n) 100ms --------------- O(1) 31.3MB --------------- (86% 10%) ※
+    // --------------- O(n) 100ms --------------- O(1) 31.3MB --------------- (80% 10%) ※
     /*
-     * using recursive , but cannot understand
+     * using fase/slow , find middle , then reverse slow 
      */
     public bool IsPalindrome_3(ListNode head)
     {
-        ListNode temp = head;
+         ListNode fast = head;
+         ListNode slow = head;
+         while (fast!=null && fast.next!=null)
+         {
+             slow = slow.next;
+             fast = fast.next.next;
+         }
 
-        return IsPali(head, ref temp);
+         ListNode newhead= ReverseListNode(slow);
+         ListNode temp = head;
+         while (newhead!=null)
+         {
+             if (newhead.val != temp.val)
+             {
+                 return false;
+             }
+
+             newhead = newhead.next;
+             temp = temp.next;
+         }
+
+         return true;
     }
 
-    private bool IsPali(ListNode head, ref ListNode compare)
+    ListNode ReverseListNode(ListNode head)
     {
-        if (head == null)
+        if (head == null) return head;
+
+        ListNode temp = head;
+        ListNode pre = null;
+        ListNode newHead = head;
+        while (temp!=null)
         {
-            return true;
-        }
-        else if (!IsPali(head.next,ref compare))
-        {
-            return false;
+            temp = temp.next;
+            newHead.next = pre;
+            pre = newHead;
+            newHead = temp;
         }
 
-        if (head.val != compare.val)
-        {
-            return false;
-        }
-
-        compare = compare.next;
-        return true;
+        return pre;
     }
-
     
+    // --------------- O(n) ms --------------- O(1) MB --------------- (% %)
     /*
      * using recursive , but cannot understand
      */
@@ -191,5 +213,5 @@ public class Solution234
     }
 }
 /**************************************************************************************************************
- * IsPalindrome_1 IsPalindrome_3/4                                                                            *
+ * IsPalindrome_2 IsPalindrome_3                                                                              *
  **************************************************************************************************************/
