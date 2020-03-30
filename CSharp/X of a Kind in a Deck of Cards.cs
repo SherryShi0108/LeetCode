@@ -67,58 +67,9 @@ public class Solution914
         return true;
     }
     ///+++++++++++++++++++++++++ Error +++++++++++++++++++++++++
-
-    // --------------- O(n^2) 140ms --------------- 26.5MB --------------- (10% 60%)
-    /*
-     * the last foreach is unnecessary
-     */
-    public bool HasGroupsSizeX_2(int[] deck)
-    {
-        Dictionary<int, int> d = new Dictionary<int, int>();
-        for (int i = 0; i < deck.Length; i++)
-        {
-            if (d.ContainsKey(deck[i]))
-            {
-                d[deck[i]]++;
-            }
-            else
-            {
-                d[deck[i]] = 1;
-            }
-        }
-
-        int temp = deck.Length;
-        for (int i = 2; i < deck.Length; i++)
-        {
-            bool b = true;
-            foreach (var item in d)
-            {
-                if (item.Value % i != 0)
-                {
-                    b = false;
-                }
-            }
-            if (b)
-            {
-                temp = i;
-                break;
-            }
-        }
-
-        bool flag = true;
-        foreach (var item in d)
-        {
-            if (item.Value % temp != 0 || temp == 1)
-            {
-                flag = false;
-                break;
-            }
-        }
-        return flag;
-    }
     
     // --------------- O(n) 124ms --------------- 26.6MB --------------- (42% 100%)
-    public bool HasGroupsSizeX_3(int[] deck)
+    public bool HasGroupsSizeX_2(int[] deck)
     {
         Dictionary<int, int> d = new Dictionary<int, int>();
         for (int i = 0; i < deck.Length; i++)
@@ -153,7 +104,12 @@ public class Solution914
         }
         return false;
     }
+    
+    /* using gcd , cannot understand */
+    public bool HasGroupsSizeX_3(int[] deck)
+    {
+    }
 }
 /**************************************************************************************************************
- * HasGroupsSizeX_3                                                                                           *
+ * HasGroupsSizeX_2 / 3                                                                                       *
  **************************************************************************************************************/
