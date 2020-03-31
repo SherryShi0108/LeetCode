@@ -17,7 +17,7 @@
 
 public class Solution58
 {
-    // --------------- O(n) 76ms --------------- O(n) 22MB --------------- (76% 7%) ※
+    // --------------- O(n) 76ms --------------- O(n) 22MB --------------- (76% 7%) 
     public int LengthOfLastWord_1(string s)
     {
         int len = 0;
@@ -35,7 +35,32 @@ public class Solution58
 
         return len;
     }
+    
+    // --------------- O(n) 72ms --------------- O(n) 22MB --------------- (80% 7%) ※
+    /*
+     * easy-understand
+     */
+    public int LengthOfLastWord_2(string s)
+    {
+        int i = s.Length - 1;
+        for (; i >=0; i--)
+        {
+            if (s[i] != ' ') break;
+        }
+
+        int count = 0;
+        for (; i>=0; i--)
+        {
+            if (s[i] != ' ') count++;
+            else
+            {
+                break;
+            }
+        }
+
+        return count;
+    }
 }
 /**************************************************************************************************************
- * LengthOfLastWord_1                                                                                         *
+ * LengthOfLastWord_2                                                                                         *
  **************************************************************************************************************/
