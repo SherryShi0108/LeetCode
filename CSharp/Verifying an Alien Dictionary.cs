@@ -146,7 +146,7 @@ public class Solution953
         return true;
     }
     
-    // --------------- O(n) 88ms --------------- 25MB --------------- (86% 50%) ※
+    // --------------- O(n) 88ms --------------- 25MB --------------- (86% 50%) 
     public bool IsAlienSorted_4(string[] words, string order)
     {
         int[] letters=new int[26];
@@ -178,7 +178,43 @@ public class Solution953
 
         return true;
     }
+    
+     // --------------- O(n) 80ms --------------- 25MB --------------- (99% 50%)※
+     /*
+      * use int[] direct , not parameter
+      * improve 4
+      */
+     private int[] letters = new int[26];
+     public bool IsAlienSorted_5(string[] words, string order)
+     {
+         for (int i = 0; i < order.Length; i++)
+         {
+             letters[order[i] - 'a'] = i;
+         }
+
+         for (int i = 0; i < words.Length-1; i++)
+         {
+             if (!Istrue(words[i], words[i + 1]))
+                 return false;
+         }
+
+         return true;
+      }
+
+     private bool Istrue(string v1, string v2)
+     {
+         int min = v1.Length < v2.Length ? v1.Length : v2.Length;
+         for (int i = 0; i < min; i++)
+         {
+             if (letters[v1[i] - 'a'] != letters[v2[i] - 'a'])
+             {
+                 return letters[v1[i] - 'a'] < letters[v2[i] - 'a'];
+             }
+         }
+
+         return v1.Length < v2.Length;
+     }
 }
 /**************************************************************************************************************
- * IsAlienSorted_4                                                                                            *
+ * IsAlienSorted_5                                                                                            *
  **************************************************************************************************************/
