@@ -142,7 +142,8 @@ public class Solution160
      */
     public ListNode GetIntersectionNode_3(ListNode headA, ListNode headB)
     {
-        if (headA == null || headB == null) return null;
+        if (headA == null || headB == null) return null; // could delete
+        
         ListNode temp1 = headA;
         ListNode temp2 = headB;
         while (temp1!=temp2)
