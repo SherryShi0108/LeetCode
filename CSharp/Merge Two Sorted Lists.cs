@@ -23,7 +23,7 @@
 
 public class Solution21
 {
-    // --------------- O(n) 84ms --------------- O(n) 25MB --------------- (99.7% 6%) ※
+    // --------------- O(n) 84ms --------------- O(n) 25MB --------------- (99.7% 6%) 
     /*
      * using recursion , donnot understand
      */
@@ -43,9 +43,25 @@ public class Solution21
             return l2;
         }
     }
+    
+    // --------------- O(n) 96ms --------------- O(n) 25MB --------------- (65% 6%) ※
+    /*
+     * using recursion , easy understand
+     */
+    public ListNode MergeTwoLists_2(ListNode l1, ListNode l2)
+    {
+        if (l1 == null) return l2;
+        if (l2 == null) return l1;
+
+        ListNode head = l1.val < l2.val ? l1 : l2;
+        ListNode nonhead = l1.val < l2.val ? l2 : l1;
+
+        head.next = MergeTwoLists_2(head.next, nonhead);
+        return head;
+    }
 
     // --------------- O(n) 112ms --------------- O(n) 25MB --------------- (8% 6%) 
-    public ListNode MergeTwoLists_2(ListNode l1, ListNode l2)
+    public ListNode MergeTwoLists_3(ListNode l1, ListNode l2)
     {
         ListNode start = new ListNode(-1);
         ListNode cur = start;
@@ -82,5 +98,5 @@ public class Solution21
     }
 }
 /**************************************************************************************************************
- * MergeTwoLists_1 MergeTwoLists_2                                                                            *
+ * MergeTwoLists_2 MergeTwoLists_3                                                                            *
  **************************************************************************************************************/
