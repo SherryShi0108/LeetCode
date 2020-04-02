@@ -37,66 +37,44 @@ using System.Collections.Generic; // stack namespace
 
 public class Solution844
 {
-    // --------------- O(m+n) 76ms --------------- O(m+n) 21.2MB --------------- (61% 50%) 
+    // --------------- O(m+n) 68ms --------------- O(m+n) 22MB --------------- (97% 50%) 
+    /*
+     * use stack , easy-understand but O(space) != O(1)
+     */
     public bool BackspaceCompare_1(string S, string T)
     {
-        Stack<char> s1 = new Stack<char>();
-        Stack<char> s2 = new Stack<char>();
+        Stack<char> s1=new Stack<char>();
         foreach (char c in S)
         {
             if (c != '#')
             {
                 s1.Push(c);
             }
-            else
+            else if (s1.Count > 0)
             {
-                if (s1.Count == 0)
-                {
-                    continue;
-                }
-                else
-                {
-                    s1.Pop();
-                }
+                s1.Pop();
             }
         }
 
+        Stack<char> s2 = new Stack<char>();
         foreach (char c in T)
         {
             if (c != '#')
             {
                 s2.Push(c);
             }
-            else
+            else if (s2.Count > 0)
             {
-                if (s2.Count == 0)
-                {
-                    continue;
-                }
-                else
-                {
-                    s2.Pop();
-                }
+                s2.Pop();
             }
         }
 
-        if (s1.Count != s2.Count)
+        while (s1.Count>0 && s2.Count>0)
         {
-            return false;
+            if (s1.Pop() != s2.Pop()) return false;
         }
 
-        int n = s1.Count;
-        while (n > 0)
-        {
-            if (s1.Pop() != s2.Pop())
-            {
-                return false;
-            }
-
-            n--;
-        }
-
-        return true;
+        return s1.Count == s2.Count;
     }
 
     // --------------- O(m+n) 76ms --------------- O(m+n) 21.7MB --------------- (61% 50%) ※ 
