@@ -58,12 +58,47 @@ public class Solution868
         }
         return max;
     }
+    
+    // --------------- O(logn) 40ms --------------- 12.7MB --------------- (62% 100%) 
+    /*
+     * easy-understanding
+     */
+    public int BinaryGap_2(int n)
+    {
+        int maxCount = 0;
+        int count = 0;
+        bool flag = true;
+        while (n>0)
+        {
+            if (n % 2 == 1)
+            {
+                if (flag)
+                {
+                    flag = false;
+                    count = 1;
+                }
+                else
+                {
+                    maxCount = maxCount > count ? maxCount : count;
+                    count = 1;
+                }
+            }
+            else
+            {
+                count++;
+            }
+
+            n /= 2;
+        }
+
+        return maxCount;
+    }
 
     // --------------- O(logn) 40ms --------------- 12.7MB --------------- (80% 100%)
     /*
      * int 32bits
      */
-    public int BinaryGap_2(int N)
+    public int BinaryGap_3(int N)
     {
         int[] array = new int[32];
         int t = 0;
@@ -84,7 +119,7 @@ public class Solution868
     }
     
     // --------------- O(logn) 40ms --------------- 13.7MB --------------- (80% 100%) ※
-    public int BinaryGap_3(int N)
+    public int BinaryGap_4(int N)
     {
         int max = 0;
         for (int i = -32; N>0; N/=2,i++)
@@ -103,7 +138,7 @@ public class Solution868
     /*
      * similar to 3
      */
-    public int BinaryGap_4(int N)
+    public int BinaryGap_5(int N)
     {
         int max = 0;
         int i = -32;
