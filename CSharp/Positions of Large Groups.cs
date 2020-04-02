@@ -29,34 +29,30 @@ using System.Collections.Generic;
 
 public class Solution830
 {
-    // --------------- O(n) 268ms --------------- 30.5MB --------------- (20% 8%)
+    // --------------- O(n) 36ms --------------- 32MB --------------- (65% 33%)
     public IList<IList<int>> LargeGroupPositions_1(string S)
     {
-        List<IList<int>> L = new List<IList<int>>();
-        if (S.Length < 1) return null;
+        IList<IList<int>> L =new List<IList<int>>();
 
-        char c = S[0];
         int count = 1;
         for (int i = 1; i < S.Length; i++)
         {
-            if (S[i] == c)
+            if (S[i] == S[i - 1])
             {
                 count++;
-
-                if (i == S.Length - 1 && count > 2)
+                if (i == S.Length - 1 &&count>=3)
                 {
-                    L.Add(new int[] { i - count + 1, i });
+                    L.Add(new int[]{S.Length-count,S.Length-1});
                 }
             }
-            if (S[i] != c)
+            else
             {
-                if (count > 2)
+                if (count >= 3)
                 {
-                    L.Add(new int[] { i - count, i - 1 });
+                    L.Add(new int[2] {i-count,i-1});
                 }
 
                 count = 1;
-                c = S[i];
             }
         }
 
@@ -139,5 +135,5 @@ public class Solution830
     }
 }
 /**************************************************************************************************************
- * LargeGroupPositions_1 LargeGroupPositions_2 LargeGroupPositions_3                                          *
+ * LargeGroupPositions_1/2 LargeGroupPositions_3                                                              *
  **************************************************************************************************************/
