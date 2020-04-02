@@ -93,17 +93,16 @@ public class Solution830
 
     }
 
-    // --------------- O(n) 260ms --------------- 30.7MB --------------- (29% 8%) ※
+    // --------------- O(n) 260ms --------------- 30.7MB --------------- (29% 8%) 
     public IList<IList<int>> LargeGroupPositions_2(string S)
     {
         List<IList<int>> L = new List<IList<int>>();
 
         int i = 0;
-        int N = S.Length;
 
         for (int j = 0; j < S.Length; j++)
         {
-            if (j == N - 1 || S[j] != S[j + 1])
+            if (j == S.Length - 1 || S[j] != S[j + 1])
             {
                 if (j - i + 1 >= 3)
                 {
@@ -116,24 +115,34 @@ public class Solution830
         return L;
     }
 
-    // --------------- O(n) 284ms --------------- 30.6MB --------------- (5% 8%)
+    // --------------- O(n) 232ms --------------- 32MB --------------- (76% 33%) ※
+    /*
+     * use two point
+     */
     public IList<IList<int>> LargeGroupPositions_3(string S)
     {
-        List<IList<int>> L = new List<IList<int>>();
-        for (int i = 0, j = 0; i < S.Length; i = j)
-        {
-            while (j < S.Length && S[j] == S[i])
-            {
-                j++;
-            }
-            if (j - i >= 3)
-            {
-                L.Add(new int[] { i, j - 1 });
-            }
-        }
-        return L;
+       IList<IList<int>> L = new List<IList<int>>();
+
+       int i = 0;
+       int j = 0;
+       while (j<S.Length)
+       {
+           while (j<S.Length && S[i]==S[j])
+           {
+               j++;
+           }
+
+           if (j - i >= 3)
+           {
+               L.Add(new List<int>(){i,j-1});
+           }
+
+           i = j;
+       }
+
+       return L;
     }
 }
 /**************************************************************************************************************
- * LargeGroupPositions_1/2 LargeGroupPositions_3                                                              *
+ * LargeGroupPositions_1 LargeGroupPositions_3                                                                *
  **************************************************************************************************************/
