@@ -35,7 +35,7 @@ public class Solution367
         return num == 0;
     }
 
-   // --------------- O(logn) 40ms --------------- 14MB --------------- (74% 25%) ※
+   // --------------- O(logn) 36ms --------------- 14MB --------------- (96% 25%) ※
     /*
      * attention: num/mid , so mid != 0 , so i && j !=0
      */
@@ -46,13 +46,9 @@ public class Solution367
         while (i<=j)
         {
             int mid = i + (j - i) / 2;
-            if (mid == num / mid )
+            if (num / mid == mid)
             {
-                if (num % mid == 0){return true;}
-                else
-                {
-                    j = mid - 1;
-                }
+                return num % mid == 0;
             }
             else if (mid > num / mid)
             {
@@ -75,5 +71,5 @@ public class Solution367
     }
 }
 /**************************************************************************************************************
- * IsPerfectSquare_1 IsPerfectSquare_2 IsPerfectSquare_3                                                      *
+ * IsPerfectSquare_2                                                                                          *
  **************************************************************************************************************/
