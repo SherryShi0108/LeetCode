@@ -20,19 +20,19 @@ public class Solution258
     // --------------- O(n?) 44ms --------------- 12.8MB --------------- (54% 100%)
     public int AddDigits_1(int num)
     {
-        while (num > 9)
-        {
-            int sum = 0;
-            int temp = num;
-            while (temp > 0)
-            {
-                sum += temp % 10;
-                temp /= 10;
-            }
+       while (num>9)
+       {
+           int sum = 0;
+           while (num > 0)
+           {
+               sum += num % 10;
+               num /= 10;
+           }
+           
             num = sum;
-        }
+       }
 
-        return num;
+       return num;
     }
 
     // --------------- O(1) 40ms --------------- 12.7MB --------------- (84% 100%)
