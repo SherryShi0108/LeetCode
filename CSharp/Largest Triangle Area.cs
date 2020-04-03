@@ -24,7 +24,7 @@ public class Solution812
     // --------------- O(n^3) 108ms --------------- 22.2MB --------------- (69% 100%) ※
     /*
      * stupid question , it's a Math question more than a Programming question
-     * use the Heron's formula : RectangleArea = 0.5 * a * b * sinC = 0.5 * ( x[0]y[1]+y[0]z[1]+z[0]x[1]-x[1]y[0]-y[1]z[0]-z[1]x[0] )
+     * use the Heron's formula : RectangleArea = 0.5 * a * b * sinC = 0.5 * |( x[0]y[1]+y[0]z[1]+z[0]x[1]-x[1]y[0]-y[1]z[0]-z[1]x[0] )|
      */
     public double LargestTriangleArea_1(int[][] points)
     {
