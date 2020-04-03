@@ -34,35 +34,11 @@ using System.Collections.Generic;
 
 public class Solution824
 {
-    // --------------- O(n^2) 84ms --------------- 25.9MB --------------- (83% 33%)
+    // --------------- O(n)? 84ms --------------- 23MB --------------- (83% 33%) 
+    /*
+     * but use API
+     */
     public string ToGoatLatin_1(string S)
-    {
-        HashSet<char> H = new HashSet<char>("AEIOUaeiou");
-        string result = "";
-        int count = 1;
-        foreach (string str in S.Split(' '))
-        {
-            if (H.Contains(str[0]))
-            {
-                result = result + " " + str + "ma";
-            }
-            else
-            {
-                result = result + " " + str.Substring(1) + str[0] + "ma";
-            }
-
-            for (int i = 0; i < count; i++)
-            {
-                result += "a";
-            }
-            count++;
-        }
-
-        return result.Substring(1);
-    }
-
-    // --------------- O(n)? 84ms --------------- 23MB --------------- (83% 33%) ※
-    public string ToGoatLatin_2(string S)
     {
         HashSet<char> H = new HashSet<char>("AEIOUaeiou");
         string result = "";
@@ -81,7 +57,40 @@ public class Solution824
 
         return result.Substring(1);
     }
+    
+    // --------------- O(n^2) 84ms --------------- 23MB --------------- (73% 33%) ※
+    public string ToGoatLatin_2(string S)
+    {
+        string addas = "a";
+        string result = "";
+        foreach (string s in S.Split(' '))
+        {
+            string temp = ChangeStr(s) + "ma" + addas;
+            addas += "a";
+
+            result = result + (result == "" ? "" : " ") + temp;
+        }
+
+        return result;
+    }
+
+    public string ChangeStr(string s)
+    {
+        string temp = "aeiouAEIOU";
+        if (!temp.Contains(s[0]))
+        {
+            string result = "";
+            for (int i = 1; i < s.Length; i++)
+            {
+                result += s[i];
+            }
+
+            return result + s[0];
+        }
+
+        return s;
+    }
 }
 /**************************************************************************************************************
- * ToGoatLatin_1 ToGoatLatin_2                                                                                *
+ * ToGoatLatin_2                                                                                              *
  **************************************************************************************************************/
