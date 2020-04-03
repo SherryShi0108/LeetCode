@@ -34,36 +34,13 @@
  *******************************************************************************************************************************/
 
 public class Solution868
-{
-    // --------------- O(logn) 40ms --------------- 12.7MB --------------- (80% 100%) 
-    public int BinaryGap_1(int N)
-    {
-        int i1 = 0;  // current
-        int i2 = 0;  // last 1
-        int max = 0;
-        while (N > 0)
-        {
-            int temp = N % 2; // temp = N & 1 ;
-            N = N / 2; // N = N >> 1 ;
-            i1++;
-
-            if (temp == 1)
-            {
-                if (i2 != 0)
-                {
-                    max = max > i1 - i2 ? max : i1 - i2;
-                }
-                i2 = i1;
-            }
-        }
-        return max;
-    }
-    
+{    
     // --------------- O(logn) 40ms --------------- 12.7MB --------------- (62% 100%) 
     /*
-     * easy-understanding
+     * easy-understanding 
+     * use count
      */
-    public int BinaryGap_2(int n)
+    public int BinaryGap_1(int n)
     {
         int maxCount = 0;
         int count = 0;
@@ -93,10 +70,33 @@ public class Solution868
 
         return maxCount;
     }
+    
+     // --------------- O(logn) 36ms --------------- 15MB --------------- (93% 100%) ※
+    /*
+     * should remember : use bit operator , and last
+     */
+    public int BinaryGap_2(int N)
+    {
+        int last = -1;
+        int max = 0;
+        for (int i = 0; i < 32; i++)
+        {
+            if (((N >> i) & 1) != 0)
+            {
+                if (last >= 0)
+                {
+                    max = max > i - last ? max : i - last;
+                }
+                last = i;
+            }
+        }
+
+        return max;
+    }
 
     // --------------- O(logn) 40ms --------------- 12.7MB --------------- (80% 100%)
     /*
-     * int 32bits
+     * int 32bits , use int[32] 
      */
     public int BinaryGap_3(int N)
     {
@@ -122,25 +122,6 @@ public class Solution868
     public int BinaryGap_4(int N)
     {
         int max = 0;
-        for (int i = -32; N>0; N/=2,i++)
-        {
-            if (N % 2 == 1)
-            {
-                max = max > i ? max : i;
-                i = 0;
-            }
-        }
-
-        return max;
-    }
-    
-    // --------------- O(logn) 40ms --------------- 13.7MB --------------- (80% 100%) ※
-    /*
-     * similar to 3
-     */
-    public int BinaryGap_5(int N)
-    {
-        int max = 0;
         int i = -32;
 
         while (N>0)
@@ -159,5 +140,5 @@ public class Solution868
     }
 }
 /**************************************************************************************************************
- * BinaryGap_1 BinaryGap_4                                                                                    *
+ * BinaryGap_2                                                                                                *
  **************************************************************************************************************/
