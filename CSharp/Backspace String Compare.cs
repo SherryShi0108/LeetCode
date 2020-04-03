@@ -106,9 +106,51 @@ public class Solution844
             j--;
         }
     }
+    
+     // --------------- O(m+n) 76ms --------------- O(m+n) 21.7MB --------------- (61% 50%) ※ 
+    /*
+     * similar to 2
+     */
+    public bool BackspaceCompare_3(string S, string T)
+    {
+        int i = S.Length - 1; int count1=0;
+        int j = T.Length - 1; int count2=0;
+
+        while (i>=0 || j>=0)
+        {
+            while (i >= 0 && (S[i] == '#' || count1 > 0))
+            {
+                count1 = S[i] == '#' ? count1++ : count1--;
+                i--;
+            }
+
+            while (j >= 0 && (T[j] == '#' || count2 > 0))
+            {
+                count2 = T[j] == '#' ? count2++ : count2--;
+                j--;
+            }
+
+            if (i < 0 || j < 0) return i == j;
+            if (S[i] != S[j])
+            {
+                return false;
+
+            }
+            else
+            {
+                i--;
+                j--;
+            }
+        }
+
+        return i == j;
+    }
 
     // --------------- O(m+n) 88ms --------------- O(m+n) 21.9MB --------------- (9% 50%)
-    public bool BackspaceCompare_3(string S, string T)
+    /*
+     * O(Space) != O(1)
+     */
+    public bool BackspaceCompare_4(string S, string T)
     {
         return GetString(S).Equals(GetString(T));
     }
