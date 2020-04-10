@@ -82,10 +82,40 @@ public class Solution500
     #endregion
 
     // --------------- O(n) 280ms --------------- 28.5MB --------------- (22% 100%) 
-    /*
-     * use 1 10 100,to | ,a mart solution !
+    /* 
+     * improve 1: use toLower()
      */
     public string[] FindWords_2(string[] words)
+    {
+        int[] arrayInt = new int[] { 2, 3, 3, 2, 1, 2, 2, 2, 1, 2, 2, 2, 3, 3, 1, 1, 1, 1, 2, 1, 1, 3, 1, 3, 1, 3 };
+
+        List<string> result = new List<string>();
+        foreach (string item in words)
+        {
+            string word = item.ToLower();
+            int temp = arrayInt[ word[0]-'a'];
+            bool flag = true;
+
+            for (int i = 1; i < word.Length; i++)
+            {
+                if (arrayInt[word[i] - 'a'] != temp)
+                {
+                    flag = false;
+                    break;
+                }
+            }
+            if (flag) { result.Add(item); }
+        }
+        return result.ToArray();
+    }
+        
+    // --------------- O(n) 280ms --------------- 28.5MB --------------- (22% 100%) 
+    /*
+     * amazing solution!
+     * use 1 10 100,to | ,a mart solution !
+     */
+     /* use 2,3,5prime,determine which can %2==0 && %3!=0 && %5!=0 , but it will overfolw */
+    public string[] FindWords_3(string[] words)
     {
         Dictionary<char, int> d = new Dictionary<char, int>();
         foreach (var c in "qwertyuiopQWERTYUIOP")
@@ -116,54 +146,7 @@ public class Solution500
         }
         return result.ToArray();
     }
-
-    // --------------- O(n) 272ms --------------- 28.6MB --------------- (31% 100%) 
-    /*
-     * use HashSet.IsSubsetOf();
-     */
-    public string[] FindWords_3(string[] words)
-    {
-        HashSet<char> h1 = new HashSet<char>("qwertyuiopQWERTYUIOP".ToCharArray());
-        HashSet<char> h2 = new HashSet<char>("asdfghjklASDFGHJKL".ToCharArray());
-        HashSet<char> h3 = new HashSet<char>("zxcvbnmZXCVBNM".ToCharArray());
-
-        List<string> result = new List<string>();
-        foreach (string item in words)
-        {
-            HashSet<char> i = new HashSet<char>(item.ToCharArray());
-            if (i.IsSubsetOf(h1) || i.IsSubsetOf(h2) || i.IsSubsetOf(h3))
-            {
-                result.Add(item);
-            }
-        }
-        return result.ToArray();
-    }
-
-    // --------------- O(n) 280ms --------------- 28.5MB --------------- (22% 100%) 
-    public string[] FindWords_4(string[] words)
-    {
-        int[] arrayInt = new int[] { 2, 3, 3, 2, 1, 2, 2, 2, 1, 2, 2, 2, 3, 3, 1, 1, 1, 1, 2, 1, 1, 3, 1, 3, 1, 3 };
-
-        List<string> result = new List<string>();
-        foreach (string item in words)
-        {
-            string word = item.ToLower();
-            int temp = arrayInt[ word[0]-'a'];
-            bool flag = true;
-
-            for (int i = 1; i < word.Length; i++)
-            {
-                if (arrayInt[word[i] - 'a'] != temp)
-                {
-                    flag = false;
-                    break;
-                }
-            }
-            if (flag) { result.Add(item); }
-        }
-        return result.ToArray();
-    }
 }
 /**************************************************************************************************************
- * FindWords_1 FindWords_2 FindWords_3 FindWords_4                                                            *
+ * FindWords_2 FindWords_3                                                                                    *
  **************************************************************************************************************/
