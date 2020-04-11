@@ -14,7 +14,7 @@
  * Note:
  *      You may use one character in the keyboard more than once.
  *      You may assume the input string will only contain letters of alphabet.
- * ※
+ * 
  *******************************************************************************************************************************/
 
 using System.Collections.Generic;
@@ -145,6 +145,28 @@ public class Solution500
             }
         }
         return result.ToArray();
+    }
+    
+    // --------------- O(n) 228ms --------------- 28.5MB --------------- (100% 100%) ※
+    public string[] FindWords_4(string[] words)
+    {
+        List<string> L = new List<string>();
+        int[] arrays = new int[26] {2, 4, 4, 2, 1, 2, 2, 2, 1, 2, 2, 2, 4, 4, 1, 1, 1, 1, 2, 1, 1, 4, 1, 4, 1, 4};
+        foreach (string s in words)
+        {
+            int temp = 0;
+            foreach (char c in s.ToLower())
+            {
+                temp |= arrays[c - 'a'];
+            }
+
+            if (temp == 1 || temp == 2 || temp == 4)
+            {
+                L.Add(s);
+            }
+        }
+
+        return L.ToArray();
     }
 }
 /**************************************************************************************************************
