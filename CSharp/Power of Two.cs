@@ -17,7 +17,7 @@
  * 
  * Input: 218
  * Output: false
- * ※
+ * 
  *******************************************************************************************************************************/
 
 using System.Collections;
@@ -48,6 +48,22 @@ public class Solution231
 
         return true;
     }
+    
+    // --------------- O(logn) 40ms --------------- 15MB --------------- (82% 10%) ※
+    /*
+     * improve 1
+     */
+    public bool IsPowerOfTwo_1_2(int n)
+    {
+        if (n < 1) return false;
+
+        while (n % 2 == 0)
+        {
+            n /= 2;
+        }
+
+        return n == 1;
+    }
 
     // --------------- O(logn) 44ms --------------- 13.8MB --------------- (59% 10%)
     public bool IsPowerOfTwo_2(int n)
@@ -66,7 +82,7 @@ public class Solution231
     /*
      * improve 2
      */
-    public bool IsPowerOfTwo_3(int n)
+    public bool IsPowerOfTwo_2_2(int n)
     {
         return n > 0 && ((n & (n - 1)) == 0);
     }
@@ -75,7 +91,7 @@ public class Solution231
     /*
      * use math table
      */
-    public bool IsPowerOfTwo_4(int n)
+    public bool IsPowerOfTwo_3(int n)
     {
         HashSet<int> H=new HashSet<int>(){1,2,4,8,16,32,64, 128, 256, 512, 1024, 2048, 4096, 8192,
             16384, 32768, 65536, 131072, 262144, 524288, 1048576, 2097152, 4194304, 8388608, 16777216,
@@ -87,5 +103,5 @@ public class Solution231
     }
 }
 /**************************************************************************************************************
- * IsPowerOfTwo_1 IsPowerOfTwo_3 IsPowerOfTwo_4                                                               *
+ * IsPowerOfTwo_1 IsPowerOfTwo_2                                                                              *
  **************************************************************************************************************/
