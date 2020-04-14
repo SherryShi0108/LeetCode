@@ -42,7 +42,7 @@ public class Solution125
         return true;
     }
 
-    // --------------- O(n) 80ms --------------- 23.7MB --------------- (84% 10%) ※
+    // --------------- O(n) 80ms --------------- 23.7MB --------------- (84% 10%) 
     public bool IsPalindrome_2(string s)
     {
         s = s.ToLower();
@@ -79,6 +79,42 @@ public class Solution125
             return true;
         }
 
+        return false;
+    }
+    
+    // --------------- O(n) 80ms --------------- 23.7MB --------------- (68% 10%) ※
+    /* 
+     * improve IsPalindrome_2
+     */
+    public bool IsPalindrome_2_2(string s)
+    {
+        s = s.ToLower();
+        int i = 0;
+        int j = s.Length - 1;
+        while (i < j)
+        {
+            while (i < j && !IsAlphanumeric(s[i]))
+            {
+                i++;
+            }
+
+            while (i < j && !IsAlphanumeric(s[j]))
+            {
+                j--;
+            }
+
+            if (i < j && s[i] != s[j]) return false;
+            i++;
+            j--;
+        }
+
+        return true;
+    }
+
+    public bool IsAlphanumeric(char c)
+    {
+        if (c >= 'a' && c <= 'z' || c >= '0' && c <= '9')
+            return true;
         return false;
     }
 }
