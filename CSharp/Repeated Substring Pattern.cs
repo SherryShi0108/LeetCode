@@ -24,7 +24,7 @@
 public class Solution459
 {
     /*
-     * time limited , but this solution is true ※
+     * time limited , but this solution is true 
      */
     public bool RepeatedSubstringPattern_1(string s) 
     {
@@ -45,17 +45,44 @@ public class Solution459
 
         return false;
     }
+    
+    // --------------- O(n^2) 80ms --------------- 31MB --------------- (98% 67%) ※
+    /*
+     * easy-understanding
+     */
+    public bool RepeatedSubstringPattern_3(string s)
+    {
+        for (int i = 1; i <= s.Length / 2; i++)
+        {
+            if (s.Length % i == 0)
+            {
+                bool repeat = true;
+                for (int j = i; j < s.Length; j++)
+                {
+                    if (s[j - i] != s[j])
+                    {
+                        repeat = false;
+                        break;
+                    }
+                }
+
+                if (repeat) return true;
+            }
+        }
+
+        return false;
+    }
 
     // --------------- O(1) 204ms --------------- 35MB --------------- (35% 67%)
     /*
      * so tricky , math knowledge
      */
-    public bool RepeatedSubstringPattern_2(string s)
+    public bool RepeatedSubstringPattern_3(string s)
     {
         string str = s + s;
         return str.Substring(1, str.Length - 2).Contains(s);
     }
 }
 /**************************************************************************************************************
- * RepeatedSubstringPattern_1 RepeatedSubstringPattern_2                                                      *
+ * RepeatedSubstringPattern_2 RepeatedSubstringPattern_3                                                      *
  **************************************************************************************************************/
