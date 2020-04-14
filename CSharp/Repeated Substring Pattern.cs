@@ -50,7 +50,7 @@ public class Solution459
     /*
      * easy-understanding
      */
-    public bool RepeatedSubstringPattern_3(string s)
+    public bool RepeatedSubstringPattern_2(string s)
     {
         for (int i = 1; i <= s.Length / 2; i++)
         {
