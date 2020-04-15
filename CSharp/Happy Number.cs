@@ -52,14 +52,15 @@ public class Solution202
     HashSet<int> H = new HashSet<int>();
     public bool IsHappy(int n)
     {
-        if (!H.Add(n)) return false;
+        if (n == 1) return true;
+        if (n<0 || !H.Add(n)) return false;
+        
         int sum = 0;
         while (n>0)
         {
             sum += (n % 10) * (n % 10);
             n /= 10;
         }
-        if (sum == 1) return true;
         return  IdHappy(sum);
     }
 
