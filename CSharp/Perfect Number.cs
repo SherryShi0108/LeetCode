@@ -39,36 +39,39 @@ public class Solution507
 
         return sum == num;
     }
-
-    // --------------- O(n ^ 1/2) 40ms --------------- 14MB --------------- (82% 100%) ※
+    
+    // --------------- O(n ^ 1/2) 748ms --------------- 14MB --------------- (23% 100%) ※
     /*
-     * O(time) = O(n ^ 1/2)
+     * use two point
      */
     public bool CheckPerfectNumber_2(int num)
     {
-        if (num <= 0) return false;
+        if (num <= 1) return false;
 
-        int sum = 0;
-        int n = 1;
-        while (n * n <= num)
+        int i = 2;
+        int j = num;
+
+        int count = 1;
+        while (i < j)
         {
-            if (num % n == 0)
+            if (num % i == 0)
             {
-                sum += n;
-                if (n * n < num) sum += num / n;
+                j = num / i;
+                count += i == j ? i : i + j;
+                if (count > num) return false;
             }
 
-            n++;
+            i++;
         }
 
-        return sum == 2 * num;
+        return count == num;
     }
-
-    // --------------- O(n ^ 1/2) 944ms --------------- 14MB --------------- (5% 100%) ※
+    
+    // --------------- O(n ^ 1/2) 944ms --------------- 14MB --------------- (5% 100%) 
     /*
-     * improve 2
+     * similar to 2
      */
-    public bool CheckPerfectNumber_3(int num)
+    public bool CheckPerfectNumber_2_2(int num)
     {
         if (num <= 1) return false;
 
@@ -88,6 +91,30 @@ public class Solution507
         }
 
         return sum == num;
+    }
+
+    // --------------- O(n ^ 1/2) 40ms --------------- 14MB --------------- (82% 100%) ※
+    /*
+     * O(time) = O(n ^ 1/2)
+     */
+    public bool CheckPerfectNumber_3(int num)
+    {
+        if (num <= 0) return false;
+
+        int sum = 0;
+        int n = 1;
+        while (n * n <= num)
+        {
+            if (num % n == 0)
+            {
+                sum += n;
+                if (n * n < num) sum += num / n;
+            }
+
+            n++;
+        }
+
+        return sum == 2 * num;
     }
 
     /*
