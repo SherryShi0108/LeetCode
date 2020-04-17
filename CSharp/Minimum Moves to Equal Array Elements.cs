@@ -72,6 +72,27 @@ public class Solution453
 
         return true;
     }
+    
+    // --------------- O(n) 132ms --------------- 34MB --------------- (86% 100%) ※
+    /*
+     * use trick : (n-1)element + 1 = one element - 1
+     */
+    public int MinMoves_2(int[] nums)
+    {
+        int min = int.MaxValue;
+        for (int i = 0; i < nums.Length; i++)
+        {
+            min = nums[i] < min ? nums[i] : min;
+        }
+
+        int count = 0;
+        for (int i = 0; i < nums.Length; i++)
+        {
+            count += (nums[i] - min);
+        }
+
+        return count;
+    }
 
     // --------------- O(n) 148ms --------------- 34MB --------------- (35% 100%) ※
     /*
@@ -80,7 +101,7 @@ public class Solution453
      * 2. x = minValue + m
      * 3. sum - m = n * minValue 
      */
-    public int MinMoves_2(int[] nums)
+    public int MinMoves_3(int[] nums)
     {
         int sum = 0;
         int min = int.MaxValue;
@@ -91,18 +112,6 @@ public class Solution453
         }
 
         return sum - nums.Length * min;
-    }
-
-
-    /*
-     * Math solution : Amazing Solution !
-     * (n-1)element + 1 = one element - 1
-     * so finally = sum - n * minValue
-     */
-    public int MinMoves_3(int[] nums)
-    {
-        // the same with 2
-        return 0;
     }
 }
 /**************************************************************************************************************
