@@ -31,7 +31,7 @@
  *      Each address will have either 1 or 2 "." characters.
  *      The input count in any count-paired domain will not exceed 10000.
  *      The answer output can be returned in any order.
- * ※
+ * 
  *******************************************************************************************************************************/
 
 using System.Collections.Generic;
@@ -66,7 +66,37 @@ public class Solution811
         }
 
         return L;
-    }   
+    }  
+    
+    // --------------- O(n) 272ms --------------- 33MB --------------- (55% 33%) ※
+    /*
+     * improve 1
+     */
+    public IList<string> SubdomainVisits_1_1(string[] cpdomains)
+    {
+        Dictionary<string, int> d = new Dictionary<string, int>();
+        foreach (string cpdomain in cpdomains)
+        {
+            string[] temp1 = cpdomain.Split(' ');
+            int count = int.Parse(temp1[0]);
+            string[] temp2 = temp1[1].Split('.');
+
+            string subDomain = "";
+            for (int i = temp2.Length - 1; i >= 0; i--)
+            {
+                subDomain = temp2[i] + (i == temp2.Length - 1 ? "" : ".") + subDomain;
+                d[subDomain] = d.ContainsKey(subDomain) ? d[subDomain] + count : count;
+            }
+        }
+
+        IList<string> result = new List<string>();
+        foreach (var i in d)
+        {
+            result.Add(i.Value + " " + i.Key);
+        }
+
+        return result;
+    }
 }
 /**************************************************************************************************************
  * SubdomainVisits_1                                                                                          *
