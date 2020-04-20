@@ -30,28 +30,12 @@ using System;
 
 public class Solution189
 {
-    ///+++++++++++++++++++++++++ Time Limit Exceeded +++++++++++++++++++++++++
-    //--------------- O(n*k) ---------------
-    public void Rotate_1(int[] nums, int k)
-    {
-        for (int i = 0; i < k; i++)
-        {
-            int temp = nums[nums.Length - 1];
-            for (int j = nums.Length - 1; j > 0; j--)
-            {
-                nums[j] = nums[j - 1];
-            }
-            nums[0] = temp;
-        }
-    }
-    ///+++++++++++++++++++++++++ Time Limit Exceeded +++++++++++++++++++++++++
-
     // --------------- O(n) 256ms --------------- 30.5MB --------------- (79% 73%)
     /*
-     * But O(space)=O(n)
+     * But O(space)=O(n) ， use extra space
      * Another array of the same size is used.
      */
-    public void Rotate_2(int[] nums, int k)
+    public void Rotate_1(int[] nums, int k)
     {
         int[] a = new int[nums.Length];
         for (int i = 0; i < nums.Length; i++)
@@ -66,7 +50,7 @@ public class Solution189
     }
 
     // --------------- O(n) 260ms --------------- O(1)30.5MB --------------- (68% 85%)
-    public void Rotate_3(int[] nums, int k)
+    public void Rotate_2(int[] nums, int k)
     {
         Array.Reverse(nums);
 
@@ -79,7 +63,7 @@ public class Solution189
     /*
      * use user-defined method
      */
-    public void Rotate_4(int[] nums, int k)
+    public void Rotate_2_2(int[] nums, int k)
     {
         RecerseArray(nums, 0, nums.Length);
 
@@ -102,7 +86,7 @@ public class Solution189
     }
 
     // --------------- O(n) 264ms --------------- O(1)30.5MB --------------- (56% 85%) ※
-    public void Rotate_5(int[] nums, int k)
+    public void Rotate_3(int[] nums, int k)
     {
         int count = 0;
         for (int i = 0; count < nums.Length; i++)
@@ -122,5 +106,5 @@ public class Solution189
     }
 }
 /**************************************************************************************************************
- * Rotate_3 Rotate_5                                                                                          *
+ * Rotate_2 Rotate_3                                                                                          *
  **************************************************************************************************************/
