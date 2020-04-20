@@ -20,46 +20,13 @@
 
 public class Solution69
 {
-    ///+++++++++++++++++++++++++ Error +++++++++++++++++++++++++
-    /*
-     * 2147395600 output:289398 need:46340,but 46341^2>int.max,
-     * long double same false
-     */
-    public int MySqrt_1(int x)
-    {
-        int i = 0;
-        int sum = 0;
-        while (sum <= x)
-        {
-            i++;
-            sum = i * i;
-        }
-
-        return i - 1;
-    }
-
-    ///+++++++++++++++++++++++++ O(n) Time Limit Exceeded +++++++++++++++++++++++++
-    /*
-     * O(time) = O(n)
-     */
-    public int MySqrt_2(int x)
-    {
-        int i = 0;
-        while (i * i < x)
-        {
-            i++;
-        }
-
-        return x == i * i ? i : i - 1;
-    }
-
     // --------------- O(logn) 36ms --------------- 14.1MB --------------- (96% 7%) 
     /*
      * Binary Search
      * 1. but mid * mid > maxValue , can cause -xxxxxx ; so use mid > x / mid instead mid * mid > x
      * 2. 0 cannot be divide , so x/mid mid!=0 , so i/j!=0
      */
-    public int MySqrt_3(int x)
+    public int MySqrt_1(int x)
     {
         if (x == 0) return 0;
         int i = 1;
@@ -86,7 +53,7 @@ public class Solution69
      * Binary Search
      * 1. j should be x+1 , but x+1 maybe overflow , so use x and consider j = x , but always x*x>x except 1 
      */
-    public int MySqrt_4(int x)
+    public int MySqrt_1_1(int x)
     {
         if (x <2) return x;
         int i = 1;
@@ -112,7 +79,7 @@ public class Solution69
     /*
      * Math solution : Newton's method
      */
-    public int MySqrt_5(int x)
+    public int MySqrt_2(int x)
     {
         long r = x;
         while (r * r > x)
@@ -124,7 +91,7 @@ public class Solution69
     /*
      * use bit manipulation , amazing solution , but donot understand
      */
-    public int MySqrt_6(int x)
+    public int MySqrt_3(int x)
     {
         if (x == 0) return 0;
 
@@ -152,5 +119,5 @@ public class Solution69
     }
 }
 /**************************************************************************************************************
- * MySqrt_3  MySqrt_4  MySqrt_6                                                                               *
+ * MySqrt_1  MySqrt_2  MySqrt_3                                                                               *
  **************************************************************************************************************/
