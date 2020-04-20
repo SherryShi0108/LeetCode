@@ -36,9 +36,24 @@ public class Solution168
         while (n > 0)
         {
             n--;
-            int x = n % 26;
-            result = (char)(x + 65) + result;
+            result = (char)(n % 26 + 1 + 64) + result;
             n = n / 26;
+        }
+
+        return result;
+    }
+    
+    // --------------- O(n) 80ms --------------- 20.3MB --------------- (90% 100%) ※
+    /*
+     * improve 1
+     */
+    public string ConvertToTitle_1_1(int n)
+    {
+        string result = "";
+        while (n > 0)
+        {
+            result = (char)((n - 1) % 26 + 65) + result;
+            n = (n - 1) / 26;
         }
 
         return result;
@@ -56,23 +71,7 @@ public class Solution168
         }
         return result;
     }
-
-    // --------------- O(n) 80ms --------------- 20.3MB --------------- (90% 100%) ※
-    /*
-     * improve 1
-     */
-    public string ConvertToTitle_3(int n)
-    {
-        string result = "";
-        while (n > 0)
-        {
-            result = (char)((n - 1) % 26 + 65) + result;
-            n = (n - 1) / 26;
-        }
-
-        return result;
-    }
 }
 /**************************************************************************************************************
- * ConvertToTitle_2 ConvertToTitle_30                                                                         *
+ * ConvertToTitle_1                                                                                           *
  **************************************************************************************************************/
