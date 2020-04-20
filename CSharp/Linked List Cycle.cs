@@ -41,48 +41,19 @@ using System.Collections.Generic;
 
 public class Solution141
 {
-    ///+++++++++++++++++++++++++ Error +++++++++++++++++++++++++
+    // --------------- O(n) 104ms --------------- O(n) 26.1MB --------------- (34% 7%) 
     /*
-     * 1-2-3-4-2-5-null is not true!
+     * use HashSet : ListNode must has the same next and val !!!
      */
     public bool HasCycle_1(ListNode head)
     {
-        if (head == null || head.next == null) return false;
-
-        HashSet<int> H=new HashSet<int>();
-        ListNode temp = head;
-
-        while (temp.next != null)
-        {
-            if (H.Contains(temp.val))
-            {
-                return true;
-            }
-            H.Add(temp.val);
-            temp = temp.next;
-        }
-
-        return false;
-    }
-    ///+++++++++++++++++++++++++ Error +++++++++++++++++++++++++
-
-    // --------------- O(n) 104ms --------------- O(n) 26.1MB --------------- (34% 7%) 
-    /*
-     * Improve 1 : ListNode must has the same next and val !!!
-     */
-    public bool HasCycle_2(ListNode head)
-    {
-        HashSet<ListNode> H=new HashSet<ListNode>();
+        HashSet<ListNode> h = new HashSet<ListNode>();
         ListNode temp = head;
         while (temp != null)
         {
-            if (H.Contains(temp))
+            if (!h.Add(temp))
             {
                 return true;
-            }
-            else
-            {
-                H.Add(temp);
             }
 
             temp = temp.next;
@@ -95,7 +66,7 @@ public class Solution141
     /*
      * use two points
      */
-    public bool HasCycle_3(ListNode head)
+    public bool HasCycle_2(ListNode head)
     {
         if (head == null || head.next == null) return false;
         ListNode slow = head;
@@ -116,9 +87,9 @@ public class Solution141
 
     // --------------- O(n) 100ms --------------- O(1) 25.1MB --------------- (65% 7%) ※ 
     /*
-     * improve 3
+     * improve 2
      */
-    public bool HasCycle_4(ListNode head)
+    public bool HasCycle_2_2(ListNode head)
     {
         ListNode slow = head;
         ListNode fast = head;
@@ -137,5 +108,5 @@ public class Solution141
 }
 
 /**************************************************************************************************************
- * HasCycle_2 HasCycle_4                                                                                      *
+ * HasCycle_2 HasCycle_3                                                                                      *
  **************************************************************************************************************/
