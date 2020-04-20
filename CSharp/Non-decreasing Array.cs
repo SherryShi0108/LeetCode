@@ -23,130 +23,52 @@
 
 public class Solution665
 {
-    /*
-     *  [-1,4,2,3] true ???
-     *  [2,3,3,2,4] true
-     *  [3,4,2,3] false
-     *  [4,2,3] true
-     */
-    // --------------- O(n) 144ms --------------- 29.7MB --------------- (17% 8%)  
+    // --------------- O(n) 128s --------------- 32MB --------------- (18% 100%)  
     public bool CheckPossibility_1(int[] nums)
-    {
-        int count = 0;
-        for (int i = 1; i < nums.Length; i++)
-        {
-            if (nums[i] >= nums[i - 1])
-            {
-                continue;
-            }
-            else
-            {
-                if (count == 0)
-                {
-                    count++;
-                    if (i < 2 || nums[i - 2] < nums[i])
-                    {
-                        nums[i - 1] = nums[i];
-                    }
-                    else
-                    {
-                        nums[i] = nums[i - 1];
-                    }
-                }
-                else
-                {
-                    return false;
-                }
-            }
-        }
-        return true;
-    }
-
-    // --------------- O(n) 132ms --------------- 29.7MB --------------- (39% 8%)
-    public bool CheckPossibility_2(int[] nums)
-    {
-        int count = 0;
-        for (int i = 1; i < nums.Length; i++)
-        {
-            if (nums[i] >= nums[i - 1])
-            {
-                continue;
-            }
-            else
-            {
-                if (count == 0)
-                {
-                    count++;
-                    if (i > 1 && nums[i - 2] > nums[i])
-                    {
-                        nums[i] = nums[i - 1];
-                    }
-                }
-                else
-                {
-                    return false;
-                }
-            }
-        }
-        return true;
-    }
-    
-    // --------------- O(n) 128ms --------------- 29.6MB --------------- (70% 100%) ※
-    public bool CheckPossibility_3(int[] nums)
     {
         int count = 1;
         for (int i = 1; i < nums.Length; i++)
         {
             if (nums[i] < nums[i - 1])
             {
-                count--;
-                if (count < 0) { return false; }
+                if (count-- == 0) return false;
                 if (i == 1 || nums[i] >= nums[i - 2])
                 {
                     nums[i - 1] = nums[i];
                 }
-                else if (nums[i] < nums[i - 2])
+                else
                 {
                     nums[i] = nums[i - 1];
                 }
             }
         }
+
         return true;
     }
     
-    // --------------- O(n) 116ms --------------- 31.5MB --------------- (87% 100%) ※
+    // --------------- O(n) 124s --------------- 32MB --------------- (44% 100%)  
     /*
-     * easy-understanding
+     * improve 1 : reduce branch
      */
-    public bool CheckPossibility_4(int[] nums)
+    public bool CheckPossibility_1_1(int[] nums)
     {
         int count = 1;
         for (int i = 1; i < nums.Length; i++)
         {
             if (nums[i] < nums[i - 1])
             {
-                count--;
-                if (count < 0) return false;
-                if (i == 1)
+                if (count-- == 0) return false;
+
+                if (i != 1 && nums[i] < nums[i - 2])
                 {
-                    nums[i - 1] = nums[i];
-                }
-                else
-                {
-                    if (nums[i] >= nums[i - 2])
-                    {
-                        nums[i - 1] = nums[i];
-                    }
-                    else
-                    {
-                        nums[i] = nums[i - 1];
-                    }
+                    nums[i] = nums[i - 1];
                 }
             }
         }
+
         return true;
     }
 }
 /**************************************************************************************************************
- * CheckPossibility_3                                                                                         *
+ * CheckPossibility_1                                                                                         *
  **************************************************************************************************************/
