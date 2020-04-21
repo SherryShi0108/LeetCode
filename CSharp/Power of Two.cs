@@ -66,25 +66,23 @@ public class Solution231
     }
 
     // --------------- O(logn) 44ms --------------- 13.8MB --------------- (59% 10%)
+    /*
+     * attention : n=0 is special
+     */
     public bool IsPowerOfTwo_2(int n)
     {
-        if (n <= 0)
-        {
-            return false;
-        }
-
-        bool a = (n & (n - 1)) == 0;
-
-        return a;
+        return n > 0 && ((n & (n - 1)) == 0);
     }
-
-    // --------------- O(logn) 44ms --------------- 13.7MB --------------- (59% 10%)
+    
+    // --------------- O(logn) 44ms --------------- 15MB --------------- (48% 10%)
     /*
-     * improve 2
+     * attention : 0 | any num == 0
+     * int.MinValue donot have complement , same it's complement is 0 
      */
     public bool IsPowerOfTwo_2_2(int n)
     {
-        return n > 0 && ((n & (n - 1)) == 0);
+        if (n == 0 || n == int.MinValue) return false;
+        return (n & (n - 1)) == 0;
     }
 
     // --------------- O(1) 56ms --------------- 17.1MB --------------- (10% 10%)
