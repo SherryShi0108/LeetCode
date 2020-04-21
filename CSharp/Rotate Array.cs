@@ -50,6 +50,9 @@ public class Solution189
     }
 
     // --------------- O(n) 260ms --------------- O(1)30.5MB --------------- (68% 85%)
+    /*
+     * use Reverse
+     */
     public void Rotate_2(int[] nums, int k)
     {
         Array.Reverse(nums);
@@ -89,19 +92,43 @@ public class Solution189
     public void Rotate_3(int[] nums, int k)
     {
         int count = 0;
-        for (int i = 0; count < nums.Length; i++)
+        for (int i = 0; ; i++)
         {
-            int current = i;
-            int prev = nums[i];
+            int prevValue = nums[i];
+            int currentIndex = i;
             do
             {
-                int next = (current + k) % nums.Length;
-                int temp = nums[next];
-                nums[next] = prev;
-                prev = temp;
-                current = next;
-                count++;
-            } while (i != current);
+                int nextIndex = (currentIndex + k) % nums.Length;
+                int nextValue = nums[nextIndex];
+                nums[nextIndex] = prevValue;
+                prevValue = nextValue;
+                currentIndex = nextIndex;
+
+                if (++count == nums.Length) return;
+            } while (i != currentIndex);
+        }
+    }
+    
+    // --------------- O(n) 240ms --------------- O(1)32MB --------------- (86% 9%) ※
+    public void Rotate_3(int[] nums, int k)
+    {
+        int count = 0;
+        int i = -1;
+        while (true)
+        {
+            i++;
+            int prevValue = nums[i];
+            int currentIndex = i;
+            do
+            {
+                int nextIndex = (currentIndex + k) % nums.Length;
+                int nextValue = nums[nextIndex];
+                nums[nextIndex] = prevValue;
+                prevValue = nextValue;
+                currentIndex = nextIndex;
+
+                if (++count == nums.Length) return;
+            } while (i != currentIndex);
         }
     }
 }
