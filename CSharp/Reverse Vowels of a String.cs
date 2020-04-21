@@ -22,47 +22,8 @@ using System.Text; // StringBuilder namespace
 
 public class Solution345
 {
-    ///+++++++++++++++++++++++++ Time Limit Exceeded +++++++++++++++++++++++++
-    /*
-     * Test(480/481) : too long
-     * Should use new String(chars) to add char to string
-     */
-    public string ReverseVowels_1(string s)
-    {
-        string vowels = "aeiouAEIOU";
-        char[] array = s.ToCharArray();
-
-        int i = 0;
-        int j = array.Length - 1;
-        while (i<j)
-        {
-            if (!vowels.Contains(array[i].ToString()))
-            {
-                i++;
-            }
-            else if(!vowels.Contains(array[j].ToString()))
-            {
-                j--;
-            }
-            else
-            {
-                char temp = array[i];
-                array[i++] = array[j];
-                array[j--] = temp;
-            }
-        }
-        string result = "";
-        foreach (char c in array)
-        {
-            result += c;
-        }
-
-        return result;
-    }
-    ///+++++++++++++++++++++++++ Time Limit Exceeded +++++++++++++++++++++++++
-
     // --------------- O(n) 112ms --------------- O(n) 27.3MB --------------- (23% 25%)
-    public string ReverseVowels_2(string s)
+    public string ReverseVowels_1(string s)
     {
         string vowels = "aeiouAEIOU";
         char[] chars = s.ToCharArray();
@@ -88,38 +49,6 @@ public class Solution345
         return new String(chars);
     }
 
-    // --------------- O(n) 88ms --------------- O(n) 26.2MB --------------- (95% 25%)
-    /*
-     * using IsVowel to Judge are much faster than Judging string.contains()
-     */
-    public string ReverseVowels_3(string s)
-    {
-        StringBuilder sb=new StringBuilder(s);
-        int i = 0;
-        int j = sb.Length - 1;
-        while (i<j)
-        {
-            while (i<j&&!IsVowel(sb[i]))
-            {
-                i++;
-            }
-
-            while (i<j && !IsVowel(sb[j]))
-            {
-                j--;
-            }
-
-            if (i < j)
-            {
-                char temp = sb[i];
-                sb[i++] = sb[j];
-                sb[j--] = temp;
-            }
-        }
-
-        return sb.ToString();
-    }
-
     private bool IsVowel(char c)
     {
         return c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' || c == 'A' || c == 'E' || c == 'I' ||
@@ -128,10 +57,11 @@ public class Solution345
 
     // --------------- O(n) 84ms --------------- O(n) 26.2MB --------------- (99% 25%) ※
     /*
+     * imorove 1
      * 1. use new String(chars) to make chars to string
      * 2. use IsVowel to judge rather than string.contains()
      */
-    public string ReverseVowels_4(string s)
+    public string ReverseVowels_1_1(string s)
     {
         char[] chars = s.ToCharArray();
         int i = 0;
@@ -157,5 +87,5 @@ public class Solution345
     }
 }
 /**************************************************************************************************************
- * ReverseVowels_4                                                                                            *
+ * ReverseVowels_2                                                                                            *
  **************************************************************************************************************/
