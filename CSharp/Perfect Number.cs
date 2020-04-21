@@ -17,34 +17,12 @@
  *******************************************************************************************************************************/
 
 public class Solution507
-{
-    ///+++++++++++++++++++++++++ Time Limited +++++++++++++++++++++++++
-    /*
-     * O(time) = O(n)
-     * this idea is true , but cost much time
-     */
-    public bool CheckPerfectNumber_1(int num)
-    {
-        int sum = 0;
-        int n = num - 1;
-        while (n > 0)
-        {
-            if (num % n == 0)
-            {
-                sum += n;
-            }
-
-            n--;
-        }
-
-        return sum == num;
-    }
-    
-    // --------------- O(n ^ 1/2) 748ms --------------- 14MB --------------- (23% 100%) ※
+{    
+    // --------------- O(n ^ 1/2) 748ms --------------- 14MB --------------- (23% 100%) 
     /*
      * use two point
      */
-    public bool CheckPerfectNumber_2(int num)
+    public bool CheckPerfectNumber_1(int num)
     {
         if (num <= 1) return false;
 
@@ -66,66 +44,40 @@ public class Solution507
 
         return count == num;
     }
-    
-    // --------------- O(n ^ 1/2) 944ms --------------- 14MB --------------- (5% 100%) 
+
+    // --------------- O(n ^ 1/2) 36ms --------------- 14MB --------------- (95% 100%) ※
     /*
-     * similar to 2
+     * O(time) = O(n ^ 1/2)
      */
-    public bool CheckPerfectNumber_2_2(int num)
+    public bool CheckPerfectNumber_2(int num)
     {
         if (num <= 1) return false;
 
         int sum = 1;
-        int maxNum = num;
-
-        for (int i = 2; i < maxNum; i++)
-        {
-            if (num % i == 0)
-            {
-                sum += i;
-                sum += num / i;
-                maxNum = num / i;
-            }
-
-            if (sum > num) break;
-        }
-
-        return sum == num;
-    }
-
-    // --------------- O(n ^ 1/2) 40ms --------------- 14MB --------------- (82% 100%) ※
-    /*
-     * O(time) = O(n ^ 1/2)
-     */
-    public bool CheckPerfectNumber_3(int num)
-    {
-        if (num <= 0) return false;
-
-        int sum = 0;
-        int n = 1;
+        int n = 2;
         while (n * n <= num)
         {
             if (num % n == 0)
             {
-                sum += n;
-                if (n * n < num) sum += num / n;
+                sum += num / n == n ? n : num / n + n;
+                if (sum > num) return false;
             }
 
             n++;
         }
 
-        return sum == 2 * num;
+        return sum == num;
     }
 
     /*
      * Math solution :  Euclid-Euler Theorem  
      */
-    public bool CheckPerfectNumber_4(int num)
+    public bool CheckPerfectNumber_3(int num)
     {
 
         return false;
     }
 }
 /**************************************************************************************************************
- * CheckPerfectNumber_1 CheckPerfectNumber_2 CheckPerfectNumber_3                                             *
+ * CheckPerfectNumber_1 CheckPerfectNumber_2                                                                  *
  **************************************************************************************************************/
