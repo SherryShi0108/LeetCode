@@ -24,28 +24,11 @@
 
 public class Solution7
 {
-    // --------------- O(n) 40ms --------------- 12.9MB --------------- (87% 100%) 
+    // --------------- O(n) 56ms --------------- 12.8MB --------------- (13% 100%) 
     /*
-     * need check overflow
+     * use long , not be fine
      */
     public int Reverse_1(int x)
-    {
-        bool flag = x > 0 ? true : false;
-        x = x > 0 ? x : -x;
-
-        int result = 0;
-        while (x > 0)
-        {
-            if (result != 0 && int.MaxValue / result < 10) { return 0; }
-            result = result * 10 + x % 10;
-            x = x / 10;
-        }
-        result = flag ? result : -result;
-        return result;
-    }
-
-    // --------------- O(n) 56ms --------------- 12.8MB --------------- (13% 100%) 
-    public int Reverse_2(int x)
     {
         long result = 0;
 
@@ -58,48 +41,45 @@ public class Solution7
 
         return (int)result;
     }
-
-    // --------------- O(n) 40ms --------------- 12.9MB --------------- (87% 100%) ※
+    
+    // --------------- O(n) 44ms --------------- 12.7MB --------------- (62% 100%) 
     /*
-     * improve 1+2
+     * amazing to check overflow
+     */
+    public int Reverse_2(int x)
+    {
+        int result = 0;
+        while (x!=0)
+        {
+            int temp = result * 10 + x % 10;
+            if ((temp - x % 10) / 10 != result) return 0;
+
+            result = temp;
+            x /= 10;
+        }
+
+        return result;
+    }
+    
+    // --------------- O(n) 40ms --------------- 12.9MB --------------- (87% 100%) 
+    /*
+     * -2147483648 to 2147483647
      */
     public int Reverse_3(int x)
     {
-        bool flag = x > 0 ? true : false;
-        x = x > 0 ? x : -x;
-
-        long result = 0;
-        while (x > 0)
-        {
-            result = result * 10 + x % 10;
-            x = x / 10;
-            if (result > int.MaxValue || result < int.MinValue) { return 0; };
-        }
-
-        result = flag ? result : -result;
-        return (int)result;
-    }
-
-    // --------------- O(n) 44ms --------------- 12.7MB --------------- (62% 100%) 
-    /*
-     * use newResult overflow
-     */
-    public int Reverse_4(int x)
-    {
         int result = 0;
-
         while (x != 0)
         {
-            int tail = x % 10;
-            int newResult = result * 10 + tail;
-            if ((newResult - tail) / 10 != result) { return 0; }
+            if (result > int.MaxValue / 10 || result == int.MaxValue / 10 && x % 10 > 7) return 0;
+            if (result < int.MinValue / 10 || result == int.MinValue / 10 && x % 10 < -8) return 0;
 
-            result = newResult;
-            x = x / 10;
+            result = result * 10 + x % 10;
+            x /= 10;
         }
+
         return result;
     }
 }
 /**************************************************************************************************************
- * Reverse_3 Reverse_4                                                                                        *
+ * Reverse_2                                                                                                  *
  **************************************************************************************************************/
