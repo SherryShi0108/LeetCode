@@ -61,6 +61,24 @@ public class Solution532
         } 
         return count;
     }
+    
+    // --------------- O(n) 116ms --------------- 32MB --------------- (58% 100%)
+    public int FindPairs_2(int[] nums, int k)
+    {
+        if (k < 0) return 0;
+        HashSet<int> h = new HashSet<int>();
+        HashSet<int> result = new HashSet<int>();
+
+        foreach (int i in nums)
+        {
+            if (h.Contains(i + k)) result.Add(i);
+            if (h.Contains(i - k)) result.Add(i - k);
+
+            h.Add(i);
+        }
+
+        return result.Count;
+    }
 }
 /**************************************************************************************************************
  * FindPairs_1                                                                                                *
