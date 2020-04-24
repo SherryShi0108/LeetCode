@@ -25,35 +25,11 @@ using System.Collections.Generic;
 
 public class Solution231
 {
-    // --------------- O(logn) 44ms --------------- 13.8MB --------------- (59% 10%)
-    /*
-     * attention: integer!!!
-     */
-    public bool IsPowerOfTwo_1(int n)
-    {
-        if (n < 1)
-        {
-            return false;
-        }
-
-        while (n > 1)
-        {
-            if (n % 2 > 0)
-            {
-                return false;
-            }
-
-            n = n / 2;
-        }
-
-        return true;
-    }
-    
     // --------------- O(logn) 40ms --------------- 15MB --------------- (82% 10%) ※
     /*
      * improve 1
      */
-    public bool IsPowerOfTwo_1_2(int n)
+    public bool IsPowerOfTwo_1(int n)
     {
         if (n < 1) return false;
 
@@ -74,15 +50,17 @@ public class Solution231
         return n > 0 && ((n & (n - 1)) == 0);
     }
     
-    // --------------- O(logn) 44ms --------------- 15MB --------------- (48% 10%)
+    // --------------- O(logn) 40ms --------------- 15MB --------------- (83% 10%)
     /*
      * attention : 0 | any num == 0
-     * int.MinValue donot have complement , same it's complement is 0 
+     * int.MinValue (n-1) is overflow 
      */
     public bool IsPowerOfTwo_2_2(int n)
     {
-        if (n == 0 || n == int.MinValue) return false;
-        return (n & (n - 1)) == 0;
+        return n != 0 && n != int.MinValue && (n & (n - 1)) == 0;
+        
+         // if (n == 0 || n == int.MinValue) return false;
+         // return (n & (n - 1)) == 0;
     }
 
     // --------------- O(1) 56ms --------------- 17.1MB --------------- (10% 10%)
