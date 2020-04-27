@@ -44,6 +44,32 @@ public class Solution507
 
         return count == num;
     }
+    
+    // --------------- O(n ^ 1/2) 928ms --------------- 14MB --------------- (18% 100%) 
+    /*
+     * use two point
+     */
+    public bool CheckPerfectNumber_1_1(int num)
+    {
+        if (num < 1) return false;
+
+        int i = 1;
+        int j = num;
+        int sum = 0;
+
+        while (i < j)
+        {
+            if (num % i == 0)
+            {
+                j = num / i;
+                sum += i == j ? i : i + j;
+            }
+
+            i++;
+        }
+
+        return sum == 2 * num;
+    }
 
     // --------------- O(n ^ 1/2) 36ms --------------- 14MB --------------- (95% 100%) ※
     /*
@@ -67,15 +93,6 @@ public class Solution507
         }
 
         return sum == num;
-    }
-
-    /*
-     * Math solution :  Euclid-Euler Theorem  
-     */
-    public bool CheckPerfectNumber_3(int num)
-    {
-
-        return false;
     }
 }
 /**************************************************************************************************************
