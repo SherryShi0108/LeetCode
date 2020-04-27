@@ -23,7 +23,7 @@
  *
  * Input: 4
  * Output: "1211"
- * ※
+ * 
  *******************************************************************************************************************************/
 
 public class Solution38
@@ -63,7 +63,44 @@ public class Solution38
         result += count.ToString() + temp;
         return result;
     }
+    
+    // --------------- O(n^2) 88ms --------------- 28MB ---------------(49% 6%) ※
+    /*
+     * !!! Attention : count.ToString() NOT count
+     */
+    public string CountAndSay_1_2(int n)
+    {
+        string result = "1";
+        while (n > 1)
+        {
+            result = CountAndSayMethod(result);
+            n--;
+        }
+
+        return result;
+    }
+    
+    private string CountAndSayMethod(string s)
+    {
+        string result = "";
+
+        int count = 1;
+        for (int i = 1; i < s.Length; i++)
+        {
+            if (s[i] == s[i - 1])
+            {
+                count++;
+            }
+            else
+            {
+                result = result + (count.ToString() + s[i - 1]);
+                count = 1;
+            }
+        }
+
+        return result + (count.ToString() + s[s.Length - 1]);
+    }
 }
 /**************************************************************************************************************
- * CountAndSay_1                                                                                              *
+ * CountAndSay_2                                                                                              *
  **************************************************************************************************************/
