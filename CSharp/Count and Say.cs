@@ -65,7 +65,7 @@ public class Solution38
         return result + (count.ToString() + s[s.Length - 1]);
     }
     
-     // --------------- O(n^2) 88ms --------------- 28MB ---------------(49% 6%) ※
+     // --------------- O(n^2) 88ms --------------- 28MB ---------------(50% 6%) ※
     /*
      * improve 1 
      */
