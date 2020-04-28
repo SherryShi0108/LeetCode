@@ -27,48 +27,12 @@
  *******************************************************************************************************************************/
 
 public class Solution38
-{
-    // --------------- O(n^2) 112ms --------------- 28MB ---------------(6% 6%)
-    public string CountAndSay_1(int n)
-    {
-        string result = "1";
-        for (int i = 1; i < n; i++)
-        {
-            result = CountId(result);
-        }
-
-        return result;
-    }
-
-    public string CountId(string s)
-    {
-        string result = "";
-        char temp = s[0];
-        int count = 1;
-        for (int i = 1; i < s.Length; i++)
-        {
-            if (s[i] == temp)
-            {
-                count++;
-            }
-            else
-            {
-                result += count.ToString() + temp;
-
-                count = 1;
-                temp = s[i];
-            }
-        }
-
-        result += count.ToString() + temp;
-        return result;
-    }
-    
-    // --------------- O(n^2) 88ms --------------- 28MB ---------------(49% 6%) ※
+{    
+    // --------------- O(n^2) 88ms --------------- 28MB ---------------(49% 6%) 
     /*
      * !!! Attention : count.ToString() NOT count
      */
-    public string CountAndSay_1_2(int n)
+    public string CountAndSay_1(int n)
     {
         string result = "1";
         while (n > 1)
@@ -100,7 +64,44 @@ public class Solution38
 
         return result + (count.ToString() + s[s.Length - 1]);
     }
+    
+     // --------------- O(n^2) 88ms --------------- 28MB ---------------(49% 6%) ※
+    /*
+     * improve 1 
+     */
+    public string CountAndSay_1_2(int n)
+    {
+        string result = "1";
+        while (n > 1)
+        {
+            result = SayString(result);
+            n--;
+        }
+
+        return result;
+    }
+
+    private string SayString(string S)
+    {
+        string result = "";
+
+        int count = 1;
+        for (int i = 0; i < S.Length; i++)
+        {
+            if (i == S.Length - 1 || S[i] != S[i + 1])
+            {
+                result += count.ToString() + S[i];
+                count = 1;
+            }
+            else
+            {
+                count++;
+            }
+        }
+
+        return result;
+    }
 }
 /**************************************************************************************************************
- * CountAndSay_2                                                                                              *
+ * CountAndSay_1                                                                                              *
  **************************************************************************************************************/
