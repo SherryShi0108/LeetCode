@@ -114,8 +114,37 @@ public class Solution830
 
         return L;
     }
+    
+     // --------------- O(n) 232ms --------------- 32MB --------------- (83% 33%)  ※
+    /*
+     * improve 2
+     */
+    public IList<IList<int>> LargeGroupPositions_2_2(string S)
+    {
+        List<IList<int>> L = new List<IList<int>>();
+        int count = 1;
 
-    // --------------- O(n) 232ms --------------- 32MB --------------- (76% 33%) ※
+        for (int i = 0; i < S.Length; i++)
+        {
+            if (i == S.Length - 1 || S[i] != S[i + 1])
+            {
+                if (count >= 3)
+                {
+                    L.Add(new List<int>() { i - count + 1, i });
+                }
+
+                count = 1;
+            }
+            else
+            {
+                count++;
+            }
+        }
+
+        return L;
+    }
+
+    // --------------- O(n) 232ms --------------- 32MB --------------- (76% 33%) 
     /*
      * use two point
      */
@@ -144,5 +173,5 @@ public class Solution830
     }
 }
 /**************************************************************************************************************
- * LargeGroupPositions_1 LargeGroupPositions_3                                                                *
+ * LargeGroupPositions_2 LargeGroupPositions_3                                                                *
  **************************************************************************************************************/
