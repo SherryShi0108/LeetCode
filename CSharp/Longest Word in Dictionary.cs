@@ -52,10 +52,39 @@ public class Solution720
         return result;
     }
 
+     // --------------- O(n * m) 144ms --------------- 30MB --------------- (88% 100%)
     /*
-     * use trie tree
+     * Brute Force
      */
     public string LongestWord_2(string[] words)
+    {
+        string result = "";
+        HashSet<string> h = new HashSet<string>(words);
+        foreach (string word in words)
+        {
+            if (word.Length > result.Length || word.Length == result.Length && word.CompareTo(result) < 0)
+            {
+                bool flag = true;
+                for (int i = 1; i < word.Length; i++)
+                {
+                    if (!h.Contains(word.Substring(0, i)))
+                    {
+                        flag = false;
+                        break;
+                    }
+                }
+
+                if (flag) result = word;
+            }
+        }
+
+        return result;
+    }
+    
+    /*
+     * use trie + Depth-First Search
+     */
+    public string LongestWord_3(string[] words)
     {
         return "";
     }
