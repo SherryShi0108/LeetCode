@@ -72,10 +72,9 @@ public class Solution38
     public string CountAndSay_1_2(int n)
     {
         string result = "1";
-        while (n > 1)
+        while (--n > 0)
         {
             result = SayString(result);
-            n--;
         }
 
         return result;
@@ -84,18 +83,13 @@ public class Solution38
     private string SayString(string S)
     {
         string result = "";
-
-        int count = 1;
-        for (int i = 0; i < S.Length; i++)
+        int firstIndex = 0;
+        for (int i = 0; i < s.Length; i++)
         {
-            if (i == S.Length - 1 || S[i] != S[i + 1])
+            if (i == s.Length - 1 || s[i] != s[i + 1])
             {
-                result += count.ToString() + S[i];
-                count = 1;
-            }
-            else
-            {
-                count++;
+                result += (i - firstIndex + 1).ToString() + s[i];
+                firstIndex = i + 1;
             }
         }
 
