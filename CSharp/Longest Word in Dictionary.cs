@@ -29,26 +29,26 @@ using System.Collections.Generic;
 
 public class Solution720
 {
-    // --------------- O(n) 320ms --------------- 30.5MB --------------- (60% 100%)
+    // --------------- O(n) 320ms --------------- 33MB --------------- (60% 100%)
     public string LongestWord_1(string[] words)
     {
-        string[] x = (string[])words.Clone();
-        Array.Sort(x);
-
-        HashSet<string> H = new HashSet<string>();
+        Array.Sort(words);
+        HashSet<string> h = new HashSet<string>();
         string result = "";
-        int count = 0;
 
-        foreach (string item in x)
+        foreach (string word in words)
         {
-            string t = item.Substring(0, item.Length - 1);
-            if (H.Contains(t) || item.Length == 1)
+            if (word.Length == 1 || h.Contains(word.Substring(0, word.Length - 1)))
             {
-                H.Add(item);
-                result = item.Length > count ? item : result;
-                count = item.Length > count ? item.Length : count;
+                h.Add(word);
+
+                if (word.Length > result.Length)
+                {
+                    result = word;
+                }
             }
         }
+
         return result;
     }
 
