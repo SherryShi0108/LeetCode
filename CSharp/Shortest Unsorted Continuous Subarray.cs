@@ -43,6 +43,29 @@ public class Solution581
 
         return R - L > 0 ? R - L + 1 : 0 ;
     }
+    
+    // --------------- O(nlogn) 136ms --------------- O(n) 32MB --------------- (47% 100%)
+    /*
+     * similar to 1
+     */
+    public int FindUnsortedSubarray_1_2(int[] nums)
+    {
+        int[] copy = (int[])nums.Clone();
+        Array.Sort(copy);
+
+        int L = nums.Length;
+        int R = 0;
+        for (int i = 0; i < nums.Length; i++)
+        {
+            if (nums[i] != copy[i])
+            {
+                if (L > i) { L = i; }
+                R = i;
+            }
+        }
+
+        return R > L ? R - L + 1 : 0;
+    }
 
     // --------------- O(nlogn) 152ms --------------- O(n) 30.3MB --------------- (17% 5%)
     /*
