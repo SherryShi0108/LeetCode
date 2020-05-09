@@ -19,7 +19,7 @@ public class Solution434
 {
     // --------------- O(n) 68ms --------------- 21.3MB --------------- (96% 50%) 
     /*
-     * it's important to use (i==0 || s[i-1]==' ')
+     * it's important to use (i == 0 || s[i - 1] == ' ')
      */
     public int CountSegments_1(string s)
     {
@@ -27,6 +27,24 @@ public class Solution434
         for (int i = 0; i < s.Length; i++)
         {
             if ((i == 0 || s[i - 1] == ' ') && s[i] != ' ')
+            {
+                count++;
+            }
+        }
+
+        return count;
+    }
+    
+    // --------------- O(n) 68ms --------------- 21.3MB --------------- (96% 50%) 
+    /*
+     * it's important to use (i == s.Length - 1 || s[i + 1] == ' ')
+     */
+    public int CountSegments_1_1(string s)
+    {
+        int count = 0;
+        for (int i = 0; i < s.Length; i++)
+        {
+            if (s[i] != ' ' && (i == s.Length - 1 || s[i + 1] == ' '))
             {
                 count++;
             }
@@ -56,5 +74,5 @@ public class Solution434
     }
 }
 /**************************************************************************************************************
- * CountSegments_2                                                                                            *
+ * CountSegments_1 / 2                                                                                        *
  **************************************************************************************************************/
