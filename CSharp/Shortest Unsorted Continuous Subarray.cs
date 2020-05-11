@@ -90,7 +90,7 @@ public class Solution581
         return R - L > 0 ? R - L + 1 : 0;
     }
 
-    // --------------- O(n) 128ms --------------- O(1) 29.9MB --------------- (78% 37%) ※ 
+    // --------------- O(n) 128ms --------------- O(1) 29.9MB --------------- (78% 37%)  
     public int FindUnsortedSubarray_3(int[] nums)
     {
         //if (nums.Length < 2 || nums == null) { return 0; }
@@ -139,6 +139,26 @@ public class Solution581
 
         return maxIndex - minIndex + 1;
     }
+    
+    // --------------- O(n) 124ms --------------- O(1) 32MB --------------- (75% 100%) ※
+    public int FindUnsortedSubarray_3_3(int[] nums)
+    {
+        int maxIndex = 0;
+        int minIndex = 0;
+
+        int maxValue = int.MinValue;
+        int minValue = int.MaxValue;
+
+        for (int i = 0; i < nums.Length; i++)
+        {
+            maxValue = maxValue > nums[i] ? maxValue : nums[i];
+            maxIndex = nums[i] < maxValue ? i : maxIndex;
+
+            minValue = minValue < nums[nums.Length - 1 - i] ? minValue : nums[nums.Length - 1 - i];
+            minIndex = nums[nums.Length - 1 - i] > minValue ? nums.Length - 1 - i : minIndex;
+        }
+
+        return maxIndex > minIndex ? maxIndex - minIndex + 1 : 0;
 }
 /**************************************************************************************************************
  * FindUnsortedSubarray_1 FindUnsortedSubarray_3                                                              *
