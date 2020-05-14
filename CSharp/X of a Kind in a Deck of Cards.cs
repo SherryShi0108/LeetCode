@@ -38,38 +38,9 @@
 using System.Collections.Generic; //Dictionary名称空间
 
 public class Solution914
-{
-    ///+++++++++++++++++++++++++ Error +++++++++++++++++++++++++
-    /*
-     *     // [0,0,0,1,1,1,2,2,2] should be true
-     *     X >= 2 !!! not X = 2 !!!
-     *     You need to read the topic carefully!
-     */
+{    
+    // --------------- O(n) 124ms --------------- 26.6MB --------------- (47% 100%)
     public bool HasGroupsSizeX_1(int[] deck)
-    {
-        Dictionary<int, int> d = new Dictionary<int, int>();
-        for (int i = 0; i < deck.Length; i++)
-        {
-            if (d.ContainsKey(deck[i]))
-            {
-                d.Remove(deck[i]);
-            }
-            else
-            {
-                d[deck[i]] = 1;
-            }
-        }
-
-        if (d.Count > 0)
-        {
-            return false;
-        }
-        return true;
-    }
-    ///+++++++++++++++++++++++++ Error +++++++++++++++++++++++++
-    
-    // --------------- O(n) 124ms --------------- 26.6MB --------------- (42% 100%)
-    public bool HasGroupsSizeX_2(int[] deck)
     {
         Dictionary<int, int> d = new Dictionary<int, int>();
         for (int i = 0; i < deck.Length; i++)
@@ -95,7 +66,7 @@ public class Solution914
             bool flag = true;
             foreach (var item in d)
             {
-                if (item.Value % i != 0) { flag = false; }
+                if (item.Value % i != 0) { flag = false; break;}
             }
             if (flag)
             {
@@ -105,11 +76,43 @@ public class Solution914
         return false;
     }
     
-    /* using gcd , cannot understand */
-    public bool HasGroupsSizeX_3(int[] deck)
+    // --------------- O(n) 112ms --------------- 32MB --------------- (65% 100%)
+    /*
+     * using gcd , Greatest Common Divisor 
+     */
+    public bool HasGroupsSizeX_2(int[] deck)
     {
+        int[] count = new int[10000];
+
+        foreach (int i in deck)
+        {
+            count[i]++;
+        }
+
+        int temp = -1;
+        for (int i = 0; i < 10000; i++)
+        {
+            if (count[i] > 0)
+            {
+                if (temp == -1)
+                {
+                    temp = count[i];
+                }
+                else
+                {
+                    temp = gcd(temp, count[i]);
+                }
+            }
+        }
+
+        return temp >= 2;
+    }
+
+    public int gcd(int x, int y)
+    {
+        return x == 0 ? y : gcd(y % x, x);
     }
 }
 /**************************************************************************************************************
- * HasGroupsSizeX_2 / 3                                                                                       *
+ * HasGroupsSizeX_1 HasGroupsSizeX_2                                                                          *
  **************************************************************************************************************/
