@@ -67,38 +67,25 @@ public class Solution884
         return result;
     }
 
-    // --------------- O(n) 268ms --------------- 30.3MB ---------------(33% 100%)
+    // --------------- O(n) 244ms --------------- 32MB ---------------(55% 100%)
     /*
      * similar to 1, but reduce a for()
      */
     public string[] UncommonFromSentences_2(string A, string B)
     {
-        string C = A + ' ' + B;
-        string[] c = C.Split(' ');
         Dictionary<string, int> d = new Dictionary<string, int>();
-
-        for (int i = 0; i < c.Length; i++)
+        foreach (string s in (A + ' ' + B).Split(' '))
         {
-            if (d.ContainsKey(c[i]))
-            {
-                d[c[i]]++;
-            }
-            else
-            {
-                d[c[i]] = 1;
-            }
+            d[s] = d.ContainsKey(s) ? d[s] + 1 : 1;
         }
 
-        List<string> result = new List<string>();
-        for (int i = 0; i < c.Length; i++)
+        List<string> L = new List<string>();
+        foreach (var i in d)
         {
-            if (d[c[i]] == 1)
-            {
-                result.Add(c[i]);
-            }
+            if (i.Value == 1) L.Add(i.Key);
         }
 
-        return result.ToArray();
+        return L.ToArray();
     }
 
     // --------------- O(n) 252ms --------------- 30.3MB ---------------(93% 100%)
