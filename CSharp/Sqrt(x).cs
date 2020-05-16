@@ -28,7 +28,6 @@ public class Solution69
      */
     public int MySqrt_1(int x)
     {
-        if (x == 0) return 0;
         int i = 1;
         int j = x;
         while (i <= j)
