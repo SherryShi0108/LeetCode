@@ -200,7 +200,7 @@ C#
 |	195	|	|	|	| | |
 |	196	|	|	|	| | |
 |	197	|	|	|	| | |
-|	198	|	|	|	| | |
+|	198	|[House Robber](https://leetcode.com/problems/house-robber/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/House%20Robber.cs)| | ♥ | |
 |	199	|	|	|	| | |
 |	200	|	|	|	| | |
 |	201	|	|	|	| | |
@@ -305,7 +305,7 @@ C#
 |	300	|	|	|	| | |
 |	301	|	|	|	| | |
 |	302	|♣ Smallest Rectangle Enclosing Black Pixels 	|	|	| | |
-|	303	|	|	|	| | |
+|	303	|[Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Range%20Sum%20Query%20-%20Immutable.cs)| | ♥ | |
 |	304	|	|	|	| | |
 |	305	|♣ Number of Islands II 	|	|	| | |
 |	306	|	|	|	| | |
@@ -477,7 +477,7 @@ C#
 |	472	|	|	|	| | |
 |	473	|	|	|	| | |
 |	474	|	|	|	| | |
-|	475	|	|	|	| | |
+|	475	|[Heaters](https://leetcode.com/problems/heaters/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Heaters.cs)|	| ♥ | |
 |	476	|	|	|	| | |
 |	477	|	|	|	| | |
 |	478	|	|	|	| | |
@@ -821,7 +821,7 @@ C#
 |	816	|	|	|	| | |
 |	817	|	|	|	| | |
 |	818	|	|	|	| | |
-|	819	|	|	|	| | |
+|	819	|[Most Common Word](https://leetcode.com/problems/most-common-word/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Most%20Common%20Word.cs)| | ♥ | |
 |	820	|	|	|	| | |
 |	821	|	|	|	| | |
 |	822	|	|	|	| | |
@@ -861,7 +861,7 @@ C#
 |	856	|	|	|	| | |
 |	857	|	|	|	| | |
 |	858	|	|	|	| | |
-|	859	|	|	|	| | |
+|	859	|[Buddy Strings](https://leetcode.com/problems/buddy-strings/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Buddy%20Strings.cs)|	| ♥ | |
 |	860	|	|	|	| | |
 |	861	|	|	|	| | |
 |	862	|	|	|	| | |
