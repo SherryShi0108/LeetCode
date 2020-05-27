@@ -22,17 +22,20 @@
 
 public class Solution551
 {
-    // --------------- O(n) 84ms --------------- 21.4MB --------------- (24% 100%)
-    public bool CheckRecord_1(string s)
+    // --------------- O(n) 76ms --------------- 22MB --------------- (54% 100%)
+    public bool CheckRecord_1(string S)
     {
-        if (s.Contains("LLL")) return false;
-        int count = 0;
-        foreach (char c in s)
+        int countA = 0;
+        for (int i = 0; i < S.Length; i++)
         {
-            if (c == 'A')
+            if (S[i] == 'A')
             {
-                count++;
-                if (count > 1) return false;
+                countA++;
+                if (countA > 1) return false;
+            }
+            else if (S[i] == 'L')
+            {
+                if (i > 1 && S[i - 1] == 'L' && S[i - 2] == 'L') return false;
             }
         }
 
