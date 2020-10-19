@@ -16,7 +16,7 @@
  * Output: length = 5 ([nums=[0,1,3,0,4,....]) Note that the order of those five elements can be arbitrary.
  * 
  *******************************************************************************************************************************/
-public class Solution
+public class Solution26
 {
     // --------------- O(n) 248ms --------------- 28.4MB ---------------
     public int RemoveElement_1(int[] nums, int val)
