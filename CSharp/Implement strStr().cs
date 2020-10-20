@@ -52,6 +52,35 @@ public class Solution28
 
         return -1;
     }
+    
+    // --------------- 68ms --------------- 23MB --------------- (97% 11%) 
+    public int StrStr_1_2(string haystack, string needle)
+    {
+        if (needle.Length == 0) return 0;
+        if (haystack.Length == 0) return -1;
+
+        for (int i = 0; i <= haystack.Length - needle.Length; i++)
+        {
+            if (haystack[i] == needle[0])
+            {
+                for (int j = 0; j < needle.Length; j++)
+                {
+                    if (haystack[i + j] != needle[j])
+                    {
+                        break;
+                    }
+
+                    if (j == needle.Length - 1)
+                    {
+                        return i;
+                    }
+                }
+            }
+        }
+
+        return -1;
+    }
+
 
     // --------------- 76ms --------------- 21.8MB --------------- (83% 7%) ※
     /*
@@ -77,6 +106,35 @@ public class Solution28
                 {
                     break;
                 }
+            }
+        }
+    }
+    
+     // --------------- 64ms --------------- 23MB --------------- (99% 11%) ※
+    public int StrStr_2_2(string haystack, string needle)
+    {
+        int i = 0;
+        int j = 0;
+        while (true)
+        {
+            if (j == needle.Length)
+            {
+                return i;
+            }
+
+            if (i + j == haystack.Length)
+            {
+                return -1;
+            }
+
+            if (haystack[i + j] == needle[j])
+            {
+                j++;
+            }
+            else
+            {
+                i++;
+                j = 0;
             }
         }
     }
