@@ -17,7 +17,7 @@
 using System; // Math.max 名称空间
 using System.Linq; // nums.Max() 名称空间
 
-public class Solution
+public class Solution53
 {
     // --------------- O(n) 100ms --------------- 23.3MB ---------------  
     /*
