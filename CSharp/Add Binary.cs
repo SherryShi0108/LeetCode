@@ -21,56 +21,11 @@ using System.Collections.Generic;
 
 public class Solution67
 {
-    ///+++++++++++++++++++++++++ Error +++++++++++++++++++++++++
-    /*
-     * stack overflow , it's all "add"
-     */
-    public string AddBinary_1(string a, string b)
-    {
-        int x = ChangeStringToInt(a);
-        int y = ChangeStringToInt(b);
-        int sum = x + y;
-        if (sum == 0)
-        {
-            return "0";
-
-        }
-
-        List<int> L = new List<int>();
-        while (sum > 0)
-        {
-            L.Add(sum % 2);
-            sum /= 2;
-        }
-
-        string result = string.Empty;
-
-        foreach (int t in L)
-        {
-            result = t + result;
-        }
-
-        return result;
-    }
-
-    ///+++++++++++++++++++++++++ Error +++++++++++++++++++++++++
-
-    public int ChangeStringToInt(string s)
-    {
-        int result = 0;
-        for (int i = 0; i < s.Length; i++)
-        {
-            result = result * 2 + int.Parse(s[i].ToString());
-        }
-
-        return result;
-    }
-
     // --------------- O(n) 96ms --------------- 25.3MB --------------- (45% 8%)
     /*
      * "0" "0" should be "0" not "00"
      */
-    public string AddBinary_2(string a, string b)
+    public string AddBinary_1(string a, string b)
     {
         List<int> L1 = new List<int>();
         for (int i = a.Length - 1; i >= 0; i--)
@@ -107,7 +62,7 @@ public class Solution67
     }
 
     // --------------- O(n) 88ms --------------- 24.4MB --------------- (90% 8%) ※
-    public string AddBinary_3(string a, string b)
+    public string AddBinary_2(string a, string b)
     {
         string result = "";
         int k = 0;
@@ -130,7 +85,7 @@ public class Solution67
     /*
      * similar to 3
      */
-    public string AddBinary_4(string a, string b)
+    public string AddBinary_3(string a, string b)
     {
         string result = "";
         int k = 0;
@@ -158,5 +113,5 @@ public class Solution67
     }
 }
 /**************************************************************************************************************
- * AddBinary_3 / AddBinary_4                                                                                  *
+ * AddBinary_2 / AddBinary_3                                                                                  *
  **************************************************************************************************************/
