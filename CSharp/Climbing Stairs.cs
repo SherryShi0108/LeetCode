@@ -44,7 +44,7 @@ public class Solution70
         return arrays[n];
     }
 
-    // --------------- O(n) 56ms --------------- O(1) 14.6MB --------------- (9% 6%) ※
+    // --------------- O(n) 56ms --------------- O(1) 14.6MB --------------- (9% 6%) 
     public int ClimbStairs_2(int n)
     {
         if (n <= 2) return n;
@@ -61,6 +61,14 @@ public class Solution70
         }
 
         return result;
+    }
+    
+    // --------------- O(n) 56ms --------------- O(1) 14.6MB --------------- (9% 6%) ※
+    public int ClimbStairs2_2(int n)
+    {
+        if (n == 1) return 1;
+        if (n == 2) return 2;
+        return ClimbStairs2_2(n - 1) + ClimbStairs2_2(n - 2);
     }
 
     // --------------- O(n) 40ms --------------- O(1) 14.7MB --------------- (67% 6%)
