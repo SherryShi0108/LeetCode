@@ -43,26 +43,8 @@ public class Solution268
         return -1;
     }
 
-    // --------------- HashTable --------------- O(n) 172ms --------------- 34.3MB --------------- (5% 5%)
-    public int MissingNumber_2(int[] nums)
-    {
-        Dictionary<int, int> d = new Dictionary<int, int>();
-        for (int i = 0; i < nums.Length; i++)
-        {
-            d.Add(nums[i], 1);
-        }
-        for (int i = 0; i < nums.Length + 1; i++)
-        {
-            if (!d.ContainsKey(i))
-            {
-                return i;
-            }
-        }
-        return -1;
-    }
-
     // --------------- O(n) 116ms --------------- 27.9MB --------------- (53% 15%)
-    public int MissingNumber_3(int[] nums)
+    public int MissingNumber_2(int[] nums)
     {
         long sum = 0; long sum2 = 0;
         for (int i = 0; i < nums.Length + 1; i++)
@@ -77,22 +59,8 @@ public class Solution268
         return (int)(sum - sum2);
     }
 
-    // --------------- O(n) 132ms --------------- 27.7MB --------------- (15% 19%)
-    public int MissingNumber_4(int[] nums)
-    {
-        long sum = nums.Length;
-        long sum2 = 0;
-        for (int i = 0; i < nums.Length; i++)
-        {
-            sum += i;
-            sum2 += nums[i];
-        }
-        return (int)(sum - sum2);
-
-    }
-
     // --------------- Gauss' Formula --------------- O(n) 144ms --------------- 27.6MB --------------- (7% 25%)
-    public int MissingNumber_5(int[] nums)
+    public int MissingNumber_2_2(int[] nums)
     {
         long sum = nums.Length * (nums.Length + 1) / 2;
         for (int i = 0; i < nums.Length; i++)
@@ -102,8 +70,8 @@ public class Solution268
         return (int)sum;
     }
 
-    // --------------- Bit Manipulation --------------- O(n) 148ms --------------- 27.5MB --------------- (6% 38%) ※
-    public int MissingNumber_6(int[] nums)
+    // --------------- Bit Manipulation --------------- O(n) 148ms --------------- 27.5MB --------------- (6% 38%) 
+    public int MissingNumber_3(int[] nums)
     {
         int missing = nums.Length;
 
@@ -112,7 +80,20 @@ public class Solution268
 
         return missing;
     }
+    
+    // --------------- O(n) 116ms --------------- 30MB --------------- (37% 32) ※
+    public int MissingNumber_3_2(int[] nums)
+    {
+        int result = 0;
+
+        for (int i = 0; i < nums.Length; i++)
+        {
+            result ^= nums[i] ^ (i+1);
+        }
+        
+        return result;
+    }
 }
 /**************************************************************************************************************
- *  MissingNumber_1/2 MissingNumber_3/4/5 MissingNumber_6                                                     *
+ *  MissingNumber_2 / MissingNumber_3                                                                         *
  **************************************************************************************************************/
