@@ -164,6 +164,31 @@ public class Solution475
 
         return result;
     }
+    
+    // Difficult to understand
+    public int FindRadius_3_2(int[] houses, int[] heaters)
+    {
+        Array.Sort(houses);
+        Array.Sort(heaters);
+
+        int Length = 0;
+        int temp = 0;
+
+        for (int i = 0; i < houses.Length; i++)
+        {
+            int current = houses[i];
+
+            while (temp < heaters.Length - 1 &&
+                   Math.Abs(heaters[temp + 1] - current) <= Math.Abs(heaters[temp] - current))
+            {
+                temp++;
+            }
+
+            Length = Length > Math.Abs(heaters[temp] - current) ? Length : Math.Abs(heaters[temp] - current);
+        }
+
+        return Length;
+    }
 }
 /**************************************************************************************************************
  * FindRadius_1 FindRadius_2 FindRadius_3                                                                     *
