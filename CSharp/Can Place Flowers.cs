@@ -25,44 +25,8 @@
 
 public class Solution605
 {
-    ///+++++++++++++++++++++++++ Error +++++++++++++++++++++++++
-    /*
-     * Runtime Error [0]
-     * Index was outside the bounds of the array.
-     */
-    public bool CanPlaceFlowers_1(int[] flowerbed, int n)
-    {
-        int i = 0;
-        int count = 0;
-        while (i < flowerbed.Length)
-        {
-            if (flowerbed[i] == 0)
-            {
-                if (i == 0 && flowerbed[i + 1] == 0)
-                {
-                    count++;
-                    flowerbed[i] = 1;
-                }
-                else if (i == flowerbed.Length - 1 && flowerbed[i - 1] == 0)
-                {
-                    count++;
-                    flowerbed[i] = 1;
-                }
-                else if (flowerbed[i - 1] == 0 && flowerbed[i + 1] == 0)
-                {
-                    count++;
-                    flowerbed[i] = 1;
-                }
-            }
-            i++;
-        }
-
-        return count >= n;
-    }
-    ///+++++++++++++++++++++++++ Error +++++++++++++++++++++++++
-
     // --------------- O(n) 104ms --------------- 28MB --------------- (99.2% 6%)
-    public bool CanPlaceFlowers_2(int[] flowerbed, int n)
+    public bool CanPlaceFlowers_1(int[] flowerbed, int n)
     {
         int i = 0;
         int count = 0;
@@ -78,9 +42,33 @@ public class Solution605
 
         return count >= n;
     }
+    
+    // --------------- O(n) 104ms --------------- 28MB --------------- (99.2% 6%) ※
+    public bool CanPlaceFlowers_1_2(int[] flowerbed, int n)
+    {
+        int count = 0;
+        for (int i = 0; i < flowerbed.Length; i++)
+        {
+            if (flowerbed[i] == 0)
+            {
+                if ((i == 0 || flowerbed[i - 1] == 0)
+                    && (i == flowerbed.Length - 1 || flowerbed[i + 1] == 0))
+                {
+                    count++;
+                    flowerbed[i] = 1;
+                    
+                    // i++; // less time
+                }
+            }
+            
+            // if(count>=n) return true;
+        }
+
+        return count >= n;
+    }
 
     // --------------- O(n) 100ms --------------- 28MB --------------- (100%)
-    public bool CanPlaceFlowers_3(int[] flowerbed, int n)
+    public bool CanPlaceFlowers_1_3(int[] flowerbed, int n)
     {
         int i = 0;
         int count = 0;
@@ -110,7 +98,7 @@ public class Solution605
     /*
      * easy-understanding
      */
-    public bool CanPlaceFlowers_4(int[] flowerbed, int n)
+    public bool CanPlaceFlowers_2(int[] flowerbed, int n)
     {
         int count = 1;
         int result = 0;
@@ -139,7 +127,7 @@ public class Solution605
      *  !!! The input array won't violate no-adjacent-flowers rule. !!!
      *  means 1 will not near 1 !!!
      */
-    public bool CanPlaceFlowers_5(int[] flowerbed, int n)
+    public bool CanPlaceFlowers_3(int[] flowerbed, int n)
     {
         int capacity = 0;
 
@@ -168,45 +156,7 @@ public class Solution605
         }
         return capacity >= n;
     }
-    
-    // --------------- O(n) 104ms --------------- 28.9MB --------------- (98% 100%)
-    public bool CanPlaceFlowers_6(int[] flowerbed, int n)
-    {
-        int count = 0;
-        for (int i = 0; i < flowerbed.Length; i++)
-        {
-            if (flowerbed[i] == 0)
-            {
-                if (i == 0)
-                {
-                    if (flowerbed.Length == 1 || flowerbed[i + 1] == 0)
-                    {
-                        flowerbed[i] = 1;
-                        count++;
-                    }
-                }
-                else if (i == flowerbed.Length - 1)
-                {
-                    if (flowerbed[flowerbed.Length - 2] == 0)
-                    {
-                        flowerbed[i] = 1;
-                        count++;
-                    }
-                }
-                else
-                {
-                    if (flowerbed[i - 1] == 0 && flowerbed[i + 1] == 0)
-                    {
-                        flowerbed[i] = 1;
-                        count++;
-                    }
-                }
-            }
-        }
-
-        return count >= n;
-    }
 }
 /**************************************************************************************************************
- * CanPlaceFlowers_2 CanPlaceFlowers_4 CanPlaceFlowers_5   6！！！                                             *
+ * CanPlaceFlowers_1 CanPlaceFlowers_2 CanPlaceFlowers_3                                                      *
  **************************************************************************************************************/
