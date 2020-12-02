@@ -23,45 +23,11 @@ using System.Collections.Generic;
 
 public class Solution645
 {
-    // --------------- O(n) 312ms --------------- 44.3MB ---------------(22% 100%)
-    public int[] FindErrorNums_1(int[] nums)
-    {
-        Dictionary<int, int> d = new Dictionary<int, int>();
-        for (int i = 1; i < nums.Length + 1; i++)
-        {
-            d[i] = 1;
-        }
-
-        int x = 0; int y = 0;
-        for (int i = 0; i < nums.Length; i++)
-        {
-            if (d.ContainsKey(nums[i]))
-            {
-                if (d[nums[i]] == 0)
-                {
-                    x = nums[i];
-                }
-                else
-                {
-                    d[nums[i]]--;
-                }
-            }
-        }
-        foreach (var item in d)
-        {
-            if (item.Value == 1)
-            {
-                y = item.Key;
-            }
-        }
-        return new int[] { x, y };
-    }
-
     // --------------- O(n) 388ms --------------- 44.3MB ---------------(7% 100%)
     /*
-     * similar to 1
+     *  use Dictionary
      */
-    public int[] FindErrorNums_2(int[] nums)
+    public int[] FindErrorNums_1(int[] nums)
     {
         Dictionary<int, int> d = new Dictionary<int, int>();
         int x = 0; int y = 0;
@@ -91,7 +57,7 @@ public class Solution645
     /*
      * use array
      */
-    public int[] FindErrorNums_3(int[] nums)
+    public int[] FindErrorNums_2(int[] nums)
     {
         int[] a = new int[nums.Length + 1];
         int x = 0; int y = 0;
@@ -112,7 +78,7 @@ public class Solution645
     /*
      * use XOR
      */
-    public int[] FindErrorNums_4(int[] nums)
+    public int[] FindErrorNums_3(int[] nums)
     {
         int sum = 0;
         int number1 = 0;
@@ -134,8 +100,8 @@ public class Solution645
     }
     
     // --------------- O(n) 264ms --------------- 43.7MB ---------------(96% 100%) ※
-    /* improve 4 */
-    public int[] FindErrorNums_5(int[] nums)
+    /* improve 3 */
+    public int[] FindErrorNums_3_2(int[] nums)
     {
         int t = 0;
         HashSet<int> H=new HashSet<int>();
@@ -149,5 +115,5 @@ public class Solution645
     }
 }
 /**************************************************************************************************************
- * FindErrorNums_3 FindErrorNums_5                                                                            *
+ * FindErrorNums_2 FindErrorNums_3                                                                            *
  **************************************************************************************************************/
