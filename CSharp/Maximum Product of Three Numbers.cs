@@ -21,128 +21,53 @@
 
 public class Solution628
 {
-    ///+++++++++++++++++++++++++ Error +++++++++++++++++++++++++
-    /*
-     *     " - * - = + "
-     * if input: [-4,-3,-2,-1,60] 
-     * this method is -2 * -1 * 60 = 120, but should be -4 * -3 * 60 = 720
-     */
+    // --------------- O(n) 132ms --------------- 35MB --------------- (86% 51%)  ※
     public int MaximumProduct_1(int[] nums)
     {
-        int[] d = new int[3] { int.MinValue, int.MinValue, int.MinValue };
-        d[0] = nums[0];
-        for (int i = 1; i < nums.Length; i++)
-        {
-            if (nums[i] >= d[0])
-            {
-                d[2] = d[1];
-                d[1] = d[0];
-                d[0] = nums[i];
-            }
-            else if (nums[i] < d[0] && nums[i] >= d[1])
-            {
-                d[2] = d[1];
-                d[1] = nums[i];
-            }
-            else if (nums[i] > d[2] && nums[i] < d[1])
-            {
-                d[2] = nums[i];
-            }
+        int max1 = int.MinValue;
+        int max2 = int.MinValue;
+        int max3 = int.MinValue;
 
-        }
-
-        return d[0] * d[1] * d[2];
-    }
-    ///+++++++++++++++++++++++++ Error +++++++++++++++++++++++++
-
-    // --------------- O(n) 144ms --------------- 32.5MB --------------- (70% 6%) 
-    public int MaximumProduct_2(int[] nums)
-    {
-        int[] d1 = new int[3] { int.MinValue, int.MinValue, int.MinValue };
-        int[] d2 = new int[2] { int.MaxValue, int.MaxValue };
-
-        d1[0] = nums[0];
-        d2[0] = nums[0];
-        for (int i = 1; i < nums.Length; i++)
-        {
-            if (nums[i] >= d1[0])
-            {
-                d1[2] = d1[1];
-                d1[1] = d1[0];
-                d1[0] = nums[i];
-            }
-            else if (nums[i] < d1[0] && nums[i] >= d1[1])
-            {
-                d1[2] = d1[1];
-                d1[1] = nums[i];
-            }
-            else if (nums[i] > d1[2] && nums[i] < d1[1])
-            {
-                d1[2] = nums[i];
-            }
-
-            if (nums[i] < d2[0])
-            {
-                d2[1] = d2[0];
-                d2[0] = nums[i];
-            }
-            else if (nums[i] >= d2[0] && nums[i] < d2[1])
-            {
-                d2[1] = nums[i];
-            }
-        }
-
-        int max = (d1[0] * d1[1] * d1[2]) > (d1[0] * d2[1] * d2[0]) ? (d1[0] * d1[1] * d1[2]) : (d1[0] * d2[1] * d2[0]);
-
-        return max;
-    }
-
-    // --------------- O(n) 144ms --------------- 32.5MB --------------- (80% 50%) ※
-    /*
-     * similar to 2
-     */
-     public int MaximumProduct_3(int[] nums)
-    {
-        int Max1 = int.MinValue; int Max2 = int.MinValue; int Max3 = int.MinValue;
-        int Min1 = int.MaxValue; int Min2 = int.MaxValue;
+        int min1 = int.MaxValue;
+        int min2 = int.MaxValue;
 
         for (int i = 0; i < nums.Length; i++)
         {
-            if (nums[i] >= Max1)
+            if (nums[i] > max1)
             {
-                Max3 = Max2;
-                Max2 = Max1;
-                Max1 = nums[i];
+                max3 = max2;
+                max2 = max1;
+                max1 = nums[i];
             }
-            else if (nums[i] >= Max2)
+            else if (nums[i] > max2)
             {
-                Max3 = Max2;
-                Max2 = nums[i];
+                max3 = max2;
+                max2 = nums[i];
             }
-            else if (nums[i] > Max3)
+            else if (nums[i] > max3)
             {
-                Max3 = nums[i];
+                max3 = nums[i];
             }
 
-            if (nums[i] <= Min1)
+            if (nums[i] < min1)
             {
-                Min2 = Min1;
-                Min1 = nums[i];
+                min2 = min1;
+                min1 = nums[i];
             }
-            else if (nums[i] < Min2)
+            else if (nums[i] < min2)
             {
-                Min2 = nums[i];
+                min2 = nums[i];
             }
         }
 
-        return Max1 * Max2 * Max3 > Max1 * Min1 * Min2 ? Max1 * Max2 * Max3 : Max1 * Min1 * Min2;
+        return max1 * max2 * max3 > max1 * min1 * min2 ? max1 * max2 * max3 : max1 * min1 * min2;
     }
-    
+
     // --------------- O(nlogn) 164ms --------------- 32.5MB --------------- (32% 6%)
     /*
      * sort
      */
-    public int MaximumProduct_4(int[] nums)
+    public int MaximumProduct_2(int[] nums)
     {
         System.Array.Sort(nums);
 
@@ -152,5 +77,5 @@ public class Solution628
     }
 }
 /**************************************************************************************************************
- * MaximumProduct_3                                                                                           *
+ * MaximumProduct_1                                                                                           *
  **************************************************************************************************************/
