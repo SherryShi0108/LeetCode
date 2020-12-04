@@ -98,10 +98,10 @@ public class Solution717
     }
 
     // --------------- O(n) 96ms --------------- 22.7MB --------------- (48% 37%)
-    public bool IsOneBitCharacter_5(int[] bits)
+    public bool IsOneBitCharacter_4_2(int[] bits)
     {
         int i = bits.Length - 2;
-        for (i = bits.Length - 2; i >=0; i--)
+        for (; i >=0; i--)
         {
             if (bits[i] == 0)
             {
@@ -109,15 +109,10 @@ public class Solution717
             }
         }
 
-        return (bits.Length - i - 1) % 2 != 0;
-        
-        // return (bits.Length - i) % 2 == 0;
-    }
-
-
-   
+        return (bits.Length - i) % 2 == 0;        
+    }   
 }
 
 /**************************************************************************************************************
- * IsOneBitCharacter_1/2        IsOneBitCharacter_4/5                                                         *
+ * IsOneBitCharacter_1/2        IsOneBitCharacter_4                                                           *
  **************************************************************************************************************/
