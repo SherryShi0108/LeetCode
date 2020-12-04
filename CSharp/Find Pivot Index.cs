@@ -25,33 +25,8 @@
 
 public class Solution724
 {
-    // --------------- O(n^2) 1116ms --------------- 28.8MB --------------- (9% 48%)
-    public int PivotIndex_1(int[] nums)
-    {
-        int L = 0;
-        int R = 0;
-        for (int i = 0; i < nums.Length; i++)
-        {
-            for (int j = 0; j < i; j++)
-            {
-                L += nums[j];
-            }
-            for (int j = i + 1; j < nums.Length; j++)
-            {
-                R += nums[j];
-            }
-            if (L == R)
-            {
-                return i;
-            }
-
-            L = 0; R = 0;
-        }
-        return -1;
-    }
-
     // --------------- O(n) 116ms --------------- 29MB --------------- (90% 15%) ※
-    public int PivotIndex_2(int[] nums)
+    public int PivotIndex_1(int[] nums)
     {
         int sum = 0;
         for (int i = 0; i < nums.Length; i++)
@@ -73,7 +48,7 @@ public class Solution724
     }
 
     // --------------- O(n) 120ms --------------- 28.9MB --------------- (68% 17%)
-    public int PivotIndex_3(int[] nums)
+    public int PivotIndex_2(int[] nums)
     {
         int sum = 0;
         for (int i = 0; i < nums.Length; i++)
@@ -95,53 +70,7 @@ public class Solution724
         }
         return -1;
     }
-
-    // --------------- O(n) 148ms --------------- 29MB --------------- (21% 15%) 
-    public int PivotIndex_4(int[] nums)
-    {
-        int sum = 0;
-        for (int i = 0; i < nums.Length; i++)
-        {
-            sum += nums[i];
-        }
-
-        int leftSum = 0;
-        for (int i = 0; i < nums.Length; i++)
-        {
-            if (leftSum * 2 + nums[i] == sum)
-            {
-                return i;
-            }
-            leftSum += nums[i];          
-        }
-
-        return -1;
-    }
-
-    // --------------- O(n) 120ms --------------- 28.9MB --------------- (38% 20%) 
-    public int PivotIndex_5(int[] nums)
-    {
-        int sum = 0;
-        for (int i = 0; i < nums.Length; i++)
-        {
-            sum += nums[i];
-        }
-
-        int leftSum = 0;
-        for (int i = 0; i < nums.Length; i++)
-        {
-            if ((sum = (sum - nums[i])) == leftSum)
-                return i;
-            else
-                leftSum += nums[i];
-        }
-
-        return -1;
-    }
-
-
-
 }
 /**************************************************************************************************************
- * PivotIndex_2 PivotIndex_3/4/5                                                                              *
+ * PivotIndex_1                                                                                               *
  **************************************************************************************************************/
