@@ -25,7 +25,7 @@
 
 public class Solution747
 {
-    // --------------- O(n) 92ms --------------- 22.7MB --------------- (93% 6%) ※
+    // --------------- O(n) 92ms --------------- 22.7MB --------------- (93% 6%) 
     public int DominantIndex_1(int[] nums)
     {
         int max = 0;
@@ -47,10 +47,31 @@ public class Solution747
         }
         return index;
     }
+    
+    // --------------- O(n) 112ms --------------- 22.6MB --------------- (12% 21%)
+    public int DominantIndex_1_1(int[] nums)
+    {
+        int index = 0;
+        for (int i = 0; i < nums.Length; i++)
+        {
+            if (nums[i] > nums[index])
+            {
+                index = i;
+            }
+        }
+        for (int i = 0; i < nums.Length; i++)
+        {
+            if (nums[index] < 2 * nums[i] && index != i)
+            {
+                return -1;
+            }
+        }
+        return index;
+    }
 
-    // --------------- O(n) 112ms --------------- 22.7MB --------------- (12% 6%)
+    // --------------- O(n) 112ms --------------- 22.7MB --------------- (12% 6%) ※
     /*
-     *  1 for
+     *  use max1、max2
      */
     public int DominantIndex_2(int[] nums)
     {
@@ -74,54 +95,9 @@ public class Solution747
         {
             return maxIndex;
         }
-        return -1;
-    }
-
-    // --------------- O(n) 112ms --------------- 22.6MB --------------- (12% 21%)
-    public int DominantIndex_3(int[] nums)
-    {
-        int index = 0;
-        for (int i = 0; i < nums.Length; i++)
-        {
-            if (nums[i] > nums[index])
-            {
-                index = i;
-            }
-        }
-        for (int i = 0; i < nums.Length; i++)
-        {
-            if (nums[index] < 2 * nums[i] && index != i)
-            {
-                return -1;
-            }
-        }
-        return index;
-    }
-    
-    // --------------- O(n) 92ms --------------- 23.8MB --------------- (82% 20%)
-    public int DominantIndex_4(int[] nums)
-    {
-        int index = 0;
-
-        int max1 = nums[0];
-        int max2 = 0;
-        for (int i = 1; i < nums.Length; i++)
-        {
-            if (nums[i] > max1)
-            {
-                max2 = max1;
-                max1 = nums[i];
-                index = i;
-            }
-            else if(nums[i] > max2)
-            {
-                max2 = nums[i];
-            }
-        }
-
-        return max1 >= 2 * max2 ? index : -1;
+        return max1 >= max2 * 2 ？maxIndex ：-1;
     }
 }
 /**************************************************************************************************************
- * DominantIndex_1/3 DominantIndex_2 /DominantIndex_4                                                         *
+ * DominantIndex_2                                                                                            *
  **************************************************************************************************************/
