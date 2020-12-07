@@ -66,7 +66,7 @@ public class Solution771
         int[] array = new int[58];
         foreach (char item in J)
         {
-            array[item - 65]++;
+            array[item - 65] = 1;
         }
         int sum = 0;
         foreach (char item in S)
