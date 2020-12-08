@@ -31,49 +31,35 @@ using System.Collections.Generic;
 
 public class Solution849
 {
-    // --------------- O(n) 112ms --------------- O(n) 26.4MB --------------- (55% 11%) 
-    /*
-     * new int[] to store the index of 1
-     */
+    // --------------- O(n) 104ms --------------- O(n) 27.2MB --------------- (83% 100%) ※
     public int MaxDistToClosest_1(int[] seats)
     {
-        int[] temp = new int[seats.Length];
-        for (int i = 0; i < temp.Length; i++)
-        {
-            temp[i] = -1;
-        }
-
-        int j = 0;
+        int max = 0;
+        int count = 0;
+        bool flag = true;
         for (int i = 0; i < seats.Length; i++)
         {
-            if (seats[i] == 1)
+            if (seats[i] == 0)
             {
-                temp[j] = i;
-                j++;
-            }
-        }
-
-        int count = 0;
-        int max = 0;
-        for (int i = 0; i < temp.Length - 1; i++)
-        {
-            if (temp[0] != 0)
-            {
-                count = temp[0];
-                max = max > count ? max : count;
-            }
-            if (temp[i + 1] == -1)
-            {
-                count = seats.Length - 1 - temp[i];
-                max = max > count ? max : count;
-                break;
+                count++;
             }
             else
             {
-                count = (temp[i + 1] - temp[i]) / 2;
-                max = max > count ? max : count;
+                if (flag)
+                {
+                    max = max > count ? max : count;
+                    flag = false;
+                    count = 0;
+                }
+                else
+                {
+                    max = max > (count + 1) / 2 ? max : (count + 1) / 2;
+                    count = 0;
+                }
             }
         }
+
+        max = max > count ? max : count;
         return max;
     }
 
@@ -81,7 +67,7 @@ public class Solution849
     /*
      * easy-understanding
      */
-    public int MaxDistToClosest_2(int[] seats)
+    public int MaxDistToClosest_1_2(int[] seats)
     {
         int count = 0;
         int max = 0;
@@ -118,7 +104,7 @@ public class Solution849
     }
 
     // --------------- O(n) 128ms --------------- O(n) 25.9MB --------------- (11% 47%) 
-    public int MaxDistToClosest_3(int[] seats)
+    public int MaxDistToClosest_1_3(int[] seats)
     {
         int max = 0;
         int countMedium = 0;
@@ -145,7 +131,7 @@ public class Solution849
     }
 
     // --------------- O(n) 128ms --------------- O(n) 25.8MB --------------- (11% 58%) 
-    public int MaxDistToClosest_4(int[] seats)
+    public int MaxDistToClosest_2(int[] seats)
     {
         int left = -1;
         int max = 0;
@@ -167,39 +153,7 @@ public class Solution849
         max = max > (seats.Length - 1 - left) ? max : (seats.Length - 1 - left);
         return max;
     }   
-    
-    // --------------- O(n) 104ms --------------- O(n) 27.2MB --------------- (83% 100%) ※
-    public int MaxDistToClosest_5(int[] seats)
-    {
-        int max = 0;
-        int count = 0;
-        bool flag = true;
-        for (int i = 0; i < seats.Length; i++)
-        {
-            if (seats[i] == 0)
-            {
-                count++;
-            }
-            else
-            {
-                if (flag)
-                {
-                    max = max > count ? max : count;
-                    flag = false;
-                    count = 0;
-                }
-                else
-                {
-                    max = max > (count + 1) / 2 ? max : (count + 1) / 2;
-                    count = 0;
-                }
-            }
-        }
-
-        max = max > count ? max : count;
-        return max;
-    }
 }
 /**************************************************************************************************************
- * MaxDistToClosest_5                                                                                         *
+ * MaxDistToClosest_1 / MaxDistToClosest_2                                                                    *
  **************************************************************************************************************/
