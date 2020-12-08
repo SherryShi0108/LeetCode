@@ -22,37 +22,15 @@
 
 public class Solution867
 {
-    // --------------- O(n)=O(A.W*A.H) 280ms --------------- 33.5MB --------------- (62% 30%)
-    public int[][] Transpose_1(int[][] A)
-    {
-        if (A.Length == 0 || A == null) return null;
-
-        int x = A[0].Length;
-
-        int[][] result = new int[x][];
-        for (int i = 0; i < x; i++)
-        {
-            int[] temp = new int[A.Length];
-            for (int j = 0; j < A.Length; j++)
-            {
-                temp[j] = A[j][i];
-            }
-            result[i] = temp;
-        }
-        return result;
-    }
-
     // --------------- O(n)=O(A.W*A.H) 268ms --------------- 33.6MB --------------- (94% 11%) ※
-    public int[][] Transpose_2(int[][] A)
-    {
-        int x = A.Length;
-        int y = A[0].Length;
-        int[][] result = new int[y][];
+    public int[][] Transpose_1(int[][] A)
+    {      
+        int[][] result = new int[A[0].Length][];
 
-        for (int i = 0; i < y; i++)
+        for (int i = 0; i < result.Length; i++)
         {
-            result[i] = new int[x];
-            for (int j = 0; j < x; j++)
+            result[i] = new int[A.length];
+            for (int j = 0; j < A.Length; j++)
             {
                 result[i][j] = A[j][i];
             }
@@ -61,5 +39,5 @@ public class Solution867
     }
 }
 /**************************************************************************************************************
- * Transpose_2                                                                                                *
+ * Transpose_1                                                                                                *
  **************************************************************************************************************/
