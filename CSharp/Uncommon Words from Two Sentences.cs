@@ -27,7 +27,7 @@ using System.Linq;
 
 public class Solution884
 {
-    // --------------- O(n) 264ms --------------- 30MB ---------------(51% 100%) ※
+    // --------------- O(n) 264ms --------------- 30MB ---------------(51% 100%) 
     public string[] UncommonFromSentences_1(string A, string B)
     {
         string C = A + ' ' + B;
@@ -67,7 +67,7 @@ public class Solution884
         return result;
     }
 
-    // --------------- O(n) 244ms --------------- 32MB ---------------(55% 100%)
+    // --------------- O(n) 244ms --------------- 32MB ---------------(55% 100%) ※
     /*
      * similar to 1, but reduce a for()
      */
