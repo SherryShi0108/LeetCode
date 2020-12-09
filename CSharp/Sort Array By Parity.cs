@@ -20,7 +20,10 @@
 
 public class Solution905
 {
-    // --------------- O(n) 260ms --------------- 31.9MB --------------- (75% 46%)
+    // --------------- O(n) 260ms --------------- O(n) 31.9MB --------------- (75% 46%)
+    /*
+     * But Memory is O(n)
+     */
     public int[] SortArrayByParity_1(int[] A)
     {
         int[] B = new int[A.Length];
@@ -42,8 +45,8 @@ public class Solution905
         return B;
     }
 
-    // --------------- O(n) 264ms --------------- 31.8MB --------------- (56% 50%)
-    public int[] SortArrayByParity_2(int[] A)
+    // --------------- O(n) 264ms --------------- O(n) 31.8MB --------------- (56% 50%)
+    public int[] SortArrayByParity_1_2(int[] A)
     {
         int[] B = new int[A.Length];
         int m = 0;
@@ -62,30 +65,11 @@ public class Solution905
         return B;
     }
 
-    // --------------- in-place --------------- O(n) 264ms --------------- 31.7MB --------------- (56% 80%)
-    public int[] SortArrayByParity_3(int[] A)
-    {
-        int k = A.Length - 1;
-        for (int i = 0; i < A.Length; i++)
-        {
-            if (A[i] % 2 != 0)
-            {
-                int temp = A[i];
-                A[i] = A[k];
-                A[k] = temp;
-                k--;
-                i--;
-            }
-            if (i + 1 >= k)
-            {
-                break;
-            }
-        }
-        return A;
-    }
-
     // --------------- O(n) 288ms --------------- 31.8MB --------------- (17% 50%)
-    public int[] SortArrayByParity_4(int[] A)
+    /*
+     * But should exchange all even , even if all even
+     */
+    public int[] SortArrayByParity_2(int[] A)
     {
         int j = 0;
         for (int i = 0; i < A.Length; i++)
@@ -100,56 +84,37 @@ public class Solution905
         return A;
     }
 
-    // --------------- O(n) 348ms --------------- 31.9MB --------------- (5% 46%)
-    public int[] SortArrayByParity_5(int[] A)
+    // --------------- O(n) 244ms --------------- 34MB --------------- (77% 83%) ※
+    public int[] SortArrayByParity_3(int[] A)
     {
-        int m = 0;
-        int n = A.Length - 1;
-
-        while (m < n)
+        int i = 0;
+        int j = A.Length - 1;
+        
+        while (i < j)
         {
-            if (A[m] % 2 == 0)
+            while (i < j && A[i] % 2 == 0)
             {
-                m++;
+                i++;
             }
-            else
-            {
-                int temp = A[m];
-                A[m] = A[n];
-                A[n] = temp;
 
-                n--;
+            while (i < j && A[j] % 2 == 1)
+            {
+                j--;
+            }
+
+            if (i < j)
+            {
+                int temp = A[i];
+                A[i] = A[j];
+                A[j] = temp;
+                i++;
+                j--;
             }
         }
-        return A;
-    }
 
-    // --------------- O(n) 300ms --------------- 31.9MB --------------- (10% 46%) ※
-    public int[] SortArrayByParity_6(int[] A)
-    {
-        int m = 0;
-        int n = A.Length - 1;
-
-        while (m < n)
-        {
-            if (A[m] % 2 != 0 && A[n] % 2 == 0)
-            {
-                int temp = A[m];
-                A[m] = A[n];
-                A[n] = temp;
-            }
-            if (A[m] % 2 == 0)
-            {
-                m++;
-            }
-            if (A[n] % 2 != 0)
-            {
-                n--;
-            }
-        }
         return A;
     }
 }
 /**************************************************************************************************************
- * Two Solution:new int[],in-place   SortArrayByParity_2/3/4/5/6                                              *
+ *  SortArrayByParity_3                                                                                       *
  **************************************************************************************************************/
