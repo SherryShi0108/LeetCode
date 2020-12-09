@@ -71,7 +71,7 @@ public class Solution884
     /*
      * similar to 1, but reduce a for()
      */
-    public string[] UncommonFromSentences_2(string A, string B)
+    public string[] UncommonFromSentences_1_2(string A, string B)
     {
         Dictionary<string, int> d = new Dictionary<string, int>();
         foreach (string s in (A + ' ' + B).Split(' '))
@@ -92,12 +92,12 @@ public class Solution884
     /*
      * use Linq
      */
-    public string[] UncommonFromSentences_3(string A, string B)
+    public string[] UncommonFromSentences_2(string A, string B)
     {
         string[] x = (A + ' ' + B).Split(' ').GroupBy(w => w).Where(g => g.Count() == 1).Select(g => g.Key).ToArray();
         return x;
     }
 }
 /**************************************************************************************************************
- * UncommonFromSentences_1 UncommonFromSentences_2 UncommonFromSentences_3                                    *
+ * UncommonFromSentences_1 UncommonFromSentences_2                                                            *
  **************************************************************************************************************/
