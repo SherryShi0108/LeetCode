@@ -52,16 +52,20 @@ public class Solution908
     // --------------- O(n) 104ms --------------- 27.3MB --------------- (99% 100%) ※
     public int SmallestRangeI_2(int[] A, int K)
     {
-        int max = A[0];
-        int min = A[0];
+        int max = int.MinValue;
+        int min = int.MaxValue;
         foreach (int t in A)
         {
             max = max > t ? max : t;
             min = min < t ? min : t;
         }
 
-        int result = (min + K) - (max - K) > 0 ? 0 : (max - K) - (min + K);
-        return result;
+        if (max - min <= 2 * K)
+        {
+            return 0;
+        }
+
+        return max - min - 2 * K;
     }
     
     // more tricky
