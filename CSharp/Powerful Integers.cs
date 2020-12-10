@@ -35,41 +35,8 @@ using System.Collections.Generic;
 
 public class Solution970
 {
-    // --------------- O(m*n) 228ms --------------- 24.3MB --------------- (39% 100%)
-    public IList<int> PowerfulIntegers_1(int x, int y, int bound)
-    {
-        HashSet<int> L = new HashSet<int>();
-
-        int i = 0;
-        while (x != 1 && Math.Pow(x, i) <= bound)
-        {
-            i++;
-        }
-        int j = 0;
-        while (y != 1 && Math.Pow(y, j) <= bound)
-        {
-            j++;
-        }
-        if (x == 1) { i = 1; }
-        if (y == 1) { j = 1; }
-
-        for (int m = 0; m < i; m++)
-        {
-            for (int n = 0; n < j; n++)
-            {
-                if (Math.Pow(x, m) + Math.Pow(y, n) <= bound)
-                {
-                    L.Add((int)(Math.Pow(x, m) + Math.Pow(y, n)));
-                }
-            }
-        }
-
-        List<int> List = new List<int>(L);
-        return List;
-    }
-
     // --------------- O(m*n) 216ms --------------- 24.1MB --------------- (98% 100%) ※
-    public IList<int> PowerfulIntegers_2(int x, int y, int bound)
+    public IList<int> PowerfulIntegers_1(int x, int y, int bound)
     {
         HashSet<int> H = new HashSet<int>();
         for (int i = 1; i <= bound; i*=x)
@@ -85,7 +52,7 @@ public class Solution970
     }
     
     // --------------- O(m*n) 204ms --------------- 25MB --------------- (95% 100%)
-    public IList<int> PowerfulIntegers_3(int x, int y, int bound)
+    public IList<int> PowerfulIntegers_2(int x, int y, int bound)
     {
         List<int> L1=new List<int>();
         List<int> L2 = new List<int>();
@@ -122,5 +89,5 @@ public class Solution970
     }
 }
 /**************************************************************************************************************
- * PowerfulIntegers_2 / 3                                                                                     *
+ * PowerfulIntegers_1                                                                                         *
  **************************************************************************************************************/
