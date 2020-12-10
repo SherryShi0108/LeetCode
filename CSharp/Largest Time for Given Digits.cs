@@ -24,55 +24,8 @@ using System.Linq;
 
 public class Solution949
 {
-    // --------------- 108ms --------------- 23.6MB --------------- (82% 100%)
-    /*
-     * 4!=4*3*2*1=24 , decided if a number is legal
-     */
-    public string LargestTimeFromDigits_1(int[] A)
-    {
-        int result = -1;
-        for (int i = 0; i < 4; i++)
-        {
-            for (int j = 0; j < 4; j++)
-            {
-                for (int k = 0; k < 4; k++)
-                {
-                    if (i != j && j != k && k != i)
-                    {
-                        int l = 6 - i - j - k;
-                        int temp = IsLegal(A[i], A[j], A[k], A[l]);
-                        result = result > temp ? result : temp;
-
-                    }
-                }
-            }
-        }
-
-        if (result != -1)
-        {
-            string r = string.Format("{0:D2}:{1:D2}", result / 100, result % 100);
-
-            string r2 = $"{result / 100:D2}:{result % 100:D2}"; //格式转换
-            return r;
-        }
-        return "";
-    }
-
-    public int IsLegal(int a, int b, int c, int d)
-    {
-        int hour = a * 10 + b;
-        int min = c * 10 + d;
-
-        if (hour < 24 && min < 60)
-        {
-            return hour * 100 + min;
-        }
-
-        return -1;
-    }
-
     // --------------- 140ms --------------- 25.3MB --------------- (8% 100%)
-    public string LargestTimeFromDigits_2(int[] A)
+    public string LargestTimeFromDigits_1(int[] A)
     {
         string result = "";
         for (int i = 0; i < 4; i++)
@@ -101,7 +54,7 @@ public class Solution949
         return result;
     }
     
-    // --------------- 108ms --------------- 23.9MB --------------- (60% 100%)
+    // --------------- 108ms --------------- 23.9MB --------------- (60% 100%) ※
     public string LargestTimeFromDigits_2(int[] A)
     {
         int max = -1;
@@ -124,15 +77,12 @@ public class Solution949
                         }
                     }
                 }
-
             }
         }
-
-        if (max == -1) return "";
-        string re = $"{max / 60:D2}:{max % 60:D2}";
-        return re;
+        
+        return max == -1 ? string.Empty : $"{max / 60:2D}:{max % 60:2D}";
     }
 }
 /**************************************************************************************************************
- * LargestTimeFromDigits_1 LargestTimeFromDigits_2/3                                                          *
+ * LargestTimeFromDigits_2                                                                                    *
  **************************************************************************************************************/
