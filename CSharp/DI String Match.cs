@@ -26,7 +26,7 @@
 
 public class Solution942
 {
-    // --------------- O(n) 264ms --------------- 33.4MB --------------- (45% 50%) ※
+    // --------------- O(n) 264ms --------------- 33.4MB --------------- (45% 50%)
     public int[] DiStringMatch_1(string S)
     {
         int L = 0;int H = S.Length;
@@ -48,7 +48,30 @@ public class Solution942
 
         return result;
     }
+    
+    // --------------- O(n) 224ms --------------- 36MB --------------- (99% 6%) ※
+    public int[] DiStringMatch_2(string S)
+    {
+        int i = 0;
+        int j = S.Length; 
+
+        List<int> list = new List<int>();
+        foreach (char c in S)
+        {
+            if (c == 'I')
+            {
+                list.Add(i++);
+            }
+            else if (c == 'D')
+            {
+                list.Add(j--);
+            }
+        }
+
+        list.Add(i);
+        return list.ToArray();
+    }
 }
 /**************************************************************************************************************
- * DiStringMatch_1                                                                                            *
+ * DiStringMatch_2                                                                                            *
  **************************************************************************************************************/
