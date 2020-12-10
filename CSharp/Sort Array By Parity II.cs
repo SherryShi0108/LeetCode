@@ -22,7 +22,10 @@
 
 public class Solution922
 {
-    // --------------- O(n) 292ms --------------- 35.2MB --------------- (51% 22%)
+    // --------------- O(n) 292ms --------------- O(n) 5.2MB --------------- (51% 22%)
+    /*
+     * use extra space
+     */
     public int[] SortArrayByParityII_1(int[] A)
     {
         int[] B = new int[A.Length];
@@ -44,9 +47,13 @@ public class Solution922
     }
 
     // --------------- O(n) 296ms --------------- 34.6MB --------------- (42% 76%)
+    /*
+     * use while-if
+     */
     public int[] SortArrayByParityII_2(int[] A)
     {
-        int m = 0;int n = 1;
+        int m = 0;
+        int n = 1;
         while (m < A.Length && n < A.Length)
         {
             if (A[m] % 2 != 0 && A[n] % 2 == 0)
@@ -66,32 +73,42 @@ public class Solution922
         }
         return A;
     }
-
-    // --------------- 320ms --------------- 34.7MB --------------- (11% 53%)
-    public int[] SortArrayByParityII_3(int[] A)
+    
+    // --------------- O(n) 276ms --------------- 37MB --------------- (34% 91%) ※
+    /*
+     * use while-while
+     */
+    public int[] SortArrayByParityII_2_2(int[] A)
     {
-        for (int i = 0, j = 1; i < A.Length; i += 2, j += 2)
+        int i = 0;
+        int j = 1;
+        while (i < A.Length)
         {
             while (i < A.Length && A[i] % 2 == 0)
             {
                 i += 2;
             }
+
             while (j < A.Length && A[j] % 2 != 0)
             {
                 j += 2;
             }
-            if (i < A.Length && j < A.Length)
+
+            if (i < A.Length)
             {
                 int temp = A[i];
                 A[i] = A[j];
                 A[j] = temp;
+                i += 2;
+                j += 2;
             }
         }
+
         return A;
     }
     
-    // --------------- 300ms --------------- 34.6MB --------------- (46% 72%) ※
-    public int[] SortArrayByParityII_4(int[] A)
+    // --------------- 300ms --------------- 34.6MB --------------- (46% 72%) 
+    public int[] SortArrayByParityII_3(int[] A)
     {
         int j = 1;
         for (int i = 0; i < A.Length; i+=2)
@@ -112,5 +129,5 @@ public class Solution922
     }
 }
 /**************************************************************************************************************
- * SortArrayByParityII_2 SortArrayByParityII_3 SortArrayByParityII_4                                          *
+ * SortArrayByParityII_2                                                                                      *
  **************************************************************************************************************/
