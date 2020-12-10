@@ -42,6 +42,29 @@ public class Solution976
         }
         return 0;
     }
+    
+    // O(n^3) Time Limit Exceeded
+    public int LargestPerimeter_2(int[] A)
+    {
+        int max = 0;
+        for (int i = 0; i < A.Length; i++)
+        {
+            for (int j = i + 1; j < A.Length; j++)
+            {
+                for (int k = j + 1; k < A.Length; k++)
+                {
+                    if (A[i] + A[j] > A[k] &&
+                        A[i] + A[k] > A[j] &&
+                        A[j] + A[k] > A[i]) 
+                    {
+                        max = max > A[i] + A[j] + A[k] ? max : A[i] + A[j] + A[k];
+                    }
+                }
+            }
+        }
+
+        return max;
+    }
 }
 /**************************************************************************************************************
  * LargestPerimeter_1                                                                                         *
