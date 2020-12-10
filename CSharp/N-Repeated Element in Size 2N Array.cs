@@ -29,27 +29,27 @@ using System.Collections.Generic;
 
 public class Solution961
 {
-    // --------------- O(n) 152ms --------------- 31.1MB ---------------(31% 11%) ※
+    // --------------- O(n) 124ms --------------- 34MB ---------------(80% 73%) 
+    /*
+     * use HashSet
+     */
     public int RepeatedNTimes_1(int[] A)
     {
-        Dictionary<int, int> d = new Dictionary<int, int>();
+        HashSet<int> h = new HashSet<int>();
         for (int i = 0; i < A.Length; i++)
         {
-            if (d.ContainsKey(A[i]))
+            if (h.Add(A[i]) == false)
             {
                 return A[i];
             }
-            else
-            {
-                d[A[i]] = 1;
-            }
         }
+
         return 0;
     }
 
-    // --------------- O(n) 124ms --------------- 31MB ---------------(98% 11%)
+    // --------------- O(n) 124ms --------------- 31MB ---------------(98% 11%) ※
     /*
-     * smart solution 
+     * smart solution
      */
     public int RepeatedNTimes_2(int[] A)
     {
@@ -60,7 +60,7 @@ public class Solution961
                 return A[i];
             }
         }
-        return A[A.Length - 1];
+        return A[A.Length - 1]; // A[0] Error,because [1,2,3,3] 
     }
 
     // --------------- O(4) 136ms --------------- 31MB ---------------(70% 33%)
