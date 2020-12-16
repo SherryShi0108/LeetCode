@@ -192,8 +192,8 @@ C#
 |	187	|	|	|	| | |
 |	188	|	|	|	| | |
 |	189	|[Rotate Array](https://leetcode.com/problems/rotate-array/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Rotate%20Array.cs)|	| ♥ | |
-|	190	|	|	|	| | |
-|	191	|	|	|	| | |
+|	190	|[Reverse Bits](https://leetcode.com/problems/reverse-bits/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Reverse%20Bits.cs)|	| ♥ | |
+|	191	|[Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Number%20of%201%20Bits.cs)| | ♥ | |
 |	192	|	|	|	| | |
 |	193	|	|	|	| | |
 |	194	|	|	|	| | |
@@ -344,7 +344,7 @@ C#
 |	339	|❀ Nested List Weight Sum	|	|	| | |
 |	340	|♣ Longest Substring with At Most K Distinct Characters  	|	|	| | |
 |	341	|	|	|	| | |
-|	342	|	|	|	| | |
+|	342	|[Power of Four](https://leetcode.com/problems/power-of-four/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Power%20of%20Four.cs)|	| ♥ | |
 |	343	|	|	|	| | |
 |	344	| [Reverse String](https://leetcode.com/problems/reverse-string/) | [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Reverse%20String.cs) |	| ♥ | |
 |	345	|[Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Reverse%20Vowels%20of%20a%20String.cs)| | ♥ | |
@@ -407,7 +407,7 @@ C#
 |	402	|	|	|	| | |
 |	403	|	|	|	| | |
 |	404	|	|	|	| | |
-|	405	|	|	|	| | |
+|	405	|[Convert a Number to Hexadecimal](https://leetcode.com/problems/convert-a-number-to-hexadecimal/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Convert%20a%20Number%20to%20Hexadecimal.cs)|	| ♥ | |
 |	406	|	|	|	| | |
 |	407	|	|	|	| | |
 |	408	|❀ Valid Word Abbreviation	|	|	| | |
@@ -463,7 +463,7 @@ C#
 |	458	|	|	|	| | |
 |	459	|[Repeated Substring Pattern](https://leetcode.com/problems/repeated-substring-pattern/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Repeated%20Substring%20Pattern.cs)| | ♥ | |
 |	460	|	|	|	| | |
-|	461	|	|	|	| | |
+|	461	|[Hamming Distance](https://leetcode.com/problems/hamming-distance/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Hamming%20Distance.cs)|	| ♥ | |
 |	462	|	|	|	| | |
 |	463	|[Island Perimeter](https://leetcode.com/problems/island-perimeter/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Island%20Perimeter.cs)| | ♥ | |
 |	464	|	|	|	| | |
@@ -478,7 +478,7 @@ C#
 |	473	|	|	|	| | |
 |	474	|	|	|	| | |
 |	475	|[Heaters](https://leetcode.com/problems/heaters/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Heaters.cs)|	| ♥ | |
-|	476	|	|	|	| | |
+|	476	|[Number Complement](https://leetcode.com/problems/number-complement/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Number%20Complement.cs)|	| ♥ | |
 |	477	|	|	|	| | |
 |	478	|	|	|	| | |
 |	479	|	|	|	| | |
@@ -695,7 +695,7 @@ C#
 |	690	|	|	|	| | |
 |	691	|	|	|	| | |
 |	692	|	|	|	| | |
-|	693	|	|	|	| | |
+|	693	|[Binary Number with Alternating Bits](https://leetcode.com/problems/binary-number-with-alternating-bits/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Binary%20Number%20with%20Alternating%20Bits.cs)|	| ♥ | |
 |	694	|❀ Number of Distinct Islands	|	|	| | |
 |	695	|	|	|	| | |
 |	696	|	|	|	| | |
@@ -764,7 +764,7 @@ C#
 |	759	|♣ Employee Free Time	|	|	| | |
 |	760	|❀ Find Anagram Mappings	|	|	| | |
 |	761	|	|	|	| | |
-|	762	|	|	|	| | |
+|	762	|[Prime Number of Set Bits in Binary Representation](https://leetcode.com/problems/prime-number-of-set-bits-in-binary-representation/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Prime%20Number%20of%20Set%20Bits%20in%20Binary%20Representation.cs)|	| ♥ | |
 |	763	|	|	|	| | |
 |	764	|	|	|	| | |
 |	765	|	|	|	| | |
