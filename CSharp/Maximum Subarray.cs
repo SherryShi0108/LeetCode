@@ -19,7 +19,7 @@ using System.Linq; // nums.Max() 名称空间
 
 public class Solution53
 {
-    // --------------- O(n) 100ms --------------- 23.3MB ---------------  
+    // --------------- O(n) 132ms --------------- 26MB --------------- (13% 61%) 
     /*
      *  Easy-Understanding
      */
@@ -35,31 +35,22 @@ public class Solution53
         return nums.Max();
     }
 
-    // --------------- O(n) 104ms --------------- 23.2MB ---------------  
+    // --------------- O(n) 112ms --------------- 23.4MB --------------- (27% 8%) ※
     public int MaxSubArray_1_2(int[] nums)
     {
+        if (nums == null || nums.Length == 0) 
+        {
+           return int.MinValue;
+        }
+         
         for (int i = 1; i < nums.Length; i++)
         {
-            nums[i] = Math.Max(nums[i], nums[i] + nums[i - 1]);
-            nums[0] = Math.Max(nums[0], nums[i]);
+            nums[i] = nums[i] + nums[i - 1] > nums[i] ? nums[i] + nums[i - 1] : nums[i];
+            nums[0] = nums[0] > nums[i] ? nums[0] : nums[i];
         }
         return nums[0];
     }
-
-    // --------------- O(n) 112ms --------------- 23.4MB --------------- (27% 8%) ※
-     public int MaxSubArray_3(int[] nums)
-    {
-        if(nums.Length==0||nums==null) {return 0;}
-         
-        int max = nums[0];
-        for (int i = 1; i < nums.Length; i++)
-        {
-            nums[i] = nums[i] > nums[i] + nums[i - 1] ? nums[i] : nums[i] + nums[i - 1];
-            max = max > nums[i] ? max : nums[i];
-        }
-        return max;
-    }
 }
 /**************************************************************************************************************
- * MaxSubArray_1/3                                                                                              *
+ * MaxSubArray_1_2                                                                                            *
  **************************************************************************************************************/
