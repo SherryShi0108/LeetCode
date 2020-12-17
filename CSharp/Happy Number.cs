@@ -30,22 +30,23 @@ public class Solution202
      */
     public bool IsHappy_1(int n)
     {
-       HashSet<int> d=new HashSet<int>();
-       while (n!=1)
+       HashSet<int> d = new HashSet<int>();
+       while (n != 1)
        {
            int sum = 0;
-           while (n>0)
+           while (n > 0)
            {
                 sum += (n % 10) * (n % 10);
                 n /= 10;
            }
+           
            if (!d.Add(sum)) return false;
            n = sum;
        }
        return true;
    }
 
-    // --------------- O(n) 44ms --------------- 15MB --------------- (68% 33%)
+    // --------------- O(n) 44ms --------------- 15MB --------------- (68% 33%) ※
     /*
      * use recursive way
      */
@@ -53,18 +54,18 @@ public class Solution202
     public bool IsHappy(int n)
     {
         if (n == 1) return true;
-        if (n<0 || !H.Add(n)) return false;
+        if (n < 0 || !H.Add(n)) return false;
         
         int sum = 0;
-        while (n>0)
+        while (n > 0)
         {
             sum += (n % 10) * (n % 10);
             n /= 10;
         }
-        return  IdHappy(sum);
+        return IsHappy(sum);
     }
 
-    // --------------- O(n) 40ms --------------- 14.7MB --------------- (88% 67%) ※
+    // --------------- O(n) 40ms --------------- 14.7MB --------------- (88% 67%) 
     /* 
      * difficute understanding use the Floyd Cycle detection algorithm
      */
@@ -72,7 +73,7 @@ public class Solution202
     {
         int a = GetSum(n);
         int b = GetSum(GetSum(n));
-        while (a!=b)
+        while (a != b)
         {
             a = GetSum(a);
             b = GetSum(GetSum(b));
