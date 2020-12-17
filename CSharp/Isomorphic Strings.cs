@@ -26,53 +26,12 @@
 using System.Collections.Generic; //Dictionary NameSpace
 
 public class Solution205
-{
-    // --------------- O(n) 76ms --------------- 21.4MB --------------- (96% 50%) 
+{    
+    // --------------- O(n) 76ms --------------- 23MB --------------- (86% 12%)
     /*
-     * use HashTable
+     * use Dictionary
      */
     public bool IsIsomorphic_1(string s, string t)
-    {
-        Dictionary<char, char> d1 = new Dictionary<char, char>();
-        Dictionary<char, char> d2 = new Dictionary<char, char>();
-
-        for (int i = 0; i < s.Length; i++)
-        {
-            if (d1.ContainsKey(s[i]))
-            {
-                if (d1[s[i]] != t[i])
-                {
-                    return false;
-                }
-            }
-            else
-            {
-                d1[s[i]] = t[i];
-            }
-        }
-        for (int i = 0; i < t.Length; i++)
-        {
-            if (d2.ContainsKey(t[i]))
-            {
-                if (d2[t[i]] != s[i])
-                {
-                    return false;
-                }
-            }
-            else
-            {
-                d2[t[i]] = s[i];
-            }
-        }
-
-        return true;
-    }
-    
-    // --------------- O(n) 76ms --------------- 23MB --------------- (86% 12%) ※
-    /*
-     * improve 1
-     */
-    public bool IsIsomorphic_1_2(string s, string t)
     {
         Dictionary<char, char> d1 = new Dictionary<char, char>();
         Dictionary<char, char> d2 = new Dictionary<char, char>();
@@ -103,8 +62,11 @@ public class Solution205
         return true;
     }
 
-    // --------------- O(n) 80ms --------------- 21.6MB --------------- (83% 25%)
-    public bool IsIsomorphic_2_2(string s, string t)
+    // --------------- O(n) 80ms --------------- 21.6MB --------------- (83% 25%) ※
+    /*
+     * easy-understanding
+     */
+    public bool IsIsomorphic_3(string s, string t)
     {
         int[] a = new int[128];
         int[] b = new int[128];
@@ -121,7 +83,7 @@ public class Solution205
     }
     
     // --------------- O(n) 72ms --------------- 23.3MB --------------- (95% 13%)
-    public bool IsIsomorphic_2_3(string s, string t)
+    public bool IsIsomorphic_3_2(string s, string t)
     {
         if (s.Length != t.Length) return false;
 
@@ -139,5 +101,5 @@ public class Solution205
     
 }
 /**************************************************************************************************************
- * IsIsomorphic_1 IsIsomorphic_2                                                                              *
+ * IsIsomorphic_2 IsIsomorphic_3                                                                              *
  **************************************************************************************************************/
