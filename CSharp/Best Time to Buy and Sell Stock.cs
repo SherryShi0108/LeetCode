@@ -23,26 +23,8 @@
 
 public class Solution121
 {
-    // ---------------Brute Force --------------- O(n^2) 892ms --------------- 23.4MB ---------------
-    public int MaxProfit_1(int[] nums)
-    {
-        int max = 0;
-        for (int i = 0; i < nums.Length; i++)
-        {
-            for (int j = i + 1; j < nums.Length; j++)
-            {
-                if ((nums[j] - nums[i]) > max && (nums[j] - nums[i]) > 0)
-                {
-                    max = nums[j] - nums[i];
-                }
-            }
-        }
-
-        return max;
-    }
-
     // --------------- Kadane's Algorithm --------------- O(n) 100ms --------------- 23.3MB --------------- 
-    public int MaxProfit_2(int[] nums)
+    public int MaxProfit_1(int[] nums)
     {
         int sum = 0;
         int max = 0;
@@ -63,7 +45,7 @@ public class Solution121
     }
 
     // --------------- O(n) 104ms --------------- 23.4MB ---------------
-    public int MaxProfit_3(int[] nums)
+    public int MaxProfit_2(int[] nums)
     {
         if (nums.Length == 0 || nums == null)
         {
@@ -80,13 +62,20 @@ public class Solution121
         return max;
     }
 
-    // --------------- dynamic programming  --------------- 
-    public int MaxProfit_4(int[] nums)
+    // --------------- O(n) 104ms --------------- 23.4MB ---------------
+    public int MaxProfit_2_2(int[] nums)
     {
+        int max = 0;
+        int min = int.MaxValue;
+        for (int i = 0; i < nums.Length; i++)
+        {
+            min = min < nums[i] ? min : nums[i];
+            max = max > nums[i] - min ? max : nums[i] - min;
+        }
 
-        return 0;
+        return max;
     }
 }
 /**************************************************************************************************************
- * MaxProfit_2 MaxProfit_3                                                                                    *
+ * MaxProfit_2                                                                                                *
  **************************************************************************************************************/
