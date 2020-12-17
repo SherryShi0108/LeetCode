@@ -9,7 +9,7 @@
  * where it would be if it were inserted in order.
  * You may assume no duplicates in the array.
  * 
- * Input: nums = [1,3,5,6], terget = 5
+ * Input: nums = [1,3,5,6], target = 5
  * Output: 2
  * 
  * Input: nums = [1,3,5,6], target = 7
@@ -19,55 +19,10 @@
 
 public class Solution
 {
-    // ---------------searchInsert --------------- O(n) 96ms --------------- 22.8MB ---------------
+    // --------------- O(n) 208ms --------------- 26MB --------------- (5% 8%)  
     public int SearchInsert_1(int[] nums, int target)
     {
-        if (nums.Length==0||nums==null)
-        {
-            return 0;
-        }
-        if (nums[0] > target)
-        {
-            return 0;
-        }
-        if (nums[nums.Length - 1] < target)
-        {
-            return nums.Length ;
-        }
-
-        for (int i = 0; i < nums.Length; i++)
-        {
-            if (nums[i] == target)
-            {
-                return i;
-            }
-            if (nums[i] > target)
-            {
-                return i ;
-            }
-        }
-        return 0;
-    }
-
-    // --------------- O(n) 92ms --------------- 22.5MB ---------------  
-    public int SearchInsert_2(int[] nums, int target)
-    {
-        for (int i = 0; i < nums.Length; i++)
-        {
-            if (target == nums[i])
-                return i;
-            if (target < nums[i])
-                return i;
-            if (i == nums.Length - 1)
-                return i + 1;
-        }
-        return 0;
-    }
-
-    // --------------- O(n) 96ms --------------- 22.6MB ---------------  
-    public int SearchInsert_3(int[] nums, int target)
-    {
-        var i = 0;
+        int i = 0;
         for (i = 0; i < nums.Length; i++)
         {
             if (nums[i] < target)
@@ -78,12 +33,12 @@ public class Solution
         }
         return i;
     }
-
-    // --------------- O(n) 100ms --------------- 22.6MB ---------------  
-    public int SearchInsert_4(int[] nums, int target)
+    
+    // --------------- O(n) 132ms --------------- 25MB --------------- (5% 33%) 
+    public int SearchInsert_1_2(int[] nums, int target)
     {
-        var i = 0;
-        for (i = 0; i < nums.Length; i++)
+        int i = 0;
+        for (; i < nums.Length; i++)
         {
             if (nums[i] >= target)
             {
@@ -93,8 +48,8 @@ public class Solution
         return i;
     }
     
-    // --------------- O(n) 96ms --------------- 22.7MB --------------- (74% 5%) 
-    public int SearchInsert_5(int[] nums, int target)
+    // --------------- O(n) 132ms --------------- 25MB --------------- (5% 33%) 
+    public int SearchInsert_1_3(int[] nums, int target)
     {
         for (int i = 0; i < nums.Length; i++)
         {
@@ -107,30 +62,38 @@ public class Solution
     }
     
     // --------------- O(logn) 96ms --------------- 24MB --------------- (63% 5%) ※
-    public int SearchInsert_6(int[] nums, int target)
+    /*
+     * using Binary Search Mode1
+     */
+    public int SearchInsert_2(int[] nums, int target)
     {
         int left = 0;
         int right = nums.Length;
-        while (left<right)
+        while (left  <right)
         {
             int mid = left + (right - left) / 2;
-            if (nums[mid] == target) return mid;
+            if (nums[mid] == target) 
+            {
+                return mid;
+            }
             else if (nums[mid] > target)
             {
                 right = mid;
             }
             else
             {
-                left = mid+1;
+                left = mid + 1;
             }
         }
 
-        return left ;
+        return left;
     }
     
     // --------------- O(logn) 96ms --------------- 23.9MB --------------- (63% 5%)
-    /* Normal Solution */
-    public int SearchInsert_7(int[] nums, int target)
+    /*
+     * using Binary Search Mode2
+     */
+    public int SearchInsert_2_2(int[] nums, int target)
     {
         int left = 0;
         int right = nums.Length-1;
@@ -143,7 +106,7 @@ public class Solution
             }
             else if (nums[mid] > target)
             {
-                right = mid-1;
+                right = mid - 1;
             }
             else
             {
@@ -155,5 +118,5 @@ public class Solution
     }
 }
 /**************************************************************************************************************
- * SearchInsert_6                                                                                             *
+ * SearchInsert_2                                                                                             *
  **************************************************************************************************************/
