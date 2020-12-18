@@ -86,7 +86,7 @@ public class Solution389
         return x;
     }
 
-    // --------------- O(n) 100ms --------------- 22.6MB ---------------(75% 20%) ※
+    // --------------- O(n) 100ms --------------- 22.6MB ---------------(75% 20%) 
     /*
      * use XOR , cause x^x=0 , 0^y=y
      */
@@ -103,6 +103,18 @@ public class Solution389
         }
 
         return (char)sum;
+    }
+    
+    // --------------- O(n) 84ms --------------- 25MB ---------------(99% 64%) ※
+    public char FindTheDifference_3_2(string s, string t)
+    {
+        int temp = t[t.Length - 1];
+        for (int i = 0; i < s.Length; i++)
+        {
+            temp ^= s[i] ^ t[i];
+        }
+
+        return (char)temp;
     }
 }
 /**************************************************************************************************************
