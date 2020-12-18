@@ -32,7 +32,7 @@
  *      -105 <= nums[i] <= 105
  *      0 <= i <= j < nums.length
  *      At most 104 calls will be made to sumRange.
- * ※
+ * 
  *******************************************************************************************************************************/
 
 // class 303
@@ -65,9 +65,9 @@ public class NumArray
     }
 }
 
-// --------------- O(n) 284ms --------------- O(1) 36MB ---------------(40% 17%) 
+// --------------- O(1) 284ms --------------- O(n) 36MB ---------------(40% 17%) ※ 
 /*
- * Brute Force
+ * Using Caching
  */
 public class NumArray_2
 {
@@ -75,7 +75,7 @@ public class NumArray_2
 
     public NumArray_2(int[] nums)
     {
-        arrays=new int[nums.Length];
+        arrays = new int[nums.Length];
         for (int i = 0; i < nums.Length; i++)
         {
             if (i == 0)
