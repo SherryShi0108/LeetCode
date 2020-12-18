@@ -35,7 +35,7 @@ public class Solution367
         return num == 0;
     }
 
-   // --------------- O(logn) 36ms --------------- 14MB --------------- (96% 25%) ※
+    // --------------- O(logn) 36ms --------------- 14MB --------------- (96% 25%) ※
     /*
      * attention: num/mid , so mid != 0 , so i && j !=0
      */
@@ -63,11 +63,29 @@ public class Solution367
         return false;
     }
 
-    // use Newton Method
-    public bool IsPerfectSquare_3(int num)
+    // --------------- O(logn) 36ms --------------- 15MB --------------- (90% 67%) 
+    public bool IsPerfectSquare_2_2(int num)
     {
+        int i = 1;
+        int j = num;
+        while (i<j)
+        {
+            int mid = i + (j - i) / 2;
+            if (num / mid == mid)
+            {
+                return num % mid == 0;
+            }
+            else if (num / mid > mid)
+            {
+                i = mid + 1;
+            }
+            else
+            {
+                j = mid;
+            }
+        }
 
-        return false;
+        return i == 1;
     }
 }
 /**************************************************************************************************************
