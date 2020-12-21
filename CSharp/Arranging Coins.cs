@@ -31,7 +31,7 @@ public class Solution441
     // --------------- O(n) 56ms --------------- 12.9MB --------------- (57% 100%)
     public int ArrangeCoins_1(int n)
     {
-        int i = 1;
+        int i = 1;    // or i=0;
         while (n >= 0)
         {
             n = n - i;
@@ -39,6 +39,19 @@ public class Solution441
         }
 
         return i - 2;
+    }
+    
+    // --------------- O(n) 56ms --------------- 16MB --------------- (35% 17%)
+    public int ArrangeCoins_1_2(int n)
+    {
+        int i = 1;    // or i=0;
+        while (n >= i)
+        {
+            n -= i;
+            i++;
+        }
+
+        return i - 1;
     }
 
     // --------------- O(logn) 44ms --------------- 14.2MB --------------- (83% 100%)
