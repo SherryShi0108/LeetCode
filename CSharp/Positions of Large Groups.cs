@@ -28,42 +28,12 @@
 using System.Collections.Generic;
 
 public class Solution830
-{
-    // --------------- O(n) 36ms --------------- 32MB --------------- (65% 33%)
-    public IList<IList<int>> LargeGroupPositions_1(string S)
-    {
-        IList<IList<int>> L =new List<IList<int>>();
-
-        int count = 1;
-        for (int i = 1; i < S.Length; i++)
-        {
-            if (S[i] == S[i - 1])
-            {
-                count++;
-                if (i == S.Length - 1 &&count>=3)
-                {
-                    L.Add(new int[]{S.Length-count,S.Length-1});
-                }
-            }
-            else
-            {
-                if (count >= 3)
-                {
-                    L.Add(new int[2] {i-count,i-1});
-                }
-
-                count = 1;
-            }
-        }
-
-        return L;
-    }
-    
+{    
     // --------------- O(n) 252ms --------------- 30.5MB --------------- (88% 34%)
     /*
-     * similar to 1
+     *  Determine in the final ; use count
      */
-    public IList<IList<int>> LargeGroupPositions_1_2(string S)
+    public IList<IList<int>> LargeGroupPositions_1(string S)
     {
         IList<IList<int>> L = new List<IList<int>>();
         int count = 1;
@@ -90,34 +60,61 @@ public class Solution830
         }
 
         return L;
-
     }
 
-    // --------------- O(n) 260ms --------------- 30.7MB --------------- (29% 8%) 
-    public IList<IList<int>> LargeGroupPositions_2(string S)
+    // --------------- O(n) 236ms --------------- 33MB --------------- (60% 12%)
+    /*
+     * add non-letter "#" to avoid determine final ; use start
+     */
+    public IList<IList<int>> LargeGroupPositions_1_2(string S)
     {
+        S = S + "#";
         List<IList<int>> L = new List<IList<int>>();
 
-        int i = 0;
-
-        for (int j = 0; j < S.Length; j++)
+        int start = 0;
+        for (int i = 0; i < S.Length; i++)
         {
-            if (j == S.Length - 1 || S[j] != S[j + 1])
+            if (S[i] != S[start])
             {
-                if (j - i + 1 >= 3)
+                if (i - start >= 3)
                 {
-                    L.Add(new int[] { i, j });
+                    L.Add(new List<int>() { start, i - 1 });
                 }
-                i = j + 1;
+                start = i;
             }
         }
 
         return L;
     }
     
-     // --------------- O(n) 232ms --------------- 32MB --------------- (83% 33%)  ※
+    // --------------- O(n) 260ms --------------- 30.7MB --------------- (29% 8%) ※
     /*
-     * improve 2
+     * donnot need final determine ; use start
+     */
+    public IList<IList<int>> LargeGroupPositions_2(string S)
+    {
+        List<IList<int>> L = new List<IList<int>>();
+
+        int start = 0;
+
+        for (int i = 0; i < S.Length; i++)
+        {
+            if (i == S.Length - 1 || S[i] != S[i + 1])
+            {
+                if (i - start + 1 >= 3)
+                {
+                    L.Add(new int[] { start, i });
+                }
+                start = i + 1;
+            }
+        }
+
+        return L;
+    }
+    
+     // --------------- O(n) 232ms --------------- 32MB --------------- (83% 33%)  
+    /*
+     * donnot need final determine ; use count
      */
     public IList<IList<int>> LargeGroupPositions_2_2(string S)
     {
@@ -143,35 +140,7 @@ public class Solution830
 
         return L;
     }
-
-    // --------------- O(n) 232ms --------------- 32MB --------------- (76% 33%) 
-    /*
-     * use two point
-     */
-    public IList<IList<int>> LargeGroupPositions_3(string S)
-    {
-       IList<IList<int>> L = new List<IList<int>>();
-
-       int i = 0;
-       int j = 0;
-       while (j<S.Length)
-       {
-           while (j<S.Length && S[i]==S[j])
-           {
-               j++;
-           }
-
-           if (j - i >= 3)
-           {
-               L.Add(new List<int>(){i,j-1});
-           }
-
-           i = j;
-       }
-
-       return L;
-    }
 }
 /**************************************************************************************************************
- * LargeGroupPositions_2 LargeGroupPositions_3                                                                *
+ * LargeGroupPositions_1 LargeGroupPositions_2                                                                *
  **************************************************************************************************************/
