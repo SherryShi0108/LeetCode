@@ -21,7 +21,7 @@
  *      All the strings in the input will only contain lowercase letters.
  *      The length of words will be in the range [1, 1000].
  *      The length of words[i] will be in the range [1, 30].
- * ※
+ * 
  *******************************************************************************************************************************/
 
 using System;
@@ -52,7 +52,7 @@ public class Solution720
         return result;
     }
 
-     // --------------- O(n * m) 144ms --------------- 30MB --------------- (88% 100%)
+    // --------------- O(n * m) 144ms --------------- 30MB --------------- (88% 100%)
     /*
      * Brute Force
      */
@@ -81,14 +81,65 @@ public class Solution720
         return result;
     }
     
+    // --------------- O(n * m) 116ms --------------- 34MB --------------- (96% 36%) ※
     /*
-     * use trie + Depth-First Search
+     * use trie + Breadth-First Search
      */
     public string LongestWord_3(string[] words)
     {
-        return "";
+        TrieNode root = new TrieNode() { IsWord = true, Word = "" };
+
+        // build trie
+        foreach (string word in words)
+        {
+            TrieNode temp = root;
+            foreach (char c in word)
+            {
+                if (temp.Children[c - 'a'] == null)
+                {
+                    temp.Children[c - 'a'] = new TrieNode();
+                }
+
+                temp = temp.Children[c - 'a'];
+            }
+
+            temp.IsWord = true;
+            temp.Word = word;
+        }
+
+        // find longest
+        Queue<TrieNode> queue = new Queue<TrieNode>();
+        queue.Enqueue(root);
+        string result = "";
+
+        while (queue.Count > 0)
+        {
+            TrieNode temp = queue.Dequeue();
+
+            if (temp.Word.Length > result.Length)
+            {
+                result = temp.Word;
+            }
+
+            for (int i = 0; i < 26; i++)
+            {
+                if (temp.Children[i] != null && temp.Children[i].IsWord)
+                {
+                    queue.Enqueue(temp.Children[i]);
+                }
+            }
+        }
+
+        return result;
+    }
+    
+    public class TrieNode
+    {
+        public TrieNode[] Children = new TrieNode[26];
+        public bool IsWord;
+        public string Word;
     }
 }
 /**************************************************************************************************************
- * LongestWord_1  LongestWord_2                                                                               *
+ * LongestWord_3                                                                                              *
  **************************************************************************************************************/
