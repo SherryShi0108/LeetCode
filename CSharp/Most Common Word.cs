@@ -26,7 +26,7 @@
  *      paragraph only consists of letters, spaces, or the punctuation symbols !?',;.
  *      There are no hyphens or hyphenated words.
  *      Words only consist of letters, never apostrophes or other punctuation symbols.
- * ※
+ * 
  *******************************************************************************************************************************/
 
 using System.Collections.Generic;
@@ -34,94 +34,40 @@ using System.Linq;
 
 public class Solution819
 {
-    // --------------- O(n) 104ms --------------- 25MB --------------- (98% 9%) 
-    /*
-     * Attention: paragraph not must end with ".,!?"
-     */
+    // --------------- O(n) 112ms --------------- 26MB --------------- (77% 88%) ※
     public string MostCommonWord_1(string paragraph, string[] banned)
     {
-        Dictionary<string, int> d=new Dictionary<string, int>();
-        List<string> ban=new List<string>(banned);
-        paragraph = paragraph.ToLower();
+        string[] words = paragraph.ToLower().Split(new char[] { ' ', ',', '.', '?', '!', '\'', ';' });
+        List<string> banList = new List<string>(banned);
+        Dictionary<string, int> d = new Dictionary<string, int>();
 
-        string temp = "";
-        for (int i = 0; i < paragraph.Length; i++)
+        string result = "";
+        int max = int.MinValue;
+
+        foreach (string word in words)
         {
-            if (IsLetters(paragraph[i]))
+            if (banList.Contains(word) || string.IsNullOrEmpty(word)) continue;
+
+            if (d.ContainsKey(word))
             {
-                temp = temp + paragraph[i];
-                if (i == paragraph.Length - 1)
-                {
-                    d[temp] = d.ContainsKey(temp) ? d[temp] + 1 : 1;
-                }
+                d[word]++;
             }
             else
             {
-                if (temp != "")
-                {
-                    d[temp] = d.ContainsKey(temp) ? d[temp] + 1 : 1;
-                    temp = "";
-                }
+                d[word] = 1;
             }
-        }
 
-        int maxCount = 0;
-        string result = "";
-        foreach (var i in d)
-        {
-            if (i.Value > maxCount && !ban.Contains(i.Key))
+            if (d[word] > max)
             {
-                result = i.Key;
-                maxCount = i.Value;
+                result = word;
+                max = d[word];
             }
         }
 
         return result;
     }
-
-    public bool IsLetters(char c)
-    {
-        if (c >= 'a' && c <= 'z') return true;
-        return false;
-    }
-
-    // --------------- O(n) 116ms --------------- 25MB --------------- (65% 9%) 
-    /*
-     * improve 1 : add "." to the end
-     */
-    public string MostCommonWord_1_1(string paragraph, string[] banned)
-    {
-        Dictionary<string, int> d = new Dictionary<string, int>();
-        List<string> ban = new List<string>(banned);
-        paragraph = paragraph.ToLower()+".";
-
-        string temp = "";
-        int maxCount = 0;
-        string result = "";
-
-        for (int i = 0; i < paragraph.Length; i++)
-        {
-            if (IsLetters(paragraph[i]))
-            {
-                temp = temp + paragraph[i];
-            }
-            else if(temp != "")
-            {
-                d[temp] = d.ContainsKey(temp) ? d[temp] + 1 : 1;
-                if (d[temp] > maxCount && !ban.Contains(temp))
-                {
-                    result = temp;
-                    maxCount = d[temp];
-                }
-
-                temp = "";
-            }
-        }
-
-        return result;
-    }
-
-    // --------------- O(n) 116ms --------------- 25MB --------------- (65% 9%) 
+    
+    // --------------- O(n) 116ms --------------- 25MB --------------- (65% 9%)
     /*
      * use many API : split(char[]),Linq
      */
@@ -144,14 +90,6 @@ public class Solution819
         }
 
         return d.OrderByDescending(x => x.Value).First().Key;
-    }
-
-    /*
-     * using Store Words in Trie ※
-     */
-    public string MostCommonWord_3(string paragraph, string[] banned)
-    {
-        return "";
     }
 }
 /**************************************************************************************************************
