@@ -95,33 +95,9 @@ public class Solution868
 
         return max;
     }
-
-    // --------------- O(logn) 40ms --------------- 12.7MB --------------- (80% 100%)
-    /*
-     * int 32bits , use int[32] 
-     */
-    public int BinaryGap_3(int N)
-    {
-        int[] array = new int[32];
-        int t = 0;
-        for (int i = 0; i < 32 ; i++)
-        {
-            if (((N >> i) & 1) == 1)
-            {
-                array[t++] = i;
-            }
-        }
-
-        int max = 0;
-        for (int i = 1; i < t; i++)
-        {
-            max = max > array[i] - array[i - 1] ? max : array[i] - array[i - 1];
-        }
-        return max;
-    }
     
-    // --------------- O(logn) 40ms --------------- 13.7MB --------------- (80% 100%) ※
-    public int BinaryGap_4(int N)
+    // --------------- O(logn) 40ms --------------- 13.7MB --------------- (80% 100%) 
+    public int BinaryGap_3(int N)
     {
         int max = 0;
         int i = -32;
