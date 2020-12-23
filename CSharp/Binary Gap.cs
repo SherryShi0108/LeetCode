@@ -74,6 +74,7 @@ public class Solution868
      // --------------- O(logn) 36ms --------------- 15MB --------------- (93% 100%) ※
     /*
      * should remember : use bit operator , and last
+     * >> higher than == higher than &
      */
     public int BinaryGap_2(int N)
     {
@@ -81,12 +82,13 @@ public class Solution868
         int max = 0;
         for (int i = 0; i < 32; i++)
         {
-            if (((N >> i) & 1) != 0)
+            if ((N >> i & 1) != 0)
             {
                 if (last >= 0)
                 {
                     max = max > i - last ? max : i - last;
                 }
+                
                 last = i;
             }
         }
