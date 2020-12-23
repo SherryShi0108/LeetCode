@@ -63,7 +63,7 @@ public class Solution941
     /*
      * similar to "1"
      */
-    public bool ValidMountainArray_2(int[] A)
+    public bool ValidMountainArray_1_2(int[] A)
     {
         int temp = 0;
         while (temp < A.Length - 1 && A[temp] < A[temp + 1])
@@ -84,7 +84,7 @@ public class Solution941
     /*
      *  easy - understanding
      */
-    public bool ValidMountainArray_3(int[] A)
+    public bool ValidMountainArray_2(int[] A)
     {
         int i = 0;
         int j = A.Length - 1;
@@ -100,12 +100,85 @@ public class Solution941
 
         return i > 0 && i == j && j < A.Length - 1;
     }
+    
+      // --------------- O(n) 188ms --------------- 31MB --------------- (6% 100%) 
+     /*
+      *  easy - understanding
+      */
+    public bool ValidMountainArray_2_2(int[] A)
+    {
+        int p = 0; int q = -1;
+        for (int i = 1; i < A.Length; i++)
+        {
+            if (A[i] > A[i - 1])
+            {
+                continue;
+            }
+            else
+            {
+                p = i-1;
+                break;
+            }
+        }
+
+        for (int i = A.Length-1; i > 0; i--)
+        {
+            if (A[i] < A[i - 1])
+            {
+                continue;
+            }
+            else
+            {
+                q = i;
+                break;
+            }
+        }
+
+        return p == q;
+    }
+    
+    // --------------- O(n) 192ms --------------- 31MB --------------- (5% 13%) 
+    public bool ValidMountainArray_2_3(int[] A)
+    {
+        int flag1 = 0;
+        int flag2 = 0;
+
+        int i = 1;
+        int j = A.Length - 1;
+        for (i = 1; i < A.Length; i++)
+        {
+            if (A[i] > A[i - 1])
+            {
+                flag1 = 1;
+            }
+            else
+            {
+                break;
+            }
+        }
+
+        for (j = A.Length - 1; j > 0; j--)
+        {
+            if (A[j] < A[j - 1])
+            {
+                flag2 = 1;
+            }
+            else
+            {
+                break;
+            }
+        }
+
+        bool a = (flag1 == 1 && flag2 == 1 && j + 1 == i);
+        return a;
+    }
+    
 
     // --------------- O(n) 144ms --------------- 31MB --------------- (12% 5%) 
     /*
      *  easy - understanding
      */
-    public bool ValidMountainArray_4(int[] A)
+    public bool ValidMountainArray_3(int[] A)
     {
         if (A == null || A.Length < 3) return false;
 
@@ -141,80 +214,9 @@ public class Solution941
             }
         }
         return increaseFound && decreaseFound;
-    }    
-    
-    // --------------- O(n) 192ms --------------- 31MB --------------- (5% 13%) 
-    public bool ValidMountainArray_5(int[] A)
-    {
-        int flag1 = 0;
-        int flag2 = 0;
-
-        int i = 1;
-        int j = A.Length - 1;
-        for (i = 1; i < A.Length; i++)
-        {
-            if (A[i] > A[i - 1])
-            {
-                flag1 = 1;
-            }
-            else
-            {
-                break;
-            }
-        }
-
-        for (j = A.Length - 1; j > 0; j--)
-        {
-            if (A[j] < A[j - 1])
-            {
-                flag2 = 1;
-            }
-            else
-            {
-                break;
-            }
-        }
-
-        bool a = (flag1 == 1 && flag2 == 1 && j + 1 == i);
-        return a;
-    }
-    
-     // --------------- O(n) 188ms --------------- 31MB --------------- (6% 100%) 
-     /*
-      *  easy - understanding
-      */
-    public bool ValidMountainArray_6(int[] A)
-    {
-        int p = 0; int q = -1;
-        for (int i = 1; i < A.Length; i++)
-        {
-            if (A[i] > A[i - 1])
-            {
-                continue;
-            }
-            else
-            {
-                p = i-1;
-                break;
-            }
-        }
-
-        for (int i = A.Length-1; i > 0; i--)
-        {
-            if (A[i] < A[i - 1])
-            {
-                continue;
-            }
-            else
-            {
-                q = i;
-                break;
-            }
-        }
-
-        return p == q;
-    }
+    }       
 }
+
 /**************************************************************************************************************
- * ValidMountainArray_2   ValidMountainArray_3   ValidMountainArray_4/5 ValidMountainArray_6                  *
+ * ValidMountainArray_1   ValidMountainArray_2                                                                *
  **************************************************************************************************************/
