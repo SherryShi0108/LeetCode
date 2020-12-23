@@ -131,16 +131,10 @@ public class Solution844
             }
 
             if (i < 0 || j < 0) return i == j;
-            if (S[i] != S[j])
-            {
-                return false;
-
-            }
-            else
-            {
-                i--;
-                j--;
-            }
+            if (S[i] != S[j]) return false;
+      
+            i--;
+            j--;            
         }
 
         return i == j;
