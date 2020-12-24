@@ -36,79 +36,8 @@ using System.Collections.Generic;
 
 public class Solution989
 {
-    ///+++++++++++++++++++++++++ Error +++++++++++++++++++++++++
-    /*
-     * it has input cause sum > int.maxValue
-     */
-    public IList<int> AddToArrayForm_1(int[] A, int K)
-    {
-        int sum = 0;
-        for (int i = 0; i < A.Length; i++)
-        {
-            sum = sum * 10 + A[i];
-        }
-
-        sum += K;
-
-        //求sum位数
-        int j = 0; int temp = sum;
-        while (temp > 0)
-        {
-            temp = temp / 10;
-            j++;
-        }
-
-        IList<int> d = new int[j];
-        for (int i = j - 1; i >= 0; i--)
-        {
-            d[i] = sum % 10;
-            sum = sum / 10;
-        }
-
-        return d;
-    }
-    ///+++++++++++++++++++++++++ Error +++++++++++++++++++++++++
-
-    ///+++++++++++++++++++++++++ Error +++++++++++++++++++++++++
-    /*
-     * maybe cause sum > long.maxValue (>double.maxValue)
-     */
-    public IList<int> AddToArrayForm_2(int[] A, int K)
-    {
-        long sum = 0;
-        for (int i = 0; i < A.Length; i++)
-        {
-            sum = sum * 10 + A[i];
-        }
-
-        sum += K;
-
-        //求sum位数
-        int j = 0;
-        long temp = sum;
-        if (temp == 0)
-        {
-            return new int[] { 0 };
-        }
-        while (temp > 0)
-        {
-            temp = temp / 10;
-            j++;
-        }
-
-        IList<int> d = new int[j];
-        for (int i = j - 1; i >= 0; i--)
-        {
-            d[i] = (int)(sum % 10);
-            sum = sum / 10;
-        }
-
-        return d;
-    }
-    ///+++++++++++++++++++++++++ Error +++++++++++++++++++++++++
-
     // --------------- O(n) 308ms --------------- 37.9MB --------------- (72% 18%) 
-    public IList<int> AddToArrayForm_3(int[] A, int K)
+    public IList<int> AddToArrayForm_1(int[] A, int K)
     {
         List<int> d = new List<int>();
 
@@ -128,26 +57,12 @@ public class Solution989
         d.Reverse();
         return d;
     }
-
-    // --------------- O(n) 312ms --------------- 37.7MB --------------- (63% 70%) 
-    public IList<int> AddToArrayForm_4(int[] A, int K)
-    {
-        List<int> d = new List<int>();
-
-        int i = A.Length - 1;
-        while (i >= 0 || K > 0)
-        {
-            K = K + (i >= 0 ? A[i--] : 0);
-            d.Add(K % 10);
-            K = K / 10;
-        }
-
-        d.Reverse();
-        return d;
-    }
-
+    
     // --------------- O(n) 296ms --------------- 36.7MB --------------- (95% 88%) ※ 
-    public IList<int> AddToArrayForm_5(int[] A, int K)
+    /*
+     * improve 1 : use Insert(index,value) API , better than Add
+     */
+    public IList<int> AddToArrayForm_1_2(int[] A, int K)
     {
         List<int> d = new List<int>(A);
 
@@ -166,7 +81,24 @@ public class Solution989
 
         return d;
     }
+
+    // --------------- O(n) 312ms --------------- 37.7MB --------------- (63% 70%) 
+    public IList<int> AddToArrayForm_2(int[] A, int K)
+    {
+        List<int> d = new List<int>();
+
+        int i = A.Length - 1;
+        while (i >= 0 || K > 0)
+        {
+            K = K + (i >= 0 ? A[i--] : 0);
+            d.Add(K % 10);
+            K = K / 10;
+        }
+
+        d.Reverse();
+        return d;
+    }
 }
 /**************************************************************************************************************
- * AddToArrayForm_3/5 AddToArrayForm_4                                                                        *
+ * AddToArrayForm_1 / AddToArrayForm_2                                                                        *
  **************************************************************************************************************/
