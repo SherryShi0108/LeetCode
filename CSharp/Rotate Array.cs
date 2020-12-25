@@ -87,30 +87,33 @@ public class Solution189
             j--;
         }
     }
-
-    // --------------- O(n) 264ms --------------- O(1)30.5MB --------------- (56% 85%) ※
+    
+    // --------------- O(n) 228ms --------------- O(1) 32MB --------------- (99.8% 9%) ※
     public void Rotate_3(int[] nums, int k)
     {
         int count = 0;
-        for (int i = 0; ; i++)
+        for (int i = 0; i < nums.Length; i++)
         {
-            int prevValue = nums[i];
             int currentIndex = i;
-            do
+            int currentValue = nums[currentIndex];
+            while ( count < nums.Length )
             {
-                int nextIndex = (currentIndex + k) % nums.Length;
+                int nextIndex = (k + currentIndex) % nums.Length;
                 int nextValue = nums[nextIndex];
-                nums[nextIndex] = prevValue;
-                prevValue = nextValue;
-                currentIndex = nextIndex;
 
-                if (++count == nums.Length) return;
-            } while (i != currentIndex);
+                nums[nextIndex] = currentValue;
+                currentIndex = nextIndex;
+                currentValue = nextValue;
+                
+                count++;
+                if (count == nums.Length) return;
+                if (currentIndex == i) break;
+            }
         }
     }
     
-    // --------------- O(n) 240ms --------------- O(1)32MB --------------- (86% 9%) ※
-    public void Rotate_3_1(int[] nums, int k)
+    // --------------- O(n) 240ms --------------- O(1) 32MB --------------- (86% 9%) 
+    public void Rotate_3_2(int[] nums, int k)
     {
         int count = 0;
         int i = -1;
@@ -129,29 +132,6 @@ public class Solution189
 
                 if (++count == nums.Length) return;
             } while (i != currentIndex);
-        }
-    }
-    
-    // --------------- O(n) 228ms --------------- O(1)32MB --------------- (99.8% 9%) ※
-    public void Rotate_3_2(int[] nums, int k)
-    {
-        int count = 0;
-        for (int i = 0; i < nums.Length; i++)
-        {
-            int currentIndex = i;
-            int currentValue = nums[currentIndex];
-            while (true)
-            {
-                int nextIndex = (k + currentIndex) % nums.Length;
-                int nextValue = nums[nextIndex];
-
-                nums[nextIndex] = currentValue;
-                currentIndex = nextIndex;
-                currentValue = nextValue;
-
-                if (++count == nums.Length) return;
-                if (currentIndex == i) break;
-            }
         }
     }
 }
