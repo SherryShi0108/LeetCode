@@ -15,7 +15,7 @@
  * Input: 8
  * Output: 2
  * Explanation: The square root of 8 is 2.82842..., and since the decimal part is truncated, 2 is returned.
- * ※
+ * 
  *******************************************************************************************************************************/
 
 public class Solution69
@@ -47,14 +47,14 @@ public class Solution69
         return j;
     }
 
-    // --------------- O(logn) 44ms --------------- 14.1MB --------------- (57% 7%) 
+    // --------------- O(logn) 44ms --------------- 14.1MB --------------- (57% 7%) ※
     /*
      * Binary Search
      * 1. j should be x+1 , but x+1 maybe overflow , so use x and consider j = x , but always x*x>x except 1 
      */
-    public int MySqrt_1_1(int x)
+    public int MySqrt_1_2(int x)
     {
-        if (x <2) return x;
+        if (x < 2) return x;
         int i = 1;
         int j = x;
         while (i < j)
