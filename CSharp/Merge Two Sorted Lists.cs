@@ -59,44 +59,7 @@ public class Solution21
         head.next = MergeTwoLists_2(head.next, nonhead);
         return head;
     }
-
-    // --------------- O(n) 112ms --------------- O(n) 25MB --------------- (8% 6%) 
-    public ListNode MergeTwoLists_3(ListNode l1, ListNode l2)
-    {
-        ListNode start = new ListNode(-1);
-        ListNode cur = start;
-        ListNode temp1 = l1;
-        ListNode temp2 = l2;
-
-        while (temp1 != null && temp2 != null)
-        {
-            if (temp1.val <= temp2.val)
-            {
-                cur.next = temp1;
-                temp1 = temp1.next;
-            }
-            else
-            {
-                cur.next = temp2;
-                temp2 = temp2.next;
-            }
-
-            cur = cur.next;
-        }
-
-        if (temp1 != null)
-        {
-            cur.next = temp1;
-        }
-
-        if (temp2 != null)
-        {
-            cur.next = temp2;
-        }
-
-        return start.next;
-    }
 }
 /**************************************************************************************************************
- * MergeTwoLists_2 MergeTwoLists_3                                                                            *
+ * MergeTwoLists_1 MergeTwoLists_2                                                                            *
  **************************************************************************************************************/
