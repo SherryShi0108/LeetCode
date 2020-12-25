@@ -55,7 +55,7 @@ public class Solution203
     /*
      * improve 1
      */
-    public ListNode RemoveElements_2(ListNode head, int val)
+    public ListNode RemoveElements_1_2(ListNode head, int val)
     {
         if (head == null) return head;
 
@@ -79,7 +79,7 @@ public class Solution203
     /*
      * using recursive
      */
-    public ListNode RemoveElements_3(ListNode head, int val)
+    public ListNode RemoveElements_2(ListNode head, int val)
     {
         if (head == null) return null;
         head.next = RemoveElements_3(head.next, val);
@@ -87,5 +87,5 @@ public class Solution203
     }
 }
 /**************************************************************************************************************
- * RemoveElements_2 RemoveElements_3                                                                          *
+ * RemoveElements_1 RemoveElements_2                                                                          *
  **************************************************************************************************************/
