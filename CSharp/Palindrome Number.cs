@@ -19,18 +19,27 @@
  * Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
  * 
  * Follow up: Coud you solve it without converting the integer to a string?
- * ※
+ * 
  *******************************************************************************************************************************/
 
 public class Solution9
 {
-    // --------------- 72ms --------------- 15.5MB --------------- (48% 15%)
+    // --------------- 64ms --------------- 19MB --------------- (70% 13%) ※
     public bool IsPalindrome_1(int x)
     {
-        string s = x.ToString();
-        for (int i = 0; i < s.Length; i++)
+        if (x < 0) return false;
+        List<int> L = new List<int>();
+        while (x > 0)
         {
-            if (s[i] != s[s.Length - 1 - i])
+            L.Add(x % 10);
+            x /= 10;
+        }
+
+        int[] arrays = new int[L.Count];
+        arrays = L.ToArray();
+        for (int i = 0; i < arrays.Length / 2; i++)
+        {
+            if (arrays[i] != arrays[arrays.Length - 1 - i])
             {
                 return false;
             }
@@ -40,6 +49,9 @@ public class Solution9
     }
 
     // --------------- 60ms --------------- 14.9MB --------------- (89% 20%)
+    /*
+     * tricky : because if overflow , it mustn't be palindrome
+     */
     public bool IsPalindrome_2(int x)
     {
         if (x < 0 || x % 10 == 0 && x != 0)
@@ -83,5 +95,5 @@ public class Solution9
 
 }
 /**************************************************************************************************************
- * IsPalindrome_2                                                                                             *
+ * IsPalindrome_1                                                                                             *
  **************************************************************************************************************/
