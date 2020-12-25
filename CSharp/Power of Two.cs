@@ -27,7 +27,7 @@ public class Solution231
 {
     // --------------- O(logn) 40ms --------------- 15MB --------------- (82% 10%) ※
     /*
-     * improve 1
+     *  using 
      */
     public bool IsPowerOfTwo_1(int n)
     {
@@ -47,7 +47,7 @@ public class Solution231
      */
     public bool IsPowerOfTwo_2(int n)
     {
-        return n > 0 && ((n & (n - 1)) == 0);
+        return n > 0 && (n & n - 1) == 0;
     }
     
     // --------------- O(logn) 40ms --------------- 15MB --------------- (83% 10%)
@@ -57,7 +57,7 @@ public class Solution231
      */
     public bool IsPowerOfTwo_2_2(int n)
     {
-        return n != 0 && n != int.MinValue && (n & (n - 1)) == 0;
+        return n != 0 && n != int.MinValue && (n & n - 1) == 0;
         
          // if (n == 0 || n == int.MinValue) return false;
          // return (n & (n - 1)) == 0;
