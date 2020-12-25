@@ -28,9 +28,9 @@
 
 public class Solution38
 {    
-    // --------------- O(n^2) 88ms --------------- 28MB ---------------(49% 6%) 
+    // --------------- O(n^2) 88ms --------------- 30MB ---------------(65% 24%) ※
     /*
-     * !!! Attention : count.ToString() NOT count
+     * !!! Attention : count.ToString() NOT count ； using count
      */
     public string CountAndSay_1(int n)
     {
@@ -48,26 +48,24 @@ public class Solution38
     {
         string result = "";
 
-        int count = 1;
-        for (int i = 1; i < s.Length; i++)
+        int count = 0;
+        for (int i = 0; i < s.Length; i++)
         {
-            if (s[i] == s[i - 1])
+            count++;
+            
+            if (i == s.Length - 1 || s[i] != s[i + 1])
             {
-                count++;
-            }
-            else
-            {
-                result = result + (count.ToString() + s[i - 1]);
-                count = 1;
-            }
+                result = result + count.ToString() + s[i];
+                count = 0;
+            }          
         }
 
-        return result + (count.ToString() + s[s.Length - 1]);
+        return result;
     }
     
-     // --------------- O(n^2) 88ms --------------- 28MB ---------------(50% 6%) ※
+     // --------------- O(n^2) 88ms --------------- 28MB ---------------(50% 6%) 
     /*
-     * improve 1 
+     *  using lastIndex
      */
     public string CountAndSay_1_2(int n)
     {
