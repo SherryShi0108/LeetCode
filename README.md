@@ -600,7 +600,7 @@ C#
 |	595	|	|	|	| | |
 |	596	|	|	|	| | |
 |	597	|❀ Friend Requests I: Overall Acceptance Rate |	|	| | |
-|	598	|	|	|	| | |
+|	598	|[Range Addition II](https://leetcode.com/problems/range-addition-ii/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Range%20Addition%20II.cs)|	| ♥ | |
 |	599	|[Minimum Index Sum of Two Lists](https://leetcode.com/problems/minimum-index-sum-of-two-lists/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Minimum%20Index%20Sum%20of%20Two%20Lists.cs)| | ♥ | |
 |	600	|	|	|	| | |
 |	601	|	|	|	| | |
@@ -639,7 +639,7 @@ C#
 |	634	|❀ Find the Derangement of An Array	|	|	| | |
 |	635	|❀ Design Log Storage System 	|	|	| | |
 |	636	|	|	|	| | |
-|	637	|	|	|	| | |
+|	637	|[Average of Levels in Binary Tree](https://leetcode.com/problems/average-of-levels-in-binary-tree/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Average%20of%20Levels%20in%20Binary%20Tree.cs)| | ♥ | |
 |	638	|	|	|	| | |
 |	639	|	|	|	| | |
 |	640	|	|	|	| | |
@@ -790,7 +790,7 @@ C#
 |	785	|	|	|	| | |
 |	786	|	|	|	| | |
 |	787	|	|	|	| | |
-|	788	|	|	|	| | |
+|	788	|[Rotated Digits](https://leetcode.com/problems/rotated-digits/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Rotated%20Digits.cs)| | ♥ | |
 |	789	|	|	|	| | |
 |	790	|	|	|	| | |
 |	791	|	|	|	| | |
@@ -838,7 +838,7 @@ C#
 |	833	|	|	|	| | |
 |	834	|	|	|	| | |
 |	835	|	|	|	| | |
-|	836	|	|	|	| | |
+|	836	|[Rectangle Overlap](https://leetcode.com/problems/rectangle-overlap/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Rectangle%20Overlap.cs)|	| ♥ | |
 |	837	|	|	|	| | |
 |	838	|	|	|	| | |
 |	839	|	|	|	| | |
@@ -885,7 +885,7 @@ C#
 |	880	|	|	|	| | |
 |	881	|	|	|	| | |
 |	882	|	|	|	| | |
-|	883	|	|	|	| | |
+|	883	|[Projection Area of 3D Shapes](https://leetcode.com/problems/projection-area-of-3d-shapes/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Projection%20Area%20of%203D%20Shapes.cs)| | ♥ | |
 |	884	|[Uncommon Words from Two Sentences](https://leetcode.com/problems/uncommon-words-from-two-sentences/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Uncommon%20Words%20from%20Two%20Sentences.cs)|	| ♥ | |
 |	885	|	|	|	| | |
 |	886	|	|	|	| | |
@@ -894,7 +894,7 @@ C#
 |	889	|	|	|	| | |
 |	890	|	|	|	| | |
 |	891	|	|	|	| | |
-|	892	|	|	|	| | |
+|	892	|[Surface Area of 3D Shapes](https://leetcode.com/problems/surface-area-of-3d-shapes/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Surface%20Area%20of%203D%20Shapes.cs)|	| ♥ | |
 |	893	|	|	|	| | |
 |	894	|	|	|	| | |
 |	895	|	|	|	| | |
