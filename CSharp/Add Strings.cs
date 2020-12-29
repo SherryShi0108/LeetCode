@@ -17,22 +17,26 @@
 
 public class Solution415
 {
-    // --------------- O(n) 108ms --------------- 46MB --------------- (36% 13%) ※
+    // --------------- O(n) 92ms --------------- 48MB --------------- (70% 11%) ※
     public string AddStrings_1(string num1, string num2)
     {
-        int m = num1.Length - 1;
-        int n = num2.Length - 1;
         string result = "";
-        int add = 0;
+        int i = num1.Length - 1;
+        int j = num2.Length - 1;
+        int k = 0;
 
-        while (m>=0||n>=0||add>0)
+        while (i>=0 || j>=0 || k>0)
         {
-            int t = (m >= 0 ? num1[m] - '0' : 0) + (n >= 0 ? num2[n] - '0' : 0) + add;
-            add = t / 10;
-            result = t % 10 + result;
+            int t1 = i >= 0 ? num1[i] - '0' : 0;
+            int t2 = j >= 0 ? num2[j] - '0' : 0;
 
-            m--;
-            n--;
+            k += t1 + t2;
+
+            result = (k % 10).ToString() + result;
+            k /= 10;
+
+            i--;
+            j--;
         }
 
         return result;
