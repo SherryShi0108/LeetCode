@@ -19,42 +19,35 @@ using System.Collections.Generic;
 
 public class Solution447
 {
-
-    public int Dis(int[] p1, int[] p2)
-    {
-        int x0 = p1[0] - p2[0];
-        int y0 = p1[1] - p2[1];
-        int mul = x0 * x0 + y0 * y0;
-        return mul;
-    }
-    // --------------- O(n^2) 264ms --------------- 44MB --------------- (53% 100%) ※
+    // --------------- O(n^2) 260ms --------------- 47MB --------------- (93% 91%) ※
     public int NumberOfBoomerangs_1(int[][] points)
     {
-        int count = 0;        
+        int result = 0;
         for (int i = 0; i < points.Length; i++)
         {
             Dictionary<int, int> d = new Dictionary<int, int>();
             for (int j = 0; j < points.Length; j++)
             {
-                if (j != i)
-                {
-                    int mul = Dis(points[i], points[j]);
-                    if (d.ContainsKey(mul))
-                    {
-                        d[mul]++;
-                    }
-                    else
-                    {
-                        d[mul] = 1;
-                    }
-                }
+                if (i == j) continue;
+                int temp = Distict(points[i], points[j]);
+                d[temp] = d.ContainsKey(temp) ? d[temp] + 1 : 1;
             }
+
             foreach (var item in d)
             {
-                count += (item.Value * (item.Value - 1));
+                result += item.Value * (item.Value - 1);
             }
-        }       
-        return count;
+        }
+
+        return result;
+    }
+    
+    public int Distict(int[] p1, int[] p2)
+    {
+        int x = p1[0] - p2[0];
+        int y = p1[1] - p2[1];
+
+        return x * x + y * y;
     }
 }
 /**************************************************************************************************************
