@@ -28,37 +28,30 @@ using System.Collections.Generic;
 
 public class Solution532
 {
-    // --------------- O(n) 120ms --------------- 31.9MB --------------- (66% 8%) ※
+    // --------------- O(n) 100ms --------------- 29MB --------------- (89% 71%) ※
     /*
-     * Why k>=-1? cause absolute difference!!! so k>=0!!!
+     *  if k==0 , it must to determine what is the count of this key
      */
     public int FindPairs_1(int[] nums, int k)
     {
         Dictionary<int, int> d = new Dictionary<int, int>();
+        foreach (int num in nums)
+        {
+            d[num] = d.ContainsKey(num) ? d[num] + 1 : 1;
+        }
 
         int count = 0;
-        for (int i = 0; i < nums.Length; i++)
-        {
-            if (d.ContainsKey(nums[i]))
-            {
-                d[nums[i]]++;
-            }
-            else
-            {
-                d[nums[i]]=1;
-            }
-        }
         foreach (var item in d)
         {
-            if (k == 0 && item.Value > 1)
+            if (d.ContainsKey(item.Key + k))
             {
-                count++;
+                if (k != 0 || k == 0 && d[item.Key] > 1)
+                {
+                    count++;
+                }
             }
-            if (k >= 1 && d.ContainsKey(item.Key+k))
-            {
-                count++;
-            }
-        } 
+        }
+
         return count;
     }
     
