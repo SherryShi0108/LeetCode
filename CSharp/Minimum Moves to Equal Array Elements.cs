@@ -18,66 +18,12 @@
 using System.Runtime.Remoting.Channels;
 
 public class Solution453
-{
-    ///+++++++++++++++++++++++++ Time Limited +++++++++++++++++++++++++
-    /*
-     * this idea is right , but it cost lots of time
-     */
-    public int MinMoves_1(int[] nums)
-    {
-        if (nums == null||nums.Length == 0 ) return 0;
-        int count = 0;
-
-        while (!IsAllEqu(nums))
-        {
-            int maxIndex = 0;
-            int max = int.MinValue;
-            int min = int.MaxValue;
-            for (int i = 0; i < nums.Length; i++)
-            {
-                if (nums[i] > max)
-                {
-                    max = nums[i];
-                    maxIndex = i;
-                }
-
-                if (nums[i] < min)
-                {
-                    min = nums[i];
-                }
-            }
-
-            for (int i = 0; i < nums.Length; i++)
-            {
-                nums[i] = i == maxIndex ? nums[i] : nums[i] + (max - min);
-            }
-
-            int x = max - min;
-
-            count += max - min;
-
-        }
-
-        return count;
-    }
-
-    private bool IsAllEqu(int[] nums)
-    {
-        if (nums == null || nums.Length == 0 ) return false;
-        int temp = nums[0];
-        foreach (int num in nums)
-        {
-            if (num != temp) return false;
-        }
-
-        return true;
-    }
-    
+{    
     // --------------- O(n) 132ms --------------- 34MB --------------- (86% 100%) ※
     /*
      * use trick : (n-1)element + 1 = one element - 1
      */
-    public int MinMoves_2(int[] nums)
+    public int MinMoves_1(int[] nums)
     {
         int min = int.MaxValue;
         for (int i = 0; i < nums.Length; i++)
@@ -94,14 +40,14 @@ public class Solution453
         return count;
     }
 
-    // --------------- O(n) 148ms --------------- 34MB --------------- (35% 100%) ※
+    // --------------- O(n) 148ms --------------- 34MB --------------- (35% 100%) 
     /*
      * Math solution :
      * 1. sum + m*(n-1)*1 = x * n
      * 2. x = minValue + m
      * 3. sum - m = n * minValue 
      */
-    public int MinMoves_3(int[] nums)
+    public int MinMoves_2(int[] nums)
     {
         int sum = 0;
         int min = int.MaxValue;
@@ -115,5 +61,5 @@ public class Solution453
     }
 }
 /**************************************************************************************************************
- * MinMoves_2 MinMoves_3                                                                                      *
+ * MinMoves_1 MinMoves_2                                                                                      *
  **************************************************************************************************************/
