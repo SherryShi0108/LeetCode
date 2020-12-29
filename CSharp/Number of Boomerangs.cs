@@ -49,7 +49,35 @@ public class Solution447
 
         return x * x + y * y;
     }
+    
+    // --------------- O(n^2) 212ms --------------- 26MB --------------- (100% 100%) ※
+    /*
+     * Improve 1 : use Dictionary.Clear to reduce each-for declare
+     */
+    public int NumberOfBoomerangs_1_2(int[][] points)
+    {
+        int result = 0;
+        Dictionary<int, int> d = new Dictionary<int, int>();
+        for (int i = 0; i < points.Length; i++)
+        {           
+            for (int j = 0; j < points.Length; j++)
+            {
+                if (i == j) continue;
+                int temp = Distict(points[i], points[j]);
+                d[temp] = d.ContainsKey(temp) ? d[temp] + 1 : 1;
+            }
+
+            foreach (var item in d)
+            {
+                result += item.Value * (item.Value - 1);
+            }
+            
+            d.Clear();
+        }
+
+        return result;
+    }
 }
 /**************************************************************************************************************
- * NumberOfBoomerangs_1                                                                                       *
+ * NumberOfBoomerangs_1_2                                                                                     *
  **************************************************************************************************************/
