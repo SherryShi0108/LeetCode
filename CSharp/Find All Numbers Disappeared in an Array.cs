@@ -46,30 +46,10 @@ public class Solution448
         return L;
     }
 
-    // --------------- O(n) 336ms --------------- 43.1MB --------------- (52% 40%)
-    /*
-     * But O(space)!=O(1),using extra int[]  
-     */
-    public IList<int> FindDisappearedNumbers_1_2(int[] nums)
-    {
-        List<int> L = new List<int>();
-        int[] temp = new int[nums.Length+1];
-
-        for (int i = 0; i < nums.Length; i++)
-        {
-            temp[nums[i]]++;
-        }
-        for (int i = 1; i < temp.Length; i++)
-        {
-            if (temp[i] == 0)
-            {
-                L.Add(i);
-            }
-        }
-        return L;
-    }
-
     // --------------- O(n) 324ms --------------- 42.5MB --------------- (91% 53%) ※ 
+    /*
+     * Modify nums : [4,3,2,7,8,2,3,1] => [-4,-3,-2,-7,8,2,-3,-1]
+     */
     public IList<int> FindDisappearedNumbers_2(int[] nums)
     {
         List<int> L = new List<int>();
@@ -88,8 +68,37 @@ public class Solution448
         }
         return L;
     }
+    
+    // --------------- O(n) 304ms --------------- 44MB --------------- (66% 91%)  
+    /*
+     * Modify nums : [4,3,2,7,8,2,3,1] => [1,2,3,4,3,2,7,8]
+     */
+    public IList<int> FindDisappearedNumbers_3(int[] nums)
+    {
+        List<int> L = new List<int>();
+
+        for (int i = 0; i < nums.Length; i++)
+        {
+            while (nums[i] != i + 1 && nums[i] != nums[nums[i] - 1])
+            {
+                int temp = nums[i];
+                nums[i] = nums[temp - 1];
+                nums[temp - 1] = temp;
+            }
+        }
+
+        for (int i = 0; i < nums.Length; i++)
+        {
+            if (nums[i] != i + 1)
+            {
+                L.Add(i + 1);
+            }
+        }
+
+        return L;
+    }
 }
 
 /**************************************************************************************************************
- * FindDisappearedNumbers_2                                                                                   *
+ * FindDisappearedNumbers_2 FindDisappearedNumbers_3                                                          *
  **************************************************************************************************************/
