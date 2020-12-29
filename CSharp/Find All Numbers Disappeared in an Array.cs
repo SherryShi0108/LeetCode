@@ -46,34 +46,11 @@ public class Solution448
         return L;
     }
 
-    ///+++++++++++++++++++++++++ Error +++++++++++++++++++++++++
-    /*
-     * Time Limit Exceeded
-     */
-    public IList<int> FindDisappearedNumbers_2(int[] nums)
-    {
-        List<int> L = new List<int>();
-        for (int i = 1; i < nums.Length + 1; i++)
-        {
-            L.Add(i);
-        }
-        for (int i = 0; i < nums.Length; i++)
-        {
-            if (L.Contains(nums[i]))
-            {
-                L.Remove(nums[i]);
-            }
-        }
-
-        return L;
-    }
-    ///+++++++++++++++++++++++++ Error +++++++++++++++++++++++++
-
     // --------------- O(n) 336ms --------------- 43.1MB --------------- (52% 40%)
     /*
      * But O(space)!=O(1),using extra int[]  
      */
-    public IList<int> FindDisappearedNumbers_3(int[] nums)
+    public IList<int> FindDisappearedNumbers_1_2(int[] nums)
     {
         List<int> L = new List<int>();
         int[] temp = new int[nums.Length+1];
@@ -93,14 +70,14 @@ public class Solution448
     }
 
     // --------------- O(n) 324ms --------------- 42.5MB --------------- (91% 53%) ※ 
-    public IList<int> FindDisappearedNumbers_4(int[] nums)
+    public IList<int> FindDisappearedNumbers_2(int[] nums)
     {
         List<int> L = new List<int>();
 
         for (int i = 0; i < nums.Length; i++)
         {
-            int x = (nums[i] > 0 ? nums[i] : -nums[i]) - 1;
-            nums[x] = nums[x] > 0 ? -nums[x] : nums[x];
+            int tempIndex = (nums[i] > 0 ? nums[i] : -nums[i]) - 1;
+            nums[tempIndex] = nums[tempIndex] > 0 ? -nums[tempIndex] : nums[tempIndex];
         }
         for (int i = 0; i < nums.Length; i++)
         {
@@ -111,36 +88,8 @@ public class Solution448
         }
         return L;
     }
-
-    /*
-     * Time Limit Exceeded
-     *  O(time)!=O(n)
-     */
-    public IList<int> FindDisappearedNumbers_5(int[] nums)
-    {
-        List<int> L = new List<int>();
-        for (int i = 0; i < nums.Length; i++)
-        {
-            while (nums[i] != i + 1 && nums[i] != nums[nums[i] - 1])
-            {
-                int temp = nums[i];
-                nums[i] = nums[nums[i] - 1];
-                nums[nums[i] - 1] = temp;
-            }
-        }
-
-        for (int i = 0; i < nums.Length; i++)
-        {
-            if (nums[i] != i + 1)
-            {
-                L.Add(i+1);
-            }
-        }
-       
-        return L;
-    }
 }
 
 /**************************************************************************************************************
- * FindDisappearedNumbers_4                                                                                   *
+ * FindDisappearedNumbers_2                                                                                   *
  **************************************************************************************************************/
