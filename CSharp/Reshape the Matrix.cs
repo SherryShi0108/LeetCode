@@ -36,96 +36,44 @@
 
 public class Solution566
 {
-    // --------------- O(n)=O(nums.L*nums.W) 280ms --------------- O(n) 32.6MB --------------- (55% 5%)
+    // --------------- O(n)=O(nums.L*nums.W) 260ms --------------- O(n) 34MB --------------- (55% 93%) ※
     /*
-     * Attention : B[m][n] can't use directly, you should "B[m] = new int[c];" first
+     *  use 0 - m*n
      */
     public int[][] MatrixReshape_1(int[][] nums, int r, int c)
     {
-        if (nums.Length * nums[0].Length != r * c) { return nums; }
+        int m = nums.Length;
+        int n = nums[0].Length;
+        if (m * n != r * c) return nums;
 
-        int[][] B = new int[r][];
-
-        int[] temp = new int[r * c];
-        int i = 0;
-        for (int m = 0; m < nums.Length; m++)
+        int[][] result = new int[r][];
+        for (int i = 0; i < result.Length; i++)
         {
-            for (int n = 0; n < nums[0].Length; n++)
-            {
-                temp[i++] = nums[m][n];
-            }
+            result[i] = new int[c];
         }
-
-        int j = 0;
-        for (int m = 0; m < r; m++)
-        {
-            B[m] = new int[c];
-            for (int n = 0; n < c; n++)
-            {
-                B[m][n] = temp[j++];
-            }
-        }
-
-        return B;
-    }
-
-    /*
-     * is good for Java or others. It's a great solution 
-     * C# should instantiation first ,so it can't work
-     */
-    public int[][] MatrixReshape_2(int[][] nums, int r, int c)
-    {
-        if (nums.Length * nums[0].Length != r * c) { return nums; }
-
-        int[][] B = new int[r][];
-        int m = nums.Length; int n = nums[0].Length;
 
         for (int i = 0; i < m * n; i++)
         {
-            B[i / c][i % c] = nums[i / n][i % n];
+            result[i / c][i % c] = nums[i / n][i % n];
         }
 
-        return B;
-    }
-
-    // --------------- O(n)=O(nums.L*nums.W) 288ms --------------- O(n) 32.4MB --------------- (30% 27%) ※ 
-    public int[][] MatrixReshape_3(int[][] nums, int r, int c)
-    {
-        int m = nums.Length; int n = nums[0].Length;
-        if (m * n != r * c) { return nums; }
-
-        int[][] B = new int[r][];
-        for (int t = 0; t < r; t++)
-        {
-            B[t] = new int[c];
-        }
-
-        for (int i = 0; i < m*n; i++)
-        {
-            B[i/c][i%c]= nums[i/n][i%n];
-        }
-
-        return B;
+        return result;
     }
     
     // --------------- O(n)=O(nums.L*nums.W) 276ms --------------- O(n) 33.1MB --------------- (66.3% 33%)
-    public int[][] MatrixReshape_4(int[][] nums, int r, int c)
+    public int[][] MatrixReshape_2(int[][] nums, int r, int c)
     {
         int m = nums.Length;
         int n = nums[0].Length;
-        if (m * n != r * c)
-        {
-            return nums;
-        }
-        
-        int[][] result=new int[r][];
+        if (m * n != r * c) return nums;
+       
+        int[][] result = new int[r][];
         for (int i = 0; i < r; i++)
         {
             result[i] = new int[c];
             for (int j = 0; j < c; j++)
             {
-                int t = i *c+ j;
-                result[i][j] = nums[t/n][t%n];
+                result[i][j] = nums[(i * c + j) / n][(i * c + j) % n];
             }
         }
 
@@ -133,5 +81,5 @@ public class Solution566
     }
 }
 /**************************************************************************************************************
- * MatrixReshape_4 MatrixReshape_3                                                                            *
+ * MatrixReshape_1 MatrixReshape_2                                                                            *
  **************************************************************************************************************/
