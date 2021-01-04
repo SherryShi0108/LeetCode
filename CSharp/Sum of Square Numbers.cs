@@ -48,6 +48,40 @@ public class Solution633
 
         return false;
     }
+    
+    // --------------- O(c^1/2 * logc) 268ms --------------- O(logc) 15MB --------------- (7% 39%) 
+    public bool JudgeSquareSum_1_2(int c)
+    {
+        for (long a = 0; a * a <= c; a++)
+        {
+            int b = c - (int)(a * a);
+            if (BinarySearchTest(0, b, b))
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    public bool BinarySearchTest(long s, long e, int n)
+    {
+        if (s > e) return false;
+        long mid = s + (e - s) / 2;
+        if (mid * mid == n)
+        {
+            return true;
+        }
+
+        if (mid * mid > n)
+        {
+            return BinarySearchTest(s, mid - 1, n);
+        }
+        else
+        {
+            return BinarySearchTest(mid + 1, e, n);
+        }
+    }
 
     // --------------- O(n) 76ms --------------- 34.1MB --------------- (23% 50%) 
     public bool JudgeSquareSum_2(int c)
@@ -61,7 +95,30 @@ public class Solution633
 
         return false;
     }
+    
+    // --------------- O(c^1/2 * logc) 40ms --------------- O(1) 15MB --------------- (89% 39%) 
+    /*
+     * Use Fermat Theorem
+     */
+    public bool JudgeSquareSum_3(int c)
+    {
+        for (int i = 2; i * i <= c; i++)
+        {
+            int count = 0;
+            if (c % i == 0)
+            {
+                while (c % i == 0)
+                {
+                    count++;
+                    c /= i;
+                }
+                if (i % 4 == 3 && count % 2 != 0)
+                    return false;
+            }
+        }
+        return c % 4 != 3;
+    }
 }
 /**************************************************************************************************************
- * JudgeSquareSum_1                                                                                           *
+ * JudgeSquareSum_1 / 2 / 3                                                                                   *
  **************************************************************************************************************/
