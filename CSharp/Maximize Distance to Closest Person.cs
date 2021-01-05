@@ -92,6 +92,40 @@ public class Solution849
         }
         return result;
     }  
+    
+    // --------------- O(n) 104ms --------------- O(1) 28MB --------------- (73% 87%) 
+    /*
+     *  use while
+     */
+    public int MaxDistToClosest_2(int[] seats)
+    {
+        int result = 0;
+        int i = 0;
+        while (i<seats.Length)
+        {
+            while (i<seats.Length && seats[i]==1)
+            {
+                i++;
+            }
+
+            int j = i; // start
+            while (i<seats.Length && seats[i]==0)
+            {
+                i++;
+            }
+
+            if (j == 0 || i == seats.Length)
+            {
+                result = result > i - j ? result : i - j;
+            }
+            else
+            {
+                result = result > (i - j + 1) / 2 ? result : (i - j + 1)/2;
+            }
+        }
+       
+        return result;
+    }
 }
 /**************************************************************************************************************
  * MaxDistToClosest_1 / MaxDistToClosest_2                                                                    *
