@@ -157,7 +157,7 @@ C#
 |	152	|	|	|	| | |
 |	153	|	|	|	| | |
 |	154	|	|	|	| | |
-|	155	|	|	|	| | |
+|	155	|[Min Stack](https://leetcode.com/problems/min-stack/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Min%20Stack.cs)|	| ♥ | |
 |	156 |❀ Binary Tree Upside Down	|	|	| | |
 |	157 |❀ Read N Characters Given Read4 |	|	| | |
 |	158	|♣ Read N Characters Given Read4 II - Call multiple times	|	|	| | |
@@ -227,14 +227,14 @@ C#
 |	222	|	|	|	| | |
 |	223	|	|	|	| | |
 |	224	|	|	|	| | |
-|	225	|	|	|	| | |
+|	225	|[Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Implement%20Stack%20using%20Queues.cs)| | ♥ | |
 |	226	|	|	|	| | |
 |	227	|	|	|	| | |
 |	228	|	|	|	| | |
 |	229	|	|	|	| | |
 |	230	|	|	|	| | |
 |	231	| [Power of Two](https://leetcode.com/problems/power-of-two/) | [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Power%20of%20Two.cs) |	| ♥ | |
-|	232	|	|	|	| | |
+|	232	|[Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Implement%20Queue%20using%20Stacks.cs)| | ♥  | |
 |	233	|	|	|	| | |
 |	234	|[Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Palindrome%20Linked%20List.cs)| | ♥ | |
 |	235	|	|	|	| | |
@@ -403,7 +403,7 @@ C#
 |	398	|	|	|	| | |
 |	399	|	|	|	| | |
 |	400	|	|	|	| | |
-|	401	|	|	|	| | |
+|	401	|[Binary Watch](https://leetcode.com/problems/binary-watch/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Binary%20Watch.cs)| | ♥ | |
 |	402	|	|	|	| | |
 |	403	|	|	|	| | |
 |	404	|	|	|	| | |
@@ -457,7 +457,7 @@ C#
 |	452	|	|	|	| | |
 |	453	|[Minimum Moves to Equal Array Elements](https://leetcode.com/problems/minimum-moves-to-equal-array-elements/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Minimum%20Moves%20to%20Equal%20Array%20Elements.cs)|	| ♥ | |
 |	454	|	|	|	| | |
-|	455	|	|	|	| | |
+|	455	|[Assign Cookies](https://leetcode.com/problems/assign-cookies/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Assign%20Cookies.cs)|	| ♥ | |
 |	456	|	|	|	| | |
 |	457	|	|	|	| | |
 |	458	|	|	|	| | |
@@ -498,7 +498,7 @@ C#
 |	493	|	|	|	| | |
 |	494	|	|	|	| | |
 |	495	|	|	|	| | |
-|	496	|	|	|	| | |
+|	496	|[Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Next%20Greater%20Element%20I.cs)| | ♥ | |
 |	497	|	|	|	| | |
 |	498	|	|	|	| | |
 |	499	|♣ The Maze III 	|	|	| | |
@@ -684,7 +684,7 @@ C#
 |	679	|	|	|	| | |
 |	680	|	|	|	| | |
 |	681	|❀ Next Closest Time	|	|	| | |
-|	682	|	|	|	| | |
+|	682	|[Baseball Game](https://leetcode.com/problems/baseball-game/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Baseball%20Game.cs)|	| ♥ | |
 |	683	|♣ K Empty Slots	|	|	| | |
 |	684	|	|	|	| | |
 |	685	|	|	|	| | |
@@ -705,7 +705,7 @@ C#
 |	700	|	|	|	| | |
 |	701	|	|	|	| | |
 |	702	|❀ Search in a Sorted Array of Unknown Size	|	|	| | |
-|	703	|	|	|	| | |
+|	703	|[Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Kth%20Largest%20Element%20in%20a%20Stream.cs)|	| ♥ | |
 |	704	| [Binary Search](https://leetcode.com/problems/binary-search/) |[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Binary%20Search.cs)|	| ♥ | |
 |	705	|[Design HashSet](https://leetcode.com/problems/design-hashset/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Design%20HashSet.cs)| | | |
 |	706	|[Design HashMap](https://leetcode.com/problems/design-hashmap/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Design%20HashMap.cs)| | | |
@@ -862,7 +862,7 @@ C#
 |	857	|	|	|	| | |
 |	858	|	|	|	| | |
 |	859	|[Buddy Strings](https://leetcode.com/problems/buddy-strings/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Buddy%20Strings.cs)|	| ♥ | |
-|	860	|	|	|	| | |
+|	860	|[Lemonade Change](https://leetcode.com/problems/lemonade-change/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Lemonade%20Change.cs)|	| ♥ | |
 |	861	|	|	|	| | |
 |	862	|	|	|	| | |
 |	863	|	|	|	| | |
@@ -946,7 +946,7 @@ C#
 |	941	| [Valid Mountain Array](https://leetcode.com/problems/valid-mountain-array/) | [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Valid%20Mountain%20Array.cs)	|	| ♥ | |
 |	942	|[DI String Match](https://leetcode.com/problems/di-string-match/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/DI%20String%20Match.cs)|	| ♥ | |
 |	943	|	|	|	| | |
-|	944	|	|	|	| | |
+|	944	|[Delete Columns to Make Sorted](https://leetcode.com/problems/delete-columns-to-make-sorted/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Delete%20Columns%20to%20Make%20Sorted.cs)|	| ♥ | |
 |	945	|	|	|	| | |
 |	946	|	|	|	| | |
 |	947	|	|	|	| | |
