@@ -16,7 +16,7 @@ C#
 |	11	|	|	|	| | |
 |	12	|	|	|	| | |
 |	13	|[Roman to Integer](https://leetcode.com/problems/roman-to-integer/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Roman%20to%20Integer.cs)| | ♥ | |
-|	14	|	|	|	| | |
+|	14	|[Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Longest%20Common%20Prefix.cs)|	| ♥ | |
 |	15	|	|	|	| | |
 |	16	|	|	|	| | |
 |	17	|	|	|	| | |
@@ -543,7 +543,7 @@ C#
 |	538	|	|	|	| | |
 |	539	|	|	|	| | |
 |	540	|	|	|	| | |
-|	541	|	|	|	| | |
+|	541	|[Reverse String II](https://leetcode.com/problems/reverse-string-ii/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Reverse%20String%20II.cs)|	| ♥ | |
 |	542	|	|	|	| | |
 |	543	|	|	|	| | |
 |	544	|❀ Output Contest Matches	|	|	| | |
@@ -559,7 +559,7 @@ C#
 |	554	|	|	|	| | |
 |	555	|❀ Split Concatenated Strings	|	|	| | |
 |	556	|	|	|	| | |
-|	557	|	|	|	| | |
+|	557	|[Reverse Words in a String III](https://leetcode.com/problems/reverse-words-in-a-string-iii/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Reverse%20Words%20in%20a%20String%20III.cs)|	| ♥ | |
 |	558	|	|	|	| | |
 |	559	|	|	|	| | |
 |	560	|	|	|	| | |
@@ -659,7 +659,7 @@ C#
 |	654	|	|	|	| | |
 |	655	|	|	|	| | |
 |	656	|♣ Coin Path 	|	|	| | |
-|	657	|	|	|	| | |
+|	657	|[Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Robot%20Return%20to%20Origin.cs)| | ♥ | |
 |	658	|	|	|	| | |
 |	659	|	|	|	| | |
 |	660	|♣ Remove 9 |	|	| | |
@@ -682,7 +682,7 @@ C#
 |	677	|	|	|	| | |
 |	678	|	|	|	| | |
 |	679	|	|	|	| | |
-|	680	|	|	|	| | |
+|	680	|[Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Valid%20Palindrome%20II.cs)|	| ♥ | |
 |	681	|❀ Next Closest Time	|	|	| | |
 |	682	|[Baseball Game](https://leetcode.com/problems/baseball-game/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Baseball%20Game.cs)|	| ♥ | |
 |	683	|♣ K Empty Slots	|	|	| | |
@@ -698,7 +698,7 @@ C#
 |	693	|[Binary Number with Alternating Bits](https://leetcode.com/problems/binary-number-with-alternating-bits/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Binary%20Number%20with%20Alternating%20Bits.cs)|	| ♥ | |
 |	694	|❀ Number of Distinct Islands	|	|	| | |
 |	695	|	|	|	| | |
-|	696	|	|	|	| | |
+|	696	|[Count Binary Substrings](https://leetcode.com/problems/count-binary-substrings/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Count%20Binary%20Substrings.cs)|	| ♥ | |
 |	697	|[Degree of an Array](https://leetcode.com/problems/degree-of-an-array/)	|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Degree%20of%20an%20Array.cs)	|	| ♥ | |
 |	698	|	|	|	| | |
 |	699	|	|	|	| | |
@@ -806,7 +806,7 @@ C#
 |	801	|	|	|	| | |
 |	802	|	|	|	| | |
 |	803	|	|	|	| | |
-|	804	|	|	|	| | |
+|	804	|[Unique Morse Code Words](https://leetcode.com/problems/unique-morse-code-words/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Unique%20Morse%20Code%20Words.cs)|	| ♥ | |
 |	805	|	|	|	| | |
 |	806	|	|	|	| | |
 |	807	|	|	|	| | |
@@ -876,7 +876,7 @@ C#
 |	871	|	|	|	| | |
 |	872	|	|	|	| | |
 |	873	|	|	|	| | |
-|	874	|	|	|	| | |
+|	874	|[Walking Robot Simulation](https://leetcode.com/problems/walking-robot-simulation/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Walking%20Robot%20Simulation.cs)| | ♥ | |
 |	875	|	|	|	| | |
 |	876	|[Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Middle%20of%20the%20Linked%20List.cs)|	| ♥ | |
 |	877	|	|	|	| | |
@@ -895,7 +895,7 @@ C#
 |	890	|	|	|	| | |
 |	891	|	|	|	| | |
 |	892	|[Surface Area of 3D Shapes](https://leetcode.com/problems/surface-area-of-3d-shapes/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Surface%20Area%20of%203D%20Shapes.cs)|	| ♥ | |
-|	893	|	|	|	| | |
+|	893	|[Groups of Special-Equivalent Strings](https://leetcode.com/problems/groups-of-special-equivalent-strings/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Groups%20of%20Special-Equivalent%20Strings.cs)| | ♥ | |
 |	894	|	|	|	| | |
 |	895	|	|	|	| | |
 |	896	|[Monotonic Array](https://leetcode.com/problems/monotonic-array/)	|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Monotonic%20Array.cs)	|	| ♥ | |
@@ -931,7 +931,7 @@ C#
 |	926	|	|	|	| | |
 |	927	|	|	|	| | |
 |	928	|	|	|	| | |
-|	929	|	|	|	| | |
+|	929	|[Unique Email Addresses](https://leetcode.com/problems/unique-email-addresses/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Unique%20Email%20Addresses.cs)| | ♥ | |
 |	930	|	|	|	| | |
 |	931	|	|	|	| | |
 |	932	|	|	|	| | |
@@ -939,7 +939,7 @@ C#
 |	934	|	|	|	| | |
 |	935	|	|	|	| | |
 |	936	|	|	|	| | |
-|	937	|	|	|	| | |
+|	937	|[Reorder Data in Log Files](https://leetcode.com/problems/reorder-data-in-log-files/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Reorder%20Data%20in%20Log%20Files.cs)|	| ♥ | |
 |	938	|	|	|	| | |
 |	939	|	|	|	| | |
 |	940	|	|	|	| | |
