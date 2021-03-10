@@ -103,7 +103,7 @@ C#
 |	98	|	|	|	| | |
 |	99	|	|	|	| | |
 |	100	|	|	|	| | |
-|	101	|	|	|	| | |
+|	101	|[Symmetric Tree](https://leetcode.com/problems/symmetric-tree/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Symmetric%20Tree.cs)| | ♥ | |
 |	102	|	|	|	| | |
 |	103	|	|	|	| | |
 |	104	|	|	|	| | |
@@ -259,7 +259,7 @@ C#
 |	254	|❀ Factor Combinations 	|	|	| | |
 |	255	|❀ Verify Preorder Sequence in Binary Search Tree	|	|	| | |
 |	256	|❀ Paint House 	|	|	| | |
-|	257	|	|	|	| | |
+|	257	|[Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Binary%20Tree%20Paths.cs)|	| ♥ | |
 |	258	|[Add Digits](https://leetcode.com/problems/add-digits/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Add%20Digits.cs)| | ♥ | |
 |	259	|❀ 3Sum Smaller	|	|	| | |
 |	260	|	|	|	| | |
@@ -406,7 +406,7 @@ C#
 |	401	|[Binary Watch](https://leetcode.com/problems/binary-watch/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Binary%20Watch.cs)| | ♥ | |
 |	402	|	|	|	| | |
 |	403	|	|	|	| | |
-|	404	|	|	|	| | |
+|	404	|[Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Sum%20of%20Left%20Leaves.cs)| | ♥ | |
 |	405	|[Convert a Number to Hexadecimal](https://leetcode.com/problems/convert-a-number-to-hexadecimal/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Convert%20a%20Number%20to%20Hexadecimal.cs)|	| ♥ | |
 |	406	|	|	|	| | |
 |	407	|	|	|	| | |
@@ -565,7 +565,7 @@ C#
 |	560	|	|	|	| | |
 |	561	|[Array Partition I](https://leetcode.com/problems/array-partition-i/)	|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Array%20Partition%20I.cs)	|	| ？ | |
 |	562	|❀ Longest Line of Consecutive One in Matrix 	|	|	| | |
-|	563	|	|	|	| | |
+|	563	|[Binary Tree Tilt](https://leetcode.com/problems/binary-tree-tilt/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Binary%20Tree%20Tilt.cs)| |  ♥ | |
 |	564	|	|	|	| | |
 |	565	|	|	|	| | |
 |	566	|[Reshape the Matrix](https://leetcode.com/problems/reshape-the-matrix/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Reshape%20the%20Matrix.cs)| | ♥ | |
@@ -608,7 +608,7 @@ C#
 |	603	|❀ Consecutive Available Seats	|	|	| | |
 |	604	|❀ Design Compressed String Iterator 	|	|	| | |
 |	605	| [Can Place Flowers](https://leetcode.com/problems/can-place-flowers/)	| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Can%20Place%20Flowers.cs) |	| ♥ | |
-|	606	|	|	|	| | |
+|	606	|[Construct String from Binary Tree](https://leetcode.com/problems/construct-string-from-binary-tree/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Construct%20String%20from%20Binary%20Tree.cs)|	| ♥ | |
 |	607	|❀ Sales Person	|	|	| | |
 |	608	|❀ Tree Node |	|	| | |
 |	609	|	|	|	| | |
@@ -655,7 +655,7 @@ C#
 |	650	|	|	|	| | |
 |	651	|❀ 4 Keys Keyboard	|	|	| | |
 |	652	|	|	|	| | |
-|	653	|	|	|	| | |
+|	653	|[Two Sum IV - Input is a BST](https://leetcode.com/problems/two-sum-iv-input-is-a-bst/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Two%20Sum%20IV%20-%20Input%20is%20a%20BST.cs)|	| | |
 |	654	|	|	|	| | |
 |	655	|	|	|	| | |
 |	656	|♣ Coin Path 	|	|	| | |
@@ -967,7 +967,7 @@ C#
 |	962	|	|	|	| | |
 |	963	|	|	|	| | |
 |	964	|	|	|	| | |
-|	965	|	|	|	| | |
+|	965	|[Univalued Binary Tree](https://leetcode.com/problems/univalued-binary-tree/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Univalued%20Binary%20Tree.cs)|	| ♥ | |
 |	966	|	|	|	| | |
 |	967	|	|	|	| | |
 |	968	|	|	|	| | |
