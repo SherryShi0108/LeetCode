@@ -42,7 +42,7 @@ public class Solution7
         return (int)result;
     }
     
-    // --------------- O(n) 44ms --------------- 12.7MB --------------- (62% 100%) 
+    // --------------- O(n) 44ms --------------- 12.7MB --------------- (62% 100%) ※
     /*
      * amazing to check overflow
      */
@@ -55,25 +55,6 @@ public class Solution7
             if ((temp - x % 10) / 10 != result) return 0;
 
             result = temp;
-            x /= 10;
-        }
-
-        return result;
-    }
-    
-    // --------------- O(n) 40ms --------------- 12.9MB --------------- (87% 100%) 
-    /*
-     * -2147483648 to 2147483647
-     */
-    public int Reverse_3(int x)
-    {
-        int result = 0;
-        while (x != 0)
-        {
-            if (result > int.MaxValue / 10 || result == int.MaxValue / 10 && x % 10 > 7) return 0;
-            if (result < int.MinValue / 10 || result == int.MinValue / 10 && x % 10 < -8) return 0;
-
-            result = result * 10 + x % 10;
             x /= 10;
         }
 
