@@ -65,7 +65,7 @@ public class Solution9
     // --------------- O(logn) 56ms --------------- O(1) 17MB --------------- (94% 65%) ※
     public bool IsPalindrome_1_3(int x)
     {
-        if (x < 0) return false;
+        if (x < 0 || x % 10 == 0 && x != 0) return false;
 
         int result = 0;
         while (x > result)
