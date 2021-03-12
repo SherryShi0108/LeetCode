@@ -50,83 +50,73 @@ using System.Collections.Generic;
 
 public class Solution13
 {
-    // --------------- O(n) 92ms --------------- 23.7MB --------------- (75% 22%) ※
+    // --------------- O(n) 96ms --------------- 26MB --------------- (48% 82%)
+    /*
+     *  string.Contains:O(n)、Foreach:O(n); 
+     */
     public int RomanToInt_1(string s)
     {
-        Dictionary<char, int> d = new Dictionary<char, int>() { { 'I', 1 }, { 'V', 5 }, { 'X', 10 }, { 'L', 50 }, { 'C', 100 }, { 'D', 500 }, { 'M', 1000 } };
-        //d.Add('I', 1); d.Add('V', 5); d.Add('X', 10); d.Add('L', 50); d.Add('C', 100); d.Add('D', 500); d.Add('M', 1000);
-
-        if (s.Length == 0) { return 0; }
-        int result = d[s[0]];
-        for (int i = 1; i < s.Length; i++)
-        {
-            if (d[s[i]] <= d[s[i - 1]])
-            {
-                result += d[s[i]];
-            }
-            else
-            {
-                result = result - 2 * d[s[i - 1]] + d[s[i]];
-            }
-        }
-        return result;
-    }
-
-    // --------------- O(n) 112ms --------------- 23.6MB --------------- (19% 26%)
-    public int RomanToInt_2(string s)
-    {
-        Dictionary<char, int> d = new Dictionary<char, int>();
-        d.Add('I', 1); d.Add('V', 5); d.Add('X', 10); d.Add('L', 50); d.Add('C', 100); d.Add('D', 500); d.Add('M', 1000);
-
         int result = 0;
+        Dictionary<char, int> d = new Dictionary<char, int>()
+        {
+            {'I', 1}, {'V', 5},
+            {'X', 10}, {'L', 50},
+            {'C', 100}, {'D', 500}, {'M', 1000}
+        };
+
         foreach (char c in s)
         {
             result += d[c];
         }
 
-        if (s.Contains("CD") || s.Contains("CM"))
-        {
-            result -= 200;
-        }
-        if (s.Contains("XL") || s.Contains("XC"))
-        {
-            result -= 20;
-        }
-        if (s.Contains("IV") || s.Contains("IX"))
-        {
-            result -= 2;
-        }
+        if (s.Contains("IV") || s.Contains("IX")) result -= 2;
+        if (s.Contains("XL") || s.Contains("XC")) result -= 20;
+        if (s.Contains("CD") || s.Contains("CM")) result -= 200;
+
         return result;
     }
     
-     // --------------- O(n) 100ms --------------- 25.1MB --------------- (36.6% 8.7%)
+    // --------------- O(n) 80ms --------------- 26MB --------------- (96% 41%) ※
     /*
-     * Directly use if
+     * Using a Method to avoid Dictionary
+     * Using a Foreach to remove 6* O(n) -string.Contains
      */
-    public int RomanToInt_3(string s)
-    {
-        int result = 0;
-        for (int i = 0; i < s.Length; i++)
-        {
-            if (s[i] == 'M') result += 1000;
-            else if (s[i] == 'D') result += 500;
-            else if (s[i] == 'C') result += 100;
-            else if (s[i] == 'L') result += 50;
-            else if (s[i] == 'X') result += 10;
-            else if (s[i] == 'V') result += 5;
-            else if (s[i] == 'I') result += 1;
-        }
+    public int RomanToInt_2(string s)
+    {        
+        if (string.IsNullOrEmpty(s)) return 0;
 
-        if (s.Contains("IV")) result -= 2;
-        if (s.Contains("IX")) result -= 2;
-        if (s.Contains("XL")) result -= 20;
-        if (s.Contains("XC")) result -= 20;
-        if (s.Contains("CD")) result -= 200;
-        if (s.Contains("CM")) result -= 200;
+        int result = GetIntFromChar(s[s.Length - 1]);
+
+        for (int i = 0; i < s.Length - 1; i++)
+        {
+            if (GetIntFromChar(s[i]) >= GetIntFromChar(s[i + 1]))
+            {
+                result += GetIntFromChar(s[i]);
+            }
+            else
+            {
+                result -= GetIntFromChar(s[i]);
+            }
+        }
 
         return result;
     }
+    
+    private int GetIntFromChar(char c)
+    {
+        switch (c)
+        {
+            case 'I': return 1;
+            case 'V': return 5;
+            case 'X': return 10;
+            case 'L': return 50;
+            case 'C': return 100;
+            case 'D': return 500;
+            case 'M': return 1000;
+            default: return 0;
+        }
+    }
 }
 /**************************************************************************************************************
- * RomanToInt_1                                                                                               *
+ * RomanToInt_1   RomanToInt_2                                                                                *
  **************************************************************************************************************/
