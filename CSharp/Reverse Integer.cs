@@ -42,7 +42,7 @@ public class Solution7
         return (int)result;
     }
     
-    // --------------- O(n) 44ms --------------- 12.7MB --------------- (62% 100%) ※
+    // --------------- O(n) 44ms --------------- 12.7MB --------------- (62% 100%) 
     /*
      * amazing to check overflow
      */
@@ -55,6 +55,21 @@ public class Solution7
             if ((temp - x % 10) / 10 != result) return 0;
 
             result = temp;
+            x /= 10;
+        }
+
+        return result;
+    }
+    
+    // --------------- O(n) 40ms --------------- 15MB --------------- (82% 63%) ※
+    public int Reverse_2_2(int x)
+    {
+        int result = 0;
+        while (x != 0)
+        {
+            int temp = result;
+            result = result * 10 + x % 10;
+            if (result / 10 != temp) return 0;
             x /= 10;
         }
 
