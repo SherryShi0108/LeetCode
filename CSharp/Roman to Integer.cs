@@ -120,25 +120,20 @@ public class Solution13
     // --------------- O(n) 88ms --------------- 27MB --------------- (69% 12%) 
      public int RomanToInt_2_2(string s)
      {
-        Dictionary<char, int> d = new Dictionary<char, int>()
-        {
-            {'I', 1}, {'V', 5}, {'X', 10}, {'L', 50}, {'C', 100}, {'D', 500}, {'M', 1000}
-        };
-
         int result = 0;
         for (int i = 0; i < s.Length; i++)
         {
-            if (i == s.Length - 1 || d[s[i]] >= d[s[i + 1]])
+            if (i == s.Length - 1 || GetIntFromChar(s[i]) >= GetIntFromChar(s[i + 1]))
             {
-                result += d[s[i]];
+                result += GetIntFromChar(s[i]);
             }
             else
             {
-                result -= d[s[i]];
+                result -= GetIntFromChar(s[i]);
             }
         }
 
-        return result;    
+        return result;
      }
 }
 /**************************************************************************************************************
