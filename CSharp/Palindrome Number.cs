@@ -27,10 +27,10 @@ public class Solution9
     // --------------- 72ms --------------- O(1) 17MB --------------- (46% 65%) 
     public bool IsPalindrome_1(int x)
     {
-        if (x < 0) return false;
-        int temp = x;
-
+        if (x < 0) return false; 
+      
         int result = 0;
+        int temp = x;
         while (x != 0)
         {
             result = result * 10 + x % 10;
@@ -40,30 +40,8 @@ public class Solution9
         return temp == result;
     }
     
-    // --------------- 60ms --------------- 14.9MB --------------- (89% 20%)
-    /*
-     * tricky : because if overflow , it mustn't be palindrome
-     */
-    public bool IsPalindrome_1_2(int x)
-    {
-        if (x < 0 || x % 10 == 0 && x != 0)
-        {
-            return false;
-        }
-
-        int a = x;
-        int b = 0;
-        while (a > 0)
-        {
-            b = b * 10 + a % 10; 
-            a /= 10;
-        }
-
-        return b == x;
-    }
-    
     // --------------- O(logn) 56ms --------------- O(1) 17MB --------------- (94% 65%) ※
-    public bool IsPalindrome_1_3(int x)
+    public bool IsPalindrome_2(int x)
     {
         if (x < 0 || x % 10 == 0 && x != 0) return false;
 
@@ -78,7 +56,7 @@ public class Solution9
     }
         
     // --------------- 64ms --------------- O(n)19MB --------------- (70% 13%) 
-    public bool IsPalindrome_2(int x)
+    public bool IsPalindrome_3(int x)
     {
         if (x < 0) return false;
         
@@ -103,7 +81,7 @@ public class Solution9
     }
     
     // --------------- 68ms --------------- 15.7MB --------------- (57% 15%)
-    public bool IsPalindrome_3(int x)
+    public bool IsPalindrome_4(int x)
     {
         if (x < 0) return false;
 
@@ -123,5 +101,5 @@ public class Solution9
         return true;
 }
 /**************************************************************************************************************
- * IsPalindrome_1   IsPalindrome_2     IsPalindrome_3                                                         *
+ * IsPalindrome_2                                                                                             *
  **************************************************************************************************************/
