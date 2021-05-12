@@ -22,6 +22,9 @@
 public class Solution14
 {
     // --------------- O(m*n) 104ms --------------- O(1) 28MB --------------- (56% 6%) 
+    /*
+     * Compare each two strings 
+     */
     public string LongestCommonPrefix_1(string[] strs)
     {
         if (strs == null || strs.Length == 0) return string.Empty;
@@ -55,53 +58,37 @@ public class Solution14
         return result;
     }
     
-    // --------------- O(m*n) 104ms --------------- O(1) 25MB --------------- (56% 69%) 
+    // --------------- O(m*n) 104ms --------------- O(1) 25MB --------------- (50% 60%) 
+    /*
+     * Compare all string ith char
+     */
     public string LongestCommonPrefix_2(string[] strs)
     {
-        if (strs == null || strs.Length == 0) return string.Empty;
+        if (strs == null || strs.Length == 0) return "";
 
-        string result = strs[0];
-        int length = result.Length;
-
-        for (int i = 1; i < strs.Length; i++)
+        string result = "";
+        for (int i = 0; i < strs[0].Length; i++)
         {
-            string cur = strs[i];
-            int j = 0;
-            for (; j < cur.Length; j++)
+            char c = strs[0][i];
+            for (int j = 1; j < strs.Length; j++)
             {
-                if (j >= length || result[j] != cur[j]) break;
+                if (i == strs[j].Length || strs[j][i] != c)
+                {
+                    return result;
+                }
             }
 
-            length = length < j ? length : j;
-        }
-
-        return result.Substring(0, length);
-    }
-    
-    // --------------- O(m*n) 100ms --------------- O(1) 26MB --------------- (78% 42%) 
-    public string LongestCommonPrefix_3(string[] strs)
-    {
-        if (strs == null || strs.Length == 0) return string.Empty;
-
-        string result = strs[0];
-
-        for (int i = 0; i < strs.Length; i++)
-        {
-            while (strs[i].IndexOf(result) != 0)
-            {
-                result = result.Substring(0, result.Length - 1);
-                if (string.IsNullOrEmpty(result)) return string.Empty;
-            }
+            result += c;
         }
 
         return result;
     }
-    
+  
     // --------------- O(m*n) 100ms --------------- O(1) 25MB --------------- (79% 7%) ※
     /*
-     * easy-understand
+     * Improve 2: remove one string
      */
-    public string LongestCommonPrefix_4(string[] strs)
+    public string LongestCommonPrefix_2_2(string[] strs)
     {
         if (strs == null || strs.Length == 0) return "";
 
@@ -119,27 +106,32 @@ public class Solution14
 
         return strs[0];
     }
-
-  
     
-    // --------------- O(m*n) 104ms --------------- O(1) 25MB --------------- (59% 5%) 
-    public string LongestCommonPrefix_5(string[] strs)
+    // --------------- O(m*n) 112ms --------------- O(1) 26MB --------------- (22% 21%) 
+    /*
+     * Using Sort
+     */
+    public string LongestCommonPrefix_3(string[] strs)
     {
         if (strs == null || strs.Length == 0) return "";
-        string result = strs[0];
-        for (int i = 1; i < strs.Length; i++)
+
+        Array.Sort(strs);
+        int minLength = strs[0].Length < strs[strs.Length - 1].Length
+            ? strs[0].Length
+            : strs[strs.Length - 1].Length;
+
+        int i = 0;
+        for (; i < minLength; i++)
         {
-            while (strs[i].IndexOf(result)!=0)
+            if (strs[0][i] != strs[strs.Length - 1][i])
             {
-                result = result.Substring(0, result.Length - 1);
+                break;
             }
         }
 
-        return result;
+        return strs[0].Substring(0, i);
     }
-    
-   
 }
 /**************************************************************************************************************
- * LongestCommonPrefix_1                                                                                      *
+ * LongestCommonPrefix_2 / 3                                                                                  *
  **************************************************************************************************************/
