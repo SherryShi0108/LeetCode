@@ -84,7 +84,7 @@ public class Solution14
         return result;
     }
   
-    // --------------- O(m*n) 100ms --------------- O(1) 25MB --------------- (79% 7%) ※
+    // --------------- O(m*n) 100ms --------------- O(1) 25MB --------------- (75% 69%) ※
     /*
      * Improve 2: remove one string
      */
@@ -94,10 +94,9 @@ public class Solution14
 
         for (int i = 0; i < strs[0].Length; i++)
         {
-            char c = strs[0][i];
             for (int j = 1; j < strs.Length; j++)
             {
-                if (i == strs[j].Length || strs[j][i] != c)
+                if (strs[j].Length == i || strs[0][i] != strs[j][i])
                 {
                     return strs[0].Substring(0, i);
                 }
