@@ -34,14 +34,15 @@ public class VersionControl
 
 public class Solution278 : VersionControl
 {
-    // --------------- O(logn) 36ms --------------- 14MB --------------- (93% 9%) ※
+    // --------------- O(logn) 36ms --------------- 14MB --------------- (93% 9%) 
     public int FirstBadVersion_1(int n)
     {
         int i = 1;
         int j = n;
         while (i<=j)
         {
-            int mid = i + (j - i) / 2;
+            // int mid = i + (j - i) / 2;  
+            int mid = i + ((j - i) >> 1);
             if (IsBadVersion(mid))
             {
                 j = mid - 1;
@@ -55,14 +56,15 @@ public class Solution278 : VersionControl
         return i;
     }
 
-    // --------------- O(logn) 40ms --------------- 14MB --------------- (68% 9%)
-    public int FirstBadVersion_2(int n)
+    // --------------- O(logn) 40ms --------------- 14MB --------------- (68% 9%) ※
+    public int FirstBadVersion_1_2(int n)
     {
         int i = 1;
         int j = n;
         while (i < j)
         {
-            int mid = i + (j - i) / 2;
+            // int mid = i + (j - i) / 2;
+            int mid = i + ((j - i) >> 1);
             if (IsBadVersion(mid))
             {
                 j = mid ;
@@ -77,5 +79,5 @@ public class Solution278 : VersionControl
     }
 }
 /**************************************************************************************************************
- * FirstBadVersion_1 / 2                                                                                      *
+ * FirstBadVersion_1                                                                                          *
  **************************************************************************************************************/
