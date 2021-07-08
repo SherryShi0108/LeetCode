@@ -33,7 +33,7 @@ public class Temp
 
 public class Solution374 : Temp
 {
-    // --------------- O(logn) 0ms --------------- 33.2MB --------------- (100% 100%) ※
+    // --------------- O(logn) 0ms --------------- 33.2MB --------------- (100% 100%) 
     public int guessNumber_1(int n)
     {
         int i = 1;
@@ -53,6 +53,28 @@ public class Solution374 : Temp
         }
 
         return -1;
+    }
+    
+    // --------------- O(logn) 0ms --------------- 33.2MB --------------- (100% 100%) ※
+    public int GuessNumber_1_2(int n)
+    {
+        int i = 1;
+        int j = n;
+        while (i < j)
+        {
+            int mid = i + ((j - i) >> 1);
+            if (guess(mid) == 0) return mid;
+            else if (guess(mid) == 1)
+            {
+                i = mid + 1;
+            }
+            else
+            {
+                j = mid;
+            }
+        }
+
+        return i;
     }
 }
 /**************************************************************************************************************
