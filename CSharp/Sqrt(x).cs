@@ -54,12 +54,13 @@ public class Solution69
      */
     public int MySqrt_1_2(int x)
     {
-        if (x < 2) return x;
+        if (x <= 1) return x;
         int i = 1;
         int j = x;
+        
         while (i < j)
         {
-            int mid = i + (j - i) / 2;
+            int mid = i + ((j - i) >> 1);  // use >> instead of /2: int mid = i+(j-i)/2;
             if (mid == x / mid) return mid;
             else if (mid > x / mid)
             {
@@ -71,7 +72,7 @@ public class Solution69
             }
         }
 
-        return j-1;
+        return i-1; 
     }
 
     // --------------- O(logn) 52ms --------------- 14.1MB --------------- (25% 7%) 
