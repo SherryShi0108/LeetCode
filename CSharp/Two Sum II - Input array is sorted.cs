@@ -21,30 +21,11 @@ using System.Collections.Generic;
 
 public class Solution167
 {
-    // --------------- O(n) 292ms --------------- 29.2MB ---------------(15%,43%)
-    public int[] TwoSum_1(int[] nums, int target)
-    {
-        Dictionary<int, int> d = new Dictionary<int, int>();
-        for (int i = 0; i < nums.Length; i++)
-        {
-            int n = target - nums[i];
-            if (d.ContainsKey(n))
-            {
-                return new int[] { d[n] + 1, i + 1 };
-            }
-            else
-            {
-                d[nums[i]] = i;
-            }
-        }
-        return null;
-    }
-
     // --------------- O(n) 252ms --------------- 29.3MB ---------------(73%,28%) ※
     /*
      * the input nums is already sorted
      */
-    public int[] TwoSum_2(int[] nums, int target)
+    public int[] TwoSum_1(int[] nums, int target)
     {
         int i = 0;
         int j = nums.Length - 1;
@@ -68,5 +49,5 @@ public class Solution167
     }
 }
 /**************************************************************************************************************
- * TwoSum_2                                                                                                   *
+ * TwoSum_1                                                                                                   *
  **************************************************************************************************************/
