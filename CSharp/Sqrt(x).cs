@@ -47,7 +47,7 @@ public class Solution69
         return j;
     }
 
-    // --------------- O(logn) 44ms --------------- 14.1MB --------------- (57% 7%) ※
+    // --------------- O(logn) 40ms --------------- 15MB --------------- (81% 40%) ※
     /*
      * Binary Search
      * 1. j should be x+1 , but x+1 maybe overflow , so use x and consider j = x , but always x*x>x except 1 
