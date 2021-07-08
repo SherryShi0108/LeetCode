@@ -18,60 +18,46 @@
  *******************************************************************************************************************************/
 
 public class Solution
-{
-    // --------------- O(n) 208ms --------------- 26MB --------------- (5% 8%)  
-    public int SearchInsert_1(int[] nums, int target)
-    {
-        int i = 0;
-        for (i = 0; i < nums.Length; i++)
-        {
-            if (nums[i] < target)
-            {
-                continue;
-            }
-            break;
-        }
-        return i;
-    }
-    
-    // --------------- O(n) 132ms --------------- 25MB --------------- (5% 33%) 
-    public int SearchInsert_1_2(int[] nums, int target)
-    {
-        int i = 0;
-        for (; i < nums.Length; i++)
-        {
-            if (nums[i] >= target)
-            {
-                break;
-            }
-        }
-        return i;
-    }
-    
-    // --------------- O(n) 132ms --------------- 25MB --------------- (5% 33%) 
-    public int SearchInsert_1_3(int[] nums, int target)
-    {
-        for (int i = 0; i < nums.Length; i++)
-        {
-            if (target <= nums[i])
-            {
-                return i;
-            }
-        }
-        return nums.Length;
-    }
-    
-    // --------------- O(logn) 96ms --------------- 24MB --------------- (63% 5%) ※
+{        
+    // --------------- O(logn) 96ms --------------- 24MB --------------- (63% 5%)
     /*
      * using Binary Search Mode1
      */
-    public int SearchInsert_2(int[] nums, int target)
+    public int SearchInsert_1(int[] nums, int target)
     {
         int left = 0;
         int right = nums.Length;
-        while (left  <right)
+        while (left  < right)
         {
             int mid = left + (right - left) / 2;
+            if (nums[mid] == target) 
+            {
+                return mid;
+            }
+            else if (nums[mid] > target)
+            {
+                right = mid;
+            }
+            else
+            {
+                left = mid + 1;
+            }
+        }
+
+        return left;
+    }
+    
+    // --------------- O(logn) 92ms --------------- 25MB --------------- (77% 52%) ※
+    /*
+     *  Improve 1: use >>1 instead of /2
+     */
+    public int SearchInsert_1_2(int[] nums, int target)
+    {
+        int left = 0;
+        int right = nums.Length;
+        while (left  < right)
+        {
+            int mid = left + ((right - left) >> 1);
             if (nums[mid] == target) 
             {
                 return mid;
@@ -93,7 +79,7 @@ public class Solution
     /*
      * using Binary Search Mode2
      */
-    public int SearchInsert_2_2(int[] nums, int target)
+    public int SearchInsert_2(int[] nums, int target)
     {
         int left = 0;
         int right = nums.Length-1;
