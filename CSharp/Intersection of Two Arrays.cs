@@ -23,39 +23,11 @@ using System.Linq; //2 result.ToArray();
 
 public class Solution349
 {
-    // --------------- O(n) 268ms --------------- 29.5MB ---------------(37% 100%)
-    public int[] Intersection_1(int[] nums1, int[] nums2)
-    {
-        Dictionary<int, int> d = new Dictionary<int, int>();
-        for (int i = 0; i < nums1.Length; i++)
-        {
-            if (d.ContainsKey(nums1[i]))
-            {
-                d[nums1[i]]++;
-            }
-            else
-            {
-                d[nums1[i]] = 1;
-            }
-        }
-
-        List<int> L = new List<int>();
-        for (int i = 0; i < nums2.Length; i++)
-        {
-            if (d.ContainsKey(nums2[i]) && !L.Contains(nums2[i]))
-            {
-                L.Add(nums2[i]);
-            }
-        }
-        return L.ToArray();
-    }
-
-
-    // --------------- O(n) 268ms --------------- 29.1MB ---------------(37% 100%)
+    // --------------- O(n) 268ms --------------- 29.1MB ---------------(37% 100%) ※
     /*
      * use HashSet , similar to Dictionary , add 1,1,1,2,2,2 ,result 1,2
      */
-    public int[] Intersection_2(int[] nums1, int[] nums2)
+    public int[] Intersection_1(int[] nums1, int[] nums2)
     {
         var nums1Set = new HashSet<int>(nums1);
         /* 
@@ -72,9 +44,17 @@ public class Solution349
                 result.Add(num);
             }
         }
-        return result.ToArray();
+        
+        int[] result2 = new int[result.Count];
+        int k = 0;
+        foreach (var i in result)
+        {
+            result2[k++] = i;
+         }
+        
+        return result.ToArray(); // return result2;
     }
 }
 /**************************************************************************************************************
- * Intersection_1 Intersection_2                                                                              *
+ * Intersection_1                                                                                             *
  **************************************************************************************************************/
