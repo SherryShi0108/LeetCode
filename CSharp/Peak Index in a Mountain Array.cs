@@ -26,17 +26,19 @@
 
 public class Solution852
 {
-    // --------------- O(logn) 104ms --------------- O(1) 25.9MB --------------- (49% 100%) ※
+    // --------------- O(logn) 104ms --------------- O(1) 25.9MB --------------- (49% 100%) 
     /*
      * use binary search , faster than 1/2 because O(time) = O(logn)
      */
-    public int PeakIndexInMountainArray_1(int[] A)
+    public int PeakIndexInMountainArray_1(int[] array)
     {
         int left = 0;
         int right = A.Length;
         while (left<right)
-        {
+        {      
             int mid = left + (right - left) / 2;
+            if (mid == array.Length - 1) return array.Length - 2;  // this mode: mid can be array.Length-1,so A[mid+1] can be overflow
+            
             if (A[mid] < A[mid + 1])
             {
                 left = mid + 1;
@@ -50,8 +52,8 @@ public class Solution852
         return left;
     }
     
-    // --------------- O(logn) 104ms --------------- O(1) 26MB --------------- (49% 100%) 
-    public int PeakIndexInMountainArray_3_2(int[] A)
+    // --------------- O(logn) 104ms --------------- O(1) 26MB --------------- (49% 100%) ※
+    public int PeakIndexInMountainArray_1_2(int[] A)
     {
         int i = 0;
         int j = A.Length - 1;
