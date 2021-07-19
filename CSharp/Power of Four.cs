@@ -27,11 +27,33 @@ using System.Collections.Generic;
 
 public class Solution342
 {
-    // --------------- O(n) 44ms --------------- 15MB --------------- (44% 64%) 
+    // --------------- O(n) 36ms --------------- 15MB --------------- (99% 83%) ※
     /*
      * general solution
      */
     public bool IsPowerOfFour_1(int n)
+    {
+        if (n <= 0) return false;
+        if (n == 1) return true;
+
+        while (n > 1)
+        {
+            if (n % 4 != 0)
+            {
+                return false;
+            }
+
+            n >>= 2;
+        }
+
+        return true;
+    }
+    
+    // --------------- O(n) 44ms --------------- 15MB --------------- (44% 64%) 
+    /*
+     *  Using Bit
+     */
+    public bool IsPowerOfFour_2(int n)
     {
         if (n <= 0) return false;
 
@@ -48,12 +70,12 @@ public class Solution342
         return true;
     }
 
-    // --------------- O(n) 76ms --------------- 15MB --------------- (44% 85%) ※
+    // --------------- O(n) 76ms --------------- 15MB --------------- (44% 85%) 
     /*
      * use tricky
      * 0x55555555 = 10101010101010101...
      */
-    public bool IsPowerOfFour_1_2(int n)
+    public bool IsPowerOfFour_2_2(int n)
     {
         return n > 0 && (n & (n - 1)) == 0 && (n & 0x55555555) != 0;
     }
@@ -64,7 +86,7 @@ public class Solution342
      * 4^n-1 = ( 2^n+1 ) * ( 2^n-1 ), among any 3 consecutive numbers, there must be one that is a multiple of 3
      * 2^n must not be 3k,so 2^n-1 / 2^n+1 must has one is 3k,so 4^n-1 must be 3K
      */
-    public bool IsPowerOfFour_2(int n)
+    public bool IsPowerOfFour_3(int n)
     {
         return n > 0 && (n & (n - 1)) == 0 && (n - 1) % 3 == 0;
     }
@@ -73,7 +95,7 @@ public class Solution342
     /*
      * use Math 
      */
-    public bool IsPowerOfFour_3(int n)
+    public bool IsPowerOfFour_3_2(int n)
     {
         double temp = Math.Log(n) / Math.Log(4);
         return n > 0 && temp - (int) temp == 0;
