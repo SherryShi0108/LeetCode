@@ -32,11 +32,47 @@
 
 public class Solution191
 {
+    // --------------- O(n) 44ms --------------- 15MB --------------- (49% 90%) 
+    /*
+     * use bit manipulation: i-> 0-31
+     */
+    public int HammingWeight_1(uint n)
+    {
+        int result = 0;
+        for (int i = 0; i < 32; i++)
+        {
+            result += (int)(n >> i & 1);
+        }
+
+        return result;
+    }
+    
+    // --------------- O(n) 36ms --------------- 15MB --------------- (90% 92%)
+    /*
+     * use a flag , flag << 1
+     */
+    public int HammingWeight_1_2(uint n)
+    {
+        int count = 0;
+        int temp = 1;
+        for (int i = 0; i < 32; i++)
+        {
+            if ((n & temp) != 0)
+            {
+                count++;
+            }
+
+            temp = temp << 1;
+        }
+
+        return count;
+    }
+    
     // --------------- O(n) 40ms --------------- 15MB --------------- (69% 35%) 
     /*
      * use bit manipulation: &1 >>1
      */
-    public int HammingWeight_1(uint n)
+    public int HammingWeight_2(uint n)
     {
         int count = 0;
         while (n!=0)
@@ -56,34 +92,13 @@ public class Solution191
     /*
      * use bit manipulation: &1 >>1
      */
-    public int HammingWeight_2(uint n)
+    public int HammingWeight_3(uint n)
     {
         int count = 0;
         while (n!=0)
         {
             count++;
             n = n & (n - 1);
-        }
-
-        return count;
-    }
-
-    // --------------- O(n) 36ms --------------- 15MB --------------- (90% 92%)
-    /*
-     * use a flag , flag << 1
-     */
-    public int HammingWeight_3(uint n)
-    {
-        int count = 0;
-        int temp = 1;
-        for (int i = 0; i < 32; i++)
-        {
-            if ((n & temp) != 0)
-            {
-                count++;
-            }
-
-            temp = temp << 1;
         }
 
         return count;
