@@ -32,18 +32,20 @@
 
 public class Solution190
 {
-    // --------------- O(n) 44ms --------------- 16MB --------------- (66% 52%) 
+    // --------------- O(1) 32ms --------------- 16MB --------------- (100% 87%) ※
     /*
-     *  i = 31-0  / reverse 0-31
+     *  Using Bit: i = 0-31  
      */
     public uint ReverseBits_1(uint n)
     {
-        uint temp = 1;
         uint result = 0;
-        for (int i = 31; i >= 0; i--)
+
+        for (int i = 0; i < 32; i++)
         {
-            result += (n >> i & 1) * temp;
-            temp *= 2;
+            uint temp = result * 2 + (n >> i & 1);
+
+            if (temp >> 1 != result) return 0;
+            result = temp;
         }
 
         return result;
@@ -51,22 +53,21 @@ public class Solution190
 
     // --------------- O(n) 48ms --------------- 16MB --------------- (24% 86%) 
     /*
-     *  i = 0-31
+     *  using last postion |
      */
     public uint ReverseBits_1_2(uint n)
     {
         uint result = 0;
         for (int i = 0; i < 32; i++)
         {
-            result = result << 1;
-            result = result | (n & 1);
+            result = result << 1 | (n & 1);
             n = n >> 1;
         }
 
         return result;
     }
 
-    // --------------- O(n) 48ms --------------- 16MB --------------- (24% 86%) ※
+    // --------------- O(n) 48ms --------------- 16MB --------------- (24% 86%) 
     /*
      * During the interview, one might be asked to reverse the entire 32 bits without using loop.
      * Here we propose one solution that utilizes only the bit operations.
@@ -82,5 +83,5 @@ public class Solution190
     }
 }
 /**************************************************************************************************************
- * ReverseBits_1/1_2    ReverseBits_2                                                                         *
+ * ReverseBits_1        ReverseBits_2                                                                         *
  **************************************************************************************************************/
