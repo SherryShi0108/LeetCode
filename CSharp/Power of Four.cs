@@ -34,9 +34,8 @@ public class Solution342
     public bool IsPowerOfFour_1(int n)
     {
         if (n <= 0) return false;
-        if (n == 1) return true;
 
-        while (n > 1)
+        while (n > 1)          //  if (n == 1) return true;
         {
             if (n % 4 != 0)
             {
