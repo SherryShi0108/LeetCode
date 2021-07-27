@@ -70,6 +70,41 @@ public class Solution404
 
         return sum;
     }
+    
+    // --------------- O(n) 100ms --------------- O(n) 25MB --------------- (29% 26%) 
+    /*
+     *  Improve 1
+     */
+    public int SumOfLeftLeaves(TreeNode root)
+    {
+        if (root == null || root.left == null && root.right == null) return 0;
+
+        int sum = 0;
+        Queue<TreeNode> queue = new Queue<TreeNode>();
+        queue.Enqueue(root);
+
+        while (queue.Count != 0)
+        {
+            TreeNode node = queue.Dequeue();
+
+            if (node.left != null && node.left.left == null && node.left.right == null)
+            {
+                sum += node.left.val;
+            }
+
+            if (node.left != null)
+            {
+                queue.Enqueue(node.left);
+            }
+
+            if (node.right != null)
+            {
+                queue.Enqueue(node.right);
+            }
+        }
+
+        return sum;
+    }
 
     // --------------- O(n) 88ms --------------- O(n) 25MB --------------- (91% 91%) 
     /*
