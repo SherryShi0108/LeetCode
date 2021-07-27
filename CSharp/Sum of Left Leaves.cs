@@ -91,6 +91,24 @@ public class Solution404
         sum += SumOfLeftLeaves_2(root.right);
         return sum;
     }
+    
+    // --------------- O(n) 88ms --------------- O(n) 25MB --------------- (91% 91%) ※
+    /*
+     *  Improve 2
+     */
+    public int SumOfLeftLeaves_2_2(TreeNode root)
+    {
+        if (root == null) return 0;
+        int sum = 0;
+        if (root.left != null && root.left.left == null && root.left.right == null)
+        {
+            sum += root.left.val;
+        }
+        sum += SumOfLeftLeaves_2(root.left);
+        sum += SumOfLeftLeaves_2(root.right);
+        
+        return sum;
+    }
 }
 /**************************************************************************************************************
  * SumOfLeftLeaves_1    SumOfLeftLeaves_2                                                                     *
