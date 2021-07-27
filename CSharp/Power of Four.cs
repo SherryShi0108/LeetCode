@@ -57,11 +57,11 @@ public class Solution342
     {
         if (n <= 0) return false;
 
-        if ((n & (n - 1)) != 0) return false;
+        if ((n & n - 1) != 0) return false;
 
         for (int i = 1; i < 32; i+=2)
         {
-            if (((n >> i) & 1) == 1)
+            if ((n >> i & 1) == 1)
             {
                 return false;
             }
