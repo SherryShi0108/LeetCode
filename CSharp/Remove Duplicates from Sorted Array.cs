@@ -41,15 +41,14 @@ public class Solution26
         return n;
     }
 
-    // --------------- O(n) 260ms --------------- 31.7MB ---------------
+    // --------------- O(n) 248ms --------------- 34MB --------------- (71% 46%) ※
     /*
      * asymptotic time complexity for this solution is least 
      * Because this compare nums[n] ,it cost time less than nums[i-1]
      */
     public int RemoveDuplicates_2(int[] nums)
     {
-        if (nums.Length < 2)
-            return nums.Length;
+        if (nums == null || nums.Length == 0) return 0;
 
         int n = 0;
         for (int i = 1; i < nums.Length; i++)
