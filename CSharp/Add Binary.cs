@@ -21,48 +21,8 @@ using System.Collections.Generic;
 
 public class Solution67
 {
-    // --------------- O(n) 96ms --------------- 25.3MB --------------- (45% 8%)
-    /*
-     * "0" "0" should be "0" not "00"
-     */
-    public string AddBinary_1(string a, string b)
-    {
-        List<int> L1 = new List<int>();
-        for (int i = a.Length - 1; i >= 0; i--)
-        {
-            L1.Add(int.Parse(a[i].ToString()));
-        }
-
-        List<int> L2 = new List<int>();
-        for (int i = b.Length - 1; i >= 0; i--)
-        {
-            L2.Add(int.Parse(b[i].ToString()));
-        }
-
-        List<int> L3 = new List<int>();
-
-        int k = 0;
-        for (int i = 0; i < L1.Count || i < L2.Count || k == 1; i++)
-        {
-            int x = i < L1.Count ? L1[i] : 0;
-            int y = i < L2.Count ? L2[i] : 0;
-
-            int t = x + y + k;
-            L3.Add(t % 2);
-            k = t / 2;
-        }
-
-        string result = "";
-        foreach (int t in L3)
-        {
-            result = t + result;
-        }
-
-        return result;
-    }
-
     // --------------- O(n) 88ms --------------- 24.4MB --------------- (90% 8%) ※
-    public string AddBinary_2(string a, string b)
+    public string AddBinary_1(string a, string b)
     {
         string result = "";
         int k = 0;
@@ -83,9 +43,9 @@ public class Solution67
 
     // --------------- O(n) 88ms --------------- 25.2MB --------------- (90% 8%) 
     /*
-     * similar to 3
+     * similar to 1
      */
-    public string AddBinary_3(string a, string b)
+    public string AddBinary_1_2(string a, string b)
     {
         string result = "";
         int k = 0;
@@ -113,5 +73,5 @@ public class Solution67
     }
 }
 /**************************************************************************************************************
- * AddBinary_2 / AddBinary_3                                                                                  *
+ * AddBinary_1                                                                                                *
  **************************************************************************************************************/
