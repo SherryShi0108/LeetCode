@@ -64,17 +64,17 @@ public class Solution58
     // --------------- O(n) 72ms --------------- O(n) 23MB --------------- (88% 24%) ※
     public int LengthOfLastWord_2(string s)
     {
+        if (s == null) return 0;
+        
         int length = 0;
-
         bool flag = true;
+        
         for (int i = s.Length - 1; i >= 0; i--)
         {
             if (s[i] == ' ')
             {
-                if (flag == false)
-                {
-                    return length;
-                }
+                if (flag == true) continue;
+                return length;
             }
             else
             {
