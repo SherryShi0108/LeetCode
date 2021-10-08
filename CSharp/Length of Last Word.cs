@@ -16,53 +16,9 @@
  *******************************************************************************************************************************/
 
 public class Solution58
-{
-    // --------------- O(n) 76ms --------------- O(n) 22MB --------------- (76% 7%) 
-    public int LengthOfLastWord_1(string s)
-    {
-        int len = 0;
-        int i = s.Length - 1;
-        while (i>=0 && s[i]==' ')
-        {
-            i--;
-        }
-
-        while (i>=0 && s[i]!=' ')
-        {
-            len++;
-            i--;
-        }
-
-        return len;
-    }
-    
-    // --------------- O(n) 72ms --------------- O(n) 22MB --------------- (80% 7%) 
-    /*
-     * easy-understand
-     */
-    public int LengthOfLastWord_1_2(string s)
-    {
-        int i = s.Length - 1;
-        for (; i >=0; i--)
-        {
-            if (s[i] != ' ') break;
-        }
-
-        int count = 0;
-        for (; i>=0; i--)
-        {
-            if (s[i] != ' ') count++;
-            else
-            {
-                break;
-            }
-        }
-
-        return count;
-    }
-    
+{    
     // --------------- O(n) 72ms --------------- O(n) 23MB --------------- (88% 24%) ※
-    public int LengthOfLastWord_2(string s)
+    public int LengthOfLastWord_1(string s)
     {
         if (s == null) return 0;
         
@@ -85,7 +41,18 @@ public class Solution58
 
         return length;
     }
+    
+    /*
+     * using API: s.TrimEnd() / s.Split(char[],StringSplitOptions.RemoveEmptyEntries) 
+     */
+    public int LengthOfLastWord_2(string s)
+    {
+        if (s == null) return 0;  // string.IsNullOrWhiteSpace(s)
+
+        string[] list = s.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+        return list[list.Length - 1].Length;
+    }
 }
 /**************************************************************************************************************
- * LengthOfLastWord_2                                                                                         *
+ * LengthOfLastWord_1                                                                                         *
  **************************************************************************************************************/
