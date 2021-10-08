@@ -19,7 +19,7 @@ using System.Linq; // nums.Max() 名称空间
 
 public class Solution53
 {
-    // --------------- O(n) 132ms --------------- 26MB --------------- (13% 61%) 
+    // --------------- O(n) 212ms --------------- 48MB --------------- (32% 7%) 
     /*
      *  Easy-Understanding
      */
@@ -35,7 +35,7 @@ public class Solution53
         return nums.Max();
     }
 
-    // --------------- O(n) 112ms --------------- 23.4MB --------------- (27% 8%) ※
+    // --------------- O(n) 224ms --------------- 48MB --------------- (18% 7%) 
     public int MaxSubArray_1_2(int[] nums)
     {
         if (nums == null || nums.Length == 0) 
@@ -50,7 +50,28 @@ public class Solution53
         }
         return nums[0];
     }
+    
+    // --------------- O(n) 216ms --------------- 48MB --------------- (27% 7%) ※
+    /*
+     * Improve：can't change nums
+     */
+    public int MaxSubArray_2(int[] nums)
+    {
+        if (nums == null || nums.Length == 0) return int.MinValue;
+
+        int sum = 0;
+        int max = nums[0];
+
+        for (int i = 0; i < nums.Length; i++)
+        {
+            sum += nums[i];
+            sum = nums[i] > sum ? nums[i] : sum;
+            max = max > sum ? max : sum;
+        }
+
+        return max;
+    }
 }
 /**************************************************************************************************************
- * MaxSubArray_1_2                                                                                            *
+ * MaxSubArray_2                                                                                              *
  **************************************************************************************************************/
