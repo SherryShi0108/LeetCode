@@ -18,44 +18,11 @@
 
 public class Solution88
 {
-    // --------------- O(n) 304ms --------------- 28.3MB --------------- (5% 99%)
-    public void Merge_1(int[] nums1, int m, int[] nums2, int n)
-    {
-        int x = m - 1;
-        int y = n - 1;
-        for (int i = m + n - 1; i >= 0; i--)
-        {
-            if (x >= 0 && y >= 0)
-            {
-                if (nums1[x] > nums2[y])
-                {
-                    nums1[i] = nums1[x];
-                    x--;
-                }
-                else
-                {
-                    nums1[i] = nums2[y];
-                    y--;
-                }
-            }
-            else if (x >= 0)
-            {
-                nums1[i] = nums1[x];
-                x--;
-            }
-            else if (y >= 0)
-            {
-                nums1[i] = nums2[y];
-                y--;
-            }
-        }
-    }
-
     // --------------- O(n) 248ms --------------- 28.7MB --------------- (80% 24%)
     /*
-     * Cause nums1 are sorted, so if only x>=0, wo can ignore
+     * Cause nums1 are sorted, so if only x>=0, we can ignore
      */
-    public void Merge_2(int[] nums1, int m, int[] nums2, int n)
+    public void Merge_1(int[] nums1, int m, int[] nums2, int n)
     {
         int x = m - 1;
         int y = n - 1;
@@ -82,8 +49,24 @@ public class Solution88
         }
     }
     
-    // an not readable code
-    public void Merge_3(int[] nums1, int m, int[] nums2, int n)
+    // --------------- O(n) 124ms --------------- 41MB --------------- (99% 6%) ※
+    public void Merge_1_2(int[] nums1, int m, int[] nums2, int n)
+    {
+        for (int k = m + n - 1; k >= 0; k--)
+        {
+            if (m - 1 >= 0 && n - 1 >= 0)
+            {
+                nums1[k] = nums1[m - 1] > nums2[n - 1] ? nums1[m-- - 1] : nums2[n-- - 1];
+            }
+            else if (n - 1 >= 0)
+            {
+                nums1[k] = nums2[n-- - 1];
+            }
+        }
+    }
+    
+    // --------------- O(n) 116ms --------------- 41MB --------------- (100% 7%) 
+    public void Merge_1_3(int[] nums1, int m, int[] nums2, int n)
     {
         int a = m - 1;
         int b = n - 1;
@@ -100,5 +83,5 @@ public class Solution88
     }    
 }
 /**************************************************************************************************************
- *   Merge_2                                                                                                  *
+ *   Merge_1_2                                                                                                *
  **************************************************************************************************************/
