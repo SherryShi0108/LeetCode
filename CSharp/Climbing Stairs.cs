@@ -28,6 +28,9 @@
 public class Solution70
 {
     // --------------- O(n) 40ms --------------- O(n) 14.6MB --------------- (67% 6%) 
+    /*
+     * using Extra Space
+     */
     public int ClimbStairs_1(int n)
     {
         if (n <= 2) return n;
@@ -44,27 +47,30 @@ public class Solution70
         return arrays[n];
     }
 
-    // --------------- O(n) 56ms --------------- O(1) 14.6MB --------------- (9% 6%) 
+    // --------------- O(n) 32ms --------------- O(1) 27MB --------------- (97% 5%) ※
     public int ClimbStairs_2(int n)
     {
-        if (n <= 2) return n;
+        if (n == 1) return 1;
 
-        int pre2 = 1;
-        int pre1 = 2;
+        int n1 = 1;
+        int n2 = 2;
 
-        int result = 0;
-        for (int i = 3; i <= n; i++)
+        while (n > 2)
         {
-            result = pre1 + pre2;
-            pre2 = pre1;
-            pre1 = result;
+            int temp = n1 + n2;
+            n1 = n2;
+            n2 = temp;
+            n--;
         }
 
-        return result;
+        return n2;
     }
     
-    // --------------- O(n) 56ms --------------- O(1) 14.6MB --------------- (9% 6%) ※
-    public int ClimbStairs2_2(int n)
+    // --------------- O(n) 56ms --------------- O(1) 14.6MB --------------- (9% 6%) 
+    /*
+     * using Stack:Time Limit Exceeded
+     */
+    public int ClimbStairs3(int n)
     {
         if (n == 1) return 1;
         if (n == 2) return 2;
@@ -72,7 +78,7 @@ public class Solution70
     }
 
     // --------------- O(n) 40ms --------------- O(1) 14.7MB --------------- (67% 6%)
-    public int ClimbStairs_3(int n)
+    public int ClimbStairs_4(int n)
     {
         int a = 1, b = 1;
         while (n-- > 0)
