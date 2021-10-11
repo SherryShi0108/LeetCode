@@ -48,7 +48,7 @@ public class Solution101
 {
     // --------------- O(n) 100ms --------------- O(n) 26MB --------------- (38% 41%) 
     /*
-     *  Using Queue
+     *  Using Iteration：Queue
      */
     public bool IsSymmetric_1(TreeNode root)
     {
@@ -80,6 +80,9 @@ public class Solution101
     public bool IsSymmetric_2(TreeNode root)
     {
         return IsMirror(root, root);
+        
+        // if (root == null) return true;
+        // return IsMirror(root.left, root.right);
     }
 
     private bool IsMirror(TreeNode node1, TreeNode node2)
