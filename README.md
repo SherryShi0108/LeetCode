@@ -21,7 +21,7 @@ C#
 |	16	|	|	|	| | |
 |	17	|	|	|	| | |
 |	18	|	|	|	| | |
-|	19	|	|	|	| | |
+|	19	|[Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Remove%20Nth%20Node%20From%20End%20of%20List.cs)| | ♥ | |
 |	20	|[Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Valid%20Parentheses.cs)|	| ♥ | |
 |	21	|[Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Merge%20Two%20Sorted%20Lists.cs)| | ♥ | |
 |	22	|	|	|	| | |
@@ -96,23 +96,23 @@ C#
 |	91	|	|	|	| | |
 |	92	|	|	|	| | |
 |	93	|	|	|	| | |
-|	94	|	|	|	| | |
+|	94	|[Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Binary%20Tree%20Inorder%20Traversal.cs)|	| ♥ | |
 |	95	|	|	|	| | |
 |	96	|	|	|	| | |
 |	97	|	|	|	| | |
 |	98	|	|	|	| | |
 |	99	|	|	|	| | |
-|	100	|	|	|	| | |
+|	100	|[Same Tree](https://leetcode.com/problems/same-tree/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Same%20Tree.cs)|	| ♥ | |
 |	101	|[Symmetric Tree](https://leetcode.com/problems/symmetric-tree/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Symmetric%20Tree.cs)| | ♥ | |
 |	102	|	|	|	| | |
 |	103	|	|	|	| | |
-|	104	|	|	|	| | |
+|	104	|[Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Maximum%20Depth%20of%20Binary%20Tree.cs)| | ♥ | |
 |	105	|	|	|	| | |
 |	106	|	|	|	| | |
 |	107	|	|	|	| | |
-|	108	|	|	|	| | |
+|	108	|[Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Convert%20Sorted%20Array%20to%20Binary%20Search%20Tree.cs)| | ♥ | |
 |	109	|	|	|	| | |
-|	110	|	|	|	| | |
+|	110	|[Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Balanced%20Binary%20Tree.cs)| | ♥ | |
 |	111	|	|	|	| | |
 |	112	|	|	|	| | |
 |	113	|	|	|	| | |
@@ -155,7 +155,7 @@ C#
 |	150	|	|	|	| | |
 |	151	|	|	|	| | |
 |	152	|	|	|	| | |
-|	153	|	|	|	| | |
+|	153	|[Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Find%20Minimum%20in%20Rotated%20Sorted%20Array.cs)| | ♥ | |
 |	154	|	|	|	| | |
 |	155	|[Min Stack](https://leetcode.com/problems/min-stack/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Min%20Stack.cs)|	| ♥ | |
 |	156 |❀ Binary Tree Upside Down	|	|	| | |
@@ -164,7 +164,7 @@ C#
 |	159 |♣ Longest Substring with At Most Two Distinct Characters|	|	| | |
 |	160	|[Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Intersection%20of%20Two%20Linked%20Lists.cs)| | ♥ | |
 |	161	|❀ One Edit Distance	|	|	| | |
-|	162	|	|	|	| | |
+|	162	|[Find Peak Element](https://leetcode.com/problems/find-peak-element/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Find%20Peak%20Element.cs)|	| ♥ | |
 |	163 |❀ Missing Ranges	|	|	| | |
 |	164	|	|	|	| | |
 |	165	|	|	|	| | |
