@@ -5,7 +5,7 @@ C#
 | :------: | ----- | :------: | :------: | :------: |
 | 1 | [TwoSum](https://leetcode.com/problems/two-sum/) |[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/TwoSum.cs) | Easy | ♥ |
 | 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Add%20Two%20Numbers.cs) | Medium | ♥ |
-|	3	| [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)	| [C#] | Medium | |
+|	3	| [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)	| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Longest%20Substring%20Without%20Repeating%20Characters.cs) | Medium | |
 |	4	| [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/) | [C#] | Hard | |
 |	5	| [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) | [C#] | Medium | |
 |	6	| [Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion/) | [C#] | Medium | |
