@@ -794,10 +794,10 @@ C#
 |	789	|	| [C#] | Medium | |
 |	790	|	| [C#] | Medium | |
 |	791	|	| [C#] | Medium | |
-|	792	|[Number of Matching Subsequences](https://leetcode.com/problems/number-of-matching-subsequences/)| [C#][https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Number%20of%20Matching%20Subsequences.cs] | Medium | |
+|	792	|[Number of Matching Subsequences](https://leetcode.com/problems/number-of-matching-subsequences/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Number%20of%20Matching%20Subsequences.cs) | Medium | |
 |	793	|	| [C#] | Hard | |
 |	794	|	| [C#] | Medium | |
-|	795	|[Number of Subarrays with Bounded Maximum](https://leetcode.com/problems/number-of-subarrays-with-bounded-maximum/)| [C#][https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Number%20of%20Subarrays%20with%20Bounded%20Maximum.cs] | Hard | |
+|	795	|[Number of Subarrays with Bounded Maximum](https://leetcode.com/problems/number-of-subarrays-with-bounded-maximum/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Number%20of%20Subarrays%20with%20Bounded%20Maximum.cs) | Hard | |
 |	796	|	| [C#] | Easy | |
 |	797	|	| [C#] | Medium | |
 |	798	|	| [C#] | Hard | |
