@@ -7,26 +7,26 @@ C#
 | 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Add%20Two%20Numbers.cs) | Medium | ♥ |
 |	3	| [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)	| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Longest%20Substring%20Without%20Repeating%20Characters.cs) | Medium | ♥ |
 |	4	| [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/) | [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Median%20of%20Two%20Sorted%20Arrays.cs) | Hard | |
-|	5	| [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) | [C#] | Medium | |
-|	6	| [Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion/) | [C#] | Medium | |
+|	5	| [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) | [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Longest%20Palindromic%20Substring.cs) | Medium | |
+|	6	| [Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion/) | [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Zigzag%20Conversion.cs) | Medium | |
 |	7	|[Reverse Integer](https://leetcode.com/problems/reverse-integer/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Reverse%20Integer.cs)| Medium | ♥ |
-|	8	| [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/) | [C#] | Medium | |
+|	8	| [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/) | [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/String%20to%20Integer%20(atoi).cs) | Medium | |
 |	9	| [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Palindrome%20Number.cs)| Easy | ♥ |
-|	10	| [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/) | [C#] | Hard | |
-|	11	| [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | [C#] | Medium | |
-|	12	| [Integer to Roman](https://leetcode.com/problems/integer-to-roman/) | [C#] | Medium | |
+|	10	| [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/) | [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Regular%20Expression%20Matching.cs) | Hard | |
+|	11	| [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Container%20With%20Most%20Water.cs) | Medium | |
+|	12	| [Integer to Roman](https://leetcode.com/problems/integer-to-roman/) | [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Integer%20to%20Roman.cs) | Medium | |
 |	13	|[Roman to Integer](https://leetcode.com/problems/roman-to-integer/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Roman%20to%20Integer.cs)| Easy | ♥ |
 |	14	|[Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Longest%20Common%20Prefix.cs)| Easy | ♥ |
-|	15	| [3Sum](https://leetcode.com/problems/3sum/) | [C#] | Medium | |
-|	16	| [3Sum Closest](https://leetcode.com/problems/3sum-closest/) | [C#] | Medium | |
-|	17	| [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | [C#] | Medium | |
-|	18	| [4Sum](https://leetcode.com/problems/4sum/) | [C#] | Medium | |
+|	15	| [3Sum](https://leetcode.com/problems/3sum/) | [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/3Sum.cs) | Medium | |
+|	16	| [3Sum Closest](https://leetcode.com/problems/3sum-closest/) | [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/3Sum%20Closest.cs) | Medium | |
+|	17	| [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Letter%20Combinations%20of%20a%20Phone%20Number.cs) | Medium | |
+|	18	| [4Sum](https://leetcode.com/problems/4sum/) | [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/4Sum.cs) | Medium | |
 |	19	|[Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Remove%20Nth%20Node%20From%20End%20of%20List.cs)| Medium | ♥ |
 |	20	|[Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Valid%20Parentheses.cs)| Easy | ♥ |
 |	21	|[Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Merge%20Two%20Sorted%20Lists.cs)| Easy | ♥ |
-|	22	| [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | [C#] | Medium | |
-|	23	| [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | [C#] | Hard | |
-|	24	| [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) | [C#] | Medium | |
+|	22	| [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Generate%20Parentheses.cs) | Medium | |
+|	23	| [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Merge%20k%20Sorted%20Lists.cs) | Hard | |
+|	24	| [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) | [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Swap%20Nodes%20in%20Pairs.cs) | Medium | |
 |	25	| [Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/) | [C#] | Hard | |
 |	26	| [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)	| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Remove%20Duplicates%20from%20Sorted%20Array.cs) | Easy | ♥ |
 |	27	| [Remove Element](https://leetcode.com/problems/remove-element/)	|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Remove%20Element.cs)	| Easy | ♥ |
