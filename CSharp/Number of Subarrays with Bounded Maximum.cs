@@ -18,7 +18,7 @@
  * 
  *******************************************************************************************************************************/
 
-public class Solution798
+public class Solution795
 {
     public int NumSubarrayBoundedMax_1(int[] A, int L, int R)
     {
