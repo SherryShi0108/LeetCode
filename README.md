@@ -31,18 +31,18 @@ C#
 |	26	| [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)	| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Remove%20Duplicates%20from%20Sorted%20Array.cs) | Easy | ♥ |
 |	27	| [Remove Element](https://leetcode.com/problems/remove-element/)	|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Remove%20Element.cs)	| Easy | ♥ |
 |	28	| [Implement strStr()](https://leetcode.com/problems/implement-strstr/) | [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Implement%20strStr().cs) | Easy | ♥ |
-|	29	| [Divide Two Integers](https://leetcode.com/problems/divide-two-integers/) | [C#] | Medium | |
+|	29	| [Divide Two Integers](https://leetcode.com/problems/divide-two-integers/) | [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Divide%20Two%20Integers.cs) | Medium | |
 |	30	| [Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/) | [C#] | Hard | |
-|	31	| [Next Permutation](https://leetcode.com/problems/next-permutation/) | [C#] | Medium | |
+|	31	| [Next Permutation](https://leetcode.com/problems/next-permutation/) | [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Next%20Permutation.cs) | Medium | |
 |	32	| [Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/) | [C#] | Hard | |
-|	33	| [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | [C#] | Medium | |
+|	33	| [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Search%20in%20Rotated%20Sorted%20Array.cs) | Medium | |
 |	34	| [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | [C#] | Medium | |
 |	35	|	[Search Insert Position](https://leetcode.com/problems/search-insert-position/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Search%20Insert%20Position.cs)| Easy | ♥ |
 |	36	| [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | [C#] | Medium | |
 |	37	| [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/) | [C#] | Hard | |
 |	38	|[Count and Say](https://leetcode.com/problems/count-and-say/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Count%20and%20Say.cs)| Medium | ♥ |
-|	39	| [Combination Sum](https://leetcode.com/problems/combination-sum/) | [C#] | Medium | |
-|	40	| [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/) | [C#] | Medium | |
+|	39	| [Combination Sum](https://leetcode.com/problems/combination-sum/) | [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Combination%20Sum.cs) | Medium | |
+|	40	| [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/) | [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Combination%20Sum%20II.cs) | Medium | |
 |	41	| [First Missing Positive](https://leetcode.com/problems/first-missing-positive/) | [C#] | Hard | |
 |	42	| [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) | [C#] | Hard | |
 |	43	| [Multiply Strings](https://leetcode.com/problems/multiply-strings/) | [C#] | Medium | |
@@ -50,23 +50,23 @@ C#
 |	45	| [Jump Game II](https://leetcode.com/problems/jump-game-ii/) | [C#] | Medium | |
 |	46	| [Permutations](https://leetcode.com/problems/permutations/) | [C#] | Medium | |
 |	47	| [Permutations II](https://leetcode.com/problems/permutations-ii/) | [C#] | Medium | |
-|	48	| [Rotate Image](https://leetcode.com/problems/rotate-image/) | [C#] | Medium | |
+|	48	| [Rotate Image](https://leetcode.com/problems/rotate-image/) | [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Rotate%20Image.cs) | Medium | |
 |	49	| [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | [C#] | Medium | |
 |	50	| [Pow(x, n)](https://leetcode.com/problems/powx-n/) | [C#] | Medium | |
 |	51	| [N-Queens](https://leetcode.com/problems/n-queens/) | [C#] | Hard | |
 |	52	| [N-Queens II](https://leetcode.com/problems/n-queens-ii/) | [C#] | Hard | |
 |	53	|[Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)	|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Maximum%20Subarray.cs)	| Easy | |
-|	54	| [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) | [C#] | Medium | |
-|	55	| [Jump Game](https://leetcode.com/problems/jump-game/) | [C#] | Medium | |
-|	56	| [Merge Intervals](https://leetcode.com/problems/merge-intervals/) | [C#] | Medium | |
+|	54	| [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) | [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Spiral%20Matrix.cs) | Medium | |
+|	55	| [Jump Game](https://leetcode.com/problems/jump-game/) | [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Jump%20Game.cs) | Medium | |
+|	56	| [Merge Intervals](https://leetcode.com/problems/merge-intervals/) | [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Merge%20Intervals.cs) | Medium | |
 |	57	| [Insert Interval](https://leetcode.com/problems/insert-interval/) | [C#] | Medium | |
 |	58	|[Length of Last Word](https://leetcode.com/problems/length-of-last-word/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Length%20of%20Last%20Word.cs)| Easy | ♥ |
-|	59	| [Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/) | [C#] | Medium | |
+|	59	| [Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/) | [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Spiral%20Matrix%20II.cs) | Medium | |
 |	60	| [Permutation Sequence](https://leetcode.com/problems/permutation-sequence/) | [C#] | Hard | |
 |	61	| [Rotate List](https://leetcode.com/problems/rotate-list/) | [C#] | Medium | |
-|	62	| [Unique Paths](https://leetcode.com/problems/unique-paths/) | [C#] | Medium | |
-|	63	| [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/) | [C#] | Medium | |
-|	64	| [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/) | [C#] | Medium | |
+|	62	| [Unique Paths](https://leetcode.com/problems/unique-paths/) | [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Unique%20Paths.cs) | Medium | |
+|	63	| [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/) | [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Unique%20Paths%20II.cs) | Medium | |
+|	64	| [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/) | [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Minimum%20Path%20Sum.cs) | Medium | |
 |	65	| [Valid Number](https://leetcode.com/problems/valid-number/) | [C#] | Hard | |
 |	66	|[Plus One](https://leetcode.com/problems/plus-one/)	|	[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Plus%20One.cs)	| Easy | ♥ |
 |	67	|[Add Binary](https://leetcode.com/problems/add-binary/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Add%20Binary.cs)| Easy | ♥ |
@@ -75,15 +75,15 @@ C#
 |	70	|[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Climbing%20Stairs.cs)| Easy | ♥ |
 |	71	| [Simplify Path](https://leetcode.com/problems/simplify-path/) | [C#] | Medium | |
 |	72	| [Edit Distance](https://leetcode.com/problems/edit-distance/) | [C#] | Hard | |
-|	73	| [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) | [C#] | Medium | |
-|	74	| [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/) | [C#] | Medium | |
-|	75	| [Sort Colors](https://leetcode.com/problems/sort-colors/) | [C#] | Medium | |
+|	73	| [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) | [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Set%20Matrix%20Zeroes.cs) | Medium | |
+|	74	| [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/) | [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Search%20a%202D%20Matrix.cs) | Medium | |
+|	75	| [Sort Colors](https://leetcode.com/problems/sort-colors/) | [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Sort%20Colors.cs) | Medium | |
 |	76	| [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) | [C#] | Hard | |
 |	77	| [Combinations](https://leetcode.com/problems/combinations/) | [C#] | Medium | |
-|	78	| [Subsets](https://leetcode.com/problems/subsets/) | [C#] | Medium | |
-|	79	| [Word Search](https://leetcode.com/problems/word-search/) | [C#] | Medium | |
-|	80	| [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) | [C#] | Medium | |
-|	81	| [Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/) | [C#] | Medium | |
+|	78	| [Subsets](https://leetcode.com/problems/subsets/) | [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Subsets.cs) | Medium | |
+|	79	| [Word Search](https://leetcode.com/problems/word-search/) | [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Word%20Search.cs) | Medium | |
+|	80	| [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) | [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Remove%20Duplicates%20from%20Sorted%20Array%20II.cs) | Medium | |
+|	81	| [Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/) | [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Search%20in%20Rotated%20Sorted%20Array%20II.cs) | Medium | |
 |	82	| [Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) | [C#] | Medium | |
 |	83	|[Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Remove%20Duplicates%20from%20Sorted%20List.cs)| Easy | ♥ |
 |	84	| [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) | [C#] | Hard | |
@@ -92,7 +92,7 @@ C#
 |	87	| [Scramble String](https://leetcode.com/problems/scramble-string/) | [C#] | Hard | |
 |	88	|[Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)	|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Merge%20Sorted%20Array.cs)	| Easy | |
 |	89	| [Gray Code](https://leetcode.com/problems/gray-code/) | [C#] | Medium | |
-|	90	| [Subsets II](https://leetcode.com/problems/subsets-ii/) | [C#] | Medium | |
+|	90	| [Subsets II](https://leetcode.com/problems/subsets-ii/) | [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Subsets%20II.cs) | Medium | |
 |	91	| [Decode Ways](https://leetcode.com/problems/decode-ways/) | [C#] | Medium | |
 |	92	| [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/) | [C#] | Medium | |
 |	93	| [Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/) | [C#] | Medium | |
@@ -107,14 +107,14 @@ C#
 |	102	|	| [C#] | Medium | |
 |	103	|	| [C#] | Medium | |
 |	104	|[Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Maximum%20Depth%20of%20Binary%20Tree.cs)| Easy | ♥ |
-|	105	|	| [C#] | Medium | |
-|	106	|	| [C#] | Medium | |
-|	107	|	| [C#] | Medium | |
+|	105	|[Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Construct%20Binary%20Tree%20from%20Preorder%20and%20Inorder%20Traversal.cs) | Medium | |
+|	106	|[Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Construct%20Binary%20Tree%20from%20Inorder%20and%20Postorder%20Traversal.cs) | Medium | |
+|	107	|[Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Binary%20Tree%20Level%20Order%20Traversal%20II.cs) | Medium | |
 |	108	|[Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Convert%20Sorted%20Array%20to%20Binary%20Search%20Tree.cs)| Easy | ♥ |
 |	109	|	| [C#] | Medium | |
 |	110	|[Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Balanced%20Binary%20Tree.cs)| Easy | ♥ |
-|	111	|	| [C#] | Easy | |
-|	112	|	| [C#] | Easy | |
+|	111	|[Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Minimum%20Depth%20of%20Binary%20Tree.cs) | Easy | |
+|	112	|[Path Sum](https://leetcode.com/problems/path-sum/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Path%20Sum.cs) | Easy | |
 |	113	|	| [C#] | Medium | |
 |	114	|	| [C#] | Medium | |
 |	115	|	| [C#] | Hard | |
@@ -122,7 +122,7 @@ C#
 |	117	|	| [C#] | Medium | |
 |	118	|[Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Pascal's%20Triangle.cs)| Easy | ♥ |
 |	119	|[Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Pascal's%20Triangle%20II.cs)| Easy | ♥ |
-|	120	|	| [C#] | Medium | |
+|	120	|[Triangle](https://leetcode.com/problems/triangle/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Triangle.cs) | Medium | |
 |	121	|[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)	|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Best%20Time%20to%20Buy%20and%20Sell%20Stock.cs)| Easy | |
 |	122	|	[Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) | [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Best%20Time%20to%20Buy%20and%20Sell%20Stock%20II.cs)	| Medium | ♥ |
 |	123	|	| [C#] | Hard | |
@@ -154,8 +154,8 @@ C#
 |	149	|	| [C#] | Hard | |
 |	150	|	| [C#] | Medium | |
 |	151	|	| [C#] | Medium | |
-|	152	|	| [C#] | Medium | |
-|	153	|[Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Find%20Minimum%20in%20Rotated%20Sorted%20Array.cs)| Medium | ♥ |
+|	152	|[Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Maximum%20Product%20Subarray.cs) | Medium | |
+|	153	|[Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Find%20Minimum%20in%20Rotated%20Sorted%20Array.cs)| Medium |  |
 |	154	|	| [C#] | Hard | |
 |	155	|[Min Stack](https://leetcode.com/problems/min-stack/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Min%20Stack.cs)| Easy | ♥ |
 |	156 |Binary Tree Upside Down	| [C#] | Medium | |
@@ -164,7 +164,7 @@ C#
 |	159 |Longest Substring with At Most Two Distinct Characters| [C#] | Medium | |
 |	160	|[Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Intersection%20of%20Two%20Linked%20Lists.cs)| Easy | ♥ |
 |	161	|One Edit Distance	| [C#] | Medium | |
-|	162	|[Find Peak Element](https://leetcode.com/problems/find-peak-element/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Find%20Peak%20Element.cs)| Medium | ♥ |
+|	162	|[Find Peak Element](https://leetcode.com/problems/find-peak-element/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Find%20Peak%20Element.cs)| Medium |  |
 |	163 |Missing Ranges	| [C#] | Easy | |
 |	164	|	| [C#] | Hard | |
 |	165	|	| [C#] | Medium | |
@@ -211,14 +211,14 @@ C#
 |	206	|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Reverse%20Linked%20List.cs)| Easy | ♥ |
 |	207	|	| [C#] | Medium | |
 |	208	|	| [C#] | Medium | |
-|	209	|	| [C#] | Medium | |
+|	209	|[Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Minimum%20Size%20Subarray%20Sum.cs) | Medium | |
 |	210	|	| [C#] | Medium | |
 |	211	|	| [C#] | Medium | |
 |	212	|	| [C#] | Hard | |
 |	213	|	| [C#] | Medium | |
 |	214	|	| [C#] | Hard | |
 |	215	|	| [C#] | Medium | |
-|	216	|	| [C#] | Medium | |
+|	216	|[Combination Sum III](https://leetcode.com/problems/combination-sum-iii/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Combination%20Sum%20III.cs) | Medium | |
 |	217	|[Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)	|	[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Contains%20Duplicate.cs)	| Easy | ♥ |
 |	218	|	| [C#] | Hard | |
 |	219	|[Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/)	|	[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Contains%20Duplicate%20II.cs)	| Easy | ♥ |
@@ -226,21 +226,21 @@ C#
 |	221	|	| [C#] | Medium | |
 |	222	|	| [C#] | Medium | |
 |	223	|	| [C#] | Medium | |
-|	224	|	| [C#] | Hard | |
+|	224	|[Basic Calculator](https://leetcode.com/problems/basic-calculator/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Basic%20Calculator.cs) | Hard | |
 |	225	|[Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Implement%20Stack%20using%20Queues.cs)| Easy | ♥ |
-|	226	|	| [C#] | Easy | |
+|	226	|[Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Invert%20Binary%20Tree.cs) | Easy | |
 |	227	|	| [C#] | Medium | |
-|	228	|	| [C#] | Easy | |
-|	229	|	| [C#] | Medium | |
+|	228	|[Summary Ranges](https://leetcode.com/problems/summary-ranges/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Summary%20Ranges.cs) | Easy | |
+|	229	|[Majority Element II](https://leetcode.com/problems/majority-element-ii/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Majority%20Element%20II.cs) | Medium | |
 |	230	|	| [C#] | Medium | |
 |	231	| [Power of Two](https://leetcode.com/problems/power-of-two/) | [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Power%20of%20Two.cs) | Easy | ♥ |
 |	232	|[Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Implement%20Queue%20using%20Stacks.cs)| Easy | ♥  |
 |	233	|	| [C#] | Hard | |
 |	234	|[Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Palindrome%20Linked%20List.cs)| Easy | ♥ |
-|	235	|	| [C#] | Easy | |
+|	235	|[Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Lowest%20Common%20Ancestor%20of%20a%20Binary%20Search%20Tree.cs) | Easy | |
 |	236	|	| [C#] | Medium | |
 |	237	|[Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Delete%20Node%20in%20a%20Linked%20List.cs)| Easy | ♥ |
-|	238	|	| [C#] | Medium | |
+|	238	|[Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Product%20of%20Array%20Except%20Self.cs) | Medium | |
 |	239	|	| [C#] | Hard | |
 |	240	|	| [C#] | Medium | |
 |	241	|	| [C#] | Medium | |
@@ -286,10 +286,10 @@ C#
 |	281	|❀ Zigzag Iterator	| [C#] | Medium | |
 |	282	|	| [C#] | Hard | |
 |	283	|[Move Zeroes](https://leetcode.com/problems/move-zeroes/)	|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Move%20Zeroes.cs)	| Easy | ♥ |
-|	284	|	| [C#] | Medium | |
+|	284	|[Game of Life](https://leetcode.com/problems/game-of-life/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Game%20of%20Life.cs) | Medium | |
 |	285	|❀ Inorder Successor in BST	| [C#] | Medium | |
 |	286	|❀ Walls and Gates 	| [C#] | Medium | |
-|	287	|	| [C#] | Medium | |
+|	287	|[Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Find%20the%20Duplicate%20Number.cs) | Medium | |
 |	288	|❀ Unique Word Abbreviation	| [C#] | Medium | |
 |	289	|	| [C#] | Medium | |
 |	290	|[Word Pattern](https://leetcode.com/problems/word-pattern/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Word%20Pattern.cs)| Easy | ♥ |
@@ -382,7 +382,7 @@ C#
 |	377	|	| [C#] | Medium | |
 |	378	|	| [C#] | Medium | |
 |	379	|❀ Design Phone Directory	| [C#] | Medium | |
-|	380	|	| [C#] | Medium | |
+|	380	|[Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Insert%20Delete%20GetRandom%20O(1).cs) | Medium | |
 |	381	|	| [C#] | Hard | |
 |	382	|	| [C#] | Medium | |
 |	383	|[Ransom Note](https://leetcode.com/problems/ransom-note/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Ransom%20Note.cs)| Easy | ♥ |
@@ -444,8 +444,8 @@ C#
 |	439	|❀ Ternary Expression Parser	| [C#] | Medium | |
 |	440	|	| [C#] | Hard | |
 |	441	|[Arranging Coins](https://leetcode.com/problems/arranging-coins/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Arranging%20Coins.cs)| Easy | ♥ |
-|	442	|	| [C#] | Medium | |
-|	443	|	| [C#] | Medium | |
+|	442	|[Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Find%20All%20Duplicates%20in%20an%20Array.cs) | Medium | |
+|	443	|[String Compression](https://leetcode.com/problems/string-compression/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/String%20Compression.cs) | Medium | |
 |	444	|❀ Sequence Reconstruction	| [C#] | Medium | |
 |	445	|	| [C#] | Medium | |
 |	446	|	| [C#] | Hard | |
@@ -459,7 +459,7 @@ C#
 |	454	|	| [C#] | Medium | |
 |	455	|[Assign Cookies](https://leetcode.com/problems/assign-cookies/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Assign%20Cookies.cs)| Easy | ♥ |
 |	456	|	| [C#] | Medium | |
-|	457	|	| [C#] | Medium | |
+|	457	|[Circular Array Loop](https://leetcode.com/problems/circular-array-loop/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Circular%20Array%20Loop.cs) | Medium | |
 |	458	|	| [C#] | Hard | |
 |	459	|[Repeated Substring Pattern](https://leetcode.com/problems/repeated-substring-pattern/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Repeated%20Substring%20Pattern.cs)| Easy | ♥ |
 |	460	|	| [C#] | Hard | |
@@ -497,13 +497,13 @@ C#
 |	492	|	| [C#] | Easy | |
 |	493	|	| [C#] | Hard | |
 |	494	|	| [C#] | Medium | |
-|	495	|	| [C#] | Easy | |
+|	495	|[Teemo Attacking](https://leetcode.com/problems/teemo-attacking/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Teemo%20Attacking.cs) | Easy | |
 |	496	|[Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Next%20Greater%20Element%20I.cs)| Easy | ♥ |
 |	497	|	| [C#] | Medium | |
 |	498	|	| [C#] | Medium | |
 |	499	|♣ The Maze III 	| [C#] | Hard | |
 |	500	|[Keyboard Row](https://leetcode.com/problems/keyboard-row/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Keyboard%20Row.cs)| Easy | ♥ |
-|	501	|	| [C#] | Easy | |
+|	501	|[Find Mode in Binary Search Tree](https://leetcode.com/problems/find-mode-in-binary-search-tree/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Find%20Mode%20in%20Binary%20Search%20Tree.cs) | Easy | |
 |	502	|	| [C#] | Hard | |
 |	503	|	| [C#] | Medium | |
 |	504	|	| [C#] | Easy | |
@@ -532,7 +532,7 @@ C#
 |	527	|Word Abbreviation	| [C#] | Hard | |
 |	528	|	| [C#] | Medium | |
 |	529	|	| [C#] | Medium | |
-|	530	|	| [C#] | Easy | |
+|	530	|[Minimum Absolute Difference in BST](https://leetcode.com/problems/minimum-absolute-difference-in-bst/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Minimum%20Absolute%20Difference%20in%20BST.cs) | Easy | |
 |	531	|Lonely Pixel I 	| [C#] | Medium | |
 |	532	|[K-diff Pairs in an Array](https://leetcode.com/problems/k-diff-pairs-in-an-array/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/K-diff%20Pairs%20in%20an%20Array.cs)| Medium | ♥ |
 |	533	|Lonely Pixel II	| [C#] | Medium | |
@@ -545,7 +545,7 @@ C#
 |	540	|	| [C#] | Medium | |
 |	541	|[Reverse String II](https://leetcode.com/problems/reverse-string-ii/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Reverse%20String%20II.cs)| Easy | ♥ |
 |	542	|	| [C#] | Medium | |
-|	543	|	| [C#] | Easy | |
+|	543	|[Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Diameter%20of%20Binary%20Tree.cs) | Easy | |
 |	544	|❀ Output Contest Matches	| [C#] | Medium | |
 |	545	|❀ Boundary of Binary Tree	| [C#] | Medium | |
 |	546	|	| [C#] |    Hard    | |
@@ -561,20 +561,20 @@ C#
 |	556	|	| [C#] | Medium | |
 |	557	|[Reverse Words in a String III](https://leetcode.com/problems/reverse-words-in-a-string-iii/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Reverse%20Words%20in%20a%20String%20III.cs)| Easy | ♥ |
 |	558	|	| [C#] | Medium | |
-|	559	|	| [C#] | Easy | |
-|	560	|	| [C#] | Medium | |
+|	559	|[Maximum Depth of N-ary Tree](https://leetcode.com/problems/maximum-depth-of-n-ary-tree/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Maximum%20Depth%20of%20N-ary%20Tree.cs) | Easy | |
+|	560	|[Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Subarray%20Sum%20Equals%20K.cs) | Medium | |
 |	561	|[Array Partition I](https://leetcode.com/problems/array-partition-i/)	|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Array%20Partition%20I.cs)	| Easy | ？ |
 |	562	|❀ Longest Line of Consecutive One in Matrix 	| [C#] | Medium | |
 |	563	|[Binary Tree Tilt](https://leetcode.com/problems/binary-tree-tilt/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Binary%20Tree%20Tilt.cs)| Easy |  ♥ |
 |	564	|	| [C#] | Hard | |
-|	565	|	| [C#] | Medium | |
+|	565	|[Array Nesting](https://leetcode.com/problems/array-nesting/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Array%20Nesting.cs) | Medium | |
 |	566	|[Reshape the Matrix](https://leetcode.com/problems/reshape-the-matrix/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Reshape%20the%20Matrix.cs)| Easy | ♥ |
 |	567	|	| [C#] | Medium | |
 |	568	|Maximum Vacation Days	| [C#] | Hard | |
 |	569	|Median Employee Salary 	| [C#] | Hard | |
 |	570	|Managers with at Least 5 Direct Reports	| [C#] | Medium | |
 |	571	|Find Median Given Frequency of Numbers	| [C#] | Hard | |
-|	572	|	| [C#] | Easy | |
+|	572	|[Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Subtree%20of%20Another%20Tree.cs) | Easy | |
 |	573	|Squirrel Simulation	| [C#] | Medium | |
 |	574	|Winning Candidate	| [C#] | Medium | |
 |	575	|[Distribute Candies](https://leetcode.com/problems/distribute-candies/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Distribute%20Candies.cs)| Easy | ♥ |
@@ -591,8 +591,8 @@ C#
 |	586	|Customer Placing the Largest Number of Orders | [C#] | Easy | |
 |	587	|	| [C#] | Hard | |
 |	588	|Design In-Memory File System	| [C#] | Hard | |
-|	589	|	| [C#] | Easy | |
-|	590	|	| [C#] | Easy | |
+|	589	|[N-ary Tree Preorder Traversal](https://leetcode.com/problems/n-ary-tree-preorder-traversal/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/N-ary%20Tree%20Preorder%20Traversal.cs) | Easy | |
+|	590	|[N-ary Tree Postorder Traversal](https://leetcode.com/problems/n-ary-tree-postorder-traversal/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/N-ary%20Tree%20Postorder%20Traversal.cs) | Easy | |
 |	591	|	| [C#] | Hard | |
 |	592	|	| [C#] | Medium | |
 |	593	|	| [C#] | Medium | |
@@ -613,17 +613,17 @@ C#
 |	608	|❀ Tree Node | [C#] | Medium | |
 |	609	|	| [C#] | Medium | |
 |	610	|❀ Triangle Judgement 	| [C#] | Easy | |
-|	611	|	| [C#] | Medium | |
+|	611	|[Valid Triangle Number](https://leetcode.com/problems/valid-triangle-number/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Valid%20Triangle%20Number.cs) | Medium |  |
 |	612	|❀ Shortest Distance in a Plane | [C#] | Medium | |
 |	613	|❀ Shortest Distance in a Line	| [C#] | Easy | |
 |	614	|❀ Second Degree Follower	| [C#] | Medium | |
 |	615	|♣ Average Salary: Departments VS Company	| [C#] | Hard | |
 |	616	|❀ Add Bold Tag in String	| [C#] | Medium | |
-|	617	|	| [C#] | Easy | |
+|	617	|[Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Merge%20Two%20Binary%20Trees.cs) | Easy | |
 |	618	|♣ Students Report By Geography 	| [C#] | Hard | |
 |	619	|❀ Biggest Single Number 	| [C#] | Easy | |
 |	620	|	| [C#] | Easy | |
-|	621	|	| [C#] | Medium | |
+|	621	|[Task Scheduler](https://leetcode.com/problems/task-scheduler/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Task%20Scheduler.cs) | Medium | |
 |	622	|	| [C#] | Medium | |
 |	623	|	| [C#] | Medium | |
 |	624	|❀ Maximum Distance in Arrays	| [C#] | Medium | |
@@ -669,11 +669,11 @@ C#
 |	664	|	| [C#] | Hard | |
 |	665	|[Non-decreasing Array](https://leetcode.com/problems/non-decreasing-array/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Non-decreasing%20Array.cs)| Medium | ♥ |
 |	666	|❀ Path Sum IV	| [C#] | Medium | |
-|	667	|	| [C#] | Medium | |
+|	667	|[Beautiful Arrangement II](https://leetcode.com/problems/beautiful-arrangement-ii/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Beautiful%20Arrangement%20II.cs) | Medium | |
 |	668	|	| [C#] | Hard | |
-|	669	|	| [C#] | Medium | |
-|	670	|	| [C#] | Medium | |
-|	671	|	| [C#] | Easy | |
+|	669	|[Trim a Binary Search Tree](https://leetcode.com/problems/trim-a-binary-search-tree)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Trim%20a%20Binary%20Search%20Tree.cs) | Medium | |
+|	670	|[Maximum Swap](https://leetcode.com/problems/maximum-swap/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Maximum%20Swap.cs) | Medium | |
+|	671	|[Second Minimum Node In a Binary Tree](https://leetcode.com/problems/second-minimum-node-in-a-binary-tree/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Second%20Minimum%20Node%20In%20a%20Binary%20Tree.cs) | Easy | |
 |	672	|	| [C#] | Medium | |
 |	673	|	| [C#] | Medium | |
 |	674	|[Longest Continuous Increasing Subsequence](https://leetcode.com/problems/longest-continuous-increasing-subsequence/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Longest%20Continuous%20Increasing%20Subsequence.cs)	| Easy | |
@@ -688,21 +688,21 @@ C#
 |	683	|♣ K Empty Slots	| [C#] | Hard | |
 |	684	|	| [C#] | Medium | |
 |	685	|	| [C#] | Hard | |
-|	686	|	| [C#] | Medium | |
+|	686	|[Repeated String Match](https://leetcode.com/problems/repeated-string-match/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Repeated%20String%20Match.cs) | Medium | |
 |	687	|	| [C#] | Medium | |
 |	688	|	| [C#] | Medium | |
 |	689	|	| [C#] | Hard | |
 |	690	|	| [C#] | Medium | |
-|	691	|	| [C#] |    Hard    | |
+|	691	|[Employee Importance](https://leetcode.com/problems/employee-importance/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Employee%20Importance.cs) |    Hard    | |
 |	692	|	| [C#] | Medium | |
 |	693	|[Binary Number with Alternating Bits](https://leetcode.com/problems/binary-number-with-alternating-bits/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Binary%20Number%20with%20Alternating%20Bits.cs)| Easy | ♥ |
 |	694	|❀ Number of Distinct Islands	| [C#] | Medium | |
-|	695	|	| [C#] | Medium | |
+|	695	|[Max Area of Island](https://leetcode.com/problems/max-area-of-island/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Max%20Area%20of%20Island.cs) | Medium | |
 |	696	|[Count Binary Substrings](https://leetcode.com/problems/count-binary-substrings/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Count%20Binary%20Substrings.cs)| Easy | ♥ |
 |	697	|[Degree of an Array](https://leetcode.com/problems/degree-of-an-array/)	|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Degree%20of%20an%20Array.cs)	| Easy | ♥ |
 |	698	|	| [C#] | Medium | |
 |	699	|	| [C#] | Hard | |
-|	700	|	| [C#] | Easy | |
+|	700	|[Search in a Binary Search Tree](https://leetcode.com/problems/search-in-a-binary-search-tree/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Search%20in%20a%20Binary%20Search%20Tree.cs) | Easy | |
 |	701	|	| [C#] | Medium | |
 |	702	|❀ Search in a Sorted Array of Unknown Size	| [C#] | Medium | |
 |	703	|[Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Kth%20Largest%20Element%20in%20a%20Stream.cs)| Easy | ♥ |
@@ -715,12 +715,12 @@ C#
 |	710	|	| [C#] | Hard | |
 |	711	|♣ Number of Distinct Islands II 	| [C#] | Hard | |
 |	712	|	| [C#] | Medium | |
-|	713	|	| [C#] | Medium | |
-|	714	|	| [C#] | Medium | |
+|	713	|[Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Subarray%20Product%20Less%20Than%20K.cs) | Medium | |
+|	714	|[Best Time to Buy and Sell Stock with Transaction Fee](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Best%20Time%20to%20Buy%20and%20Sell%20Stock%20with%20Transaction%20Fee.cs) | Medium | |
 |	715	|	| [C#] | Hard | |
 |	716	|Max Stack 	| [C#] | Easy | |
 |	717	|[1-bit and 2-bit Characters](https://leetcode.com/problems/1-bit-and-2-bit-characters/)	|	[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/1-bit%20and%202-bit%20Characters.cs)	|    Easy    | |
-|	718	|	| [C#] | Medium | |
+|	718	|[Maximum Length of Repeated Subarray](https://leetcode.com/problems/maximum-length-of-repeated-subarray)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Maximum%20Length%20of%20Repeated%20Subarray.cs) | Medium | |
 |	719	|	| [C#] | Hard | |
 |	720	|[Longest Word in Dictionary](https://leetcode.com/problems/longest-word-in-dictionary/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Longest%20Word%20in%20Dictionary.cs)| Medium | |
 |	721	|	| [C#] | Medium | |
@@ -731,11 +731,11 @@ C#
 |	726	|	| [C#] | Hard | |
 |	727	|Minimum Window Subsequence	| [C#] | Hard | |
 |	728	| [Self Dividing Numbers](https://leetcode.com/problems/self-dividing-numbers/) | [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Self%20Dividing%20Numbers.cs) | Easy | ♥ |
-|	729	|	| [C#] | Medium | |
+|	729	|[My Calendar I](https://leetcode.com/problems/my-calendar-i/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/My%20Calendar%20I.cs) | Medium | |
 |	730	|	| [C#] | Hard | |
 |	731	|	| [C#] | Medium | |
 |	732	|	| [C#] | Hard | |
-|	733	|	| [C#] | Easy | |
+|	733	|[Flood Fill](https://leetcode.com/problems/flood-fill/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Flood%20Fill.cs) | Easy | |
 |	734	|Sentence Similarity 	| [C#] | Easy | |
 |	735	|	| [C#] | Medium | |
 |	736	|	| [C#] | Hard | |
@@ -771,13 +771,13 @@ C#
 |	766	|[Toeplitz Matrix](https://leetcode.com/problems/toeplitz-matrix/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Toeplitz%20Matrix.cs)| Easy | ♥ |
 |	767	|	| [C#] | Medium | |
 |	768	|	| [C#] | Hard | |
-|	769	|	| [C#] | Medium | |
+|	769	|[Max Chunks To Make Sorted](https://leetcode.com/problems/max-chunks-to-make-sorted/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Max%20Chunks%20To%20Make%20Sorted.cs) | Medium | |
 |	770	|	| [C#] | Hard | |
 |	771	|[Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Jewels%20and%20Stones.cs)| Easy | ♥ |
 |	772	|♣ Basic Calculator III 	| [C#] |    Hard    | |
 |	773	|	| [C#] | Hard | |
 |	774	|❀ Minimize Max Distance to Gas Station 	| [C#] | Hard | |
-|	775	|	| [C#] | Medium | |
+|	775	|[Global and Local Inversions](https://leetcode.com/problems/global-and-local-inversions/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Global%20and%20Local%20Inversions.cs) | Medium | |
 |	776	|❀ Split BST	| [C#] | Medium | |
 |	777	|	| [C#] | Medium | |
 |	778	|	| [C#] | Hard | |
@@ -785,7 +785,7 @@ C#
 |	780	|	| [C#] | Hard | |
 |	781	|	| [C#] | Medium | |
 |	782	|	| [C#] | Hard | |
-|	783	|	| [C#] | Easy | |
+|	783	|[Minimum Distance Between BST Nodes](https://leetcode.com/problems/minimum-distance-between-bst-nodes/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Minimum%20Distance%20Between%20BST%20Nodes.cs) | Easy | |
 |	784	|	| [C#] | Medium | |
 |	785	|	| [C#] | Medium | |
 |	786	|	| [C#] | Hard | |
@@ -794,13 +794,13 @@ C#
 |	789	|	| [C#] | Medium | |
 |	790	|	| [C#] | Medium | |
 |	791	|	| [C#] | Medium | |
-|	792	|	| [C#] | Medium | |
+|	792	|[Number of Matching Subsequences](https://leetcode.com/problems/number-of-matching-subsequences/)| [C#][https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Number%20of%20Matching%20Subsequences.cs] | Medium | |
 |	793	|	| [C#] | Hard | |
 |	794	|	| [C#] | Medium | |
-|	795	|	| [C#] | Medium | |
+|	795	|[Number of Subarrays with Bounded Maximum](https://leetcode.com/problems/number-of-subarrays-with-bounded-maximum/)| [C#][https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Number%20of%20Subarrays%20with%20Bounded%20Maximum.cs] | Hard | |
 |	796	|	| [C#] | Easy | |
 |	797	|	| [C#] | Medium | |
-|	798	|	| [C#] |    Hard    | |
+|	798	|	| [C#] | Hard | |
 |	799	|	| [C#] | Medium | |
 |	800	|❀ Similar RGB Color	| [C#] | Easy | |
 |	801	|	| [C#] | Hard | |
@@ -827,7 +827,7 @@ C#
 |	822	|	| [C#] | Medium | |
 |	823	|	| [C#] | Medium | |
 |	824	|[Goat Latin](https://leetcode.com/problems/goat-latin/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Goat%20Latin.cs)| Easy | ♥ |
-|	825	|	| [C#] | Medium | |
+|	825	|[Friends Of Appropriate Ages](https://leetcode.com/problems/friends-of-appropriate-ages/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Friends%20Of%20Appropriate%20Ages.cs) | Medium | |
 |	826	|	| [C#] | Medium | |
 |	827	|	| [C#] | Hard | |
 |	828	|	| [C#] |    Hard    | |
@@ -837,7 +837,7 @@ C#
 |	832	|[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Flipping%20an%20Image.cs)| Easy | ♥ |
 |	833	|	| [C#] | Medium | |
 |	834	|	| [C#] | Hard | |
-|	835	|	| [C#] | Medium | |
+|	835	|[Image Overlap](https://leetcode.com/problems/image-overlap)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Image%20Overlap.cs) | Medium | |
 |	836	|[Rectangle Overlap](https://leetcode.com/problems/rectangle-overlap/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Rectangle%20Overlap.cs)| Easy | ♥ |
 |	837	|	| [C#] | Medium | |
 |	838	|	| [C#] | Medium | |
@@ -872,10 +872,10 @@ C#
 |	867	|[Transpose Matrix](https://leetcode.com/problems/transpose-matrix/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Transpose%20Matrix.cs)| Easy | ♥ |
 |	868	|[Binary Gap](https://leetcode.com/problems/binary-gap/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Binary%20Gap.cs)| Easy | ♥ |
 |	869	|	| [C#] | Medium | |
-|	870	|	| [C#] | Medium | |
+|	870	|[Advantage Shuffle](https://leetcode.com/problems/advantage-shuffle/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Advantage%20Shuffle.cs) | Medium | |
 |	871	|	| [C#] | Hard | |
-|	872	|	| [C#] | Easy | |
-|	873	|	| [C#] | Medium | |
+|	872	|[Leaf-Similar Trees](https://leetcode.com/problems/leaf-similar-trees/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Leaf-Similar%20Trees.cs) | Easy | |
+|	873	|[Length of Longest Fibonacci Subsequence](https://leetcode.com/problems/length-of-longest-fibonacci-subsequence/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Length%20of%20Longest%20Fibonacci%20Subsequence.cs) | Medium | |
 |	874	|[Walking Robot Simulation](https://leetcode.com/problems/walking-robot-simulation/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Walking%20Robot%20Simulation.cs)| Medium | ♥ |
 |	875	|	| [C#] | Medium | |
 |	876	|[Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Middle%20of%20the%20Linked%20List.cs)| Easy | ♥ |
@@ -899,17 +899,17 @@ C#
 |	894	|	| [C#] | Medium | |
 |	895	|	| [C#] | Hard | |
 |	896	|[Monotonic Array](https://leetcode.com/problems/monotonic-array/)	|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Monotonic%20Array.cs)	| Easy | ♥ |
-|	897	|	| [C#] | Easy | |
+|	897	|[Increasing Order Search Tree](https://leetcode.com/problems/increasing-order-search-tree/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Increasing%20Order%20Search%20Tree.cs) | Easy | |
 |	898	|	| [C#] | Medium | |
 |	899	|	| [C#] | Hard | |
-|	900	|	| [C#] | Medium | |
+|	900	|[RLE Iterator](https://leetcode.com/problems/rle-iterator/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/RLE%20Iterator.cs) | Medium | |
 |	901	|	| [C#] | Medium | |
 |	902	|	| [C#] | Hard | |
 |	903	|	| [C#] | Hard | |
 |	904	|	| [C#] | Medium | |
 |	905	|[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)	|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Sort%20Array%20By%20Parity.cs)	| Easy | ♥ |
 |	906	|	| [C#] | Hard | |
-|	907	|	| [C#] | Medium | |
+|	907	|[Sum of Subarray Minimums](https://leetcode.com/problems/sum-of-subarray-minimums/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Sum%20of%20Subarray%20Minimums.cs) | Medium | |
 |	908	|[Smallest Range I](https://leetcode.com/problems/smallest-range-i/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Smallest%20Range%20I.cs)| Easy | ♥ |
 |	909	|	| [C#] | Medium | |
 |	910	|	| [C#] | Medium | |
@@ -917,10 +917,10 @@ C#
 |	912	|	| [C#] | Medium | |
 |	913	|	| [C#] | Hard | |
 |	914	|[X of a Kind in a Deck of Cards](https://leetcode.com/problems/x-of-a-kind-in-a-deck-of-cards/)	|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/X%20of%20a%20Kind%20in%20a%20Deck%20of%20Cards.cs)	| Easy | |
-|	915	|	| [C#] | Medium | |
+|	915	|[Partition Array into Disjoint Intervals](https://leetcode.com/problems/partition-array-into-disjoint-intervals/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Partition%20Array%20into%20Disjoint%20Intervals.cs) | Medium | |
 |	916	|	| [C#] | Medium | |
 |	917	|[Reverse Only Letters](https://leetcode.com/problems/reverse-only-letters/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Reverse%20Only%20Letters.cs)| Easy | ♥ |
-|	918	|	| [C#] | Medium | |
+|	918	|[Maximum Sum Circular Subarray](https://leetcode.com/problems/maximum-sum-circular-subarray/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Maximum%20Sum%20Circular%20Subarray.cs) | Medium | |
 |	919	|	| [C#] | Medium | |
 |	920	|	| [C#] | Hard | |
 |	921	|	| [C#] | Medium | |
@@ -928,7 +928,7 @@ C#
 |	923	|	| [C#] | Medium | |
 |	924	|	| [C#] | Hard | |
 |	925	|[Long Pressed Name](https://leetcode.com/problems/long-pressed-name/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Long%20Pressed%20Name.cs)| Easy | ♥ |
-|	926	|	| [C#] | Medium | |
+|	926	|[Flip String to Monotone Increasing](https://leetcode.com/problems/flip-string-to-monotone-increasing/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Flip%20String%20to%20Monotone%20Increasing.cs) | Medium | |
 |	927	|	| [C#] | Hard | |
 |	928	|	| [C#] | Hard | |
 |	929	|[Unique Email Addresses](https://leetcode.com/problems/unique-email-addresses/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Unique%20Email%20Addresses.cs)| Easy | ♥ |
@@ -940,23 +940,23 @@ C#
 |	935	|	| [C#] | Medium | |
 |	936	|	| [C#] | Hard | |
 |	937	|[Reorder Data in Log Files](https://leetcode.com/problems/reorder-data-in-log-files/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Reorder%20Data%20in%20Log%20Files.cs)| Easy | ♥ |
-|	938	|	| [C#] | Easy | |
+|	938	|[Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Range%20Sum%20of%20BST.cs) | Easy | |
 |	939	|	| [C#] | Medium | |
 |	940	|	| [C#] | Hard | |
 |	941	| [Valid Mountain Array](https://leetcode.com/problems/valid-mountain-array/) | [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Valid%20Mountain%20Array.cs)	| Easy | ♥ |
 |	942	|[DI String Match](https://leetcode.com/problems/di-string-match/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/DI%20String%20Match.cs)| Easy | ♥ |
 |	943	|	| [C#] | Hard | |
 |	944	|[Delete Columns to Make Sorted](https://leetcode.com/problems/delete-columns-to-make-sorted/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Delete%20Columns%20to%20Make%20Sorted.cs)| Easy | ♥ |
-|	945	|	| [C#] | Medium | |
+|	945	|[Minimum Increment to Make Array Unique](https://leetcode.com/problems/minimum-increment-to-make-array-unique/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Minimum%20Increment%20to%20Make%20Array%20Unique.cs) | Medium | |
 |	946	|	| [C#] | Medium | |
 |	947	|	| [C#] | Medium | |
 |	948	|	| [C#] | Medium | |
 |	949	| [Largest Time for Given Digits](https://leetcode.com/problems/largest-time-for-given-digits/) | [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Largest%20Time%20for%20Given%20Digits.cs) | Medium | ♥ |
-|	950	|	| [C#] | Medium | |
+|	950	|[Reveal Cards In Increasing Order](https://leetcode.com/problems/reveal-cards-in-increasing-order/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Reveal%20Cards%20In%20Increasing%20Order.cs) | Medium | |
 |	951	|	| [C#] | Medium | |
 |	952	|	| [C#] | Hard | |
 |	953	|[Verifying an Alien Dictionary](https://leetcode.com/problems/verifying-an-alien-dictionary/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Verifying%20an%20Alien%20Dictionary.cs)| Easy | ♥ |
-|	954	|	| [C#] | Medium | |
+|	954	|[Array of Doubled Pairs](https://leetcode.com/problems/array-of-doubled-pairs/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Array%20of%20Doubled%20Pairs.cs) | Medium | |
 |	955	|	| [C#] | Medium | |
 |	956	|	| [C#] | Hard | |
 |	957	|	| [C#] | Medium | |
@@ -964,23 +964,23 @@ C#
 |	959	|	| [C#] | Medium | |
 |	960	|	| [C#] | Hard | |
 |	961	|[N-Repeated Element in Size 2N Array](https://leetcode.com/problems/n-repeated-element-in-size-2n-array/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/N-Repeated%20Element%20in%20Size%202N%20Array.cs)| Easy | ♥ |
-|	962	|	| [C#] | Medium | |
+|	962	|[Maximum Width Ramp](https://leetcode.com/problems/maximum-width-ramp/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Maximum%20Width%20Ramp.cs) | Medium | |
 |	963	|	| [C#] | Medium | |
 |	964	|	| [C#] |    Hard    | |
 |	965	|[Univalued Binary Tree](https://leetcode.com/problems/univalued-binary-tree/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Univalued%20Binary%20Tree.cs)| Easy | ♥ |
 |	966	|	| [C#] | Medium | |
 |	967	|	| [C#] | Medium | |
 |	968	|	| [C#] | Hard | |
-|	969	|	| [C#] | Medium | |
+|	969	|[Pancake Sorting](https://leetcode.com/problems/pancake-sorting/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Pancake%20Sorting.cs) | Medium | |
 |	970	|[Powerful Integers](https://leetcode.com/problems/powerful-integers/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Powerful%20Integers.cs)| Medium | ♥ |
 |	971	|	| [C#] | Medium | |
 |	972	|	| [C#] | Hard | |
 |	973	|	| [C#] | Medium | |
-|	974	|	| [C#] | Medium | |
+|	974	|[Subarray Sums Divisible by K](https://leetcode.com/problems/subarray-sums-divisible-by-k/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Subarray%20Sums%20Divisible%20by%20K.cs) | Medium | |
 |	975	|	| [C#] | Hard | |
 |	976	|[Largest Perimeter Triangle](https://leetcode.com/problems/largest-perimeter-triangle/)|[C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Largest%20Perimeter%20Triangle.cs)| Easy | ♥ |
 |	977	| [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/)	| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Squares%20of%20a%20Sorted%20Array.cs)	| Easy | ♥ |
-|	978	|	| [C#] | Medium | |
+|	978	|[Longest Turbulent Subarray](https://leetcode.com/problems/longest-turbulent-subarray/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Longest%20Turbulent%20Subarray.cs) | Medium | |
 |	979	|	| [C#] | Medium | |
 |	980	|	| [C#] | Hard | |
 |	981	|	| [C#] | Medium | |
@@ -995,7 +995,7 @@ C#
 |	990	|	| [C#] | Medium | |
 |	991	|	| [C#] | Medium | |
 |	992	|	| [C#] | Hard | |
-|	993	|	| [C#] | Easy | |
+|	993	|[Cousins in Binary Tree](https://leetcode.com/problems/cousins-in-binary-tree/)| [C#](https://github.com/SherryShi0108/LeetCode/blob/master/CSharp/Cousins%20in%20Binary%20Tree.cs) | Easy | |
 |	994	|	| [C#] | Medium | |
 |	995	|	| [C#] | Hard | |
 |	996	|	| [C#] | Hard | |
