@@ -5,8 +5,10 @@
 
 /*******************************************************************************************************************************
  * 
- * We have two special characters. The first character can be represented by one bit 0. The second character can be represented by two bits (10 or 11).
- * Now given a string represented by several bits. Return whether the last character must be a one-bit character or not. The given string will always end with a zero.
+ * We have two special characters. The first character can be represented by one bit 0. The second character can be 
+ * represented by two bits (10 or 11).
+ * Now given a string represented by several bits. Return whether the last character must be a one-bit character or not. 
+ * The given string will always end with a zero.
  * 
  * Note:
  *  1 <= len(bits) <= 1000.
@@ -24,41 +26,66 @@
 
 public class Solution717
 {
-    // --------------- O(n) 100ms --------------- 22.9MB --------------- (34% 6.7%)
+    // --------------- O(n) 129ms --------------- 39MB --------------- (75% 68%)
     public bool IsOneBitCharacter_1(int[] bits)
     {
-        for (int i = 0; i < bits.Length; i++)
+        int i = bits.Length - 2;
+        for (; i >= 0; i--)
         {
-            if (bits[i] == 1)
+            if (bits[i] == 0)
             {
-                i = i + 1;
+                break;
             }
-            else
+        }
+
+        return (bits.Length - i) % 2 == 0;        
+    }  
+    
+    // --------------- O(n) 96ms --------------- 22.8MB --------------- (48% 7%)
+    public bool IsOneBitCharacter_1_2(int[] bits)
+    {
+        int i = bits.Length - 2;
+        while (i >= 0 && bits[i] > 0)
+        {
+            i--;
+        }
+        return (bits.Length - i) % 2 == 0;
+    }
+    
+    // --------------- O(n) 125ms --------------- 39MB --------------- (75% 68%)
+    public bool IsOneBitCharacter_2(int[] bits)
+    {
+        if (bits.Length == 0)
+        {
+            return true;
+        }
+        else if(bits[bits.Length-2]==0)
+        {
+            return true;
+        }
+        else
+        {
+            bool result = true;
+            for (int i = 0; i < bits.Length; i++)
             {
-                if (i == bits.Length - 1)
+                int current = bits[i];
+                if (current == 1)
                 {
-                    return true;
+                    i++;
+                    result = false;
+                }
+                else
+                {
+                    result = true;
                 }
             }
-        }
-        return false;
-    }
-    //类似
-    public bool IsOneBitCharacter_1(int[] bits)
-    {
-        int i = 0;
-        for (i = 0; i < bits.Length - 1; i++)
-        {
-            if (bits[i] == 1)
-            {
-                i++;
-            }
-        }
-        return i == bits.Length - 1 ;
-    }
 
+            return result;
+        }
+    }
+    
     // --------------- O(n) 96ms --------------- 22.7MB --------------- (48% 50%)
-    public bool IsOneBitCharacter_2(int[] bits)
+    public bool IsOneBitCharacter_2_2(int[] bits)
     {
         int count = 0;
         while (count < bits.Length - 1)
@@ -74,45 +101,8 @@ public class Solution717
         }
         return count == bits.Length - 1;
     }
-
-    // --------------- O(n) 92ms --------------- 22.8MB --------------- (92% 6.7%)
-    public bool IsOneBitCharacter_3(int[] bits)
-    {
-        int count = 0;
-        while (count < bits.Length - 1)
-        {
-            count += bits[count] + 1;
-        }
-        return count == bits.Length - 1;
-    }
-
-    // --------------- O(n) 96ms --------------- 22.8MB --------------- (48% 7%)
-    public bool IsOneBitCharacter_4(int[] bits)
-    {
-        int i = bits.Length - 2;
-        while (i >= 0 && bits[i] > 0)
-        {
-            i--;
-        }
-        return (bits.Length - i) % 2 == 0;
-    }
-
-    // --------------- O(n) 96ms --------------- 22.7MB --------------- (48% 37%)
-    public bool IsOneBitCharacter_4_2(int[] bits)
-    {
-        int i = bits.Length - 2;
-        for (; i >=0; i--)
-        {
-            if (bits[i] == 0)
-            {
-                break;
-            }
-        }
-
-        return (bits.Length - i) % 2 == 0;        
-    }   
 }
 
 /**************************************************************************************************************
- * IsOneBitCharacter_1/2        IsOneBitCharacter_4                                                           *
+ * IsOneBitCharacter_1                                                                                        *
  **************************************************************************************************************/
